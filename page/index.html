@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2022-12-11 Sun 09:26 -->
+<!-- 2022-12-11 Sun 21:16 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>[Garden 76] Page  </title>
@@ -18,11 +18,40 @@
 <div id="content" class="content">
 <nav class="navs">
 <ul class="org-ul nav">
-<li><a href="../index.html">Home</a></li>
-<li><a href="index.html">Page</a></li>
-<li><a href="../about.html">About</a></li>
+<li><a href="../index.html#ID-7430811a-d538-4138-8787-3c48583b31f7">Home</a></li>
+<li><a href="index.html#ID-5cf31c6f-0c3a-4f6c-8131-01b2e59e8206">Page</a></li>
+<li><a href="../about.html#ID-d976f0dc-8ee2-4b1a-ab18-381c0b3fca19">About</a></li>
 </ul>
 </nav>
+
+<script src="https://cdn.jsdelivr.net/npm/underscore@1.13.6/underscore-umd-min.js"></script>
+<script>
+const active = (el) => el.parentNode.style.backgroundColor = 'gray';
+
+const homeA = document.querySelector("#content > nav > ul > li:nth-child(1) > a");
+let homePathname = new URL(homeA.href).pathname;
+const pageA = document.querySelector("#content > nav > ul > li:nth-child(2) > a");
+let pagePathname = new URL(pageA.href).pathname;
+const aboutA = document.querySelector("#content > nav > ul > li:nth-child(3) > a");
+let aboutPathname = new URL(aboutA.href).pathname;
+
+switch(window.location.pathname) {
+  case homePathname:
+    active(homeA);
+    console.log('h');
+    break;
+  case pagePathname:
+    active(pageA);
+    console.log('p');
+    break;
+  case aboutPathname:
+    active(aboutA);
+    console.log('a');
+    break;
+  default:
+    console.log('d');
+}
+</script>
 
 <ul class="org-ul">
 <li><a href="20221210072842-baidu_translate.html">baidu-translate</a></li>
@@ -32,7 +61,7 @@
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: 76</p>
-<p class="date">Created: 2022-12-11 Sun 09:26</p>
+<p class="date">Created: 2022-12-11 Sun 21:16</p>
 </div>
 </body>
 </html>
