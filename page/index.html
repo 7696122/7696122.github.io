@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2022-12-12 Mon 11:52 -->
+<!-- 2022-12-12 Mon 15:58 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>[Garden 76] Page   </title>
@@ -19,9 +19,9 @@
 <scroll-indicator></scroll-indicator>
 <nav class="navs">
 <ul class="org-ul nav">
-<li><a href="../index.html#ID-7430811a-d538-4138-8787-3c48583b31f7">Home</a></li>
+<li><a href="../home/index.html#ID-7430811a-d538-4138-8787-3c48583b31f7">Home</a></li>
 <li><a href="index.html#ID-5cf31c6f-0c3a-4f6c-8131-01b2e59e8206">Page</a></li>
-<li><a href="../about.html#ID-d976f0dc-8ee2-4b1a-ab18-381c0b3fca19">About</a></li>
+<li><a href="../about/index.html#ID-d976f0dc-8ee2-4b1a-ab18-381c0b3fca19">About</a></li>
 </ul>
 </nav>
 
@@ -37,7 +37,7 @@ const aboutA = document.querySelector("#content > nav > ul > li:nth-child(3) > a
 let aboutPathname = new URL(aboutA.href).pathname;
 
 switch(window.location.pathname) {
-  case '/':
+  // case '/':
   case homePathname:
     active(homeA);
     console.log('h');
@@ -63,7 +63,7 @@ switch(window.location.pathname) {
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: 76</p>
-<p class="date">Created: 2022-12-12 Mon 11:52</p>
+<p class="date">Created: 2022-12-12 Mon 15:58</p>
 </div>
 </body>
 </html>
