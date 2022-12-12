@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2022-12-12 Mon 16:07 -->
+<!-- 2022-12-12 Mon 17:57 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>[Garden 76] Home   </title>
@@ -27,31 +27,32 @@
 
 <script src="https://cdn.jsdelivr.net/npm/underscore@1.13.6/underscore-umd-min.js"></script>
 <script>
+const path = (href) => new URL(href).pathname;
+const dir = (href) => {
+  let _pathname = path(href);
+  return _pathname.substring(0, _pathname.lastIndexOf('/') + 1);
+}
+
 const active = (el) => el.parentNode.style.backgroundColor = 'gray';
 
 const homeA = document.querySelector("#content > nav > ul > li:nth-child(1) > a");
-let homePathname = new URL(homeA.href).pathname;
+let homePathname = dir(homeA.href);
 const pageA = document.querySelector("#content > nav > ul > li:nth-child(2) > a");
-let pagePathname = new URL(pageA.href).pathname;
+let pagePathname = dir(pageA.href);
 const aboutA = document.querySelector("#content > nav > ul > li:nth-child(3) > a");
-let aboutPathname = new URL(aboutA.href).pathname;
+let aboutPathname = dir(aboutA.href);
 
-switch(window.location.pathname) {
+switch(dir(window.location.href)) {
   // case '/':
   case homePathname:
     active(homeA);
-    console.log('h');
     break;
   case pagePathname:
     active(pageA);
-    console.log('p');
     break;
   case aboutPathname:
     active(aboutA);
-    console.log('a');
     break;
-  default:
-    console.log('d');
 }
 </script>
 
@@ -903,7 +904,7 @@ a<br>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: 76</p>
-<p class="date">Created: 2022-12-12 Mon 16:07</p>
+<p class="date">Created: 2022-12-12 Mon 17:57</p>
 </div>
 </body>
 </html>
