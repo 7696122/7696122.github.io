@@ -191,19 +191,58 @@
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   .org-svg { }
 </style>
+<link href='/stylesheets/main.css' media='screen, projection' rel='stylesheet' type='text/css' /><style>pre.src-typescript:before { content: 'Typescript'; }</style>
+<div class='header'><div class="banner">
+  <div class="center">
+    <h1>Digital Garden 76</h1>
+  </div>
+</div>
+</div><div class='navigation-panel sticky'><nav class="navs">
+<ul class="org-ul nav">
+<li><a href="/00-home/index.html#ID-7430811a-d538-4138-8787-3c48583b31f7">Home</a></li>
+<li><a href="/01-page/index.html#ID-5cf31c6f-0c3a-4f6c-8131-01b2e59e8206">Page</a></li>
+<li><a href="/03-about/index.html#ID-d976f0dc-8ee2-4b1a-ab18-381c0b3fca19">About</a></li>
+</ul>
+</nav>
+
+<script src="https://cdn.jsdelivr.net/npm/underscore@1.13.6/underscore-umd-min.js"></script>
+<script>
+const path = (href) => new URL(href).pathname;
+const dir = (href) => {
+  let _pathname = path(href);
+  return _pathname.substring(0, _pathname.lastIndexOf('/') + 1);
+}
+
+const active = (el) => el.parentNode.style.backgroundColor = 'gray';
+
+const homeA = document.querySelector("body > div.navigation-panel.sticky > nav > ul > li:nth-child(1) > a")
+let homePathname = dir(homeA.href);
+const pageA = document.querySelector("body > div.navigation-panel.sticky > nav > ul > li:nth-child(2) > a")
+let pagePathname = dir(pageA.href);
+const aboutA = document.querySelector("body > div.navigation-panel.sticky > nav > ul > li:nth-child(3) > a")
+let aboutPathname = dir(aboutA.href);
+
+switch(dir(window.location.href)) {
+  // case '/':
+  case homePathname:
+    active(homeA);
+    break;
+  case pagePathname:
+    active(pageA);
+    break;
+  case aboutPathname:
+    active(aboutA);
+    break;
+}
+</script>
+<scroll-indicator></scroll-indicator></div>
+<script src='/js/highlighter-ref-code-blockscript.js'></script><script src='/js/scroll-indicator.js'></script><script src='/js/sticky-header.js'></script><script src='/js/main.js'></script>
 </head>
 <body>
-<div id="org-div-home-and-up">
- <a accesskey="h" href="/01-page/index.html"> UP </a>
- |
- <a accesskey="H" href="/"> HOME </a>
-</div><div id="content" class="content">
+<div id="content" class="content">
 <p>
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness">Equality comparisons and sameness - JavaScript | MDN</a>
 </p>
-</div>
-<div id="postamble" class="status">
-<p class="date">Date: 2022-12-11 Sun 00:00</p>
 </div>
 </body>
 </html>

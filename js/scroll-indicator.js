@@ -6,12 +6,6 @@ class ScrollIndicator extends HTMLElement {
   render() {
     this.attachShadow({ mode: "open" });
 
-    const header = document.createElement("div");
-    header.setAttribute("class", "header");
-
-    // const title = document.createElement("h2");
-    // title.textContent = "Scroll Indicator";
-
     const container = document.createElement("div");
     container.setAttribute("class", "progress-container");
 
@@ -21,23 +15,9 @@ class ScrollIndicator extends HTMLElement {
 
     container.append(bar);
 
-    // header.append(title);
-    header.append(container);
-
-    this.shadowRoot.append(header);
-
     const style = document.createElement("style");
     style.textContent = `
 /* Style the header: fixed position (always stay at the top) */
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  width: 100%;
-  background-color: #f1f1f1;
-}
-
 /* The progress container (grey background) */
 .progress-container {
   width: 100%;
@@ -53,7 +33,7 @@ class ScrollIndicator extends HTMLElement {
 }
     `;
 
-    this.shadowRoot.append(style, header);
+    this.shadowRoot.append(style, container);
 
     // When the user scrolls the page, execute myFunction
     window.onscroll = function () {
@@ -67,7 +47,7 @@ class ScrollIndicator extends HTMLElement {
         document.documentElement.scrollHeight -
         document.documentElement.clientHeight;
       var scrolled = (winScroll / height) * 100;
-      bar.style.width = scrolled + "%";
+      bar.style.width = (scrolled <= 100 ? scrolled : 100) + "%";
     }
   }
 

@@ -1,0 +1,44 @@
+body {
+  overflow-y: scroll;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.center {
+  padding: 70px 0;
+  text-align: center;
+}
+
+.banner {
+  background-size: cover;
+  background-image: url("/img/garden.jpg");
+}
+.banner h1 {
+  color: white;
+}
+
+nav.navs {
+  left: 0;
+  background-color: #f1f1f1;
+}
+nav.navs ul.nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+nav.navs ul.nav li {
+  display: inline-block;
+  padding: 0.5em;
+}
+nav.navs ul.nav li a {
+  text-decoration: none;
+}
+nav.navs ul.nav li a:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=main.css.map */

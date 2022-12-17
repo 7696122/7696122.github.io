@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Index</title>
+<title>sdkman</title>
 <meta name="generator" content="Org Mode" />
 <style>
   #content { max-width: 60em; margin: auto; }
@@ -240,7 +240,87 @@ switch(dir(window.location.href)) {
 </head>
 <body>
 <div id="content" class="content">
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org544bfd7">1. bash, zsh</a></li>
+<li><a href="#org0bc33aa">2. fish</a></li>
+<li><a href="#orgbad1929">3. in</a></li>
+</ul>
+</div>
+</div>
+<p>
+<a href="https://sdkman.io/install">https://sdkman.io/install</a>
+</p>
 
+<p>
+<a href="#coderef-list_java" class="coderef" onmouseover="CodeHighlightOn(this, 'coderef-list_java');" onmouseout="CodeHighlightOff(this, 'coderef-list_java');">1</a>
+</p>
+
+
+<div id="outline-container-org544bfd7" class="outline-2">
+<h2 id="org544bfd7"><span class="section-number-2">1.</span> bash, zsh</h2>
+<div class="outline-text-2" id="text-1">
+<div class="org-src-container">
+<pre class="src src-sh">curl -s <span style="color: #8b2252;">"https://get.sdkman.io"</span> | bash
+</pre>
+</div>
+
+<p>
+위 명령으로 .bash_profile .zshrc 생성됨
+</p>
+
+<p>
+.bash_profile .zshrc created by the above command
+</p>
+
+<div class="org-src-container">
+<pre class="src src-bash">source <span style="color: #8b2252;">"$HOME/.sdkman/bin/sdkman-init.sh"</span>
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org0bc33aa" class="outline-2">
+<h2 id="org0bc33aa"><span class="section-number-2">2.</span> fish</h2>
+<div class="outline-text-2" id="text-2">
+<pre class="example" id="org3fb9bdb">
+&gt; source "$HOME/.sdkman/bin/sdkman-init.sh"
+~/.sdkman/bin/sdkman-init.sh (line 46): Expected end of the statement, but found an incomplete token
+        Linux)
+             ^
+from sourcing file ~/.sdkman/bin/sdkman-init.sh
+source: Error while reading file “/Users/mnml/.sdkman/bin/sdkman-init.sh”
+</pre>
+
+<p>
+<a href="https://github.com/reitzig/sdkman-for-fish">https://github.com/reitzig/sdkman-for-fish</a>
+</p>
+
+<div class="org-src-container">
+<pre class="src src-fish">fisher install reitzig/sdkman-for-fish@v1.4.0
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgbad1929" class="outline-2">
+<h2 id="orgbad1929"><span class="section-number-2">3.</span> in</h2>
+<div class="outline-text-2" id="text-3">
+<div class="org-src-container">
+<pre class="src src-sh"><span id="coderef-list_java" class="coderef-off"><span class="linenr">1: </span>sdk list java</span>
+<span class="linenr">2: </span>sdk install java 19.0.1-amzn
+</pre>
+</div>
+
+<pre class="example" id="orgb317058">
+Corretto      |     | 19.0.1       | amzn    |            | 19.0.1-amzn
+              | &gt;&gt;&gt; | 17.0.5       | amzn    | installed  | 17.0.5-amzn
+              |     | 11.0.17      | amzn    |            | 11.0.17-amzn
+</pre>
+</div>
+</div>
 </div>
 </body>
 </html>
