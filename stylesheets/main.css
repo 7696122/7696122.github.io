@@ -19,6 +19,7 @@ body {
 }
 .banner h1 {
   color: white;
+  text-shadow: -1px 0 gray, 0 1px gray, 1px 0 gray, 0 -1px gray;
 }
 
 nav.navs {
