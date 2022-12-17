@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>java development</title>
+<title>npm 없이 js 라이브러리 사용하기</title>
 <meta name="generator" content="Org Mode" />
 <style>
   #content { max-width: 60em; margin: auto; }
@@ -240,74 +240,9 @@ switch(dir(window.location.href)) {
 </head>
 <body>
 <div id="content" class="content">
-<div id="table-of-contents" role="doc-toc">
-<h2>Table of Contents</h2>
-<div id="text-table-of-contents" role="doc-toc">
-<ul>
-<li><a href="#org944e5b8">1. jdk</a></li>
-<li><a href="#org964b072">2. gradle</a></li>
-</ul>
-</div>
-</div>
 <p>
-java로 개발한다면
-<a href="#org944e5b8">1</a>JDK와 <a href="#org964b072">2</a>Gradle가필요하다.
+<a href="https://www.jsdelivr.com/">https://www.jsdelivr.com/</a>
 </p>
-
-<div id="outline-container-org944e5b8" class="outline-2">
-<h2 id="org944e5b8"><span class="section-number-2">1.</span> jdk</h2>
-<div class="outline-text-2" id="text-1">
-<p>
-여러 버전의 jdk와 각종 java 관련 도구들을 사용하기 편한
-<a href="20221215113855-sdkman.html#ID-c2412661-9172-4eee-a8d1-b9994dce406b">sdkman</a>을 사용
-</p>
-
-<div class="org-src-container">
-<pre class="src src-conf" id="org5c0910a"># <span style="color: #b22222;">Enable auto-env through the sdkman_auto_env config</span>
-# <span style="color: #b22222;">Add key=value pairs of SDKs to use below</span>
-<span style="color: #a0522d;">java</span>=11.0.17-amzn
-<span style="color: #a0522d;">gradle</span>=7.6
-
-</pre>
-</div>
-</div>
-</div>
-
-<div id="outline-container-org964b072" class="outline-2">
-<h2 id="org964b072"><span class="section-number-2">2.</span> gradle</h2>
-<div class="outline-text-2" id="text-2">
-<p>
-gradlew를 사용하려면 gradle이 있어야 하더라
-</p>
-
-<pre class="example">
-./gradle
-└── wrapper
-    └── gradle-wrapper.properties
-
-1 directory, 2 files
-</pre>
-
-
-<p>
-<code>gradle-wrapper.jar</code> 가 없다면 아래 명령어로 설치
-</p>
-
-<div class="org-src-container">
-<pre class="src src-shell">gradle wrapper
-</pre>
-</div>
-
-<pre class="example">
-./gradle
-└── wrapper
-    ├── gradle-wrapper.jar
-    └── gradle-wrapper.properties
-
-1 directory, 2 files
-</pre>
-</div>
-</div>
 </div>
 </body>
 </html>
