@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>디지털 가든 만든기</title>
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link href='https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap' rel='stylesheet'><link href='/stylesheets/main.css' media='screen, projection' rel='stylesheet' type='text/css' /><style>pre.src-typescript:before { content: 'Typescript'; }</style>
+<div class='header'><div class="banner">
+  <a href="/" class="none-deco">
+    <div class="center">
+      <h1 class="shadow">Garden 76</h1>
+    </div>
+  </a>
+</div>
+</div><div class='navigation-panel sticky'><nav class="navs">
+<ul class="org-ul nav">
+<li><a href="/00-home/index.html#ID-7430811a-d538-4138-8787-3c48583b31f7">Home</a></li>
+<li><a href="/01-page/index.html#ID-5cf31c6f-0c3a-4f6c-8131-01b2e59e8206">Page</a></li>
+<li><a href="/03-about/index.html#ID-d976f0dc-8ee2-4b1a-ab18-381c0b3fca19">About</a></li>
+</ul>
+</nav>
+
+<script src="https://cdn.jsdelivr.net/npm/underscore@1.13.6/underscore-umd-min.js"></script>
+<script>
+const path = (href) => new URL(href).pathname;
+const dir = (href) => {
+  let _pathname = path(href);
+  return _pathname.substring(0, _pathname.lastIndexOf('/') + 1);
+}
+
+const active = (el) => el.parentNode.style.backgroundColor = 'gray';
+
+const homeA = document.querySelector("body > div.navigation-panel.sticky > nav > ul > li:nth-child(1) > a")
+let homePathname = dir(homeA.href);
+const pageA = document.querySelector("body > div.navigation-panel.sticky > nav > ul > li:nth-child(2) > a")
+let pagePathname = dir(pageA.href);
+const aboutA = document.querySelector("body > div.navigation-panel.sticky > nav > ul > li:nth-child(3) > a")
+let aboutPathname = dir(aboutA.href);
+
+switch(dir(window.location.href)) {
+  // case '/':
+  case homePathname:
+    active(homeA);
+    break;
+  case pagePathname:
+    active(pageA);
+    break;
+  case aboutPathname:
+    active(aboutA);
+    break;
+}
+</script>
+<scroll-indicator></scroll-indicator><div style='display: flex; justify-content: center;'><back-button></back-button><up-button></up-button><home-button></home-button><forward-button></forward-button></div></div>
+<script src='https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js'></script><script src='https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js'></script><script src='https://npmcdn.com/underscore.string@3.3.6/dist/underscore.string.min.js'></script><script src='/js/highlighter-ref-code-blockscript.js'></script><script src='/js/scroll-indicator.js'></script><script src='/js/navigator.js'></script><script src='/js/sticky-header.js'></script><script src='/js/main.js'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">디지털 가든 만든기</h1>
+
+<div id="outline-container-org66f4ac5" class="outline-2">
+<h2 id="org66f4ac5">Batch</h2>
+<div class="outline-text-2" id="text-org66f4ac5">
+<div class="org-src-container">
+<pre class="src src-sh">emacs -Q  --batch \
+    -l publish.el \
+    -f org-publish-all
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org1b022ab" class="outline-2">
+<h2 id="org1b022ab">Syntax Highlight</h2>
+<div class="outline-text-2" id="text-org1b022ab">
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">;; <span style="color: #b22222;">[[https://emacs.stackexchange.com/questions/38437/org-mode-batch-export-missing-syntax-highlighting/38515#38515][org-mode batch export: Missing syntax highlighting - Emacs Stack Exchange]]</span>
+<span style="color: #707183;">(</span><span style="color: #008b8b;">require</span> <span style="color: #a020f0;">'</span><span style="color: #008b8b;">font-lock</span><span style="color: #707183;">)</span>
+<span style="color: #707183;">(</span><span style="color: #008b8b;">require</span> <span style="color: #a020f0;">'</span><span style="color: #008b8b;">subr-x</span><span style="color: #707183;">)</span> ;; <span style="color: #b22222;">for `</span><span style="color: #008b8b;">when-let</span><span style="color: #b22222;">'</span>
+
+<span style="color: #707183;">(</span><span style="color: #008b8b;">require</span> <span style="color: #a020f0;">'</span><span style="color: #008b8b;">fish-mode</span><span style="color: #707183;">)</span>
+;; <span style="color: #b22222;">(require 'sh-script)</span>
+<span style="color: #707183;">(</span><span style="color: #008b8b;">require</span> <span style="color: #a020f0;">'</span><span style="color: #008b8b;">ob-shell</span><span style="color: #707183;">)</span>
+
+<span style="color: #707183;">(</span><span style="color: #008b8b;">require</span> <span style="color: #a020f0;">'</span><span style="color: #008b8b;">lua-mode</span><span style="color: #707183;">)</span>
+<span style="color: #707183;">(</span><span style="color: #008b8b;">require</span> <span style="color: #a020f0;">'</span><span style="color: #008b8b;">typescript-mode</span><span style="color: #707183;">)</span>
+<span style="color: #707183;">(</span><span style="color: #008b8b;">require</span> <span style="color: #a020f0;">'</span><span style="color: #008b8b;">ob-typescript</span><span style="color: #707183;">)</span>
+
+<span style="color: #707183;">(</span><span style="color: #008b8b;">org-babel-do-load-languages</span>
+ <span style="color: #a020f0;">'</span><span style="color: #a0522d;">org-babel-load-languages</span>
+ <span style="color: #a020f0;">`</span><span style="color: #7388d6;">(</span>;; <span style="color: #b22222;">(fish . t)</span>
+   <span style="color: #909183;">(</span><span style="color: #008b8b;">shell</span> . t<span style="color: #909183;">)</span>
+   <span style="color: #909183;">(</span>typescript . t<span style="color: #909183;">)</span>
+   <span style="color: #909183;">(</span>emacs-lisp . t<span style="color: #909183;">)</span><span style="color: #7388d6;">)</span><span style="color: #707183;">)</span>
+
+<span style="color: #707183;">(</span><span style="color: #a020f0;">progn</span>
+  <span style="color: #7388d6;">(</span><span style="color: #008b8b;">font-lock-add-keywords</span>
+   <span style="color: #a020f0;">'</span><span style="color: #008b8b;">emacs-lisp-mode</span>
+   <span style="color: #909183;">(</span><span style="color: #008b8b;">append</span>
+    <span style="color: #a020f0;">`</span><span style="color: #709870;">(</span>;; <span style="color: #b22222;">custom Doom cookies</span>
+      <span style="color: #707183;">(</span><span style="color: #8b2252;">"^;;;###</span><span style="color: #8b2252; font-weight: bold;">\\</span><span style="color: #8b2252; font-weight: bold;">(</span><span style="color: #8b2252;">autodef</span><span style="color: #8b2252; font-weight: bold;">\\</span><span style="color: #8b2252; font-weight: bold;">|</span><span style="color: #8b2252;">if</span><span style="color: #8b2252; font-weight: bold;">\\</span><span style="color: #8b2252; font-weight: bold;">|</span><span style="color: #8b2252;">package</span><span style="color: #8b2252; font-weight: bold;">\\</span><span style="color: #8b2252; font-weight: bold;">)</span><span style="color: #8b2252;">[ \n]"</span> <span style="color: #7388d6;">(</span><span style="color: #008b8b;">1</span> <span style="color: #a0522d;">font-lock-warning-face</span> t<span style="color: #7388d6;">)</span><span style="color: #707183;">)</span><span style="color: #709870;">)</span>
+    ;; <span style="color: #b22222;">Shorten the :pin of `</span><span style="color: #008b8b;">package!</span><span style="color: #b22222;">' statements to 10 characters</span>
+    <span style="color: #a020f0;">`</span><span style="color: #709870;">(</span><span style="color: #707183;">(</span><span style="color: #8b2252;">"(package!\\_&gt;"</span> <span style="color: #7388d6;">(</span><span style="color: #008b8b;">0</span> <span style="color: #a0522d;">font-lock-keyword-face</span><span style="color: #7388d6;">)</span><span style="color: #707183;">)</span><span style="color: #709870;">)</span>
+    <span style="color: #a020f0;">`</span><span style="color: #709870;">(</span><span style="color: #707183;">(</span><span style="color: #8b2252;">"(use-package!\\_&gt;"</span> <span style="color: #7388d6;">(</span><span style="color: #008b8b;">0</span> <span style="color: #a0522d;">font-lock-keyword-face</span><span style="color: #7388d6;">)</span><span style="color: #707183;">)</span><span style="color: #709870;">)</span>
+    <span style="color: #909183;">)</span><span style="color: #7388d6;">)</span><span style="color: #707183;">)</span>
+
+<span style="color: #707183;">(</span><span style="color: #a020f0;">unless</span> <span style="color: #7388d6;">(</span><span style="color: #008b8b;">boundp</span> <span style="color: #a020f0;">'</span><span style="color: #a0522d;">maximal-integer</span><span style="color: #7388d6;">)</span>
+  <span style="color: #7388d6;">(</span><span style="color: #a020f0;">defconst</span> <span style="color: #a0522d;">maximal-integer</span> <span style="color: #909183;">(</span><span style="color: #008b8b;">lsh</span> <span style="color: #008b8b;">-1</span> <span style="color: #008b8b;">-1</span><span style="color: #909183;">)</span>
+    <span style="color: #8b2252;">"Maximal integer value representable natively in emacs lisp."</span><span style="color: #7388d6;">)</span><span style="color: #707183;">)</span>
+
+<span style="color: #707183;">(</span><span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">face-spec-default</span> <span style="color: #7388d6;">(</span>spec<span style="color: #7388d6;">)</span>
+  <span style="color: #8b2252;">"Get list containing at most the default entry of face SPEC.</span>
+<span style="color: #8b2252;">Return nil if SPEC has no default entry."</span>
+  <span style="color: #7388d6;">(</span><span style="color: #a020f0;">let*</span> <span style="color: #909183;">(</span><span style="color: #709870;">(</span>first <span style="color: #707183;">(</span><span style="color: #008b8b;">car-safe</span> spec<span style="color: #707183;">)</span><span style="color: #709870;">)</span>
+         <span style="color: #709870;">(</span>display <span style="color: #707183;">(</span><span style="color: #008b8b;">car-safe</span> first<span style="color: #707183;">)</span><span style="color: #709870;">)</span><span style="color: #909183;">)</span>
+    <span style="color: #909183;">(</span><span style="color: #a020f0;">when</span> <span style="color: #709870;">(</span><span style="color: #008b8b;">eq</span> display <span style="color: #a020f0;">'</span><span style="color: #008b8b;">default</span><span style="color: #709870;">)</span>
+      <span style="color: #709870;">(</span><span style="color: #008b8b;">list</span> <span style="color: #707183;">(</span><span style="color: #008b8b;">car-safe</span> spec<span style="color: #707183;">)</span><span style="color: #709870;">)</span><span style="color: #909183;">)</span><span style="color: #7388d6;">)</span><span style="color: #707183;">)</span>
+
+<span style="color: #707183;">(</span><span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">face-spec-min-color</span> <span style="color: #7388d6;">(</span>display-atts<span style="color: #7388d6;">)</span>
+  <span style="color: #8b2252;">"Get min-color entry of DISPLAY-ATTS pair from face spec."</span>
+  <span style="color: #7388d6;">(</span><span style="color: #a020f0;">let*</span> <span style="color: #909183;">(</span><span style="color: #709870;">(</span>display <span style="color: #707183;">(</span><span style="color: #008b8b;">car-safe</span> display-atts<span style="color: #707183;">)</span><span style="color: #709870;">)</span><span style="color: #909183;">)</span>
+    <span style="color: #909183;">(</span><span style="color: #a020f0;">or</span> <span style="color: #709870;">(</span><span style="color: #008b8b;">car-safe</span> <span style="color: #707183;">(</span><span style="color: #008b8b;">cdr</span> <span style="color: #7388d6;">(</span><span style="color: #008b8b;">assoc</span> <span style="color: #a020f0;">'</span><span style="color: #008b8b;">min-colors</span> display<span style="color: #7388d6;">)</span><span style="color: #707183;">)</span><span style="color: #709870;">)</span>
+        <span style="color: #a0522d;">maximal-integer</span><span style="color: #909183;">)</span><span style="color: #7388d6;">)</span><span style="color: #707183;">)</span>
+
+<span style="color: #707183;">(</span><span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">face-spec-highest-color</span> <span style="color: #7388d6;">(</span>spec<span style="color: #7388d6;">)</span>
+  <span style="color: #8b2252;">"Search face SPEC for highest color.</span>
+<span style="color: #8b2252;">That means the DISPLAY entry of SPEC</span>
+<span style="color: #8b2252;">with class 'color and highest min-color value."</span>
+  <span style="color: #7388d6;">(</span><span style="color: #a020f0;">let</span> <span style="color: #909183;">(</span><span style="color: #709870;">(</span>color-list <span style="color: #707183;">(</span><span style="color: #008b8b;">cl-remove-if-not</span>
+                     <span style="color: #7388d6;">(</span><span style="color: #a020f0;">lambda</span> <span style="color: #909183;">(</span>display-atts<span style="color: #909183;">)</span>
+                       <span style="color: #909183;">(</span><span style="color: #a020f0;">when-let</span> <span style="color: #709870;">(</span><span style="color: #707183;">(</span>display <span style="color: #7388d6;">(</span><span style="color: #008b8b;">car-safe</span> display-atts<span style="color: #7388d6;">)</span><span style="color: #707183;">)</span>
+                                  <span style="color: #707183;">(</span>class <span style="color: #7388d6;">(</span><span style="color: #a020f0;">and</span> <span style="color: #909183;">(</span><span style="color: #008b8b;">listp</span> display<span style="color: #909183;">)</span>
+                                              <span style="color: #909183;">(</span><span style="color: #008b8b;">assoc</span> <span style="color: #a020f0;">'</span><span style="color: #008b8b;">class</span> display<span style="color: #909183;">)</span><span style="color: #7388d6;">)</span><span style="color: #707183;">)</span>
+                                  <span style="color: #707183;">(</span>background <span style="color: #7388d6;">(</span><span style="color: #008b8b;">assoc</span> <span style="color: #a020f0;">'</span><span style="color: #008b8b;">background</span> display<span style="color: #7388d6;">)</span><span style="color: #707183;">)</span><span style="color: #709870;">)</span>
+                         <span style="color: #709870;">(</span><span style="color: #a020f0;">and</span> <span style="color: #707183;">(</span><span style="color: #008b8b;">member</span> <span style="color: #a020f0;">'</span><span style="color: #008b8b;">light</span> <span style="color: #7388d6;">(</span><span style="color: #008b8b;">cdr</span> background<span style="color: #7388d6;">)</span><span style="color: #707183;">)</span>
+                              <span style="color: #707183;">(</span><span style="color: #008b8b;">member</span> <span style="color: #a020f0;">'</span><span style="color: #008b8b;">color</span> <span style="color: #7388d6;">(</span><span style="color: #008b8b;">cdr</span> class<span style="color: #7388d6;">)</span><span style="color: #707183;">)</span><span style="color: #709870;">)</span><span style="color: #909183;">)</span><span style="color: #7388d6;">)</span>
+                     spec<span style="color: #707183;">)</span><span style="color: #709870;">)</span><span style="color: #909183;">)</span>
+    <span style="color: #909183;">(</span><span style="color: #008b8b;">cl-reduce</span> <span style="color: #709870;">(</span><span style="color: #a020f0;">lambda</span> <span style="color: #707183;">(</span>display-atts1 display-atts2<span style="color: #707183;">)</span>
+                 <span style="color: #707183;">(</span><span style="color: #a020f0;">if</span> <span style="color: #7388d6;">(</span><span style="color: #008b8b;">&gt;</span> <span style="color: #909183;">(</span><span style="color: #0000ff;">face-spec-min-color</span> display-atts1<span style="color: #909183;">)</span>
+                        <span style="color: #909183;">(</span><span style="color: #0000ff;">face-spec-min-color</span> display-atts2<span style="color: #909183;">)</span><span style="color: #7388d6;">)</span>
+                     display-atts1
+                   display-atts2<span style="color: #707183;">)</span><span style="color: #709870;">)</span>
+               <span style="color: #709870;">(</span><span style="color: #008b8b;">cdr</span> color-list<span style="color: #709870;">)</span>
+               <span style="color: #483d8b;">:initial-value</span> <span style="color: #709870;">(</span><span style="color: #008b8b;">car</span> color-list<span style="color: #709870;">)</span><span style="color: #909183;">)</span><span style="color: #7388d6;">)</span><span style="color: #707183;">)</span>
+
+<span style="color: #707183;">(</span><span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">face-spec-t</span> <span style="color: #7388d6;">(</span>spec<span style="color: #7388d6;">)</span>
+  <span style="color: #8b2252;">"Search face SPEC for fall back."</span>
+  <span style="color: #7388d6;">(</span><span style="color: #008b8b;">cl-find-if</span> <span style="color: #909183;">(</span><span style="color: #a020f0;">lambda</span> <span style="color: #709870;">(</span>display-atts<span style="color: #709870;">)</span>
+                <span style="color: #709870;">(</span><span style="color: #008b8b;">eq</span> <span style="color: #707183;">(</span><span style="color: #008b8b;">car-safe</span> display-atts<span style="color: #707183;">)</span> t<span style="color: #709870;">)</span><span style="color: #909183;">)</span>
+              spec<span style="color: #7388d6;">)</span><span style="color: #707183;">)</span>
+
+<span style="color: #707183;">(</span><span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">my-face-attribute</span> <span style="color: #7388d6;">(</span>face attribute <span style="color: #228b22;">&amp;optional</span> frame inherit<span style="color: #7388d6;">)</span>
+  <span style="color: #8b2252;">"Get FACE ATTRIBUTE from `</span><span style="color: #008b8b;">face-user-default-spec</span><span style="color: #8b2252;">' and not from `</span><span style="color: #008b8b;">face-attribute</span><span style="color: #8b2252;">'."</span>
+  <span style="color: #7388d6;">(</span><span style="color: #a020f0;">let*</span> <span style="color: #909183;">(</span><span style="color: #709870;">(</span>face-spec <span style="color: #707183;">(</span><span style="color: #0000ff;">face-user-default-spec</span> face<span style="color: #707183;">)</span><span style="color: #709870;">)</span>
+         <span style="color: #709870;">(</span>display-attr <span style="color: #707183;">(</span><span style="color: #a020f0;">or</span> <span style="color: #7388d6;">(</span><span style="color: #0000ff;">face-spec-highest-color</span> face-spec<span style="color: #7388d6;">)</span>
+                           <span style="color: #7388d6;">(</span><span style="color: #0000ff;">face-spec-t</span> face-spec<span style="color: #7388d6;">)</span><span style="color: #707183;">)</span><span style="color: #709870;">)</span>
+         <span style="color: #709870;">(</span>attr <span style="color: #707183;">(</span><span style="color: #008b8b;">cdr</span> display-attr<span style="color: #707183;">)</span><span style="color: #709870;">)</span>
+         <span style="color: #709870;">(</span>val <span style="color: #707183;">(</span><span style="color: #a020f0;">or</span> <span style="color: #7388d6;">(</span><span style="color: #008b8b;">plist-get</span> attr attribute<span style="color: #7388d6;">)</span> <span style="color: #7388d6;">(</span><span style="color: #008b8b;">car-safe</span> <span style="color: #909183;">(</span><span style="color: #008b8b;">cdr</span> <span style="color: #709870;">(</span><span style="color: #008b8b;">assoc</span> attribute attr<span style="color: #709870;">)</span><span style="color: #909183;">)</span><span style="color: #7388d6;">)</span><span style="color: #707183;">)</span><span style="color: #709870;">)</span><span style="color: #909183;">)</span>
+    ;; <span style="color: #b22222;">(message "attribute: %S" attribute) ;; for debugging</span>
+    <span style="color: #909183;">(</span><span style="color: #a020f0;">when</span> <span style="color: #709870;">(</span><span style="color: #a020f0;">and</span> <span style="color: #707183;">(</span><span style="color: #008b8b;">null</span> <span style="color: #7388d6;">(</span><span style="color: #008b8b;">eq</span> attribute <span style="color: #483d8b;">:inherit</span><span style="color: #7388d6;">)</span><span style="color: #707183;">)</span>
+               <span style="color: #707183;">(</span><span style="color: #008b8b;">null</span> val<span style="color: #707183;">)</span><span style="color: #709870;">)</span>
+      <span style="color: #709870;">(</span><span style="color: #a020f0;">let</span> <span style="color: #707183;">(</span><span style="color: #7388d6;">(</span>inherited-face <span style="color: #909183;">(</span><span style="color: #0000ff;">my-face-attribute</span> face <span style="color: #483d8b;">:inherit</span><span style="color: #909183;">)</span><span style="color: #7388d6;">)</span><span style="color: #707183;">)</span>
+        <span style="color: #707183;">(</span><span style="color: #a020f0;">when</span> <span style="color: #7388d6;">(</span><span style="color: #a020f0;">and</span> inherited-face
+                   <span style="color: #909183;">(</span><span style="color: #008b8b;">null</span> <span style="color: #709870;">(</span><span style="color: #008b8b;">eq</span> inherited-face <span style="color: #a020f0;">'</span><span style="color: #008b8b;">unspecified</span><span style="color: #709870;">)</span><span style="color: #909183;">)</span><span style="color: #7388d6;">)</span>
+          <span style="color: #7388d6;">(</span><span style="color: #a020f0;">setq</span> val <span style="color: #909183;">(</span><span style="color: #0000ff;">my-face-attribute</span> inherited-face attribute<span style="color: #909183;">)</span><span style="color: #7388d6;">)</span><span style="color: #707183;">)</span><span style="color: #709870;">)</span><span style="color: #909183;">)</span>
+    ;; <span style="color: #b22222;">(message "face: %S attribute: %S display-attr: %S, val: %S" face attribute display-attr val) ;; for debugging</span>
+    <span style="color: #909183;">(</span><span style="color: #a020f0;">or</span> val <span style="color: #a020f0;">'</span><span style="color: #008b8b;">unspecified</span><span style="color: #909183;">)</span><span style="color: #7388d6;">)</span><span style="color: #707183;">)</span>
+
+<span style="color: #707183;">(</span><span style="color: #008b8b;">advice-add</span> <span style="color: #a020f0;">'</span><span style="color: #008b8b;">face-attribute</span> <span style="color: #483d8b;">:override</span> <span style="color: #a020f0;">#'</span><span style="color: #008b8b;">my-face-attribute</span><span style="color: #707183;">)</span>
+
+;; <span style="color: #b22222;">;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;</span>
+;; <span style="color: #b22222;">Debugging:</span>
+<span style="color: #707183;">(</span><span style="color: #a020f0;">defmacro</span> <span style="color: #0000ff;">print-args-and-ret</span> <span style="color: #7388d6;">(</span>fun<span style="color: #7388d6;">)</span>
+  <span style="color: #8b2252;">"Prepare FUN for printing args and return value."</span>
+  <span style="color: #a020f0;">`</span><span style="color: #7388d6;">(</span>advice-add <span style="color: #909183;">(</span><span style="color: #a020f0;">quote</span> ,fun<span style="color: #909183;">)</span> <span style="color: #483d8b;">:around</span>
+    <span style="color: #909183;">(</span><span style="color: #a020f0;">lambda</span> <span style="color: #709870;">(</span>oldfun <span style="color: #228b22;">&amp;rest</span> args<span style="color: #709870;">)</span>
+      <span style="color: #709870;">(</span><span style="color: #a020f0;">let</span> <span style="color: #707183;">(</span><span style="color: #7388d6;">(</span>ret <span style="color: #909183;">(</span><span style="color: #008b8b;">apply</span> oldfun args<span style="color: #909183;">)</span><span style="color: #7388d6;">)</span><span style="color: #707183;">)</span>
+        <span style="color: #707183;">(</span><span style="color: #008b8b;">message</span> ,<span style="color: #7388d6;">(</span><span style="color: #008b8b;">concat</span> <span style="color: #8b2252;">"Calling "</span> <span style="color: #909183;">(</span><span style="color: #008b8b;">symbol-name</span> fun<span style="color: #909183;">)</span> <span style="color: #8b2252;">" with args %S returns %S."</span><span style="color: #7388d6;">)</span> args ret<span style="color: #707183;">)</span>
+        ret<span style="color: #709870;">)</span><span style="color: #909183;">)</span>
+    <span style="color: #a020f0;">'</span><span style="color: #909183;">(</span><span style="color: #709870;">(</span>name <span style="color: #8b2252;">"print-args-and-ret"</span><span style="color: #709870;">)</span><span style="color: #909183;">)</span><span style="color: #7388d6;">)</span><span style="color: #707183;">)</span>
+
+;; <span style="color: #b22222;">(print-args-and-ret htmlize-faces-in-buffer)</span>
+;; <span style="color: #b22222;">(print-args-and-ret htmlize-get-override-fstruct)</span>
+;; <span style="color: #b22222;">(print-args-and-ret htmlize-face-to-fstruct)</span>
+;; <span style="color: #b22222;">(print-args-and-ret htmlize-attrlist-to-fstruct)</span>
+;; <span style="color: #b22222;">(print-args-and-ret face-foreground)</span>
+;; <span style="color: #b22222;">(print-args-and-ret face-background)</span>
+;; <span style="color: #b22222;">(print-args-and-ret face-attribute)</span>
+
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org40f9517" class="outline-2">
+<h2 id="org40f9517">Backlinks</h2>
+<div class="outline-text-2" id="text-org40f9517">
+<div class="org-src-container">
+<pre class="src src-emacs-lisp"><span style="color: #707183;">(</span><span style="color: #008b8b;">require</span> <span style="color: #a020f0;">'</span><span style="color: #008b8b;">org-roam</span><span style="color: #707183;">)</span>
+
+<span style="color: #707183;">(</span><span style="color: #a020f0;">setq</span> <span style="color: #a0522d;">org-roam-db-location</span> <span style="color: #8b2252;">"~/doomemacs/.local/cache/org-roam.db"</span><span style="color: #707183;">)</span>
+
+<span style="color: #707183;">(</span><span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">collect-backlinks-string</span> <span style="color: #7388d6;">(</span>backend<span style="color: #7388d6;">)</span>
+  <span style="color: #7388d6;">(</span><span style="color: #a020f0;">when</span> <span style="color: #909183;">(</span><span style="color: #008b8b;">org-roam-node-at-point</span><span style="color: #909183;">)</span>
+    <span style="color: #909183;">(</span><span style="color: #a020f0;">let*</span> <span style="color: #709870;">(</span><span style="color: #707183;">(</span>source-node <span style="color: #7388d6;">(</span><span style="color: #008b8b;">org-roam-node-at-point</span><span style="color: #7388d6;">)</span><span style="color: #707183;">)</span>
+           <span style="color: #707183;">(</span>source-file <span style="color: #7388d6;">(</span><span style="color: #008b8b;">org-roam-node-file</span> source-node<span style="color: #7388d6;">)</span><span style="color: #707183;">)</span>
+           <span style="color: #707183;">(</span>nodes-in-file <span style="color: #7388d6;">(</span><span style="color: #a020f0;">--filter</span> <span style="color: #909183;">(</span><span style="color: #008b8b;">s-equals?</span> <span style="color: #709870;">(</span><span style="color: #008b8b;">org-roam-node-file</span> it<span style="color: #709870;">)</span> source-file<span style="color: #909183;">)</span>
+                                    <span style="color: #909183;">(</span><span style="color: #008b8b;">org-roam-node-list</span><span style="color: #909183;">)</span><span style="color: #7388d6;">)</span><span style="color: #707183;">)</span>
+           <span style="color: #707183;">(</span>nodes-start-position <span style="color: #7388d6;">(</span><span style="color: #008b8b;">-map</span> <span style="color: #a020f0;">'</span><span style="color: #008b8b;">org-roam-node-point</span> nodes-in-file<span style="color: #7388d6;">)</span><span style="color: #707183;">)</span>
+           ;; <span style="color: #b22222;">Nodes don't store the last position, so get the next headline position</span>
+           ;; <span style="color: #b22222;">and subtract one character (or, if no next headline, get point-max)</span>
+           <span style="color: #707183;">(</span>nodes-end-position <span style="color: #7388d6;">(</span><span style="color: #008b8b;">-map</span> <span style="color: #909183;">(</span><span style="color: #a020f0;">lambda</span> <span style="color: #709870;">(</span>nodes-start-position<span style="color: #709870;">)</span>
+                                       <span style="color: #709870;">(</span><span style="color: #008b8b;">goto-char</span> nodes-start-position<span style="color: #709870;">)</span>
+                                       <span style="color: #709870;">(</span><span style="color: #a020f0;">if</span> <span style="color: #707183;">(</span><span style="color: #008b8b;">org-before-first-heading-p</span><span style="color: #707183;">)</span> ;; <span style="color: #b22222;">file node</span>
+                                           <span style="color: #707183;">(</span><span style="color: #008b8b;">point-max</span><span style="color: #707183;">)</span>
+                                         <span style="color: #707183;">(</span><span style="color: #a020f0;">'</span><span style="color: #008b8b;">org-forward-heading-same-level</span><span style="color: #707183;">)</span>
+                                         <span style="color: #707183;">(</span><span style="color: #a020f0;">if</span> <span style="color: #7388d6;">(</span><span style="color: #008b8b;">&gt;</span> <span style="color: #909183;">(</span><span style="color: #008b8b;">point</span><span style="color: #909183;">)</span> nodes-start-position<span style="color: #7388d6;">)</span>
+                                             <span style="color: #7388d6;">(</span><span style="color: #008b8b;">-</span> <span style="color: #909183;">(</span><span style="color: #008b8b;">point</span><span style="color: #909183;">)</span> <span style="color: #008b8b;">1</span><span style="color: #7388d6;">)</span> ;; <span style="color: #b22222;">successfully found next</span>
+                                           <span style="color: #7388d6;">(</span><span style="color: #008b8b;">point-max</span><span style="color: #7388d6;">)</span><span style="color: #707183;">)</span><span style="color: #709870;">)</span><span style="color: #909183;">)</span> ;; <span style="color: #b22222;">there was no next</span>
+                                     nodes-start-position<span style="color: #7388d6;">)</span><span style="color: #707183;">)</span>
+           ;; <span style="color: #b22222;">sort in order of decreasing end position</span>
+           <span style="color: #707183;">(</span>nodes-in-file-sorted <span style="color: #7388d6;">(</span><span style="color: #a020f0;">-&gt;&gt;</span> <span style="color: #909183;">(</span><span style="color: #008b8b;">-zip</span> nodes-in-file nodes-end-position<span style="color: #909183;">)</span>
+                                      <span style="color: #909183;">(</span><span style="color: #a020f0;">--sort</span> <span style="color: #709870;">(</span><span style="color: #008b8b;">&gt;</span> <span style="color: #707183;">(</span><span style="color: #008b8b;">cdr</span> it<span style="color: #707183;">)</span> <span style="color: #707183;">(</span><span style="color: #008b8b;">cdr</span> other<span style="color: #707183;">)</span><span style="color: #709870;">)</span><span style="color: #909183;">)</span><span style="color: #7388d6;">)</span><span style="color: #707183;">)</span><span style="color: #709870;">)</span>
+      <span style="color: #709870;">(</span><span style="color: #a020f0;">dolist</span> <span style="color: #707183;">(</span>node-and-end nodes-in-file-sorted<span style="color: #707183;">)</span>
+        <span style="color: #707183;">(</span><span style="color: #a020f0;">-when-let*</span> <span style="color: #7388d6;">(</span><span style="color: #909183;">(</span><span style="color: #709870;">(</span>node . end-position<span style="color: #709870;">)</span> node-and-end<span style="color: #909183;">)</span>
+                     <span style="color: #909183;">(</span>backlinks <span style="color: #709870;">(</span><span style="color: #a020f0;">--filter</span> <span style="color: #707183;">(</span><span style="color: #a020f0;">-&gt;&gt;</span> <span style="color: #7388d6;">(</span><span style="color: #008b8b;">org-roam-backlink-source-node</span> it<span style="color: #7388d6;">)</span>
+                                               <span style="color: #7388d6;">(</span><span style="color: #008b8b;">org-roam-node-file</span><span style="color: #7388d6;">)</span>
+                                               <span style="color: #7388d6;">(</span><span style="color: #008b8b;">s-contains?</span> <span style="color: #8b2252;">"private/"</span><span style="color: #7388d6;">)</span> <span style="color: #7388d6;">(</span><span style="color: #008b8b;">not</span><span style="color: #7388d6;">)</span><span style="color: #707183;">)</span>
+                                          <span style="color: #707183;">(</span><span style="color: #008b8b;">org-roam-backlinks-get</span> node<span style="color: #707183;">)</span><span style="color: #709870;">)</span><span style="color: #909183;">)</span>
+                     <span style="color: #909183;">(</span>heading <span style="color: #709870;">(</span><span style="color: #008b8b;">format</span> <span style="color: #8b2252;">"\n\n%s Backlinks\n"</span>
+                                      <span style="color: #707183;">(</span><span style="color: #008b8b;">s-repeat</span> <span style="color: #7388d6;">(</span><span style="color: #008b8b;">+</span> <span style="color: #909183;">(</span><span style="color: #008b8b;">org-roam-node-level</span> node<span style="color: #909183;">)</span> <span style="color: #008b8b;">1</span><span style="color: #7388d6;">)</span> <span style="color: #8b2252;">"*"</span><span style="color: #707183;">)</span><span style="color: #709870;">)</span><span style="color: #909183;">)</span>
+                     <span style="color: #909183;">(</span>properties-drawer <span style="color: #8b2252;">":PROPERTIES:\n:HTML_CONTAINER_CLASS: references\n:END:\n"</span><span style="color: #909183;">)</span><span style="color: #7388d6;">)</span>
+          <span style="color: #7388d6;">(</span><span style="color: #008b8b;">goto-char</span> end-position<span style="color: #7388d6;">)</span>
+          <span style="color: #7388d6;">(</span><span style="color: #008b8b;">insert</span> heading<span style="color: #7388d6;">)</span>
+          <span style="color: #7388d6;">(</span><span style="color: #008b8b;">insert</span> properties-drawer<span style="color: #7388d6;">)</span>
+          <span style="color: #7388d6;">(</span><span style="color: #a020f0;">dolist</span> <span style="color: #909183;">(</span>backlink backlinks<span style="color: #909183;">)</span>
+            <span style="color: #909183;">(</span><span style="color: #a020f0;">let*</span> <span style="color: #709870;">(</span><span style="color: #707183;">(</span>source-node <span style="color: #7388d6;">(</span><span style="color: #008b8b;">org-roam-backlink-source-node</span> backlink<span style="color: #7388d6;">)</span><span style="color: #707183;">)</span>
+                   <span style="color: #707183;">(</span>source-file <span style="color: #7388d6;">(</span><span style="color: #008b8b;">org-roam-node-file</span> source-node<span style="color: #7388d6;">)</span><span style="color: #707183;">)</span>
+                   <span style="color: #707183;">(</span>properties <span style="color: #7388d6;">(</span><span style="color: #008b8b;">org-roam-backlink-properties</span> backlink<span style="color: #7388d6;">)</span><span style="color: #707183;">)</span>
+                   <span style="color: #707183;">(</span>outline <span style="color: #7388d6;">(</span><span style="color: #a020f0;">when-let</span> <span style="color: #909183;">(</span><span style="color: #709870;">(</span>outline <span style="color: #707183;">(</span><span style="color: #008b8b;">plist-get</span> properties <span style="color: #483d8b;">:outline</span><span style="color: #707183;">)</span><span style="color: #709870;">)</span><span style="color: #909183;">)</span>
+                              <span style="color: #909183;">(</span><span style="color: #a020f0;">when</span> <span style="color: #709870;">(</span><span style="color: #008b8b;">&gt;</span> <span style="color: #707183;">(</span><span style="color: #008b8b;">length</span> outline<span style="color: #707183;">)</span> <span style="color: #008b8b;">1</span><span style="color: #709870;">)</span>
+                                <span style="color: #709870;">(</span><span style="color: #008b8b;">mapconcat</span> <span style="color: #a020f0;">#'</span><span style="color: #008b8b;">org-link-display-format</span> outline <span style="color: #8b2252;">" &gt; "</span><span style="color: #709870;">)</span><span style="color: #909183;">)</span><span style="color: #7388d6;">)</span><span style="color: #707183;">)</span>
+                   <span style="color: #707183;">(</span><span style="color: #008b8b;">point</span> <span style="color: #7388d6;">(</span><span style="color: #008b8b;">org-roam-backlink-point</span> backlink<span style="color: #7388d6;">)</span><span style="color: #707183;">)</span>
+                   <span style="color: #707183;">(</span>text  <span style="color: #7388d6;">(</span><span style="color: #008b8b;">org-roam-preview-get-contents</span>
+                           source-file
+                           point<span style="color: #7388d6;">)</span><span style="color: #707183;">)</span>
+                   <span style="color: #707183;">(</span>reference <span style="color: #7388d6;">(</span><span style="color: #008b8b;">format</span> <span style="color: #8b2252;">"\n ----- \n%s [[id:%s][%s]]\n%s\n%s\n\n"</span>
+                                      <span style="color: #909183;">(</span><span style="color: #008b8b;">s-repeat</span> <span style="color: #709870;">(</span><span style="color: #008b8b;">+</span> <span style="color: #707183;">(</span><span style="color: #008b8b;">org-roam-node-level</span> node<span style="color: #707183;">)</span> <span style="color: #008b8b;">2</span><span style="color: #709870;">)</span> <span style="color: #8b2252;">"*"</span><span style="color: #909183;">)</span>
+                                      <span style="color: #909183;">(</span><span style="color: #008b8b;">org-roam-node-id</span> source-node<span style="color: #909183;">)</span>
+                                      <span style="color: #909183;">(</span><span style="color: #008b8b;">org-roam-node-title</span> source-node<span style="color: #909183;">)</span>
+                                      <span style="color: #909183;">(</span><span style="color: #a020f0;">if</span> outline <span style="color: #709870;">(</span><span style="color: #008b8b;">format</span> <span style="color: #8b2252;">"%s (/%s/)"</span>
+                                                          <span style="color: #707183;">(</span><span style="color: #008b8b;">s-repeat</span> <span style="color: #7388d6;">(</span><span style="color: #008b8b;">+</span> <span style="color: #909183;">(</span><span style="color: #008b8b;">org-roam-node-level</span> node<span style="color: #909183;">)</span> <span style="color: #008b8b;">3</span><span style="color: #7388d6;">)</span> <span style="color: #8b2252;">"*"</span><span style="color: #707183;">)</span> outline<span style="color: #709870;">)</span> <span style="color: #ff0000;">""</span><span style="color: #909183;">)</span>
+                                      text<span style="color: #7388d6;">)</span><span style="color: #707183;">)</span>
+                   <span style="color: #707183;">(</span>label-list <span style="color: #7388d6;">(</span><span style="color: #a020f0;">with-temp-buffer</span>
+                                 <span style="color: #909183;">(</span><span style="color: #008b8b;">insert</span> text<span style="color: #909183;">)</span>
+                                 <span style="color: #909183;">(</span><span style="color: #008b8b;">org-element-map</span> <span style="color: #709870;">(</span><span style="color: #008b8b;">org-element-parse-buffer</span><span style="color: #709870;">)</span> <span style="color: #a020f0;">'</span><span style="color: #008b8b;">footnote-reference</span>
+                                   <span style="color: #709870;">(</span><span style="color: #a020f0;">lambda</span> <span style="color: #707183;">(</span>reference<span style="color: #707183;">)</span>
+                                     <span style="color: #707183;">(</span><span style="color: #0000ff;">org-element-property</span> <span style="color: #483d8b;">:label</span> reference<span style="color: #707183;">)</span><span style="color: #709870;">)</span><span style="color: #909183;">)</span><span style="color: #7388d6;">)</span><span style="color: #707183;">)</span>
+                   <span style="color: #707183;">(</span>footnote-string-list
+                    <span style="color: #7388d6;">(</span><span style="color: #a020f0;">with-temp-buffer</span>
+                      <span style="color: #909183;">(</span><span style="color: #008b8b;">insert-file-contents</span> source-file<span style="color: #909183;">)</span>
+                      <span style="color: #909183;">(</span><span style="color: #008b8b;">-map</span> <span style="color: #709870;">(</span><span style="color: #a020f0;">lambda</span> <span style="color: #707183;">(</span>label<span style="color: #707183;">)</span> <span style="color: #707183;">(</span><span style="color: #008b8b;">buffer-substring-no-properties</span>
+                                             <span style="color: #7388d6;">(</span><span style="color: #008b8b;">nth</span> <span style="color: #008b8b;">1</span> <span style="color: #909183;">(</span><span style="color: #008b8b;">org-footnote-get-definition</span> label<span style="color: #909183;">)</span><span style="color: #7388d6;">)</span>
+                                             <span style="color: #7388d6;">(</span><span style="color: #008b8b;">nth</span> <span style="color: #008b8b;">2</span> <span style="color: #909183;">(</span><span style="color: #008b8b;">org-footnote-get-definition</span> label<span style="color: #909183;">)</span><span style="color: #7388d6;">)</span><span style="color: #707183;">)</span><span style="color: #709870;">)</span>
+                            label-list<span style="color: #909183;">)</span><span style="color: #7388d6;">)</span><span style="color: #707183;">)</span><span style="color: #709870;">)</span>
+              <span style="color: #709870;">(</span><span style="color: #008b8b;">-map</span> <span style="color: #707183;">(</span><span style="color: #a020f0;">lambda</span> <span style="color: #7388d6;">(</span>footnote-string<span style="color: #7388d6;">)</span> <span style="color: #7388d6;">(</span><span style="color: #008b8b;">insert</span> footnote-string<span style="color: #7388d6;">)</span><span style="color: #707183;">)</span> footnote-string-list<span style="color: #709870;">)</span>
+              <span style="color: #709870;">(</span><span style="color: #008b8b;">insert</span> reference<span style="color: #709870;">)</span><span style="color: #909183;">)</span><span style="color: #7388d6;">)</span><span style="color: #707183;">)</span><span style="color: #709870;">)</span><span style="color: #909183;">)</span><span style="color: #7388d6;">)</span><span style="color: #707183;">)</span>
+
+<span style="color: #707183;">(</span><span style="color: #008b8b;">add-hook</span> <span style="color: #a020f0;">'</span><span style="color: #a0522d;">org-export-before-processing-hook</span> <span style="color: #a020f0;">'</span><span style="color: #008b8b;">collect-backlinks-string</span><span style="color: #707183;">)</span>
+
+</pre>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
