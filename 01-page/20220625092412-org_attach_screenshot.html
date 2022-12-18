@@ -5,8 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>[Garden 76] Page  </title>
-<meta name="author" content="76" />
+<title>org-attach-screenshot</title>
 <meta name="generator" content="Org Mode" />
 <style>
   #content { max-width: 60em; margin: auto; }
@@ -243,20 +242,49 @@ switch(dir(window.location.href)) {
 </head>
 <body>
 <div id="content" class="content">
-<ul class="org-ul">
-<li><a href="20220625092412-org_attach_screenshot.html">&lt;2022-12-18&gt; org-attach-screenshot</a></li>
-<li><a href="20221218171719-org_unique_id.html">&lt;2022-12-18&gt; org-unique-id</a></li>
-<li><a href="20220618132712_org_agenda.html">&lt;2022-12-18&gt; org-appear</a></li>
-<li><a href="20221217124836-npm_없이_js_라이브러리_사용하기.html">&lt;2022-12-17&gt; npm 없이 js 라이브러리 사용하기</a></li>
-<li><a href="20221215113524-java_development.html">&lt;2022-12-15&gt; java development</a></li>
-<li><a href="20221215113855-sdkman.html">&lt;2022-12-15&gt; sdkman</a></li>
-<li><a href="20221210074652-google_translate.html">&lt;2022-12-15&gt; google-translate</a></li>
-<li><a href="20221214102741-prodigy.html">&lt;2022-12-14&gt; prodigy</a></li>
-<li><a href="20221209131138-동등비교_연산자.html">&lt;2022-12-14&gt; 동등비교 연산자</a></li>
+<h1 class="title">org-attach-screenshot</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org3cfc986">1. package</a></li>
+<li><a href="#org1ab33b6">2. config</a></li>
 </ul>
 </div>
-<div id="postamble" class="status">
-<p class="author">Author: 76</p>
+</div>
+
+<div id="outline-container-org3cfc986" class="outline-2">
+<h2 id="org3cfc986"><span class="section-number-2">1.</span> package</h2>
+<div class="outline-text-2" id="text-1">
+<div class="org-src-container">
+<pre class="src src-elisp" id="orge18ecdc"><span style="color: #a020f0;">(package!</span> org-attach-screenshot)
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org1ab33b6" class="outline-2">
+<h2 id="org1ab33b6"><span class="section-number-2">2.</span> config</h2>
+<div class="outline-text-2" id="text-2">
+<div class="org-src-container">
+<pre class="src src-elisp" id="orgb449391"><span style="color: #a020f0;">(use-package!</span> org-attach-screenshot
+  <span style="color: #483d8b;">:defer</span> t
+  <span style="color: #483d8b;">:bind</span> (<span style="color: #8b2252;">"&lt;f6&gt; s"</span> . org-attach-screenshot)
+  <span style="color: #483d8b;">:config</span>
+  (<span style="color: #a020f0;">setq</span>
+   ;; <span style="color: #b22222;">org-attach-screenshot-dirfunction</span>
+   ;; <span style="color: #b22222;">(lambda ()</span>
+   ;;   <span style="color: #b22222;">(progn (cl-assert (buffer-file-name))</span>
+   ;;          <span style="color: #b22222;">(concat (file-name-sans-extension (buffer-file-name))</span>
+   ;;                  <span style="color: #b22222;">"-att")))</span>
+   org-attach-screenshot-command-line
+   <span style="color: #8b2252;">"screencapture -s %f"</span>
+   ;; <span style="color: #b22222;">"gnome-screenshot -a -f %f"</span>
+   ))
+</pre>
+</div>
+</div>
+</div>
 </div>
 </body>
 </html>
