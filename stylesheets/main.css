@@ -13,13 +13,24 @@ body {
   text-align: center;
 }
 
+.none-deco {
+  text-decoration: none;
+}
+
+.stroke {
+  -webkit-text-stroke: 1px gray;
+}
+
+.shadow {
+  text-shadow: -1px 0 gray, 0 1px gray, 1px 0 gray, 0 -1px gray;
+}
+
 .banner {
   background-size: cover;
   background-image: url("/img/garden.jpg");
 }
 .banner h1 {
   color: white;
-  text-shadow: -1px 0 gray, 0 1px gray, 1px 0 gray, 0 -1px gray;
 }
 
 nav.navs {
