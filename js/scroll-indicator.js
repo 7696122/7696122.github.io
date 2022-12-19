@@ -28,7 +28,7 @@ class ScrollIndicator extends HTMLElement {
 /* The progress bar (scroll indicator) */
 .progress-bar {
   height: 8px;
-  background: springgreen;
+  background: yellowgreen;
   width: 0%;
 }
     `;

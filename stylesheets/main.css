@@ -33,6 +33,8 @@ body {
 .banner {
   background-size: cover;
   background-image: url("/img/garden.jpg");
+  border-radius: 20px;
+  margin: 5px;
 }
 .banner h1 {
   color: white;
@@ -44,11 +46,12 @@ body {
 
 nav.navs {
   background-color: black;
+  border-radius: 20px;
 }
 nav.navs ul.nav {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 0 0 30px;
 }
 nav.navs ul.nav li {
   display: inline-block;
