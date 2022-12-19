@@ -6,15 +6,19 @@
 //   "https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.js";
 // document.head.append(script);
 
-// ES6 Classes to Define the new Element Behaviour
-class SuperButton extends HTMLElement {
-  constructor() {
-    super();
-    console.log("New Super Button object has been instantiated.");
-  }
+const _style = `
+button {
+  color: white;
+  background: black;
+  border: 0;
+  margin: 5px;
 }
 
-window.customElements.define("super-button", SuperButton);
+button:hover {
+  color: gray;
+  cursor: pointer;
+}
+`;
 
 /**
  * 앞으로
@@ -29,10 +33,13 @@ class ForwordButton extends HTMLElement {
 
     const shadow = this.attachShadow({ mode: "open" });
 
-    const forwardButton = document.createElement("button");
-    forwardButton.textContent = ">";
+    const style = document.createElement("style");
+    style.textContent = _style;
 
-    shadow.appendChild(forwardButton);
+    const forwardButton = document.createElement("button");
+    forwardButton.textContent = ">>";
+
+    shadow.append(style, forwardButton);
   }
 }
 
@@ -49,10 +56,13 @@ class BackButton extends HTMLElement {
 
     const shadow = this.attachShadow({ mode: "open" });
 
-    const backButton = document.createElement("button");
-    backButton.textContent = "<";
+    const style = document.createElement("style");
+    style.textContent = _style;
 
-    shadow.appendChild(backButton);
+    const backButton = document.createElement("button");
+    backButton.textContent = "<<";
+
+    shadow.append(style, backButton);
   }
 }
 
@@ -70,10 +80,13 @@ class UpButton extends HTMLElement {
 
     const shadow = this.attachShadow({ mode: "open" });
 
-    const backButton = document.createElement("button");
-    backButton.textContent = "^";
+    const style = document.createElement("style");
+    style.textContent = _style;
 
-    shadow.appendChild(backButton);
+    const backButton = document.createElement("button");
+    backButton.textContent = "..";
+
+    shadow.append(style, backButton);
   }
 }
 
@@ -87,10 +100,13 @@ class HomeButton extends HTMLElement {
 
     const shadow = this.attachShadow({ mode: "open" });
 
+    const style = document.createElement("style");
+    style.textContent = _style;
+
     const homeButton = document.createElement("button");
     homeButton.textContent = "@";
 
-    shadow.appendChild(homeButton);
+    shadow.append(style, homeButton);
   }
 }
 

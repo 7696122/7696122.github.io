@@ -7,6 +7,10 @@ body {
   color: white;
 }
 
+.navigation-panel {
+  margin: 10px 0 10px 0;
+}
+
 .sticky {
   position: sticky;
   top: 0;
@@ -33,7 +37,7 @@ body {
 .banner {
   background-size: cover;
   background-image: url("/img/garden.jpg");
-  border-radius: 20px;
+  border-radius: 16px;
   margin: 5px;
 }
 .banner h1 {
@@ -46,7 +50,7 @@ body {
 
 nav.navs {
   background-color: black;
-  border-radius: 20px;
+  border-radius: 8px 8px 0 0;
 }
 nav.navs ul.nav {
   list-style: none;
