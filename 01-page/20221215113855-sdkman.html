@@ -207,15 +207,15 @@
 </ul>
 </nav>
 
-<script src="https://cdn.jsdelivr.net/npm/underscore@1.13.6/underscore-umd-min.js"></script>
 <script>
+const activeClassName = 'highlight';
 const path = (href) => new URL(href).pathname;
 const dir = (href) => {
   let _pathname = path(href);
   return _pathname.substring(0, _pathname.lastIndexOf('/') + 1);
 }
 
-const active = (el) => el.parentNode.style.backgroundColor = 'gray';
+const active = (el) => el.parentNode.classList.add(activeClassName);
 
 const homeA = document.querySelector("body > div.navigation-panel.sticky > nav > ul > li:nth-child(1) > a")
 let homePathname = dir(homeA.href);
@@ -238,7 +238,7 @@ switch(dir(window.location.href)) {
 }
 </script>
 <scroll-indicator></scroll-indicator><div style='display: flex; justify-content: center;'><back-button></back-button><up-button></up-button><home-button></home-button><forward-button></forward-button></div></div>
-<script src='https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js'></script><script src='https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js'></script><script src='https://npmcdn.com/underscore.string@3.3.6/dist/underscore.string.min.js'></script><script src='/js/highlighter-ref-code-blockscript.js'></script><script src='/js/scroll-indicator.js'></script><script src='/js/navigator.js'></script><script src='/js/sticky-header.js'></script><script src='/js/main.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js'></script><script src='https://npmcdn.com/underscore.string@3.3.6/dist/underscore.string.min.js'></script><script src='/js/highlighter-ref-code-blockscript.js'></script><script src='/js/scroll-indicator.js'></script><script src='/js/navigator.js'></script><script src='/js/sticky-header.js'></script><script src='/js/main.js'></script>
 </head>
 <body>
 <div id="content" class="content">
@@ -278,7 +278,7 @@ switch(dir(window.location.href)) {
 <div id="outline-container-org0bc33aa" class="outline-2">
 <h2 id="org0bc33aa">fish</h2>
 <div class="outline-text-2" id="text-org0bc33aa">
-<pre class="example" id="org3952dac">
+<pre class="example" id="org1508b24">
 &gt; source "$HOME/.sdkman/bin/sdkman-init.sh"
 ~/.sdkman/bin/sdkman-init.sh (line 46): Expected end of the statement, but found an incomplete token
         Linux)
@@ -307,7 +307,7 @@ source: Error while reading file “/Users/mnml/.sdkman/bin/sdkman-init.sh”
 </pre>
 </div>
 
-<pre class="example" id="org3d7d270">
+<pre class="example" id="org01c6e8b">
 Corretto      |     | 19.0.1       | amzn    |            | 19.0.1-amzn
               | &gt;&gt;&gt; | 17.0.5       | amzn    | installed  | 17.0.5-amzn
               |     | 11.0.17      | amzn    |            | 11.0.17-amzn

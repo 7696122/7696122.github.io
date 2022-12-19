@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>&lrm;</title>
+<title>org-roam node 얻기</title>
 <meta name="generator" content="Org Mode" />
 <style>
   #content { max-width: 60em; margin: auto; }
@@ -242,9 +242,49 @@ switch(dir(window.location.href)) {
 </head>
 <body>
 <div id="content" class="content">
-<script type="text/javascript">
-window.location.pathname = "/00-home";
-</script>
+<h1 class="title">org-roam node 얻기</h1>
+<div class="org-src-container">
+<label class="org-src-name"><span class="listing-number">Listing 1: </span>org-roam-node-file-by-title</label><pre class="src src-elisp" id="orgcf96b85">(<span style="color: #a020f0;">require</span> '<span style="color: #008b8b;">org-roam-node</span>)
+
+(<span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">org-roam-node-file-by-title</span> (_title)
+  (<span style="color: #a020f0;">let</span> ((_roam-node (org-roam-node-from-title-or-alias _title)))
+    (<span style="color: #a020f0;">and</span> _roam-node (org-roam-node-file _roam-node))))
+</pre>
+</div>
+
+<div class="org-src-container">
+<label class="org-src-name"><span class="listing-number">Listing 2: </span>org-roam-node-file-by-title(dash 사용)</label><pre class="src src-elisp" id="org35a8db8">(<span style="color: #a020f0;">require</span> '<span style="color: #008b8b;">dash</span>)
+(<span style="color: #a020f0;">require</span> '<span style="color: #008b8b;">org-roam-node</span>)
+
+(<span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">org-roam-node-file-by-title</span> (_title)
+  (<span style="color: #a020f0;">--&gt;</span>
+   (org-roam-node-from-title-or-alias _title)
+   (<span style="color: #a020f0;">and</span> it (org-roam-node-file it))))
+</pre>
+</div>
+
+<pre class="example">
+org-roam-node-file:title
+</pre>
+
+
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">(org-roam-node-file:title <span style="color: #8b2252;">"org-roam node &#50619;&#44592;"</span>)
+</pre>
+</div>
+
+<p>
+/Users/mnml/org/roam/20221219071941-org_roam_node_얻기.org
+</p>
+
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">(org-roam-node-file:title <span style="color: #8b2252;">"org-roam node &#50619;&#44592;2"</span>)
+</pre>
+</div>
+
+<p>
+nil
+</p>
 </div>
 </body>
 </html>

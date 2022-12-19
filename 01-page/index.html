@@ -207,15 +207,15 @@
 </ul>
 </nav>
 
-<script src="https://cdn.jsdelivr.net/npm/underscore@1.13.6/underscore-umd-min.js"></script>
 <script>
+const activeClassName = 'highlight';
 const path = (href) => new URL(href).pathname;
 const dir = (href) => {
   let _pathname = path(href);
   return _pathname.substring(0, _pathname.lastIndexOf('/') + 1);
 }
 
-const active = (el) => el.parentNode.style.backgroundColor = 'gray';
+const active = (el) => el.parentNode.classList.add(activeClassName);
 
 const homeA = document.querySelector("body > div.navigation-panel.sticky > nav > ul > li:nth-child(1) > a")
 let homePathname = dir(homeA.href);
@@ -238,11 +238,12 @@ switch(dir(window.location.href)) {
 }
 </script>
 <scroll-indicator></scroll-indicator><div style='display: flex; justify-content: center;'><back-button></back-button><up-button></up-button><home-button></home-button><forward-button></forward-button></div></div>
-<script src='https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js'></script><script src='https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js'></script><script src='https://npmcdn.com/underscore.string@3.3.6/dist/underscore.string.min.js'></script><script src='/js/highlighter-ref-code-blockscript.js'></script><script src='/js/scroll-indicator.js'></script><script src='/js/navigator.js'></script><script src='/js/sticky-header.js'></script><script src='/js/main.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js'></script><script src='https://npmcdn.com/underscore.string@3.3.6/dist/underscore.string.min.js'></script><script src='/js/highlighter-ref-code-blockscript.js'></script><script src='/js/scroll-indicator.js'></script><script src='/js/navigator.js'></script><script src='/js/sticky-header.js'></script><script src='/js/main.js'></script>
 </head>
 <body>
 <div id="content" class="content">
 <ul class="org-ul">
+<li><a href="20221219071941-org_roam_node_얻기.html">&lt;2022-12-19&gt; org-roam node 얻기</a></li>
 <li><a href="20221219061119-디지털_가든_만들기.html">&lt;2022-12-19&gt; 디지털 가든 만들기</a></li>
 <li><a href="20220625092412-org_attach_screenshot.html">&lt;2022-12-18&gt; org-attach-screenshot</a></li>
 <li><a href="20221218171719-org_unique_id.html">&lt;2022-12-18&gt; org-unique-id</a></li>

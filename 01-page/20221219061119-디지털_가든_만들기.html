@@ -207,15 +207,15 @@
 </ul>
 </nav>
 
-<script src="https://cdn.jsdelivr.net/npm/underscore@1.13.6/underscore-umd-min.js"></script>
 <script>
+const activeClassName = 'highlight';
 const path = (href) => new URL(href).pathname;
 const dir = (href) => {
   let _pathname = path(href);
   return _pathname.substring(0, _pathname.lastIndexOf('/') + 1);
 }
 
-const active = (el) => el.parentNode.style.backgroundColor = 'gray';
+const active = (el) => el.parentNode.classList.add(activeClassName);
 
 const homeA = document.querySelector("body > div.navigation-panel.sticky > nav > ul > li:nth-child(1) > a")
 let homePathname = dir(homeA.href);
@@ -238,7 +238,7 @@ switch(dir(window.location.href)) {
 }
 </script>
 <scroll-indicator></scroll-indicator><div style='display: flex; justify-content: center;'><back-button></back-button><up-button></up-button><home-button></home-button><forward-button></forward-button></div></div>
-<script src='https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js'></script><script src='https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js'></script><script src='https://npmcdn.com/underscore.string@3.3.6/dist/underscore.string.min.js'></script><script src='/js/highlighter-ref-code-blockscript.js'></script><script src='/js/scroll-indicator.js'></script><script src='/js/navigator.js'></script><script src='/js/sticky-header.js'></script><script src='/js/main.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js'></script><script src='https://npmcdn.com/underscore.string@3.3.6/dist/underscore.string.min.js'></script><script src='/js/highlighter-ref-code-blockscript.js'></script><script src='/js/scroll-indicator.js'></script><script src='/js/navigator.js'></script><script src='/js/sticky-header.js'></script><script src='/js/main.js'></script>
 </head>
 <body>
 <div id="content" class="content">
@@ -248,7 +248,7 @@ switch(dir(window.location.href)) {
 <h2 id="orga4d36ba">&#x2013;batch</h2>
 <div class="outline-text-2" id="text-orga4d36ba">
 <p>
-<a href="#coderef-batch" class="coderef" onmouseover="CodeHighlightOn(this, 'coderef-batch');" onmouseout="CodeHighlightOff(this, 'coderef-batch');">batch 모드</a>로 실행해야지 빠른 속도로 사이트를 생성할 수 있다.
+emacs를 <a href="#coderef-batch" class="coderef" onmouseover="CodeHighlightOn(this, 'coderef-batch');" onmouseout="CodeHighlightOff(this, 'coderef-batch');">batch 모드</a>로 실행해야지 빠른 속도로 사이트를 생성할 수 있다.
 </p>
 
 <div class="org-src-container">
@@ -380,12 +380,20 @@ switch(dir(window.location.href)) {
 
 </pre>
 </div>
+
+<pre class="example">
+print-args-and-ret
+</pre>
 </div>
 </div>
 
 <div id="outline-container-org79b2c06" class="outline-2">
 <h2 id="org79b2c06">Backlinks</h2>
 <div class="outline-text-2" id="text-org79b2c06">
+<p>
+<a href="https://org-roam.discourse.group/t/export-backlinks-on-org-export/1756/29">참조</a>
+</p>
+
 <div class="org-src-container">
 <pre class="src src-emacs-lisp">(<span style="color: #a020f0;">require</span> '<span style="color: #008b8b;">org-roam</span>)
 
@@ -458,7 +466,6 @@ switch(dir(window.location.href)) {
               (insert reference))))))))
 
 (add-hook 'org-export-before-processing-hook 'collect-backlinks-string)
-
 </pre>
 </div>
 </div>

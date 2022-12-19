@@ -2,6 +2,11 @@ body {
   overflow-y: scroll;
 }
 
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
 .sticky {
   position: sticky;
   top: 0;
@@ -33,9 +38,12 @@ body {
   color: white;
 }
 
+.highlight {
+  background-color: dimgray;
+}
+
 nav.navs {
-  left: 0;
-  background-color: #f1f1f1;
+  background-color: black;
 }
 nav.navs ul.nav {
   list-style: none;
@@ -47,10 +55,8 @@ nav.navs ul.nav li {
   padding: 0.5em;
 }
 nav.navs ul.nav li a {
+  color: white;
   text-decoration: none;
-}
-nav.navs ul.nav li a:hover {
-  text-decoration: underline;
 }
 
 /*# sourceMappingURL=main.css.map */
