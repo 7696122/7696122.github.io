@@ -104,7 +104,7 @@ class HomeButton extends HTMLElement {
     style.textContent = _style;
 
     const homeButton = document.createElement("button");
-    homeButton.textContent = "@";
+    homeButton.textContent = "/";
 
     shadow.append(style, homeButton);
   }
