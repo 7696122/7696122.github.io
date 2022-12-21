@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>org-unique-id</title>
+<title>http cookie</title>
 <meta name="generator" content="Org Mode" />
 <style>
   #content { max-width: 60em; margin: auto; }
@@ -242,58 +242,48 @@ switch(dir(window.location.href)) {
 </head>
 <body>
 <div id="content" class="content">
-<h1 class="title">org-unique-id</h1>
+<h1 class="title">http cookie</h1>
 
-<div id="outline-container-package-nkwgej60goj0" class="outline-2">
-<h2 id="package-nkwgej60goj0">package</h2>
-<div class="outline-text-2" id="text-package-nkwgej60goj0">
-<div class="org-src-container">
-<pre class="src src-elisp" id="org48447a6"><span style="color: #a020f0;">(package!</span> org-unique-id)
-</pre>
-</div>
+<div id="outline-container-org4ed4453" class="outline-2">
+<h2 id="org4ed4453">HTTP cookie (web cookie, browser cookie)</h2>
+<div class="outline-text-2" id="text-org4ed4453">
+<ul class="org-ul">
+<li>a small piece of data
+<ul class="org-ul">
+<li><b>server</b>
+<ul class="org-ul">
+<li>sent</li>
+<li>to user's web browser</li>
+</ul></li>
+<li><b>browser</b>
+<ul class="org-ul">
+<li>may store the cookie</li>
+<li>and send it back</li>
+<li>to the same server</li>
+<li>with later requests</li>
+</ul></li>
+<li>HTTP cookie is used to tell
+<ul class="org-ul">
+<li>if two request come from the same browser
+<ul class="org-ul">
+<li>keeping a user logged in, for example</li>
+</ul></li>
+</ul></li>
+<li>It remembers sateful information
+<ul class="org-ul">
+<li>for the stateless HTTP protocol</li>
+</ul></li>
+</ul></li>
+</ul>
 </div>
 </div>
 
-<div id="outline-container-config-x10hej60goj0" class="outline-2">
-<h2 id="config-x10hej60goj0">config</h2>
-<div class="outline-text-2" id="text-config-x10hej60goj0">
-<div class="org-src-container">
-<pre class="src src-elisp" id="org96eb992"><span style="color: #a020f0;">(use-package!</span> org-unique-id)
-</pre>
-</div>
-</div>
-</div>
-
-<div id="outline-container-org8d67f13" class="outline-2">
-<h2 id="org8d67f13">이렇게 돼</h2>
-<div class="outline-text-2" id="text-org8d67f13">
-<pre class="example" id="orgb267dd4">
-M-x org-unique-id
-</pre>
-
-<div class="org-src-container">
-<pre class="src src-diff">modified   roam/20221218171719-org_unique_id.org
-<span style="background-color: #d9d9d9;">@@ -6,12 +6,18 @@</span>
- #+title: org-unique-id
-
- * package
-+<span style="background-color: #eeffee;">:PROPERTIES:</span>
-+<span style="background-color: #eeffee;">:CUSTOM_ID: package-nkwgej60goj0</span>
-+<span style="background-color: #eeffee;">:END:</span>
- #+name: org-unique-id/package@emacs
- #+begin_src elisp
- (package! org-unique-id)
- #+end_src
-
- * config
-+<span style="background-color: #eeffee;">:PROPERTIES:</span>
-+<span style="background-color: #eeffee;">:CUSTOM_ID: config-x10hej60goj0</span>
-+<span style="background-color: #eeffee;">:END:</span>
- #+name: org-unique-id/config@emacs
- #+begin_src elisp
- (use-package! org-unique-id)
-</pre>
-</div>
+<div id="outline-container-org754b495" class="outline-2">
+<h2 id="org754b495">ref</h2>
+<div class="outline-text-2" id="text-org754b495">
+<p>
+<a href="https://developer.mozilla.org/ko/docs/Web/HTTP/Cookies">https://developer.mozilla.org/ko/docs/Web/HTTP/Cookies</a>
+</p>
 </div>
 </div>
 </div>
