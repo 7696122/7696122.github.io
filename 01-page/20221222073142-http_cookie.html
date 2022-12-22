@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>http cookie</title>
+<title>HTTP cookie</title>
 <meta name="generator" content="Org Mode" />
 <style>
   #content { max-width: 60em; margin: auto; }
@@ -238,17 +238,31 @@ switch(dir(window.location.href)) {
 }
 </script>
 <scroll-indicator></scroll-indicator><div style='display: flex; justify-content: center; background-color: black; border-radius: 0 0 8px 8px;'><back-button></back-button><up-button></up-button><home-button></home-button><forward-button></forward-button></div></div>
-<script src='https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.js'></script><script src='https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js'></script><script src='https://npmcdn.com/underscore.string@3.3.6/dist/underscore.string.min.js'></script><script src='/js/highlighter-ref-code-blockscript.js'></script><script src='/js/scroll-indicator.js'></script><script src='/js/navigator.js'></script><script src='/js/sticky-header.js'></script><script src='/js/main.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.js'></script><script src='https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js'></script><script src='https://npmcdn.com/underscore.string@3.3.6/dist/underscore.string.min.js'></script><script src='/js/highlighter-ref-code-blockscript.js'></script><script src='/js/scroll-indicator.js'></script><script src='/js/navigator.js'></script><script src='/js/sticky-header.js'></script><script src='/js/main.js'></script><!-- Google tag (gtag.js) -->
+          <script async src='https://www.googletagmanager.com/gtag/js?id=G-PNL4G4DJ5G'></script>
+          <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-PNL4G4DJ5G');
+          </script>
 </head>
 <body>
 <div id="content" class="content">
-<h1 class="title">http cookie</h1>
+<h1 class="title">HTTP cookie</h1>
 
-<div id="outline-container-org4ed4453" class="outline-2">
-<h2 id="org4ed4453">HTTP cookie (web cookie, browser cookie)</h2>
-<div class="outline-text-2" id="text-org4ed4453">
-<ul class="org-ul">
-<li>a small piece of data
+<div id="outline-container-org7e44a43" class="outline-2">
+<h2 id="org7e44a43">Using HTTP cookies</h2>
+<div class="outline-text-2" id="text-org7e44a43">
+</div>
+<div id="outline-container-org7e87b0e" class="outline-3">
+<h3 id="org7e87b0e">HTTP cookie (web cookie, browser cookie)</h3>
+<div class="outline-text-3" id="text-org7e87b0e">
+</div>
+<div id="outline-container-org21d34d6" class="outline-4">
+<h4 id="org21d34d6">a small piece of data</h4>
+<div class="outline-text-4" id="text-org21d34d6">
 <ul class="org-ul">
 <li><b>server</b>
 <ul class="org-ul">
@@ -258,11 +272,13 @@ switch(dir(window.location.href)) {
 <li><b>browser</b>
 <ul class="org-ul">
 <li>may store the cookie</li>
-<li>and send it back</li>
+<li>and send it back
+<ul class="org-ul">
 <li>to the same server</li>
 <li>with later requests</li>
 </ul></li>
-<li>HTTP cookie is used to tell
+</ul></li>
+<li><b>HTTP cookie</b> is used to tell
 <ul class="org-ul">
 <li>if two request come from the same browser
 <ul class="org-ul">
@@ -271,18 +287,84 @@ switch(dir(window.location.href)) {
 </ul></li>
 <li>It remembers sateful information
 <ul class="org-ul">
-<li>for the stateless HTTP protocol</li>
-</ul></li>
+<li>for the <b><span class="underline">stateless HTTP protocol</span></b></li>
 </ul></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org754b495" class="outline-2">
-<h2 id="org754b495">ref</h2>
-<div class="outline-text-2" id="text-org754b495">
+<div id="outline-container-org2c3ad2b" class="outline-4">
+<h4 id="org2c3ad2b">mainly used for three purposes</h4>
+<div class="outline-text-4" id="text-org2c3ad2b">
+<ul class="org-ul">
+<li><b>Session management</b>
+<ul class="org-ul">
+<li>Loings, shopping carts, game scores</li>
+<li>or <b>anything else the server should remember</b></li>
+</ul></li>
+<li>Personalization
+<ul class="org-ul">
+<li>User preferrnces</li>
+<li>themes</li>
+<li>and other settings</li>
+</ul></li>
+<li>Tracking
+<ul class="org-ul">
+<li>Recoding and analyzing user behavior</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga91beed" class="outline-4">
+<h4 id="orga91beed"><b>modern storage APIs are now recommended</b></h4>
+<div class="outline-text-4" id="text-orga91beed">
+<ul class="org-ul">
+<li><b>Cookies</b> are <b>sent with every request</b>, so they can <b>worsen performance</b> (especially for mobile data connections).</li>
+<li>Modern APIs for client storage are
+<ul class="org-ul">
+<li><span class="underline">Web Storage API</span>
+<ul class="org-ul">
+<li>localStorage</li>
+<li>sessionStorage</li>
+</ul></li>
+<li><span class="underline">IndexedDB</span></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org0a3d9ad" class="outline-2">
+<h2 id="org0a3d9ad">Creating cookies</h2>
+<div class="outline-text-2" id="text-org0a3d9ad">
+<ul class="org-ul">
+<li>a <b>server</b> can <b>send</b> one or more <b>Set-Cookie header</b>
+<ul class="org-ul">
+<li>with the response</li>
+<li>After receiving an HTTP request</li>
+</ul></li>
+<li>The browser useally
+<ul class="org-ul">
+<li>stores the cookie</li>
+<li>send it</li>
+<li>with requests
+<ul class="org-ul">
+<li>made to the <b>same server</b></li>
+<li>inside <b>Cookie HTTP header</b></li>
+</ul></li>
+</ul></li>
+<li>can specify</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgee1a12e" class="outline-2">
+<h2 id="orgee1a12e">ref</h2>
+<div class="outline-text-2" id="text-orgee1a12e">
 <p>
-<a href="https://developer.mozilla.org/ko/docs/Web/HTTP/Cookies">https://developer.mozilla.org/ko/docs/Web/HTTP/Cookies</a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies">https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies</a>
 </p>
 </div>
 </div>

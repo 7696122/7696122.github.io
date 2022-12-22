@@ -238,34 +238,42 @@ switch(dir(window.location.href)) {
 }
 </script>
 <scroll-indicator></scroll-indicator><div style='display: flex; justify-content: center; background-color: black; border-radius: 0 0 8px 8px;'><back-button></back-button><up-button></up-button><home-button></home-button><forward-button></forward-button></div></div>
-<script src='https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.js'></script><script src='https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js'></script><script src='https://npmcdn.com/underscore.string@3.3.6/dist/underscore.string.min.js'></script><script src='/js/highlighter-ref-code-blockscript.js'></script><script src='/js/scroll-indicator.js'></script><script src='/js/navigator.js'></script><script src='/js/sticky-header.js'></script><script src='/js/main.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.js'></script><script src='https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js'></script><script src='https://npmcdn.com/underscore.string@3.3.6/dist/underscore.string.min.js'></script><script src='/js/highlighter-ref-code-blockscript.js'></script><script src='/js/scroll-indicator.js'></script><script src='/js/navigator.js'></script><script src='/js/sticky-header.js'></script><script src='/js/main.js'></script><!-- Google tag (gtag.js) -->
+          <script async src='https://www.googletagmanager.com/gtag/js?id=G-PNL4G4DJ5G'></script>
+          <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-PNL4G4DJ5G');
+          </script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">google-translate</h1>
-<pre class="example" id="orgdfaaccf">
+<pre class="example" id="orgb237f05">
 영문으로 commit message 달 때 유용하다.
 </pre>
 
-<pre class="example" id="orgb656b9f">
+<pre class="example" id="orgc1866df">
 This is useful when writing a commit message in English.
 </pre>
 
-<div id="outline-container-orgddb072e" class="outline-2">
-<h2 id="orgddb072e">package</h2>
-<div class="outline-text-2" id="text-orgddb072e">
+<div id="outline-container-org1c05ace" class="outline-2">
+<h2 id="org1c05ace">package</h2>
+<div class="outline-text-2" id="text-org1c05ace">
 <div class="org-src-container">
-<pre class="src src-elisp" id="org0c6a19b"><span style="color: #a020f0;">(package!</span> google-translate)
+<pre class="src src-elisp" id="orgb3e7921"><span style="color: #a020f0;">(package!</span> google-translate)
 </pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org5c6339a" class="outline-2">
-<h2 id="org5c6339a">config</h2>
-<div class="outline-text-2" id="text-org5c6339a">
+<div id="outline-container-org8389105" class="outline-2">
+<h2 id="org8389105">config</h2>
+<div class="outline-text-2" id="text-org8389105">
 <div class="org-src-container">
-<pre class="src src-elisp" id="org5cac69d"><span style="color: #a020f0;">(use-package!</span> google-translate
+<pre class="src src-elisp" id="orgfb5a204"><span style="color: #a020f0;">(use-package!</span> google-translate
   <span style="color: #483d8b;">:bind</span>
   (<span style="color: #8b2252;">"C-c t"</span> . google-translate-at-point)
   (<span style="color: #8b2252;">"C-c T"</span> . google-translate-query-translate)
