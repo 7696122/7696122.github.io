@@ -189,7 +189,11 @@
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   .org-svg { }
 </style>
-<link href='https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap' rel='stylesheet'><link href='/stylesheets/main.css' media='screen, projection' rel='stylesheet' type='text/css' /><style>pre.src-typescript:before { content: 'Typescript'; }</style>
+<link href='https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap' rel='stylesheet'>
+<link href='/stylesheets/main.css' media='screen, projection' rel='stylesheet' type='text/css' />
+<style>
+pre.src-typescript:before { content: 'Typescript'; }
+</style>
 <!-- Google tag (gtag.js) -->
 <script async src='https://www.googletagmanager.com/gtag/js?id=G-PNL4G4DJ5G'></script>
 <script>
@@ -198,17 +202,30 @@
   gtag('js', new Date());
 
   gtag('config', 'G-PNL4G4DJ5G');
-</script><script src='https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.js'></script><script src='https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js'></script><script src='https://npmcdn.com/underscore.string@3.3.6/dist/underscore.string.min.js'></script><script src='/js/highlighter-ref-code-blockscript.js'></script><script src='/js/scroll-indicator.js'></script><script src='/js/navigator.js'></script><script src='/js/sticky-header.js'></script><script src='/js/main.js'></script>
+</script>
+<script src='https://kit.fontawesome.com/fb2f5d37eb.js' crossorigin='anonymous'></script>
+<script src='https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js'></script>
+<script src='https://npmcdn.com/underscore.string@3.3.6/dist/underscore.string.min.js'></script>
+<script src='/js/highlighter-ref-code-blockscript.js'></script>
+<script src='/js/scroll-indicator.js'></script>
+<script src='/js/navigator.js'></script>
+<script src='/js/sticky-header.js'></script>
+<script src='/js/main.js'></script>
 </head>
 <body>
-<div class='header'><div class="banner">
+<div class='header'>
+<div class="banner">
   <a href="/" class="none-deco">
     <div class="center">
       <h1 class="shadow">Garden 76</h1>
     </div>
   </a>
 </div>
-</div><div class='navigation-panel sticky'><nav class="navs">
+
+</div>
+<div class='navigation-panel sticky'>
+<nav class="navs">
 <ul class="org-ul nav">
 <li><a href="/00-home/index.html#ID-7430811a-d538-4138-8787-3c48583b31f7">Home</a></li>
 <li><a href="/01-page/index.html#ID-5cf31c6f-0c3a-4f6c-8131-01b2e59e8206">Page</a></li>
@@ -226,11 +243,11 @@ const dir = (href) => {
 
 const active = (el) => el.parentNode.classList.add(activeClassName);
 
-const homeA = document.querySelector("#preamble > div.navigation-panel.sticky > nav > ul > li:nth-child(1) > a");
+const homeA = document.querySelector("body > div.navigation-panel.sticky > nav > ul > li:nth-child(1) > a");
 let homePathname = dir(homeA.href);
-const pageA = document.querySelector("#preamble > div.navigation-panel.sticky > nav > ul > li:nth-child(2) > a");
+const pageA = document.querySelector("body > div.navigation-panel.sticky > nav > ul > li:nth-child(2) > a");
 let pagePathname = dir(pageA.href);
-const aboutA = document.querySelector("#preamble > div.navigation-panel.sticky > nav > ul > li:nth-child(3) > a");
+const aboutA = document.querySelector("body > div.navigation-panel.sticky > nav > ul > li:nth-child(3) > a");
 let aboutPathname = dir(aboutA.href);
 
 switch(dir(window.location.href)) {
@@ -246,7 +263,15 @@ switch(dir(window.location.href)) {
     break;
 }
 </script>
-<scroll-indicator></scroll-indicator><div style='display: flex; justify-content: center; background-color: black; border-radius: 0 0 8px 8px;'><back-button></back-button><up-button></up-button><home-button></home-button><forward-button></forward-button></div></div><div id="content" class="content">
+
+<scroll-indicator></scroll-indicator>
+<div style='display: flex; justify-content: center; background-color: black; border-radius: 0 0 8px 8px;'>
+<back-button></back-button>
+<up-button></up-button>
+<home-button></home-button>
+<forward-button></forward-button>
+</div>
+</div><div id="content" class="content">
 <header>
 <h1 class="title">npm 없이 js 라이브러리 사용하기</h1>
 </header><p>
@@ -262,7 +287,7 @@ npm을 사용하면 좋지만 그러지 못할 땐
 </p>
 
 
-<figure id="org61527d3">
+<figure id="org39f5bb9">
 <img src="../attach/Screenshot 2022-12-18 at 7.43.25 PM.png" alt="Screenshot 2022-12-18 at 7.43.25 PM.png" width="80%">
 
 </figure>
@@ -272,7 +297,7 @@ npm을 사용하면 좋지만 그러지 못할 땐
 </p>
 
 
-<figure id="orgf60001b">
+<figure id="org6bc5869">
 <img src="../attach/Screenshot 2022-12-18 at 9.00.50 PM.png" alt="Screenshot 2022-12-18 at 9.00.50 PM.png" width="80%">
 
 </figure>

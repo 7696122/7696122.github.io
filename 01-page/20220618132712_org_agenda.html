@@ -189,7 +189,11 @@
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   .org-svg { }
 </style>
-<link href='https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap' rel='stylesheet'><link href='/stylesheets/main.css' media='screen, projection' rel='stylesheet' type='text/css' /><style>pre.src-typescript:before { content: 'Typescript'; }</style>
+<link href='https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap' rel='stylesheet'>
+<link href='/stylesheets/main.css' media='screen, projection' rel='stylesheet' type='text/css' />
+<style>
+pre.src-typescript:before { content: 'Typescript'; }
+</style>
 <!-- Google tag (gtag.js) -->
 <script async src='https://www.googletagmanager.com/gtag/js?id=G-PNL4G4DJ5G'></script>
 <script>
@@ -198,17 +202,30 @@
   gtag('js', new Date());
 
   gtag('config', 'G-PNL4G4DJ5G');
-</script><script src='https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.js'></script><script src='https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js'></script><script src='https://npmcdn.com/underscore.string@3.3.6/dist/underscore.string.min.js'></script><script src='/js/highlighter-ref-code-blockscript.js'></script><script src='/js/scroll-indicator.js'></script><script src='/js/navigator.js'></script><script src='/js/sticky-header.js'></script><script src='/js/main.js'></script>
+</script>
+<script src='https://kit.fontawesome.com/fb2f5d37eb.js' crossorigin='anonymous'></script>
+<script src='https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js'></script>
+<script src='https://npmcdn.com/underscore.string@3.3.6/dist/underscore.string.min.js'></script>
+<script src='/js/highlighter-ref-code-blockscript.js'></script>
+<script src='/js/scroll-indicator.js'></script>
+<script src='/js/navigator.js'></script>
+<script src='/js/sticky-header.js'></script>
+<script src='/js/main.js'></script>
 </head>
 <body>
-<div class='header'><div class="banner">
+<div class='header'>
+<div class="banner">
   <a href="/" class="none-deco">
     <div class="center">
       <h1 class="shadow">Garden 76</h1>
     </div>
   </a>
 </div>
-</div><div class='navigation-panel sticky'><nav class="navs">
+
+</div>
+<div class='navigation-panel sticky'>
+<nav class="navs">
 <ul class="org-ul nav">
 <li><a href="/00-home/index.html#ID-7430811a-d538-4138-8787-3c48583b31f7">Home</a></li>
 <li><a href="/01-page/index.html#ID-5cf31c6f-0c3a-4f6c-8131-01b2e59e8206">Page</a></li>
@@ -226,11 +243,11 @@ const dir = (href) => {
 
 const active = (el) => el.parentNode.classList.add(activeClassName);
 
-const homeA = document.querySelector("#preamble > div.navigation-panel.sticky > nav > ul > li:nth-child(1) > a");
+const homeA = document.querySelector("body > div.navigation-panel.sticky > nav > ul > li:nth-child(1) > a");
 let homePathname = dir(homeA.href);
-const pageA = document.querySelector("#preamble > div.navigation-panel.sticky > nav > ul > li:nth-child(2) > a");
+const pageA = document.querySelector("body > div.navigation-panel.sticky > nav > ul > li:nth-child(2) > a");
 let pagePathname = dir(pageA.href);
-const aboutA = document.querySelector("#preamble > div.navigation-panel.sticky > nav > ul > li:nth-child(3) > a");
+const aboutA = document.querySelector("body > div.navigation-panel.sticky > nav > ul > li:nth-child(3) > a");
 let aboutPathname = dir(aboutA.href);
 
 switch(dir(window.location.href)) {
@@ -246,12 +263,20 @@ switch(dir(window.location.href)) {
     break;
 }
 </script>
-<scroll-indicator></scroll-indicator><div style='display: flex; justify-content: center; background-color: black; border-radius: 0 0 8px 8px;'><back-button></back-button><up-button></up-button><home-button></home-button><forward-button></forward-button></div></div><div id="content" class="content">
+
+<scroll-indicator></scroll-indicator>
+<div style='display: flex; justify-content: center; background-color: black; border-radius: 0 0 8px 8px;'>
+<back-button></back-button>
+<up-button></up-button>
+<home-button></home-button>
+<forward-button></forward-button>
+</div>
+</div><div id="content" class="content">
 <header>
 <h1 class="title">org-appear</h1>
 </header>
 <div id="outline-container-orgfff122a" class="outline-2">
-<h2 id="orgfff122a">package</h2>
+<h2 id="orgfff122a"><a href="#orgfff122a">package<span class='anchor'> #</span></a></h2>
 <div class="outline-text-2" id="text-orgfff122a">
 <div class="org-src-container">
 <pre class="src src-elisp" id="org64e4efc"><span style="color: #a020f0;">(package!</span> org-appear)
@@ -261,7 +286,7 @@ switch(dir(window.location.href)) {
 </div>
 
 <div id="outline-container-orgf6e577e" class="outline-2">
-<h2 id="orgf6e577e">config</h2>
+<h2 id="orgf6e577e"><a href="#orgf6e577e">config<span class='anchor'> #</span></a></h2>
 <div class="outline-text-2" id="text-orgf6e577e">
 <div class="org-src-container">
 <pre class="src src-elisp" id="orgb0b80f7"><span style="color: #a020f0;">(use-package!</span> org-appear
@@ -283,7 +308,7 @@ switch(dir(window.location.href)) {
 </div>
 
 <div id="outline-container-orgfd25abd" class="outline-2">
-<h2 id="orgfd25abd">Example</h2>
+<h2 id="orgfd25abd"><a href="#orgfd25abd">Example<span class='anchor'> #</span></a></h2>
 <div class="outline-text-2" id="text-orgfd25abd">
 <p>
 <a href="20220618132712_org_agenda.html#ID-33da1f1c-530f-4d98-8a14-510e278afe4b">org-appear</a>
@@ -293,12 +318,12 @@ switch(dir(window.location.href)) {
 
 
 <div id="outline-container-orgcbde550" class="outline-2 references">
-<h2 id="orgcbde550">Backlinks</h2>
+<h2 id="orgcbde550"><a href="#orgcbde550">Backlinks<span class='anchor'> #</span></a></h2>
 <div class="outline-text-2" id="text-orgcbde550">
 <hr>
 </div>
 <div id="outline-container-org0193f1c" class="outline-3">
-<h3 id="org0193f1c"><a href="20220618132712_org_agenda.html#ID-33da1f1c-530f-4d98-8a14-510e278afe4b">org-appear</a></h3>
+<h3 id="org0193f1c"><a href="#org0193f1c"><a href="20220618132712_org_agenda.html#ID-33da1f1c-530f-4d98-8a14-510e278afe4b">org-appear</a><span class='anchor'> #</span></a></h3>
 <div class="outline-text-3" id="text-org0193f1c">
 <p>
 <a href="20220618132712_org_agenda.html#ID-33da1f1c-530f-4d98-8a14-510e278afe4b">org-appear</a>

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>sdkman</title>
+<title>Mac에서 option을 누르면 이상한 문자가 찍힐 때</title>
 <meta name="generator" content="Org Mode" />
 <style>
   #content { max-width: 60em; margin: auto; }
@@ -273,102 +273,36 @@ switch(dir(window.location.href)) {
 </div>
 </div><div id="content" class="content">
 <header>
-<h1 class="title">sdkman</h1>
-</header><p>
-<a href="https://sdkman.io/install">https://sdkman.io/install</a>
-</p>
+<h1 class="title">Mac에서 option을 누르면 이상한 문자가 찍힐 때</h1>
+</header>
+<figure id="orgef401bf">
+<img src="../attach/Screenshot 2022-12-23 at 1.50.20 PM.png" alt="Screenshot 2022-12-23 at 1.50.20 PM.png" width="90%">
 
-<p>
-<a href="#coderef-list_java" class="coderef" onmouseover="CodeHighlightOn(this, 'coderef-list_java');" onmouseout="CodeHighlightOff(this, 'coderef-list_java');">1</a>
-</p>
+</figure>
 
 
-<div id="outline-container-org544bfd7" class="outline-2">
-<h2 id="org544bfd7"><a href="#org544bfd7">bash, zsh<span class='anchor'> #</span></a></h2>
-<div class="outline-text-2" id="text-org544bfd7">
-<div class="org-src-container">
-<pre class="src src-sh">curl -s <span style="color: #8b2252;">"https://get.sdkman.io"</span> | bash
-</pre>
-</div>
+<figure id="org18c92f7">
+<img src="../attach/Screenshot 2022-12-23 at 1.51.47 PM.png" alt="Screenshot 2022-12-23 at 1.51.47 PM.png" width="90%">
 
-<p>
-위 명령으로 .bash_profile .zshrc 생성됨
-</p>
-
-<p>
-.bash_profile .zshrc created by the above command
-</p>
-
-<div class="org-src-container">
-<pre class="src src-bash">source <span style="color: #8b2252;">"$HOME/.sdkman/bin/sdkman-init.sh"</span>
-</pre>
-</div>
-</div>
-</div>
-
-<div id="outline-container-org0bc33aa" class="outline-2">
-<h2 id="org0bc33aa"><a href="#org0bc33aa">fish<span class='anchor'> #</span></a></h2>
-<div class="outline-text-2" id="text-org0bc33aa">
-<pre class="example" id="org4010af6">
-&gt; source "$HOME/.sdkman/bin/sdkman-init.sh"
-~/.sdkman/bin/sdkman-init.sh (line 46): Expected end of the statement, but found an incomplete token
-        Linux)
-             ^
-from sourcing file ~/.sdkman/bin/sdkman-init.sh
-source: Error while reading file “/Users/mnml/.sdkman/bin/sdkman-init.sh”
-</pre>
-
-<p>
-<a href="https://github.com/reitzig/sdkman-for-fish">https://github.com/reitzig/sdkman-for-fish</a>
-</p>
-
-<div class="org-src-container">
-<pre class="src src-fish"><span style="color: #483d8b;">fisher</span> install reitzig/sdkman-for-fish@v1.<span style="color: #008b8b;">4.0</span>
-</pre>
-</div>
-</div>
-</div>
-
-<div id="outline-container-orgbad1929" class="outline-2">
-<h2 id="orgbad1929"><a href="#orgbad1929">in<span class='anchor'> #</span></a></h2>
-<div class="outline-text-2" id="text-orgbad1929">
-<div class="org-src-container">
-<pre class="src src-sh"><span id="coderef-list_java" class="coderef-off"><span class="linenr">1: </span>sdk list java</span>
-<span class="linenr">2: </span>sdk install java 19.0.1-amzn
-</pre>
-</div>
-
-<pre class="example" id="orga264465">
-Corretto      |     | 19.0.1       | amzn    |            | 19.0.1-amzn
-              | &gt;&gt;&gt; | 17.0.5       | amzn    | installed  | 17.0.5-amzn
-              |     | 11.0.17      | amzn    |            | 11.0.17-amzn
-</pre>
-</div>
-</div>
+</figure>
 
 
-<div id="outline-container-org160958a" class="outline-2 references">
-<h2 id="org160958a"><a href="#org160958a">Backlinks<span class='anchor'> #</span></a></h2>
-<div class="outline-text-2" id="text-org160958a">
-<hr>
-</div>
-<div id="outline-container-orgc37ed13" class="outline-3">
-<h3 id="orgc37ed13"><a href="#orgc37ed13"><a href="20221215113524-java_development.html#ID-8f255b75-7edb-466c-ac34-fb7f9d01a29a">java development</a><span class='anchor'> #</span></a></h3>
-<div class="outline-text-3" id="text-orgc37ed13">
-<p>
-여러 버전의 jdk와 각종 java 관련 도구들을 사용하기 편한
-<a href="20221215113855-sdkman.html#ID-c2412661-9172-4eee-a8d1-b9994dce406b">sdkman</a>을 사용
-</p>
+<figure id="org4248113">
+<img src="../attach/Screenshot 2022-12-23 at 1.52.41 PM.png" alt="Screenshot 2022-12-23 at 1.52.41 PM.png" width="90%">
 
-<div class="org-src-container">
-<pre class="src src-conf" id="orgffa0d9e"><span style="color: #a0522d;">java</span>=11.0.17-amzn
-<span style="color: #a0522d;">gradle</span>=7.6
+</figure>
 
-</pre>
-</div>
-</div>
-</div>
-</div>
+
+<figure id="orgc7d1449">
+<img src="../attach/Screenshot 2022-12-23 at 1.54.54 PM.png" alt="Screenshot 2022-12-23 at 1.54.54 PM.png" width="90%">
+
+</figure>
+
+
+<figure id="org772684c">
+<img src="../attach/Screenshot 2022-12-23 at 1.55.50 PM.png" alt="Screenshot 2022-12-23 at 1.55.50 PM.png" width="90%">
+
+</figure>
 </div>
 </body>
 </html>

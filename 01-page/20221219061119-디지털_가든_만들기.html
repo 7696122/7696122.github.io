@@ -189,7 +189,11 @@
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   .org-svg { }
 </style>
-<link href='https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap' rel='stylesheet'><link href='/stylesheets/main.css' media='screen, projection' rel='stylesheet' type='text/css' /><style>pre.src-typescript:before { content: 'Typescript'; }</style>
+<link href='https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap' rel='stylesheet'>
+<link href='/stylesheets/main.css' media='screen, projection' rel='stylesheet' type='text/css' />
+<style>
+pre.src-typescript:before { content: 'Typescript'; }
+</style>
 <!-- Google tag (gtag.js) -->
 <script async src='https://www.googletagmanager.com/gtag/js?id=G-PNL4G4DJ5G'></script>
 <script>
@@ -198,17 +202,30 @@
   gtag('js', new Date());
 
   gtag('config', 'G-PNL4G4DJ5G');
-</script><script src='https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.js'></script><script src='https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js'></script><script src='https://npmcdn.com/underscore.string@3.3.6/dist/underscore.string.min.js'></script><script src='/js/highlighter-ref-code-blockscript.js'></script><script src='/js/scroll-indicator.js'></script><script src='/js/navigator.js'></script><script src='/js/sticky-header.js'></script><script src='/js/main.js'></script>
+</script>
+<script src='https://kit.fontawesome.com/fb2f5d37eb.js' crossorigin='anonymous'></script>
+<script src='https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js'></script>
+<script src='https://npmcdn.com/underscore.string@3.3.6/dist/underscore.string.min.js'></script>
+<script src='/js/highlighter-ref-code-blockscript.js'></script>
+<script src='/js/scroll-indicator.js'></script>
+<script src='/js/navigator.js'></script>
+<script src='/js/sticky-header.js'></script>
+<script src='/js/main.js'></script>
 </head>
 <body>
-<div class='header'><div class="banner">
+<div class='header'>
+<div class="banner">
   <a href="/" class="none-deco">
     <div class="center">
       <h1 class="shadow">Garden 76</h1>
     </div>
   </a>
 </div>
-</div><div class='navigation-panel sticky'><nav class="navs">
+
+</div>
+<div class='navigation-panel sticky'>
+<nav class="navs">
 <ul class="org-ul nav">
 <li><a href="/00-home/index.html#ID-7430811a-d538-4138-8787-3c48583b31f7">Home</a></li>
 <li><a href="/01-page/index.html#ID-5cf31c6f-0c3a-4f6c-8131-01b2e59e8206">Page</a></li>
@@ -226,11 +243,11 @@ const dir = (href) => {
 
 const active = (el) => el.parentNode.classList.add(activeClassName);
 
-const homeA = document.querySelector("#preamble > div.navigation-panel.sticky > nav > ul > li:nth-child(1) > a");
+const homeA = document.querySelector("body > div.navigation-panel.sticky > nav > ul > li:nth-child(1) > a");
 let homePathname = dir(homeA.href);
-const pageA = document.querySelector("#preamble > div.navigation-panel.sticky > nav > ul > li:nth-child(2) > a");
+const pageA = document.querySelector("body > div.navigation-panel.sticky > nav > ul > li:nth-child(2) > a");
 let pagePathname = dir(pageA.href);
-const aboutA = document.querySelector("#preamble > div.navigation-panel.sticky > nav > ul > li:nth-child(3) > a");
+const aboutA = document.querySelector("body > div.navigation-panel.sticky > nav > ul > li:nth-child(3) > a");
 let aboutPathname = dir(aboutA.href);
 
 switch(dir(window.location.href)) {
@@ -246,12 +263,20 @@ switch(dir(window.location.href)) {
     break;
 }
 </script>
-<scroll-indicator></scroll-indicator><div style='display: flex; justify-content: center; background-color: black; border-radius: 0 0 8px 8px;'><back-button></back-button><up-button></up-button><home-button></home-button><forward-button></forward-button></div></div><div id="content" class="content">
+
+<scroll-indicator></scroll-indicator>
+<div style='display: flex; justify-content: center; background-color: black; border-radius: 0 0 8px 8px;'>
+<back-button></back-button>
+<up-button></up-button>
+<home-button></home-button>
+<forward-button></forward-button>
+</div>
+</div><div id="content" class="content">
 <header>
 <h1 class="title">디지털 가든 만들기</h1>
 </header>
 <div id="outline-container-orga4d36ba" class="outline-2">
-<h2 id="orga4d36ba">&#x2013;batch</h2>
+<h2 id="orga4d36ba"><a href="#orga4d36ba">&#x2013;batch<span class='anchor'> #</span></a></h2>
 <div class="outline-text-2" id="text-orga4d36ba">
 <p>
 emacs를 <a href="#coderef-batch" class="coderef" onmouseover="CodeHighlightOn(this, 'coderef-batch');" onmouseout="CodeHighlightOff(this, 'coderef-batch');">batch 모드</a>로 실행해야지 빠른 속도로 사이트를 생성할 수 있다.
@@ -268,7 +293,7 @@ emacs를 <a href="#coderef-batch" class="coderef" onmouseover="CodeHighlightOn(t
 </div>
 
 <div id="outline-container-org68a40f3" class="outline-2">
-<h2 id="org68a40f3">Syntax Highlight</h2>
+<h2 id="org68a40f3"><a href="#org68a40f3">Syntax Highlight<span class='anchor'> #</span></a></h2>
 <div class="outline-text-2" id="text-org68a40f3">
 <div class="org-src-container">
 <pre class="src src-emacs-lisp">;; <span style="color: #b22222;">[[https://emacs.stackexchange.com/questions/38437/org-mode-batch-export-missing-syntax-highlighting/38515#38515][org-mode batch export: Missing syntax highlighting - Emacs Stack Exchange]]</span>
@@ -394,7 +419,7 @@ print-args-and-ret
 </div>
 
 <div id="outline-container-org79b2c06" class="outline-2">
-<h2 id="org79b2c06">Backlinks</h2>
+<h2 id="org79b2c06"><a href="#org79b2c06">Backlinks<span class='anchor'> #</span></a></h2>
 <div class="outline-text-2" id="text-org79b2c06">
 <p>
 <a href="https://org-roam.discourse.group/t/export-backlinks-on-org-export/1756/29">참조</a>
@@ -478,7 +503,7 @@ print-args-and-ret
 </div>
 
 <div id="outline-container-org5e70cc8" class="outline-2">
-<h2 id="org5e70cc8">Ref</h2>
+<h2 id="org5e70cc8"><a href="#org5e70cc8">Ref<span class='anchor'> #</span></a></h2>
 <div class="outline-text-2" id="text-org5e70cc8">
 <p>
 <a href="https://taingram.org/blog/org-mode-blog.html">https://taingram.org/blog/org-mode-blog.html</a>

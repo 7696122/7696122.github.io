@@ -1,3 +1,39 @@
+.anchor {
+  text-decoration: none;
+  visibility: hidden;
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+}
+li a:hover {
+  color: gray;
+  text-decoration: underline;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a {
+  text-decoration: none;
+  color: black;
+}
+h1:hover a,
+h2:hover a,
+h3:hover a,
+h4:hover a {
+  text-decoration: underline;
+  color: gray;
+}
+h1:hover .anchor,
+h2:hover .anchor,
+h3:hover .anchor,
+h4:hover .anchor {
+  text-decoration: underline;
+  visibility: visible;
+}
+
 footer {
   height: 20px;
 }

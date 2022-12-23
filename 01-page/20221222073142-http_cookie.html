@@ -189,7 +189,11 @@
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   .org-svg { }
 </style>
-<link href='https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap' rel='stylesheet'><link href='/stylesheets/main.css' media='screen, projection' rel='stylesheet' type='text/css' /><style>pre.src-typescript:before { content: 'Typescript'; }</style>
+<link href='https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap' rel='stylesheet'>
+<link href='/stylesheets/main.css' media='screen, projection' rel='stylesheet' type='text/css' />
+<style>
+pre.src-typescript:before { content: 'Typescript'; }
+</style>
 <!-- Google tag (gtag.js) -->
 <script async src='https://www.googletagmanager.com/gtag/js?id=G-PNL4G4DJ5G'></script>
 <script>
@@ -198,17 +202,30 @@
   gtag('js', new Date());
 
   gtag('config', 'G-PNL4G4DJ5G');
-</script><script src='https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.js'></script><script src='https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js'></script><script src='https://npmcdn.com/underscore.string@3.3.6/dist/underscore.string.min.js'></script><script src='/js/highlighter-ref-code-blockscript.js'></script><script src='/js/scroll-indicator.js'></script><script src='/js/navigator.js'></script><script src='/js/sticky-header.js'></script><script src='/js/main.js'></script>
+</script>
+<script src='https://kit.fontawesome.com/fb2f5d37eb.js' crossorigin='anonymous'></script>
+<script src='https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js'></script>
+<script src='https://npmcdn.com/underscore.string@3.3.6/dist/underscore.string.min.js'></script>
+<script src='/js/highlighter-ref-code-blockscript.js'></script>
+<script src='/js/scroll-indicator.js'></script>
+<script src='/js/navigator.js'></script>
+<script src='/js/sticky-header.js'></script>
+<script src='/js/main.js'></script>
 </head>
 <body>
-<div class='header'><div class="banner">
+<div class='header'>
+<div class="banner">
   <a href="/" class="none-deco">
     <div class="center">
       <h1 class="shadow">Garden 76</h1>
     </div>
   </a>
 </div>
-</div><div class='navigation-panel sticky'><nav class="navs">
+
+</div>
+<div class='navigation-panel sticky'>
+<nav class="navs">
 <ul class="org-ul nav">
 <li><a href="/00-home/index.html#ID-7430811a-d538-4138-8787-3c48583b31f7">Home</a></li>
 <li><a href="/01-page/index.html#ID-5cf31c6f-0c3a-4f6c-8131-01b2e59e8206">Page</a></li>
@@ -226,11 +243,11 @@ const dir = (href) => {
 
 const active = (el) => el.parentNode.classList.add(activeClassName);
 
-const homeA = document.querySelector("#preamble > div.navigation-panel.sticky > nav > ul > li:nth-child(1) > a");
+const homeA = document.querySelector("body > div.navigation-panel.sticky > nav > ul > li:nth-child(1) > a");
 let homePathname = dir(homeA.href);
-const pageA = document.querySelector("#preamble > div.navigation-panel.sticky > nav > ul > li:nth-child(2) > a");
+const pageA = document.querySelector("body > div.navigation-panel.sticky > nav > ul > li:nth-child(2) > a");
 let pagePathname = dir(pageA.href);
-const aboutA = document.querySelector("#preamble > div.navigation-panel.sticky > nav > ul > li:nth-child(3) > a");
+const aboutA = document.querySelector("body > div.navigation-panel.sticky > nav > ul > li:nth-child(3) > a");
 let aboutPathname = dir(aboutA.href);
 
 switch(dir(window.location.href)) {
@@ -246,20 +263,28 @@ switch(dir(window.location.href)) {
     break;
 }
 </script>
-<scroll-indicator></scroll-indicator><div style='display: flex; justify-content: center; background-color: black; border-radius: 0 0 8px 8px;'><back-button></back-button><up-button></up-button><home-button></home-button><forward-button></forward-button></div></div><div id="content" class="content">
+
+<scroll-indicator></scroll-indicator>
+<div style='display: flex; justify-content: center; background-color: black; border-radius: 0 0 8px 8px;'>
+<back-button></back-button>
+<up-button></up-button>
+<home-button></home-button>
+<forward-button></forward-button>
+</div>
+</div><div id="content" class="content">
 <header>
 <h1 class="title">HTTP cookie</h1>
 </header>
 <div id="outline-container-org7e44a43" class="outline-2">
-<h2 id="org7e44a43">Using HTTP cookies</h2>
+<h2 id="org7e44a43"><a href="#org7e44a43">Using HTTP cookies<span class='anchor'> #</span></a></h2>
 <div class="outline-text-2" id="text-org7e44a43">
 </div>
 <div id="outline-container-org7e87b0e" class="outline-3">
-<h3 id="org7e87b0e">HTTP cookie (web cookie, browser cookie)</h3>
+<h3 id="org7e87b0e"><a href="#org7e87b0e">HTTP cookie (web cookie, browser cookie)<span class='anchor'> #</span></a></h3>
 <div class="outline-text-3" id="text-org7e87b0e">
 </div>
 <div id="outline-container-org21d34d6" class="outline-4">
-<h4 id="org21d34d6">a small piece of data</h4>
+<h4 id="org21d34d6"><a href="#org21d34d6">a small piece of data<span class='anchor'> #</span></a></h4>
 <div class="outline-text-4" id="text-org21d34d6">
 <ul class="org-ul">
 <li><b>server</b>
@@ -292,7 +317,7 @@ switch(dir(window.location.href)) {
 </div>
 
 <div id="outline-container-org2c3ad2b" class="outline-4">
-<h4 id="org2c3ad2b">mainly used for three purposes</h4>
+<h4 id="org2c3ad2b"><a href="#org2c3ad2b">mainly used for three purposes<span class='anchor'> #</span></a></h4>
 <div class="outline-text-4" id="text-org2c3ad2b">
 <ul class="org-ul">
 <li><b>Session management</b>
@@ -315,7 +340,7 @@ switch(dir(window.location.href)) {
 </div>
 
 <div id="outline-container-orga91beed" class="outline-4">
-<h4 id="orga91beed"><b>modern storage APIs are now recommended</b></h4>
+<h4 id="orga91beed"><a href="#orga91beed"><b>modern storage APIs are now recommended</b><span class='anchor'> #</span></a></h4>
 <div class="outline-text-4" id="text-orga91beed">
 <ul class="org-ul">
 <li><b>Cookies</b> are <b>sent with every request</b>, so they can <b>worsen performance</b> (especially for mobile data connections).</li>
@@ -335,7 +360,7 @@ switch(dir(window.location.href)) {
 </div>
 
 <div id="outline-container-org0a3d9ad" class="outline-2">
-<h2 id="org0a3d9ad">Creating cookies</h2>
+<h2 id="org0a3d9ad"><a href="#org0a3d9ad">Creating cookies<span class='anchor'> #</span></a></h2>
 <div class="outline-text-2" id="text-org0a3d9ad">
 <ul class="org-ul">
 <li>a <b>server</b> can <b>send</b> one or more <b>Set-Cookie header</b>
@@ -359,7 +384,7 @@ switch(dir(window.location.href)) {
 </div>
 
 <div id="outline-container-orgee1a12e" class="outline-2">
-<h2 id="orgee1a12e">ref</h2>
+<h2 id="orgee1a12e"><a href="#orgee1a12e">ref<span class='anchor'> #</span></a></h2>
 <div class="outline-text-2" id="text-orgee1a12e">
 <p>
 <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies">https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies</a>
