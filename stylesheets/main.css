@@ -56,6 +56,8 @@ figure img {
 }
 
 pre.src {
+  word-wrap: break-word;
+  white-space: pre-wrap;
   position: inherit;
 }
 
