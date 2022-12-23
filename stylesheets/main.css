@@ -47,9 +47,17 @@ body {
   color: white;
 }
 
+pre.src {
+  z-index: -1;
+}
+
+.opacity {
+  opacity: 0.8;
+  backdrop-filter: blur(30px);
+}
+
 .navigation-panel {
   margin: 10px 0 10px 0;
-  opacity: 0.8;
 }
 
 .sticky {
