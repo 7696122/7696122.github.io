@@ -1,11 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<!-- 2022-12-23 Fri 10:29 -->
+<meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>[Garden 76] Home  _weather</title>
+<title>[Garden 76] Home </title>
 <meta name="generator" content="Org Mode" />
 <style>
   #content { max-width: 60em; margin: auto; }
@@ -192,6 +191,17 @@
   .org-svg { }
 </style>
 <link href='https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap' rel='stylesheet'><link href='/stylesheets/main.css' media='screen, projection' rel='stylesheet' type='text/css' /><style>pre.src-typescript:before { content: 'Typescript'; }</style>
+<!-- Google tag (gtag.js) -->
+<script async src='https://www.googletagmanager.com/gtag/js?id=G-PNL4G4DJ5G'></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PNL4G4DJ5G');
+</script><script src='https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.js'></script><script src='https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js'></script><script src='https://npmcdn.com/underscore.string@3.3.6/dist/underscore.string.min.js'></script><script src='/js/highlighter-ref-code-blockscript.js'></script><script src='/js/scroll-indicator.js'></script><script src='/js/navigator.js'></script><script src='/js/sticky-header.js'></script><script src='/js/main.js'></script>
+</head>
+<body>
 <div class='header'><div class="banner">
   <a href="/" class="none-deco">
     <div class="center">
@@ -217,11 +227,11 @@ const dir = (href) => {
 
 const active = (el) => el.parentNode.classList.add(activeClassName);
 
-const homeA = document.querySelector("body > div.navigation-panel.sticky > nav > ul > li:nth-child(1) > a")
+const homeA = document.querySelector("#preamble > div.navigation-panel.sticky > nav > ul > li:nth-child(1) > a");
 let homePathname = dir(homeA.href);
-const pageA = document.querySelector("body > div.navigation-panel.sticky > nav > ul > li:nth-child(2) > a")
+const pageA = document.querySelector("#preamble > div.navigation-panel.sticky > nav > ul > li:nth-child(2) > a");
 let pagePathname = dir(pageA.href);
-const aboutA = document.querySelector("body > div.navigation-panel.sticky > nav > ul > li:nth-child(3) > a")
+const aboutA = document.querySelector("#preamble > div.navigation-panel.sticky > nav > ul > li:nth-child(3) > a");
 let aboutPathname = dir(aboutA.href);
 
 switch(dir(window.location.href)) {
@@ -237,58 +247,7 @@ switch(dir(window.location.href)) {
     break;
 }
 </script>
-<scroll-indicator></scroll-indicator><div style='display: flex; justify-content: center; background-color: black; border-radius: 0 0 8px 8px;'><back-button></back-button><up-button></up-button><home-button></home-button><forward-button></forward-button></div></div>
-<script src='https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.js'></script><script src='https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js'></script><script src='https://npmcdn.com/underscore.string@3.3.6/dist/underscore.string.min.js'></script><script src='/js/highlighter-ref-code-blockscript.js'></script><script src='/js/scroll-indicator.js'></script><script src='/js/navigator.js'></script><script src='/js/sticky-header.js'></script><script src='/js/main.js'></script><!-- Google tag (gtag.js) -->
-          <script async src='https://www.googletagmanager.com/gtag/js?id=G-PNL4G4DJ5G'></script>
-          <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-PNL4G4DJ5G');
-          </script>
-</head>
-<body>
-<div id="content" class="content">
-<script>
- (function(d, s, id) {
-     if (d.getElementById(id)) {
-         if (window.__TOMORROW__) {
-             window.__TOMORROW__.renderWidget();
-         }
-         return;
-     }
-     const fjs = d.getElementsByTagName(s)[0];
-     const js = d.createElement(s);
-     js.id = id;
-     js.src = "https://www.tomorrow.io/v1/widget/sdk/sdk.bundle.min.js";
-
-     fjs.parentNode.insertBefore(js, fjs);
- })(document, 'script', 'tomorrow-sdk');
-</script>
-
-<div class="tomorrow"
-     data-location-id=""
-     data-language="KO"
-     data-unit-system="METRIC"
-     data-skin="light"
-     data-widget-type="upcoming"
-     style="padding-bottom:22px;position:relative;"
->
-    <a
-        href="https://www.tomorrow.io/weather-api/"
-        rel="nofollow noopener noreferrer"
-        target="_blank"
-        style="position: absolute; bottom: 0; transform: translateX(-50%); left: 50%;"
-    >
-        <img
-            alt="Powered by the Tomorrow.io Weather API"
-            src="https://weather-website-client.tomorrow.io/img/powered-by.svg"
-            width="250"
-            height="18"
-        />
-    </a>
-</div>
+<scroll-indicator></scroll-indicator><div style='display: flex; justify-content: center; background-color: black; border-radius: 0 0 8px 8px;'><back-button></back-button><up-button></up-button><home-button></home-button><forward-button></forward-button></div></div><div id="content" class="content">
 
 <div id="outline-container-org8ccc50d" class="outline-2">
 <h2 id="org8ccc50d">디지털 정원 꾸미기</h2>
@@ -308,6 +267,17 @@ switch(dir(window.location.href)) {
 </ul>
 </div>
 </div>
+</div>
+<div id="postamble" class="status">
+<footer id="postamble" class="footer">푸터</footer>
+
+<script>
+  // first, find all the div.code blocks
+  // document.querySelectorAll('pre.src').forEach(el => {
+  //     // then highlight each
+  //     hljs.highlightElement(el);
+  // });
+</script>
 </div>
 </body>
 </html>

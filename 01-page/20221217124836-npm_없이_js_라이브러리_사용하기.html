@@ -1,9 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>npm 없이 js 라이브러리 사용하기</title>
 <meta name="generator" content="Org Mode" />
@@ -192,6 +190,17 @@
   .org-svg { }
 </style>
 <link href='https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap' rel='stylesheet'><link href='/stylesheets/main.css' media='screen, projection' rel='stylesheet' type='text/css' /><style>pre.src-typescript:before { content: 'Typescript'; }</style>
+<!-- Google tag (gtag.js) -->
+<script async src='https://www.googletagmanager.com/gtag/js?id=G-PNL4G4DJ5G'></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PNL4G4DJ5G');
+</script><script src='https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.js'></script><script src='https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js'></script><script src='https://npmcdn.com/underscore.string@3.3.6/dist/underscore.string.min.js'></script><script src='/js/highlighter-ref-code-blockscript.js'></script><script src='/js/scroll-indicator.js'></script><script src='/js/navigator.js'></script><script src='/js/sticky-header.js'></script><script src='/js/main.js'></script>
+</head>
+<body>
 <div class='header'><div class="banner">
   <a href="/" class="none-deco">
     <div class="center">
@@ -217,11 +226,11 @@ const dir = (href) => {
 
 const active = (el) => el.parentNode.classList.add(activeClassName);
 
-const homeA = document.querySelector("body > div.navigation-panel.sticky > nav > ul > li:nth-child(1) > a")
+const homeA = document.querySelector("#preamble > div.navigation-panel.sticky > nav > ul > li:nth-child(1) > a");
 let homePathname = dir(homeA.href);
-const pageA = document.querySelector("body > div.navigation-panel.sticky > nav > ul > li:nth-child(2) > a")
+const pageA = document.querySelector("#preamble > div.navigation-panel.sticky > nav > ul > li:nth-child(2) > a");
 let pagePathname = dir(pageA.href);
-const aboutA = document.querySelector("body > div.navigation-panel.sticky > nav > ul > li:nth-child(3) > a")
+const aboutA = document.querySelector("#preamble > div.navigation-panel.sticky > nav > ul > li:nth-child(3) > a");
 let aboutPathname = dir(aboutA.href);
 
 switch(dir(window.location.href)) {
@@ -237,21 +246,10 @@ switch(dir(window.location.href)) {
     break;
 }
 </script>
-<scroll-indicator></scroll-indicator><div style='display: flex; justify-content: center; background-color: black; border-radius: 0 0 8px 8px;'><back-button></back-button><up-button></up-button><home-button></home-button><forward-button></forward-button></div></div>
-<script src='https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.js'></script><script src='https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js'></script><script src='https://npmcdn.com/underscore.string@3.3.6/dist/underscore.string.min.js'></script><script src='/js/highlighter-ref-code-blockscript.js'></script><script src='/js/scroll-indicator.js'></script><script src='/js/navigator.js'></script><script src='/js/sticky-header.js'></script><script src='/js/main.js'></script><!-- Google tag (gtag.js) -->
-          <script async src='https://www.googletagmanager.com/gtag/js?id=G-PNL4G4DJ5G'></script>
-          <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-PNL4G4DJ5G');
-          </script>
-</head>
-<body>
-<div id="content" class="content">
+<scroll-indicator></scroll-indicator><div style='display: flex; justify-content: center; background-color: black; border-radius: 0 0 8px 8px;'><back-button></back-button><up-button></up-button><home-button></home-button><forward-button></forward-button></div></div><div id="content" class="content">
+<header>
 <h1 class="title">npm 없이 js 라이브러리 사용하기</h1>
-<p>
+</header><p>
 npm을 사용하면 좋지만 그러지 못할 땐
 </p>
 
@@ -264,20 +262,20 @@ npm을 사용하면 좋지만 그러지 못할 땐
 </p>
 
 
-<div id="org9ec0dd2" class="figure">
-<p><img src="../attach/Screenshot 2022-12-18 at 7.43.25 PM.png" alt="Screenshot 2022-12-18 at 7.43.25 PM.png" width="80%" />
-</p>
-</div>
+<figure id="org0f1e581">
+<img src="../attach/Screenshot 2022-12-18 at 7.43.25 PM.png" alt="Screenshot 2022-12-18 at 7.43.25 PM.png" width="80%">
+
+</figure>
 
 <p>
 <a href="https://www.jsdelivr.com/package/npm/lodash?tab=collection">https://www.jsdelivr.com/package/npm/lodash?tab=collection</a>
 </p>
 
 
-<div id="orgb38041b" class="figure">
-<p><img src="../attach/Screenshot 2022-12-18 at 9.00.50 PM.png" alt="Screenshot 2022-12-18 at 9.00.50 PM.png" width="80%" />
-</p>
-</div>
+<figure id="orgdb0d5d1">
+<img src="../attach/Screenshot 2022-12-18 at 9.00.50 PM.png" alt="Screenshot 2022-12-18 at 9.00.50 PM.png" width="80%">
+
+</figure>
 
 <p>
 <a href="#coderef-src" class="coderef" onmouseover="CodeHighlightOn(this, 'coderef-src');" onmouseout="CodeHighlightOff(this, 'coderef-src');">스크립트 로딩 코드</a>
@@ -287,6 +285,17 @@ npm을 사용하면 좋지만 그러지 못할 땐
 <pre class="src src-html"><span id="coderef-src" class="coderef-off">&lt;<span style="color: #0000ff;">script</span> <span style="color: #a0522d;">src</span>=<span style="color: #8b2252;">"https://cdn.jsdelivr.net/npm/lodash@4/lodash.min.js"</span>&gt;&lt;/<span style="color: #0000ff;">script</span>&gt;</span>
 </pre>
 </div>
+</div>
+<div id="postamble" class="status">
+<footer id="postamble" class="footer">푸터</footer>
+
+<script>
+  // first, find all the div.code blocks
+  // document.querySelectorAll('pre.src').forEach(el => {
+  //     // then highlight each
+  //     hljs.highlightElement(el);
+  // });
+</script>
 </div>
 </body>
 </html>
