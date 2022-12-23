@@ -38,17 +38,13 @@ footer {
   height: 20px;
 }
 
-body {
-  overflow-y: scroll;
-}
-
 .dark-mode {
   background-color: black;
   color: white;
 }
 
 pre.src {
-  z-index: -1;
+  position: inherit;
 }
 
 .opacity {
@@ -60,9 +56,10 @@ pre.src {
   margin: 10px 0 10px 0;
 }
 
-.sticky {
+header.sticky {
   position: sticky;
   top: -220px;
+  z-index: var(--z-index-top);
 }
 
 .center {
