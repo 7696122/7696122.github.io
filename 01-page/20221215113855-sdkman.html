@@ -214,6 +214,7 @@ pre.src-typescript:before { content: 'Typescript'; }
 <script src='/js/main.js'></script>
 </head>
 <body>
+<header class='sticky'>
 <div class='header'>
 <div class="banner">
   <a href="/" class="none-deco">
@@ -224,7 +225,7 @@ pre.src-typescript:before { content: 'Typescript'; }
 </div>
 
 </div>
-<div class='navigation-panel sticky'>
+<div class='navigation-panel'>
 <nav class="navs">
 <ul class="org-ul nav">
 <li><a href="/00-home/index.html#ID-7430811a-d538-4138-8787-3c48583b31f7">Home</a></li>
@@ -243,11 +244,11 @@ const dir = (href) => {
 
 const active = (el) => el.parentNode.classList.add(activeClassName);
 
-const homeA = document.querySelector("body > div.navigation-panel.sticky > nav > ul > li:nth-child(1) > a");
+const homeA = document.querySelector("body > header > div.navigation-panel > nav > ul > li:nth-child(1) > a");
 let homePathname = dir(homeA.href);
-const pageA = document.querySelector("body > div.navigation-panel.sticky > nav > ul > li:nth-child(2) > a");
+const pageA = document.querySelector("body > header > div.navigation-panel > nav > ul > li:nth-child(2) > a");
 let pagePathname = dir(pageA.href);
-const aboutA = document.querySelector("body > div.navigation-panel.sticky > nav > ul > li:nth-child(3) > a");
+const aboutA = document.querySelector("body > header > div.navigation-panel > nav > ul > li:nth-child(3) > a")
 let aboutPathname = dir(aboutA.href);
 
 switch(dir(window.location.href)) {
@@ -271,7 +272,8 @@ switch(dir(window.location.href)) {
 <home-button></home-button>
 <forward-button></forward-button>
 </div>
-</div><div id="content" class="content">
+</div>
+</header><div id="content" class="content">
 <header>
 <h1 class="title">sdkman</h1>
 </header><p>
@@ -309,7 +311,7 @@ switch(dir(window.location.href)) {
 <div id="outline-container-org0bc33aa" class="outline-2">
 <h2 id="org0bc33aa"><a href="#org0bc33aa">fish<span class='anchor'> #</span></a></h2>
 <div class="outline-text-2" id="text-org0bc33aa">
-<pre class="example" id="org9646d22">
+<pre class="example" id="orgcb693a2">
 &gt; source "$HOME/.sdkman/bin/sdkman-init.sh"
 ~/.sdkman/bin/sdkman-init.sh (line 46): Expected end of the statement, but found an incomplete token
         Linux)
@@ -338,7 +340,7 @@ source: Error while reading file “/Users/mnml/.sdkman/bin/sdkman-init.sh”
 </pre>
 </div>
 
-<pre class="example" id="org651ca68">
+<pre class="example" id="org3adffdb">
 Corretto      |     | 19.0.1       | amzn    |            | 19.0.1-amzn
               | &gt;&gt;&gt; | 17.0.5       | amzn    | installed  | 17.0.5-amzn
               |     | 11.0.17      | amzn    |            | 11.0.17-amzn

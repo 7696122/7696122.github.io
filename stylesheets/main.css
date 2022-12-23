@@ -49,12 +49,12 @@ body {
 
 .navigation-panel {
   margin: 10px 0 10px 0;
+  opacity: 0.8;
 }
 
 .sticky {
   position: sticky;
-  top: 0;
-  z-index: 1000;
+  top: -220px;
 }
 
 .center {
