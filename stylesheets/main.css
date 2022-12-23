@@ -43,6 +43,18 @@ footer {
   color: white;
 }
 
+figure img {
+  max-width: 100%;
+}
+@media (max-width: 800px) {
+  figure img {
+    transition: all 0.2s linear;
+  }
+  figure img:hover {
+    transform: scale(1.2);
+  }
+}
+
 pre.src {
   position: inherit;
 }
