@@ -10,10 +10,8 @@ self.addEventListener("install", (event) => {
       "/favicon.ico",
       "/app.js",
 
-      "/00-home/",
       "/00-home/index.html",
 
-      "/01-page/",
       "/01-page/index.html",
       // "/01-page/_sitemap.html", // 문제 있네
       // "/01-page/20220618132712_org_agenda.html",
@@ -35,7 +33,6 @@ self.addEventListener("install", (event) => {
       // "/01-page/20221224094210-create_link.html",
       // "/01-page/20221224103245-뚝섬ㆍ잠원_눈썰매장.html",
 
-      "/03-about/",
       "/03-about/index.html",
 
       // "/attach/",
