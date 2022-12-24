@@ -83,8 +83,10 @@ self.addEventListener("install", (event) => {
 const cacheFirst = async (request) => {
   const responseFromCache = await caches.match(request);
   if (responseFromCache) {
-    return responseFromCache;
+    if (responseFromCache) return responseFromCache;
   }
+  const response = await request.preloadResponse;
+  if (response) return response;
   return fetch(request);
 };
 
