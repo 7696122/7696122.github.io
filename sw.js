@@ -83,6 +83,7 @@ const putInCache = async (request, response) => {
 };
 
 const cacheFirst = async ({ request, preloadResponse }) => {
+  // Respond from the cache if we can
   const responseFromCache = await caches.match(request);
   if (responseFromCache) {
     return responseFromCache;
@@ -108,7 +109,7 @@ const enableNavigationPreload = async () => {
   }
 };
 
-self.addEventListener("fetch", (event) => {
+self.addEventListener("fetch", async (event) => {
   event.respondWith(cacheFirst(event));
 });
 
