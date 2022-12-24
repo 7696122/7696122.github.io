@@ -13,8 +13,8 @@ self.addEventListener("install", (event) => {
       "/00-home/",
       "/00-home/index.html",
 
-      // "/01-page/",
-      // "/01-page/index.html",
+      "/01-page/",
+      "/01-page/index.html",
       // "/01-page/_sitemap.html",
       // "/01-page/20220618132712_org_agenda.html",
       // "/01-page/20220625092412-org_attach_screenshot.html",
@@ -35,10 +35,10 @@ self.addEventListener("install", (event) => {
       // "/01-page/20221224094210-create_link.html",
       // "/01-page/20221224103245-뚝섬ㆍ잠원_눈썰매장.html",
 
-      // "/03-about/",
-      // "/03-about/index.html",
+      "/03-about/",
+      "/03-about/index.html",
 
-      // "/attach/",
+      "/attach/",
       // "/attach/_20220718_142437screenshot.png",
       // "/attach/com.apple.symbolichotkeys.plist-60-modified.jpeg",
       // "/attach/com.apple.symbolichotkeys.plist-60-origin.jpeg",
@@ -54,13 +54,13 @@ self.addEventListener("install", (event) => {
       // "/attach/switcher.png",
       // "/attach/system.png",
 
-      // "/img/",
+      "/img/",
       // "/img/garden.jpg",
       // "/img/sergio-ibannez-W9dFbDmb1Lc-unsplash.jpg",
       // "/img/snail-g0db2990a8_1920.jpg",
       // "/img/subway-g6452b86ed_1920.jpg",
 
-      // "/js/",
+      "/js/",
       // "/js/highlighter-ref-code-blockscript.js",
       // "/js/main.js",
       // "/js/navigator.js",
@@ -73,8 +73,8 @@ self.addEventListener("install", (event) => {
       // "/js/top-bottom.js",
       // "/js/word-count.js",
 
-      // "/stylesheets/",
-      // "/stylesheets/main.css",
+      "/stylesheets/",
+      "/stylesheets/main.css",
     ])
   );
 });
