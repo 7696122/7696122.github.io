@@ -15,7 +15,7 @@ self.addEventListener("install", (event) => {
 
       "/01-page/",
       "/01-page/index.html",
-      "/01-page/_sitemap.html",
+      // "/01-page/_sitemap.html", // 문제 있네
       // "/01-page/20220618132712_org_agenda.html",
       // "/01-page/20220625092412-org_attach_screenshot.html",
       // "/01-page/20221209131138-동등비교_연산자.html",
