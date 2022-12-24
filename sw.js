@@ -73,8 +73,8 @@ self.addEventListener("install", (event) => {
       // "/js/top-bottom.js",
       // "/js/word-count.js",
 
-      "/stylesheets/",
-      "/stylesheets/main.css",
+      // "/stylesheets/",
+      // "/stylesheets/main.css",
     ])
   );
 });
