@@ -55,7 +55,7 @@ self.addEventListener("install", (event) => {
       // "/attach/system.png",
 
       // "/img/",
-      "/img/garden.jpg",
+      // "/img/garden.jpg",
       // "/img/sergio-ibannez-W9dFbDmb1Lc-unsplash.jpg",
       // "/img/snail-g0db2990a8_1920.jpg",
       // "/img/subway-g6452b86ed_1920.jpg",
