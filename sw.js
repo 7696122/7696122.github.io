@@ -59,8 +59,7 @@ self.addEventListener("install", (event) => {
       // "/img/snail-g0db2990a8_1920.jpg",
       // "/img/subway-g6452b86ed_1920.jpg",
 
-      // "/app.js",
-      // "/sw.js",
+      "/app.js",
 
       // "/js/",
       // "/js/highlighter-ref-code-blockscript.js",
