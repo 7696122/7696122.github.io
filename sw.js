@@ -82,10 +82,10 @@ const cacheFirst = async (request) => {
     return responseFromCache;
   }
 
-  const response = await request.preloadResponse;
-  if (response) {
-    return response;
-  }
+  // const response = await request.preloadResponse;
+  // if (response) {
+  //   return response;
+  // }
 
   return fetch(request);
 };
