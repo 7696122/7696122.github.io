@@ -1,5 +1,6 @@
+const VERSION_CACHE = "v1";
 const addResourcesToCache = async (resources) => {
-  const cache = await caches.open("v1");
+  const cache = await caches.open(VERSION_CACHE);
   await cache.addAll(resources);
 };
 
@@ -76,18 +77,22 @@ self.addEventListener("install", (event) => {
   );
 });
 
+const putInCache = async (request, response) => {
+  const cache = await caches.open(VERSION_CACHE);
+  if (request.method === "GET") {
+    await cache.put(request, response);
+  }
+};
+
 const cacheFirst = async (request) => {
   const responseFromCache = await caches.match(request);
   if (responseFromCache) {
     return responseFromCache;
   }
 
-  // const response = await request.preloadResponse;
-  // if (response) {
-  //   return response;
-  // }
-
-  return fetch(request);
+  const responseFromNetwork = await fetch(request);
+  putInCache(request, responseFromNetwork.clone());
+  return responseFromNetwork;
 };
 
 self.addEventListener("fetch", (event) => {
