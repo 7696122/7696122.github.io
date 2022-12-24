@@ -90,11 +90,15 @@ const cacheFirst = async ({ request, preloadResponse }) => {
 
   // Else, use the preloaded response, if it's there
   const response = await preloadResponse;
-  if (response) return response;
+  if (response) {
+    return response;
+  }
 
   const responseFromNetwork = await fetch(request);
-  putInCache(request, responseFromNetwork.clone());
-  return responseFromNetwork;
+  if (responseFromNetwork) {
+    putInCache(request, responseFromNetwork.clone());
+    return responseFromNetwork;
+  }
 };
 
 // Enable navigation preload
