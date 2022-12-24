@@ -35,5 +35,5 @@ const unregisterServiceWorker = async () => {
   }
 };
 
-unregisterServiceWorker();
+// unregisterServiceWorker();
 // registerServiceWorker();
