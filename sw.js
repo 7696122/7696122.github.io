@@ -82,11 +82,15 @@ const putInCache = async (request, response) => {
   }
 };
 
-const cacheFirst = async (request) => {
+const cacheFirst = async ({ request, preloadResponse }) => {
   const responseFromCache = await caches.match(request);
   if (responseFromCache) {
     return responseFromCache;
   }
+
+  // Else, use the preloaded response, if it's there
+  const response = await preloadResponse;
+  if (response) return response;
 
   const responseFromNetwork = await fetch(request);
   putInCache(request, responseFromNetwork.clone());
@@ -101,7 +105,7 @@ const enableNavigationPreload = async () => {
 };
 
 self.addEventListener("fetch", (event) => {
-  event.respondWith(cacheFirst(event.request));
+  event.respondWith(cacheFirst(event));
 });
 
 self.addEventListener("install", (event) => {
