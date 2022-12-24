@@ -37,7 +37,7 @@ self.addEventListener("install", (event) => {
       // "/03-about/",
       // "/03-about/index.html",
 
-      "/attach/",
+      // "/attach/",
       // "/attach/_20220718_142437screenshot.png",
       // "/attach/com.apple.symbolichotkeys.plist-60-modified.jpeg",
       // "/attach/com.apple.symbolichotkeys.plist-60-origin.jpeg",
@@ -59,8 +59,8 @@ self.addEventListener("install", (event) => {
       // "/img/snail-g0db2990a8_1920.jpg",
       // "/img/subway-g6452b86ed_1920.jpg",
 
-      "/app.js",
-      "/sw.js",
+      // "/app.js",
+      // "/sw.js",
 
       // "/js/",
       // "/js/highlighter-ref-code-blockscript.js",
