@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>npm 없이 js 라이브러리 사용하기</title>
+<title>create-link</title>
 <meta name="generator" content="Org Mode" />
 <style>
   #content { max-width: 60em; margin: auto; }
@@ -277,46 +277,33 @@ switch(dir(window.location.href)) {
 </div>
 </div>
 </header><div id="preamble" class="status">
-<div id='updated'>Updated: 2022-12-23 Fri 19:15</div>
+<div id='updated'>Updated: 2022-12-24 Sat 10:00</div>
 </div>
 <div id="content" class="content">
 <header>
-<h1 class="title">npm 없이 js 라이브러리 사용하기</h1>
-</header><p>
-npm을 사용하면 좋지만 그러지 못할 땐
-</p>
-
-<p>
-<a href="https://www.jsdelivr.com/">https://www.jsdelivr.com/</a>
-</p>
-
-<p>
-<a href="https://www.jsdelivr.com/package/npm/lodash">https://www.jsdelivr.com/package/npm/lodash</a>
-</p>
-
-
-<figure id="orgfb18c71">
-<img src="../attach/Screenshot 2022-12-18 at 7.43.25 PM.png" alt="Screenshot 2022-12-18 at 7.43.25 PM.png" width="100%">
-
-</figure>
-
-<p>
-<a href="https://www.jsdelivr.com/package/npm/lodash?tab=collection">https://www.jsdelivr.com/package/npm/lodash?tab=collection</a>
-</p>
-
-
-<figure id="org5b8a8bd">
-<img src="../attach/Screenshot 2022-12-18 at 9.00.50 PM.png" alt="Screenshot 2022-12-18 at 9.00.50 PM.png" width="100%">
-
-</figure>
-
-<p>
-<a href="#coderef-src" class="coderef" onmouseover="CodeHighlightOn(this, 'coderef-src');" onmouseout="CodeHighlightOff(this, 'coderef-src');">스크립트 로딩 코드</a>
-</p>
-
+<h1 class="title">create-link</h1>
+</header><div id="outline-container-org80e37bf" class="outline-2">
+<h2 id="org80e37bf"><a href="#org80e37bf">package<span class='anchor'> #</span></a></h2>
+<div class="outline-text-2" id="text-org80e37bf">
 <div class="org-src-container">
-<pre class="src src-html"><span id="coderef-src" class="coderef-off">&lt;<span style="color: #0000ff;">script</span> <span style="color: #a0522d;">src</span>=<span style="color: #8b2252;">"https://cdn.jsdelivr.net/npm/lodash@4/lodash.min.js"</span>&gt;&lt;/<span style="color: #0000ff;">script</span>&gt;</span>
+<pre class="src src-elisp" id="org68f8064"><span style="color: #a020f0;">(package!</span> create-link)
 </pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgb21b4d2" class="outline-2">
+<h2 id="orgb21b4d2"><a href="#orgb21b4d2">config<span class='anchor'> #</span></a></h2>
+<div class="outline-text-2" id="text-orgb21b4d2">
+<div class="org-src-container">
+<pre class="src src-elisp" id="org4d37816"><span style="color: #a020f0;">(use-package!</span> create-link
+  <span style="color: #483d8b;">:custom</span>
+  (create-link-default-format
+   'create-link-format-html
+   ;; <span style="color: #b22222;">'create-link-format-org</span>
+   ))
+</pre>
+</div>
+</div>
 </div>
 </div>
 </body>
