@@ -8,9 +8,10 @@ self.addEventListener("install", (event) => {
     addResourcesToCache([
       "/",
       "/favicon.ico",
+      "/app.js",
 
-      // "/00-home/",
-      // "/00-home/index.html",
+      "/00-home/",
+      "/00-home/index.html",
 
       // "/01-page/",
       // "/01-page/index.html",
@@ -58,8 +59,6 @@ self.addEventListener("install", (event) => {
       // "/img/sergio-ibannez-W9dFbDmb1Lc-unsplash.jpg",
       // "/img/snail-g0db2990a8_1920.jpg",
       // "/img/subway-g6452b86ed_1920.jpg",
-
-      "/app.js",
 
       // "/js/",
       // "/js/highlighter-ref-code-blockscript.js",
