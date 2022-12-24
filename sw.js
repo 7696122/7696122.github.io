@@ -109,14 +109,14 @@ const enableNavigationPreload = async () => {
   }
 };
 
-self.addEventListener("fetch", async (event) => {
-  event.respondWith(cacheFirst(event));
+self.addEventListener("fetch", (event) => {
+  event.respondWith(cacheFirst(event)());
 });
 
 self.addEventListener("install", (event) => {
   event.waitUntil(addResourcesToCache(resources));
 });
 
-self.addEventListener("activate", (event) => {
-  event.waitUntil(enableNavigationPreload());
-});
+// self.addEventListener("activate", (event) => {
+//   event.waitUntil(enableNavigationPreload());
+// });
