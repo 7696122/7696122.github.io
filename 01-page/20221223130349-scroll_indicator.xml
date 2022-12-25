@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+     xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+     xmlns:georss="http://www.georss.org/georss"
+     xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+     xmlns:media="http://search.yahoo.com/mrss/"><channel>
+  <title>Scroll Indicator</title>
+  <atom:link href="http://lumiere.ens.fr/~guerry/20221223130349-scroll_indicator.xml" rel="self" type="application/rss+xml" />
+  <link>http://lumiere.ens.fr/~guerry/</link>
+  <description><![CDATA[]]></description>
+  <language>en</language>
+  <pubDate>Sun, 25 Dec 2022 07:48:17 +0900</pubDate>
+  <lastBuildDate>Sun, 25 Dec 2022 07:48:17 +0900</lastBuildDate>
+  <generator>Emacs 28.2 Org-mode 9.5.5</generator>
+  <webMaster>7696122 at gmail dot com (nil)</webMaster>
+  <image>
+    <url>http://lumiere.ens.fr/~guerry/images/faces/15.png</url>
+    <title>Scroll Indicator</title>
+    <link>http://lumiere.ens.fr/~guerry/</link>
+  </image>
+
+  <div class="org-src-container">
+    <pre class="src src-js"><span style="color: #a020f0;">class</span> ScrollIndicator <span style="color: #a020f0;">extends</span> HTMLElement {
+    constructor() {
+    <span style="color: #a020f0;">super</span>();
+    }
+
+    render() {
+    <span style="color: #008b8b;">this</span>.attachShadow({ mode: <span style="color: #8b2252;">"open"</span> });
+
+    <span style="color: #a020f0;">const</span> <span style="color: #a0522d;">container</span> = document.createElement(<span style="color: #8b2252;">"div"</span>);
+    container.setAttribute(<span style="color: #8b2252;">"class"</span>, <span style="color: #8b2252;">"progress-container"</span>);
+
+    <span style="color: #a020f0;">const</span> <span style="color: #a0522d;">bar</span> = document.createElement(<span style="color: #8b2252;">"div"</span>);
+    bar.setAttribute(<span style="color: #8b2252;">"class"</span>, <span style="color: #8b2252;">"progress-bar"</span>);
+    bar.setAttribute(<span style="color: #8b2252;">"id"</span>, <span style="color: #8b2252;">"myBar"</span>);
+
+    container.append(bar);
+
+    <span style="color: #a020f0;">const</span> <span style="color: #a0522d;">style</span> = document.createElement(<span style="color: #8b2252;">"style"</span>);
+    style.textContent = <span style="color: #8b2252;">`</span>
+    <span style="color: #8b2252;">/* Style the header: fixed position (always stay at the top) */</span>
+    <span style="color: #8b2252;">/* The progress container (grey background) */</span>
+    <span style="color: #8b2252;">.progress-container {</span>
+    <span style="color: #8b2252;">  width: 100%;</span>
+    <span style="color: #8b2252;">  height: 8px;</span>
+    <span style="color: #8b2252;">  background: black;</span>
+    <span style="color: #8b2252;">  // border-radius: 0 0 8px 8px;</span>
+    <span style="color: #8b2252;">}</span>
+
+    <span style="color: #8b2252;">/* The progress bar (scroll indicator) */</span>
+    <span style="color: #8b2252;">.progress-bar {</span>
+    <span style="color: #8b2252;">  height: 8px;</span>
+    <span style="color: #8b2252;">  background: yellowgreen;</span>
+    <span style="color: #8b2252;">  width: 0%;</span>
+    <span style="color: #8b2252;">  // border-radius: 0 0 8px 8px;</span>
+    <span style="color: #8b2252;">}</span>
+    <span style="color: #8b2252;">    `</span>;
+
+    <span style="color: #008b8b;">this</span>.shadowRoot.append(style, container);
+
+    // <span style="color: #b22222;">When the user scrolls the page, execute myFunction</span>
+    window.onscroll = <span style="color: #a020f0;">function</span> () {
+    handleScroll();
+    };
+
+    <span style="color: #a020f0;">function</span> <span style="color: #0000ff;">handleScroll</span>() {
+    <span style="color: #a020f0;">var</span> <span style="color: #a0522d;">winScroll</span> =
+    document.body.scrollTop || document.documentElement.scrollTop;
+    <span style="color: #a020f0;">var</span> <span style="color: #a0522d;">height</span> =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+    <span style="color: #a020f0;">var</span> <span style="color: #a0522d;">scrolled</span> = (winScroll / height) * 100;
+    bar.style.width = (scrolled &lt;= 100 ? scrolled : 100) + <span style="color: #8b2252;">"%"</span>;
+    }
+    }
+
+    connectedCallback() {
+    <span style="color: #a020f0;">if</span> (!<span style="color: #008b8b;">this</span>.rendered) {
+    <span style="color: #008b8b;">this</span>.render();
+    <span style="color: #008b8b;">this</span>.rendered = <span style="color: #008b8b;">true</span>;
+    }
+    }
+    // <span style="color: #b22222;">disconnectedCallback() {</span>
+    //   <span style="color: #b22222;">/* ... */</span>
+    // <span style="color: #b22222;">}</span>
+    // <span style="color: #b22222;">static get observedAttributes() {</span>
+    //   <span style="color: #b22222;">return [</span>
+    //     <span style="color: #b22222;">/* ... */</span>
+    //   <span style="color: #b22222;">];</span>
+    // <span style="color: #b22222;">}</span>
+    // <span style="color: #b22222;">attributeChangedCallback(name, oldValue, newValue) {</span>
+    //   <span style="color: #b22222;">/* ... */</span>
+    // <span style="color: #b22222;">}</span>
+    // <span style="color: #b22222;">adoptedCallback() {</span>
+    //   <span style="color: #b22222;">/* ... */</span>
+    // <span style="color: #b22222;">}</span>
+    }
+
+    customElements.define(
+    <span style="color: #8b2252;">"scroll-indicator"</span>,
+    ScrollIndicator
+    // <span style="color: #b22222;">{extends: "div"}</span>
+    );
+  </pre>
+</div>
+
+<div class="org-src-container">
+  <pre class="src src-html">&lt;<span style="color: #0000ff;">scroll-indicator</span>&gt;&lt;/<span style="color: #0000ff;">scroll-indicator</span>&gt;
+  </pre>
+</div>
+
+<item>
+  <title>Ref</title>
+  <link>http://lumiere.ens.fr/~guerry/20221223130349-scroll_indicator.html#orgbff61c6</link>
+  <author>7696122 at gmail dot com (nil)</author>
+  <guid isPermaLink="false">http://lumiere.ens.fr/~guerry/20221223130349-scroll_indicator.html#orgbff61c6</guid>
+  <pubDate>Sun, 25 Dec 2022 06:41:00 +0900</pubDate>
+
+  <description><![CDATA[<ul class="org-ul">
+  <li><a href="https://www.w3schools.com/howto/howto_js_scroll_indicator.asp">How TO - Scroll Indicator</a></li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components">Web Components</a></li>
+  </ul>
+  ]]></description>
+</item>
+</channel>
+</rss>

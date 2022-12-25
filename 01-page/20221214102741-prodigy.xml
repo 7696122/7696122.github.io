@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+     xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+     xmlns:georss="http://www.georss.org/georss"
+     xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+     xmlns:media="http://search.yahoo.com/mrss/"><channel>
+  <title>prodigy</title>
+  <atom:link href="http://lumiere.ens.fr/~guerry/20221214102741-prodigy.xml" rel="self" type="application/rss+xml" />
+  <link>http://lumiere.ens.fr/~guerry/</link>
+  <description><![CDATA[]]></description>
+  <language>en</language>
+  <pubDate>Sun, 25 Dec 2022 07:48:26 +0900</pubDate>
+  <lastBuildDate>Sun, 25 Dec 2022 07:48:26 +0900</lastBuildDate>
+  <generator>Emacs 28.2 Org-mode 9.5.5</generator>
+  <webMaster>7696122 at gmail dot com (nil)</webMaster>
+  <image>
+    <url>http://lumiere.ens.fr/~guerry/images/faces/15.png</url>
+    <title>prodigy</title>
+    <link>http://lumiere.ens.fr/~guerry/</link>
+  </image>
+
+
+  <item>
+    <title>config</title>
+    <link>http://lumiere.ens.fr/~guerry/20221214102741-prodigy.html#org3fa23dd</link>
+    <author>7696122 at gmail dot com (nil)</author>
+    <guid isPermaLink="false">http://lumiere.ens.fr/~guerry/20221214102741-prodigy.html#org3fa23dd</guid>
+    <pubDate>Sun, 25 Dec 2022 06:41:00 +0900</pubDate>
+
+    <description><![CDATA[<div class="org-src-container">
+    <pre class="src src-elisp" id="orgb0af5d6"><span style="color: #a020f0;">(use-package!</span> prodigy
+    ;; <span style="color: #b22222;">:config</span>
+    ;; <span style="color: #b22222;">(prodigy-define-service</span>
+    ;;   <span style="color: #b22222;">:command (lambda (&amp;rest args)</span>
+    ;;              <span style="color: #b22222;">(let ((service (plist-get args :service)))</span>
+    ;;                <span style="color: #b22222;">;; ...</span>
+    ;;                <span style="color: #b22222;">)))</span>
+    )
+    </pre>
+    </div>
+    ]]></description>
+  </item>
+</channel>
+</rss>

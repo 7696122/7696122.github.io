@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+     xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+     xmlns:georss="http://www.georss.org/georss"
+     xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+     xmlns:media="http://search.yahoo.com/mrss/"><channel>
+  <title>Mac에서 <code>⌥ Option</code> 을 조합한 입력에 이상한 문자가 찍힐 때</title>
+  <atom:link href="http://lumiere.ens.fr/~guerry/20221223134610-mac에서_option_을_조합한_입력에_이상한_문자가_찍힐_때.xml" rel="self" type="application/rss+xml" />
+  <link>http://lumiere.ens.fr/~guerry/</link>
+  <description><![CDATA[]]></description>
+  <language>en</language>
+  <pubDate>Sun, 25 Dec 2022 07:48:24 +0900</pubDate>
+  <lastBuildDate>Sun, 25 Dec 2022 07:48:24 +0900</lastBuildDate>
+  <generator>Emacs 28.2 Org-mode 9.5.5</generator>
+  <webMaster>7696122 at gmail dot com (nil)</webMaster>
+  <image>
+    <url>http://lumiere.ens.fr/~guerry/images/faces/15.png</url>
+    <title>Mac에서 <code>⌥ Option</code> 을 조합한 입력에 이상한 문자가 찍힐 때</title>
+    <link>http://lumiere.ens.fr/~guerry/</link>
+  </image>
+
+  <p>
+    <code>⌥ Option</code> + <code>\</code> 를 누르니 <code>«</code> 가 입력된다.
+  </p>
+
+  <p>
+    특수 문자를 Option키와 조합해서 입력하는 편의성을 위한 기능이겠지만 불필요하다.
+  </p>
+
+  <p>
+    <a href="https://ko.wikihow.com/%EB%A7%A5%EC%97%90%EC%84%9C-%ED%8A%B9%EC%88%98-%EB%AC%B8%EC%9E%90-%EC%9E%85%EB%A0%A5%ED%95%98%EB%8A%94-%EB%B2%95">맥에서 특수 문자 입력하는 법</a>
+  </p>
+
+  <p>
+    해당 기능을 비활성화 시키는 방법을 찾아 봤지만
+    Input Method를 변경하는 방법 말곤
+    찾지 못했다.
+  </p>
+
+
+  <figure id="org8c6c1cf">
+    <img src="../attach/Screenshot 2022-12-23 at 1.50.20 PM.png" alt="Screenshot 2022-12-23 at 1.50.20 PM.png">
+
+      <figcaption><span class="figure-number">Figure 1: </span>System Settings.app/Keyboard/Text Input/Input Sources/Edit</figcaption>
+    </figure>
+
+
+    <figure id="orgcd44d76">
+      <img src="../attach/Screenshot 2022-12-23 at 9.07.37 PM.png" alt="Screenshot 2022-12-23 at 9.07.37 PM.png">
+
+	<figcaption><span class="figure-number">Figure 2: </span>English/ABC 상태</figcaption>
+      </figure>
+
+
+      <figure id="orgdf6c407">
+	<img src="../attach/Screenshot 2022-12-23 at 9.10.39 PM.png" alt="Screenshot 2022-12-23 at 9.10.39 PM.png">
+
+	  <figcaption><span class="figure-number">Figure 3: </span>Others/Unicode Hex Input 선택</figcaption>
+	</figure>
+
+
+	<figure id="orge9d727e">
+	  <img src="../attach/Screenshot 2022-12-23 at 9.11.32 PM.png" alt="Screenshot 2022-12-23 at 9.11.32 PM.png">
+
+	    <figcaption><span class="figure-number">Figure 4: </span>Others/Unicode Hex Input 추가</figcaption>
+	  </figure>
+
+
+	  <figure id="org437cb59">
+	    <img src="../attach/Screenshot 2022-12-23 at 9.12.39 PM.png" alt="Screenshot 2022-12-23 at 9.12.39 PM.png">
+
+	      <figcaption><span class="figure-number">Figure 5: </span>English/ABC 제거</figcaption>
+	    </figure>
+
+	    <item>
+	      <title>Ref</title>
+	      <link>http://lumiere.ens.fr/~guerry/20221223134610-mac에서_option_을_조합한_입력에_이상한_문자가_찍힐_때.html#orgacaedf5</link>
+	      <author>7696122 at gmail dot com (nil)</author>
+	      <guid isPermaLink="false">http://lumiere.ens.fr/~guerry/20221223134610-mac에서_option_을_조합한_입력에_이상한_문자가_찍힐_때.html#orgacaedf5</guid>
+	      <pubDate>Sun, 25 Dec 2022 06:41:00 +0900</pubDate>
+
+	      <description><![CDATA[<p>
+	      <a href="https://stackoverflow.com/a/61482531">https://stackoverflow.com/a/61482531</a>
+	      </p>
+	      ]]></description>
+	    </item>
+	  </channel>
+	</rss>

@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- 2022-12-25 Sun 07:48 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>HTTP cookie</title>
+<title>Sitemap for project org</title>
 <meta name="generator" content="Org Mode" />
 <style>
   #content { max-width: 60em; margin: auto; }
@@ -281,125 +282,22 @@ switch(dir(window.location.href)) {
 <div id='updated'>Updated: 2022-12-25 Sun 07:48</div>
 </div>
 <div id="content" class="content">
-<header>
-<h1 class="title">HTTP cookie</h1>
-</header>
-<div id="outline-container-org7e44a43" class="outline-2">
-<h2 id="org7e44a43"><a href="#org7e44a43">Using HTTP cookies<span class='anchor'> #</span></a></h2>
-<div class="outline-text-2" id="text-org7e44a43">
-</div>
-<div id="outline-container-org7e87b0e" class="outline-3">
-<h3 id="org7e87b0e"><a href="#org7e87b0e">HTTP cookie (web cookie, browser cookie)<span class='anchor'> #</span></a></h3>
-<div class="outline-text-3" id="text-org7e87b0e">
-</div>
-<div id="outline-container-org21d34d6" class="outline-4">
-<h4 id="org21d34d6"><a href="#org21d34d6">a small piece of data<span class='anchor'> #</span></a></h4>
-<div class="outline-text-4" id="text-org21d34d6">
 <ul class="org-ul">
-<li><b>server</b>
+<li><a href="theindex.html">Index</a></li>
+<li><a href="index.html">index</a></li>
+<li>00-home
 <ul class="org-ul">
-<li>sent</li>
-<li>to user's web browser</li>
+<li><a href="00-home/index.html">[Garden 76] Home</a></li>
 </ul></li>
-<li><b>browser</b>
+<li>01-page
 <ul class="org-ul">
-<li>may store the cookie</li>
-<li>and send it back
-<ul class="org-ul">
-<li>to the same server</li>
-<li>with later requests</li>
+<li><a href="01-page/index.html">[Garden 76</a>]</li>
 </ul></li>
-</ul></li>
-<li><b>HTTP cookie</b> is used to tell
+<li>03-about
 <ul class="org-ul">
-<li>if two request come from the same browser
-<ul class="org-ul">
-<li>keeping a user logged in, for example</li>
-</ul></li>
-</ul></li>
-<li>It remembers sateful information
-<ul class="org-ul">
-<li>for the <b><span class="underline">stateless HTTP protocol</span></b></li>
+<li><a href="03-about/index.html">[Garden 76] About</a></li>
 </ul></li>
 </ul>
-</div>
-</div>
-
-<div id="outline-container-org2c3ad2b" class="outline-4">
-<h4 id="org2c3ad2b"><a href="#org2c3ad2b">mainly used for three purposes<span class='anchor'> #</span></a></h4>
-<div class="outline-text-4" id="text-org2c3ad2b">
-<ul class="org-ul">
-<li><b>Session management</b>
-<ul class="org-ul">
-<li>Loings, shopping carts, game scores</li>
-<li>or <b>anything else the server should remember</b></li>
-</ul></li>
-<li>Personalization
-<ul class="org-ul">
-<li>User preferrnces</li>
-<li>themes</li>
-<li>and other settings</li>
-</ul></li>
-<li>Tracking
-<ul class="org-ul">
-<li>Recoding and analyzing user behavior</li>
-</ul></li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-orga91beed" class="outline-4">
-<h4 id="orga91beed"><a href="#orga91beed"><b>modern storage APIs are now recommended</b><span class='anchor'> #</span></a></h4>
-<div class="outline-text-4" id="text-orga91beed">
-<ul class="org-ul">
-<li><b>Cookies</b> are <b>sent with every request</b>, so they can <b>worsen performance</b> (especially for mobile data connections).</li>
-<li>Modern APIs for client storage are
-<ul class="org-ul">
-<li><span class="underline">Web Storage API</span>
-<ul class="org-ul">
-<li>localStorage</li>
-<li>sessionStorage</li>
-</ul></li>
-<li><span class="underline">IndexedDB</span></li>
-</ul></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-
-<div id="outline-container-org0a3d9ad" class="outline-2">
-<h2 id="org0a3d9ad"><a href="#org0a3d9ad">Creating cookies<span class='anchor'> #</span></a></h2>
-<div class="outline-text-2" id="text-org0a3d9ad">
-<ul class="org-ul">
-<li>a <b>server</b> can <b>send</b> one or more <b>Set-Cookie header</b>
-<ul class="org-ul">
-<li>with the response</li>
-<li>After receiving an HTTP request</li>
-</ul></li>
-<li>The browser useally
-<ul class="org-ul">
-<li>stores the cookie</li>
-<li>send it</li>
-<li>with requests
-<ul class="org-ul">
-<li>made to the <b>same server</b></li>
-<li>inside <b>Cookie HTTP header</b></li>
-</ul></li>
-</ul></li>
-<li>can specify</li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-orgee1a12e" class="outline-2">
-<h2 id="orgee1a12e"><a href="#orgee1a12e">ref<span class='anchor'> #</span></a></h2>
-<div class="outline-text-2" id="text-orgee1a12e">
-<p>
-<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies">https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies</a>
-</p>
-</div>
-</div>
 </div>
 <div id="postamble" class="status">
 <script type='module' src='/app.js'></script>

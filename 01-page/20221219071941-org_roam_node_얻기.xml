@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+     xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+     xmlns:georss="http://www.georss.org/georss"
+     xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+     xmlns:media="http://search.yahoo.com/mrss/"><channel>
+  <title>org-roam node 얻기</title>
+  <atom:link href="http://lumiere.ens.fr/~guerry/20221219071941-org_roam_node_얻기.xml" rel="self" type="application/rss+xml" />
+  <link>http://lumiere.ens.fr/~guerry/</link>
+  <description><![CDATA[]]></description>
+  <language>en</language>
+  <pubDate>Sun, 25 Dec 2022 07:48:15 +0900</pubDate>
+  <lastBuildDate>Sun, 25 Dec 2022 07:48:15 +0900</lastBuildDate>
+  <generator>Emacs 28.2 Org-mode 9.5.5</generator>
+  <webMaster>7696122 at gmail dot com (nil)</webMaster>
+  <image>
+    <url>http://lumiere.ens.fr/~guerry/images/faces/15.png</url>
+    <title>org-roam node 얻기</title>
+    <link>http://lumiere.ens.fr/~guerry/</link>
+  </image>
+
+  <div class="org-src-container">
+    <label class="org-src-name"><span class="listing-number">Listing 1: </span>org-roam-node-file-by-title</label><pre class="src src-elisp" id="orga137a6d">(<span style="color: #a020f0;">require</span> '<span style="color: #008b8b;">org-roam-node</span>)
+
+    (<span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">org-roam-node-file-by-title</span> (_title)
+    (<span style="color: #a020f0;">let</span> ((_roam-node (org-roam-node-from-title-or-alias _title)))
+    (<span style="color: #a020f0;">and</span> _roam-node (org-roam-node-file _roam-node))))
+  </pre>
+  </div>
+
+  <div class="org-src-container">
+    <label class="org-src-name"><span class="listing-number">Listing 2: </span>org-roam-node-file-by-title(dash 사용)</label><pre class="src src-elisp" id="org7f01387">(<span style="color: #a020f0;">require</span> '<span style="color: #008b8b;">dash</span>)
+    (<span style="color: #a020f0;">require</span> '<span style="color: #008b8b;">org-roam-node</span>)
+
+    (<span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">org-roam-node-file-by-title</span> (_title)
+    (<span style="color: #a020f0;">--&gt;</span>
+    (org-roam-node-from-title-or-alias _title)
+    (<span style="color: #a020f0;">and</span> it (org-roam-node-file it))))
+  </pre>
+  </div>
+
+  <pre class="example">
+    org-roam-node-file:title
+  </pre>
+
+
+  <div class="org-src-container">
+    <pre class="src src-emacs-lisp">(org-roam-node-file:title <span style="color: #8b2252;">"org-roam node &#50619;&#44592;"</span>)
+    </pre>
+  </div>
+
+  <p>
+    /Users/mnml/org/roam/20221219071941-org_roam_node_얻기.org
+  </p>
+
+  <div class="org-src-container">
+    <pre class="src src-emacs-lisp">(org-roam-node-file:title <span style="color: #8b2252;">"org-roam node &#50619;&#44592;2"</span>)
+    </pre>
+  </div>
+
+  <p>
+    nil
+  </p>
+</channel>
+</rss>

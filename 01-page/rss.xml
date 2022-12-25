@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+     xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+     xmlns:georss="http://www.georss.org/georss"
+     xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+     xmlns:media="http://search.yahoo.com/mrss/"><channel>
+  <title>Sitemap for project rss</title>
+  <atom:link href="http://lumiere.ens.fr/~guerry/rss.xml" rel="self" type="application/rss+xml" />
+  <link>http://lumiere.ens.fr/~guerry/</link>
+  <description><![CDATA[]]></description>
+  <language>en</language>
+  <pubDate>Sun, 25 Dec 2022 07:48:26 +0900</pubDate>
+  <lastBuildDate>Sun, 25 Dec 2022 07:48:26 +0900</lastBuildDate>
+  <generator>Emacs 28.2 Org-mode 9.5.5</generator>
+  <webMaster>7696122 at gmail dot com (nil)</webMaster>
+  <image>
+    <url>http://lumiere.ens.fr/~guerry/images/faces/15.png</url>
+    <title>Sitemap for project rss</title>
+    <link>http://lumiere.ens.fr/~guerry/</link>
+  </image>
+
+  <ul class="org-ul">
+    <li><a href="20221222073142-http_cookie.html">HTTP cookie</a></li>
+    <li><a href="20221223134610-mac에서_option_을_조합한_입력에_이상한_문자가_찍힐_때.html">Mac에서 <code>⌥ Option</code> 을 조합한 입력에 이상한 문자가 찍힐 때</a></li>
+    <li><a href="20221223130349-scroll_indicator.html">Scroll Indicator</a></li>
+    <li><a href="20221224094210-create_link.html">create-link</a></li>
+    <li><a href="20221210074652-google_translate.html">google-translate</a></li>
+    <li><a href="20221215113524-java_development.html">java development</a></li>
+    <li><a href="20221217124836-npm_없이_js_라이브러리_사용하기.html">npm 없이 js 라이브러리 사용하기</a></li>
+    <li><a href="20220618132712_org_agenda.html">org-appear</a></li>
+    <li><a href="20220625092412-org_attach_screenshot.html">org-attach-screenshot</a></li>
+    <li><a href="20221219071941-org_roam_node_얻기.html">org-roam node 얻기</a></li>
+    <li><a href="20221218171719-org_unique_id.html">org-unique-id</a></li>
+    <li><a href="20221214102741-prodigy.html">prodigy</a></li>
+    <li><a href="20221215113855-sdkman.html">sdkman</a></li>
+    <li><a href="20221209131138-동등비교_연산자.html">동등비교 연산자</a></li>
+    <li><a href="20221219061119-디지털_가든_만들기.html">디지털 가든 만들기</a></li>
+    <li><a href="20221224103245-뚝섬ㆍ잠원_눈썰매장.html">뚝섬ㆍ잠원 눈썰매장</a></li>
+    <li><a href="20221224093736-서울광장_스케이트장.html">서울광장 스케이트장</a></li>
+  </ul>
+</channel>
+</rss>
