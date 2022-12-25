@@ -14,8 +14,8 @@
   <link>http://lumiere.ens.fr/~guerry/</link>
   <description><![CDATA[]]></description>
   <language>en</language>
-  <pubDate>Sun, 25 Dec 2022 07:48:24 +0900</pubDate>
-  <lastBuildDate>Sun, 25 Dec 2022 07:48:24 +0900</lastBuildDate>
+  <pubDate>Sun, 25 Dec 2022 16:47:49 +0900</pubDate>
+  <lastBuildDate>Sun, 25 Dec 2022 16:47:49 +0900</lastBuildDate>
   <generator>Emacs 28.2 Org-mode 9.5.5</generator>
   <webMaster>7696122 at gmail dot com (nil)</webMaster>
   <image>
@@ -60,7 +60,7 @@
     <guid isPermaLink="false">http://lumiere.ens.fr/~guerry/20221218171719-org_unique_id.html#orgd3717f6</guid>
     <pubDate>Sun, 25 Dec 2022 06:41:00 +0900</pubDate>
 
-    <description><![CDATA[<pre class="example" id="org8a3e56a">
+    <description><![CDATA[<pre class="example" id="org218897c">
     M-x org-unique-id
     </pre>
 

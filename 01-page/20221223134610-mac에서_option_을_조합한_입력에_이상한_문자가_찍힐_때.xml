@@ -14,8 +14,8 @@
   <link>http://lumiere.ens.fr/~guerry/</link>
   <description><![CDATA[]]></description>
   <language>en</language>
-  <pubDate>Sun, 25 Dec 2022 07:48:24 +0900</pubDate>
-  <lastBuildDate>Sun, 25 Dec 2022 07:48:24 +0900</lastBuildDate>
+  <pubDate>Sun, 25 Dec 2022 16:47:50 +0900</pubDate>
+  <lastBuildDate>Sun, 25 Dec 2022 16:47:50 +0900</lastBuildDate>
   <generator>Emacs 28.2 Org-mode 9.5.5</generator>
   <webMaster>7696122 at gmail dot com (nil)</webMaster>
   <image>
@@ -43,35 +43,35 @@
   </p>
 
 
-  <figure id="org8c6c1cf">
+  <figure id="org7d8fed0">
     <img src="../attach/Screenshot 2022-12-23 at 1.50.20 PM.png" alt="Screenshot 2022-12-23 at 1.50.20 PM.png">
 
       <figcaption><span class="figure-number">Figure 1: </span>System Settings.app/Keyboard/Text Input/Input Sources/Edit</figcaption>
     </figure>
 
 
-    <figure id="orgcd44d76">
+    <figure id="orgabe4ee2">
       <img src="../attach/Screenshot 2022-12-23 at 9.07.37 PM.png" alt="Screenshot 2022-12-23 at 9.07.37 PM.png">
 
 	<figcaption><span class="figure-number">Figure 2: </span>English/ABC 상태</figcaption>
       </figure>
 
 
-      <figure id="orgdf6c407">
+      <figure id="org8b15729">
 	<img src="../attach/Screenshot 2022-12-23 at 9.10.39 PM.png" alt="Screenshot 2022-12-23 at 9.10.39 PM.png">
 
 	  <figcaption><span class="figure-number">Figure 3: </span>Others/Unicode Hex Input 선택</figcaption>
 	</figure>
 
 
-	<figure id="orge9d727e">
+	<figure id="org20e8a93">
 	  <img src="../attach/Screenshot 2022-12-23 at 9.11.32 PM.png" alt="Screenshot 2022-12-23 at 9.11.32 PM.png">
 
 	    <figcaption><span class="figure-number">Figure 4: </span>Others/Unicode Hex Input 추가</figcaption>
 	  </figure>
 
 
-	  <figure id="org437cb59">
+	  <figure id="orgef5bf55">
 	    <img src="../attach/Screenshot 2022-12-23 at 9.12.39 PM.png" alt="Screenshot 2022-12-23 at 9.12.39 PM.png">
 
 	      <figcaption><span class="figure-number">Figure 5: </span>English/ABC 제거</figcaption>
