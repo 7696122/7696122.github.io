@@ -10,7 +10,7 @@
 </url>
 <url>
  <loc>https://7696122.github.io/00-home/index.html</loc>
- <priority>0.5</priority>
+ <priority>0.75</priority>
 </url>
 <url>
  <loc>https://7696122.github.io/01-page/20220618132712_org_agenda.html</loc>
@@ -86,7 +86,7 @@
 </url>
 <url>
  <loc>https://7696122.github.io/01-page/index.html</loc>
- <priority>0.5</priority>
+ <priority>0.75</priority>
 </url>
 <url>
  <loc>https://7696122.github.io/01-page/sitemap.html</loc>
@@ -98,14 +98,10 @@
 </url>
 <url>
  <loc>https://7696122.github.io/03-about/index.html</loc>
- <priority>0.5</priority>
+ <priority>0.75</priority>
 </url>
 <url>
  <loc>https://7696122.github.io/index.html</loc>
- <priority>0.5</priority>
-</url>
-<url>
- <loc>https://7696122.github.io/theindex.html</loc>
- <priority>0.5</priority>
+ <priority>0.75</priority>
 </url>
 </urlset>
