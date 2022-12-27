@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>google-translate</title>
+<title>TypeScript를 활용한 함수형 프로그래밍 온보딩</title>
 <meta name="description" content="7696122's Personal Site and Digital Garden" />
 <meta name="keywords" content="personal,blog,site" />
 <meta name="generator" content="Org Mode" />
@@ -279,43 +279,26 @@ switch(dir(window.location.href)) {
 </div>
 </div>
 </header><div id="preamble" class="status">
-<div id='updated'>업데이트: 2022-12-25 Sun 20:24</div>
+<div id='updated'>업데이트: 2022-12-27 Tue 13:04</div>
 </div>
 <div id="content" class="content">
 <header>
-<h1 class="title">google-translate</h1>
-</header><pre class="example" id="orgdcb4dc8">
-영문으로 commit message 달 때 유용하다.
-</pre>
-
-<pre class="example" id="org31d81e1">
-This is useful when writing a commit message in English.
-</pre>
-
-<div id="outline-container-org6af07dd" class="outline-2">
-<h2 id="org6af07dd"><a href="#org6af07dd">package<span class='anchor'> #</span></a></h2>
-<div class="outline-text-2" id="text-org6af07dd">
+<h1 class="title">TypeScript를 활용한 함수형 프로그래밍 온보딩</h1>
+</header>
+<div id="outline-container-org58abfff" class="outline-2">
+<h2 id="org58abfff"><a href="#org58abfff">CH04_05. Option 소개<span class='anchor'> #</span></a></h2>
+<div class="outline-text-2" id="text-org58abfff">
+<ul class="org-ul">
+<li>ADT tagged union
+<ul class="org-ul">
+<li><a href="https://greg-pabian.medium.com/creating-tagged-unions-in-typescript-ce727a306878">Creating Tagged Unions in TypeScript | by Greg Pabian | Medium</a></li>
+<li><a href="https://medium.com/@indongyoo/functional-es-2-%ED%95%A8%EC%88%98%ED%98%95-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B4%80%EC%A0%90%EC%97%90%EC%84%9C-%EB%B0%94%EB%9D%BC%EB%B3%B8-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%9D%98-%EA%B0%92-703ebd418bc">Functional.es - 2. 함수형 프로그래밍 관점에서 바라본 자바스크립트의 값 | by 유인동 | Medium</a></li>
+</ul></li>
+<li><a href="https://www.typescriptlang.org/docs/handbook/advanced-types.html#user-defined-type-guards">TypeScript: Documentation - Advanced Types</a></li>
+</ul>
 <div class="org-src-container">
-<pre class="src src-elisp" id="org5e38ad6"><span style="color: #a020f0;">(package!</span> google-translate)
-</pre>
-</div>
-</div>
-</div>
-
-<div id="outline-container-org4e7cdf2" class="outline-2">
-<h2 id="org4e7cdf2"><a href="#org4e7cdf2">config<span class='anchor'> #</span></a></h2>
-<div class="outline-text-2" id="text-org4e7cdf2">
-<div class="org-src-container">
-<pre class="src src-elisp" id="org3b12b83"><span style="color: #a020f0;">(use-package!</span> google-translate
-  <span style="color: #483d8b;">:bind</span>
-  (<span style="color: #8b2252;">"C-c t"</span> . google-translate-at-point)
-  (<span style="color: #8b2252;">"C-c T"</span> . google-translate-query-translate)
-  (<span style="color: #8b2252;">"C-c r"</span> . google-translate-at-point-reverse)
-  (<span style="color: #8b2252;">"C-c R"</span> . google-translate-query-translate-reverse)
-  <span style="color: #483d8b;">:custom</span>
-  (google-translate-default-source-language <span style="color: #8b2252;">"auto"</span>)
-  (google-translate-default-target-language nil)
-  )
+<pre class="src src-typescript"><span style="color: #a020f0;">export</span> <span style="color: #a020f0;">const</span> <span style="color: #a0522d;">isSome</span> = &lt;A&gt;(oa: <span style="color: #228b22;">Option</span>&lt;<span style="color: #228b22;">A</span>&gt;): <span style="color: #a0522d;">oa</span> <span style="color: #a020f0;">is</span> <span style="color: #228b22;">Some</span>&lt;<span style="color: #228b22;">A</span>&gt; <span style="color: #a020f0;">=&gt;</span> oa._tag === <span style="color: #8b2252;">"Some"</span>;
+<span style="color: #a020f0;">export</span> <span style="color: #a020f0;">const</span> <span style="color: #a0522d;">isNone</span> = &lt;A&gt;(oa: <span style="color: #228b22;">Option</span>&lt;<span style="color: #228b22;">A</span>&gt;): <span style="color: #a0522d;">oa</span> <span style="color: #a020f0;">is</span> <span style="color: #228b22;">None</span> <span style="color: #a020f0;">=&gt;</span> oa._tag === <span style="color: #8b2252;">"None"</span>;
 </pre>
 </div>
 </div>

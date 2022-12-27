@@ -81,20 +81,32 @@
  <priority>0.5</priority>
 </url>
 <url>
+ <loc>https://7696122.github.io/01-page/20221225211539-webfeeder.html</loc>
+ <priority>0.5</priority>
+</url>
+<url>
+ <loc>https://7696122.github.io/01-page/20221227080025-bookmarks.html</loc>
+ <priority>0.5</priority>
+</url>
+<url>
+ <loc>https://7696122.github.io/01-page/20221227084347-seo_검색엔진_최적화.html</loc>
+ <priority>0.5</priority>
+</url>
+<url>
+ <loc>https://7696122.github.io/01-page/20221227084435-seo_meta_in_1_click.html</loc>
+ <priority>0.5</priority>
+</url>
+<url>
+ <loc>https://7696122.github.io/01-page/20221227122221-typescript를_활용한_함수형_프로그래밍_온보딩.html</loc>
+ <priority>0.5</priority>
+</url>
+<url>
  <loc>https://7696122.github.io/01-page/_sitemap.html</loc>
  <priority>0.5</priority>
 </url>
 <url>
  <loc>https://7696122.github.io/01-page/index.html</loc>
  <priority>0.75</priority>
-</url>
-<url>
- <loc>https://7696122.github.io/01-page/sitemap.html</loc>
- <priority>0.5</priority>
-</url>
-<url>
- <loc>https://7696122.github.io/01-page/theindex.html</loc>
- <priority>0.5</priority>
 </url>
 <url>
  <loc>https://7696122.github.io/03-about/index.html</loc>
