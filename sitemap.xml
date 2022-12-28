@@ -3,121 +3,154 @@
       xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+      http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
  <loc>https://7696122.github.io</loc>
  <priority>1.00</priority>
 </url>
 <url>
  <loc>https://7696122.github.io/00-home/index.html</loc>
+ <lastmod>2022-12-28</lastmod>
  <priority>0.75</priority>
 </url>
 <url>
  <loc>https://7696122.github.io/01-page/20220214135127-주택구입부담지수_주택금융통계시스템_hf_한국주택금융공사.html</loc>
+ <lastmod>2022-12-28</lastmod>
  <priority>0.5</priority>
 </url>
 <url>
  <loc>https://7696122.github.io/01-page/20220618132712_org_agenda.html</loc>
+ <lastmod>2022-12-28</lastmod>
  <priority>0.5</priority>
 </url>
 <url>
  <loc>https://7696122.github.io/01-page/20220625092412-org_attach_screenshot.html</loc>
+ <lastmod>2022-12-28</lastmod>
  <priority>0.5</priority>
 </url>
 <url>
  <loc>https://7696122.github.io/01-page/20221209131138-동등비교_연산자.html</loc>
+ <lastmod>2022-12-28</lastmod>
  <priority>0.5</priority>
 </url>
 <url>
  <loc>https://7696122.github.io/01-page/20221210074652-google_translate.html</loc>
+ <lastmod>2022-12-28</lastmod>
  <priority>0.5</priority>
 </url>
 <url>
  <loc>https://7696122.github.io/01-page/20221214102741-prodigy.html</loc>
+ <lastmod>2022-12-28</lastmod>
  <priority>0.5</priority>
 </url>
 <url>
  <loc>https://7696122.github.io/01-page/20221215113524-java_development.html</loc>
+ <lastmod>2022-12-28</lastmod>
  <priority>0.5</priority>
 </url>
 <url>
  <loc>https://7696122.github.io/01-page/20221215113855-sdkman.html</loc>
+ <lastmod>2022-12-28</lastmod>
  <priority>0.5</priority>
 </url>
 <url>
  <loc>https://7696122.github.io/01-page/20221217124836-npm_없이_js_라이브러리_사용하기.html</loc>
+ <lastmod>2022-12-28</lastmod>
  <priority>0.5</priority>
 </url>
 <url>
  <loc>https://7696122.github.io/01-page/20221218171719-org_unique_id.html</loc>
+ <lastmod>2022-12-28</lastmod>
  <priority>0.5</priority>
 </url>
 <url>
  <loc>https://7696122.github.io/01-page/20221219061119-디지털_가든_만들기.html</loc>
+ <lastmod>2022-12-28</lastmod>
  <priority>0.5</priority>
 </url>
 <url>
  <loc>https://7696122.github.io/01-page/20221219071941-org_roam_node_얻기.html</loc>
+ <lastmod>2022-12-28</lastmod>
  <priority>0.5</priority>
 </url>
 <url>
  <loc>https://7696122.github.io/01-page/20221222073142-http_cookie.html</loc>
+ <lastmod>2022-12-28</lastmod>
  <priority>0.5</priority>
 </url>
 <url>
  <loc>https://7696122.github.io/01-page/20221223130349-scroll_indicator.html</loc>
+ <lastmod>2022-12-28</lastmod>
  <priority>0.5</priority>
 </url>
 <url>
  <loc>https://7696122.github.io/01-page/20221223134610-mac에서_option_을_조합한_입력에_이상한_문자가_찍힐_때.html</loc>
+ <lastmod>2022-12-28</lastmod>
  <priority>0.5</priority>
 </url>
 <url>
  <loc>https://7696122.github.io/01-page/20221224093736-서울광장_스케이트장.html</loc>
+ <lastmod>2022-12-28</lastmod>
  <priority>0.5</priority>
 </url>
 <url>
  <loc>https://7696122.github.io/01-page/20221224094210-create_link.html</loc>
+ <lastmod>2022-12-28</lastmod>
  <priority>0.5</priority>
 </url>
 <url>
  <loc>https://7696122.github.io/01-page/20221224103245-뚝섬ㆍ잠원_눈썰매장.html</loc>
+ <lastmod>2022-12-28</lastmod>
  <priority>0.5</priority>
 </url>
 <url>
  <loc>https://7696122.github.io/01-page/20221225211539-webfeeder.html</loc>
+ <lastmod>2022-12-28</lastmod>
  <priority>0.5</priority>
 </url>
 <url>
  <loc>https://7696122.github.io/01-page/20221227080025-bookmarks.html</loc>
+ <lastmod>2022-12-28</lastmod>
  <priority>0.5</priority>
 </url>
 <url>
  <loc>https://7696122.github.io/01-page/20221227084347-seo_검색엔진_최적화.html</loc>
+ <lastmod>2022-12-28</lastmod>
  <priority>0.5</priority>
 </url>
 <url>
  <loc>https://7696122.github.io/01-page/20221227084435-seo_meta_in_1_click.html</loc>
+ <lastmod>2022-12-28</lastmod>
  <priority>0.5</priority>
 </url>
 <url>
  <loc>https://7696122.github.io/01-page/20221227122221-typescript를_활용한_함수형_프로그래밍_온보딩.html</loc>
+ <lastmod>2022-12-28</lastmod>
+ <priority>0.5</priority>
+</url>
+<url>
+ <loc>https://7696122.github.io/01-page/20221228092901-sitemaps.html</loc>
+ <lastmod>2022-12-28</lastmod>
  <priority>0.5</priority>
 </url>
 <url>
  <loc>https://7696122.github.io/01-page/_sitemap.html</loc>
+ <lastmod>2022-12-28</lastmod>
  <priority>0.5</priority>
 </url>
 <url>
  <loc>https://7696122.github.io/01-page/index.html</loc>
+ <lastmod>2022-12-28</lastmod>
  <priority>0.75</priority>
 </url>
 <url>
  <loc>https://7696122.github.io/03-about/index.html</loc>
+ <lastmod>2022-12-28</lastmod>
  <priority>0.75</priority>
 </url>
 <url>
  <loc>https://7696122.github.io/index.html</loc>
+ <lastmod>2022-12-28</lastmod>
  <priority>0.75</priority>
 </url>
 </urlset>

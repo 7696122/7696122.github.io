@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>npm 없이 js 라이브러리 사용하기</title>
+<title>sitemaps</title>
 <meta name="description" content="7696122's Personal Site and Digital Garden" />
 <meta name="keywords" content="personal,blog,site" />
 <meta name="generator" content="Org Mode" />
@@ -279,46 +279,62 @@ switch(dir(window.location.href)) {
 </div>
 </div>
 </header><div id="preamble" class="status">
-<div id='updated'>업데이트: 2022-12-25 Sun 20:24</div>
+<div id='updated'>업데이트: 2022-12-28 Wed 09:34</div>
 </div>
 <div id="content" class="content">
 <header>
-<h1 class="title">npm 없이 js 라이브러리 사용하기</h1>
-</header><p>
-npm을 사용하면 좋지만 그러지 못할 땐
-</p>
-
-<p>
-<a href="https://www.jsdelivr.com/">https://www.jsdelivr.com/</a>
-</p>
-
-<p>
-<a href="https://www.jsdelivr.com/package/npm/lodash">https://www.jsdelivr.com/package/npm/lodash</a>
-</p>
-
-
-<figure id="orgd302f49">
-<img src="../attach/Screenshot 2022-12-18 at 7.43.25 PM.png" alt="Screenshot 2022-12-18 at 7.43.25 PM.png" width="100%">
-
-</figure>
-
-<p>
-<a href="https://www.jsdelivr.com/package/npm/lodash?tab=collection">https://www.jsdelivr.com/package/npm/lodash?tab=collection</a>
-</p>
-
-
-<figure id="orgc7db397">
-<img src="../attach/Screenshot 2022-12-18 at 9.00.50 PM.png" alt="Screenshot 2022-12-18 at 9.00.50 PM.png" width="100%">
-
-</figure>
-
-<p>
-<a href="#coderef-src" class="coderef" onmouseover="CodeHighlightOn(this, 'coderef-src');" onmouseout="CodeHighlightOff(this, 'coderef-src');">스크립트 로딩 코드</a>
-</p>
-
+<h1 class="title">sitemaps</h1>
+</header>
+<div id="outline-container-org167161f" class="outline-2">
+<h2 id="org167161f"><a href="#org167161f"><a href="https://www.sitemaps.org">sitemaps.org - Home</a><span class='anchor'> #</span></a></h2>
+<div class="outline-text-2" id="text-org167161f">
 <div class="org-src-container">
-<pre class="src src-html"><span id="coderef-src" class="coderef-off">&lt;<span style="color: #0000ff;">script</span> <span style="color: #a0522d;">src</span>=<span style="color: #8b2252;">"https://cdn.jsdelivr.net/npm/lodash@4/lodash.min.js"</span>&gt;&lt;/<span style="color: #0000ff;">script</span>&gt;</span>
+<pre class="src src-xml">&lt;?<span style="color: #a020f0;">xml</span> <span style="color: #8b2252;">version="1.0" encoding="UTF-8"</span>?&gt;
+&lt;<span style="color: #0000ff;">urlset</span> <span style="color: #483d8b;">xmlns</span>=<span style="color: #8b2252;">"http://www.sitemaps.org/schemas/sitemap/0.9"</span>&gt;
+   &lt;<span style="color: #0000ff;">url</span>&gt;
+      &lt;<span style="color: #0000ff;">loc</span>&gt;http://www.example.com/&lt;/<span style="color: #0000ff;">loc</span>&gt;
+      &lt;<span style="color: #0000ff;">lastmod</span>&gt;2005-01-01&lt;/<span style="color: #0000ff;">lastmod</span>&gt;
+      &lt;<span style="color: #0000ff;">changefreq</span>&gt;monthly&lt;/<span style="color: #0000ff;">changefreq</span>&gt;
+      &lt;<span style="color: #0000ff;">priority</span>&gt;0.8&lt;/<span style="color: #0000ff;">priority</span>&gt;
+   &lt;/<span style="color: #0000ff;">url</span>&gt;
+&lt;/<span style="color: #0000ff;">urlset</span>&gt;
 </pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org81a76bf" class="outline-2">
+<h2 id="org81a76bf"><a href="#org81a76bf">sitemap 생성<span class='anchor'> #</span></a></h2>
+<div class="outline-text-2" id="text-org81a76bf">
+<div class="org-src-container">
+<pre class="src src-elisp">(<span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">templated-html-create-sitemap-xml</span> (output directory base-url <span style="color: #228b22;">&amp;rest</span> regexp)
+  <span style="color: #8b2252;">"https://www.sitemaps.org/protocol.html"</span>
+  (<span style="color: #a020f0;">let*</span> ((rx (<span style="color: #a020f0;">or</span> regexp <span style="color: #8b2252;">"\\.html$"</span>)))
+    (<span style="color: #a020f0;">with-temp-file</span> output
+      (insert <span style="color: #8b2252;">"&lt;?xml version=\"1.0\" encoding=\"UTF-8\"?&gt;</span>
+<span style="color: #8b2252;">&lt;urlset</span>
+<span style="color: #8b2252;">      xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\"</span>
+<span style="color: #8b2252;">      xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"</span>
+<span style="color: #8b2252;">      xsi:schemaLocation=\"http://www.sitemaps.org/schemas/sitemap/0.9</span>
+<span style="color: #8b2252;">            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd\"&gt;\n"</span>)
+      (insert (format <span style="color: #8b2252;">"&lt;url&gt;\n &lt;loc&gt;%s&lt;/loc&gt;\n &lt;priority&gt;1.00&lt;/priority&gt;\n&lt;/url&gt;\n"</span> base-url))
+
+      (<span style="color: #a020f0;">cl-loop</span> for file in (directory-files-recursively directory rx)
+               do (insert (format <span style="color: #8b2252;">"&lt;url&gt;\n &lt;loc&gt;%s/%s&lt;/loc&gt;\n &lt;priority&gt;%s&lt;/priority&gt;\n&lt;/url&gt;\n"</span>
+                                  base-url (file-relative-name file directory)
+                                  (<span style="color: #a020f0;">if</span> (s-equals? (f-base file) <span style="color: #8b2252;">"index"</span>) <span style="color: #8b2252;">"0.75"</span> <span style="color: #8b2252;">"0.5"</span>))))
+      (insert <span style="color: #8b2252;">"&lt;/urlset&gt;"</span>))))
+
+(<span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">make-sitemap</span> ()
+  (templated-html-create-sitemap-xml
+   <span style="color: #8b2252;">"~/org/dist/public_html/sitemap.xml"</span>
+   <span style="color: #8b2252;">"~/org/dist/public_html"</span>
+   <span style="color: #8b2252;">"https://7696122.github.io"</span>))
+
+(make-sitemap)
+</pre>
+</div>
+</div>
 </div>
 </div>
 <div id="postamble" class="status">
