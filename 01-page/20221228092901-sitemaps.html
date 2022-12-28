@@ -231,8 +231,8 @@ pre.src-typescript:before { content: 'Typescript'; }
 
 </div>
 <div class='navigation-panel opacity float'>
-<nav class="navs">
-<ul class="org-ul nav">
+<nav id="nav" aria-label="Main menu">
+<ul class="org-ul">
 <li><a href="/00-home/index.html#ID-7430811a-d538-4138-8787-3c48583b31f7"><i class="fa-solid fa-house"></i> Home</a></li>
 <li><a href="/01-page/index.html#ID-5cf31c6f-0c3a-4f6c-8131-01b2e59e8206"><i class="fa-solid fa-box-archive"></i> Page</a></li>
 <li><a href="/03-about/index.html#ID-d976f0dc-8ee2-4b1a-ab18-381c0b3fca19"><i class="fa-solid fa-user"></i></i> About</a></li>
@@ -279,14 +279,14 @@ switch(dir(window.location.href)) {
 </div>
 </div>
 </header><div id="preamble" class="status">
-<div id='updated'>업데이트: 2022-12-28 Wed 09:34</div>
+<div id='updated'>업데이트: 2022-12-28 Wed 10:36</div>
 </div>
 <div id="content" class="content">
 <header>
 <h1 class="title">sitemaps</h1>
 </header>
 <div id="outline-container-org167161f" class="outline-2">
-<h2 id="org167161f"><a href="#org167161f"><a href="https://www.sitemaps.org">sitemaps.org - Home</a><span class='anchor'> #</span></a></h2>
+<h2 id="org167161f"><a href="#org167161f"><a href="https://www.sitemaps.org">sitemaps.org - Home</a></a></h2>
 <div class="outline-text-2" id="text-org167161f">
 <div class="org-src-container">
 <pre class="src src-xml">&lt;?<span style="color: #a020f0;">xml</span> <span style="color: #8b2252;">version="1.0" encoding="UTF-8"</span>?&gt;
@@ -304,7 +304,7 @@ switch(dir(window.location.href)) {
 </div>
 
 <div id="outline-container-org81a76bf" class="outline-2">
-<h2 id="org81a76bf"><a href="#org81a76bf">sitemap 생성<span class='anchor'> #</span></a></h2>
+<h2 id="org81a76bf"><a href="#org81a76bf">sitemap 생성</a></h2>
 <div class="outline-text-2" id="text-org81a76bf">
 <div class="org-src-container">
 <pre class="src src-elisp">(<span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">templated-html-create-sitemap-xml</span> (output directory base-url <span style="color: #228b22;">&amp;rest</span> regexp)
@@ -316,13 +316,19 @@ switch(dir(window.location.href)) {
 <span style="color: #8b2252;">      xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\"</span>
 <span style="color: #8b2252;">      xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"</span>
 <span style="color: #8b2252;">      xsi:schemaLocation=\"http://www.sitemaps.org/schemas/sitemap/0.9</span>
-<span style="color: #8b2252;">            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd\"&gt;\n"</span>)
-      (insert (format <span style="color: #8b2252;">"&lt;url&gt;\n &lt;loc&gt;%s&lt;/loc&gt;\n &lt;priority&gt;1.00&lt;/priority&gt;\n&lt;/url&gt;\n"</span> base-url))
+<span style="color: #8b2252;">      http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd\"&gt;\n"</span>)
+      (insert
+       (format
+        <span style="color: #8b2252;">"&lt;url&gt;\n &lt;loc&gt;%s&lt;/loc&gt;\n &lt;priority&gt;1.00&lt;/priority&gt;\n&lt;/url&gt;\n"</span>
+        base-url))
 
       (<span style="color: #a020f0;">cl-loop</span> for file in (directory-files-recursively directory rx)
-               do (insert (format <span style="color: #8b2252;">"&lt;url&gt;\n &lt;loc&gt;%s/%s&lt;/loc&gt;\n &lt;priority&gt;%s&lt;/priority&gt;\n&lt;/url&gt;\n"</span>
-                                  base-url (file-relative-name file directory)
-                                  (<span style="color: #a020f0;">if</span> (s-equals? (f-base file) <span style="color: #8b2252;">"index"</span>) <span style="color: #8b2252;">"0.75"</span> <span style="color: #8b2252;">"0.5"</span>))))
+               do (insert
+                   (format
+                    <span style="color: #8b2252;">"&lt;url&gt;\n &lt;loc&gt;%s/%s&lt;/loc&gt;\n &lt;lastmod&gt;%s&lt;/lastmod&gt;\n &lt;priority&gt;%s&lt;/priority&gt;\n&lt;/url&gt;\n"</span>
+                    base-url (file-relative-name file directory)
+                    (format-time-string <span style="color: #8b2252;">"%Y-%m-%d"</span> (file-attribute-status-change-time (file-attributes file)))
+                    (<span style="color: #a020f0;">if</span> (s-equals? (f-base file) <span style="color: #8b2252;">"index"</span>) <span style="color: #8b2252;">"0.75"</span> <span style="color: #8b2252;">"0.5"</span>))))
       (insert <span style="color: #8b2252;">"&lt;/urlset&gt;"</span>))))
 
 (<span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">make-sitemap</span> ()
@@ -331,13 +337,25 @@ switch(dir(window.location.href)) {
    <span style="color: #8b2252;">"~/org/dist/public_html"</span>
    <span style="color: #8b2252;">"https://7696122.github.io"</span>))
 
-(make-sitemap)
+;; <span style="color: #b22222;">(make-sitemap)</span>
 </pre>
 </div>
 </div>
 </div>
+
+<div id="outline-container-org1697f09" class="outline-2">
+<h2 id="org1697f09"><a href="#org1697f09">Ref</a></h2>
+<div class="outline-text-2" id="text-org1697f09">
+<p>
+<a href="https://github.com/juanjosegarciaripoll/org-thtml/blob/master/ox-thtml.el">https://github.com/juanjosegarciaripoll/org-thtml/blob/master/ox-thtml.el</a>
+</p>
+</div>
+</div>
 </div>
 <div id="postamble" class="status">
+<div>
+Footer
+</div>
 <script type='module' src='/app.js'></script>
 </div>
 </body>

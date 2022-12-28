@@ -1,37 +1,75 @@
-.anchor {
-  text-decoration: none;
-  visibility: hidden;
+p {
+  line-height: 1.5;
 }
 
-li a {
+.content {
+  overflow-wrap: break-word;
+  /* reduce the top margin of the interactive example heading */
+}
+.content li a {
   text-decoration: none;
   color: black;
 }
-li a:hover {
+.content li a:hover {
   color: gray;
   text-decoration: underline;
 }
-
-h1 a,
-h2 a,
-h3 a,
-h4 a {
+.content h1 a:link,
+.content h1 a:visited,
+.content h2 a:link,
+.content h2 a:visited,
+.content h3 a:link,
+.content h3 a:visited,
+.content h4 a:link,
+.content h4 a:visited,
+.content h5 a:link,
+.content h5 a:visited,
+.content h6 a:link,
+.content h6 a:visited {
+  color: var(--text-primary);
   text-decoration: none;
-  color: black;
 }
-h1:hover a,
-h2:hover a,
-h3:hover a,
-h4:hover a {
+.content h1 a:hover,
+.content h1 a:focus,
+.content h2 a:hover,
+.content h2 a:focus,
+.content h3 a:hover,
+.content h3 a:focus,
+.content h4 a:hover,
+.content h4 a:focus,
+.content h5 a:hover,
+.content h5 a:focus,
+.content h6 a:hover,
+.content h6 a:focus {
   text-decoration: underline;
-  color: gray;
 }
-h1:hover .anchor,
-h2:hover .anchor,
-h3:hover .anchor,
-h4:hover .anchor {
-  text-decoration: underline;
-  visibility: visible;
+.content h1 a:active,
+.content h2 a:active,
+.content h3 a:active,
+.content h4 a:active,
+.content h5 a:active,
+.content h6 a:active {
+  background-color: transparent;
+}
+.content h1 a[href^="#"]:hover:after,
+.content h2 a[href^="#"]:hover:after,
+.content h3 a[href^="#"]:hover:after,
+.content h4 a[href^="#"]:hover:after,
+.content h5 a[href^="#"]:hover:after,
+.content h6 a[href^="#"]:hover:after {
+  color: var(--text-inactive);
+  content: "#";
+  display: inline-flex;
+  font-size: 0.7em;
+  line-height: 1;
+  margin-left: 4px;
+  text-decoration: none;
+}
+.content h1::after {
+  text-decoration-color: var(--category-color);
+}
+.content h2:first-of-type {
+  margin-top: 2rem;
 }
 
 footer {
@@ -60,8 +98,8 @@ figure img {
 }
 
 pre.src {
-  word-wrap: break-word;
   white-space: pre-wrap;
+  word-wrap: break-word;
   position: inherit;
 }
 
@@ -111,45 +149,48 @@ header.sticky {
   background-color: dimgray;
 }
 
-nav.navs {
+#nav {
   background-color: black;
   border-radius: 8px 8px 0 0;
 }
-nav.navs ul.nav {
+#nav ul {
   list-style: none;
   padding: 0;
   margin: 0 0 0 30px;
 }
-nav.navs ul.nav li {
-  display: inline-block;
-  padding: 0.5em;
-}
-nav.navs ul.nav li a {
+#nav ul a {
   color: white;
   text-decoration: none;
 }
+#nav ul li {
+  display: inline-block;
+  padding: 0.5em;
+}
 
-div#zettelkasten-list {
+#zettelkasten-list {
   margin: 1em;
 }
-div#zettelkasten-list ul {
-  padding-inline: 0;
+#zettelkasten-list ul {
+  padding: 0;
+  margin: 0;
 }
-div#zettelkasten-list ul li {
+#zettelkasten-list ul li {
+  border: 1px solid gray;
   border-radius: 0.5em;
-  border: solid;
-  border-color: gray;
   list-style: none;
-  margin: 0.5em;
-  padding: 0.3em;
+  padding: 1rem;
   display: block;
   font-size: x-large;
+  margin-bottom: 0.5em;
 }
-div#zettelkasten-list ul li p {
+#zettelkasten-list ul li p {
   padding: 0;
   margin: 0.3em;
 }
-div#zettelkasten-list ul li p:first-child {
+#zettelkasten-list ul li p:first-child {
+  font-size: x-large;
+}
+#zettelkasten-list ul li p:nth-child(2) {
   font-size: medium;
   color: grey;
 }
