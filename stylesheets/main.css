@@ -1,3 +1,21 @@
+:root {
+  --text-inactive: gray;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+body > div#postamble {
+  position: sticky;
+  top: 100vh;
+}
+
 p {
   line-height: 1.5;
 }
@@ -112,7 +130,7 @@ pre.src {
   margin: 10px 0 10px 0;
 }
 
-header.sticky {
+header .sticky {
   position: sticky;
   top: -220px;
   z-index: var(--z-index-top);
@@ -139,7 +157,6 @@ header.sticky {
   background-size: cover;
   background-image: url("/img/garden.jpg");
   border-radius: 16px;
-  margin: 5px;
 }
 .banner h1 {
   color: white;
