@@ -2,18 +2,19 @@
   --text-inactive: gray;
 }
 
-body {
+* {
   margin: 0;
-}
-
-header {
-  position: sticky;
-  top: -230px;
-  z-index: var(--z-index-top);
 }
 
 main {
   min-height: 100vh;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  top: -190px;
+  z-index: var(--z-index-top);
 }
 
 footer {
