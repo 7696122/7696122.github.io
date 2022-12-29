@@ -6,24 +6,11 @@
   margin: 0;
 }
 
-main {
-  min-height: 100vh;
-}
-
 header {
   position: sticky;
   top: 0;
   top: -190px;
   z-index: var(--z-index-top);
-}
-
-footer {
-  position: sticky;
-  bottom: 0;
-  color: white;
-  background-color: black;
-  opacity: 0.8;
-  backdrop-filter: blur(30px);
 }
 
 p {
