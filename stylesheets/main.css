@@ -130,7 +130,7 @@ pre.src {
   margin: 10px 0 10px 0;
 }
 
-header .sticky {
+header.sticky {
   position: sticky;
   top: -220px;
   z-index: var(--z-index-top);
