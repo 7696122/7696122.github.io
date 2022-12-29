@@ -2,18 +2,27 @@
   --text-inactive: gray;
 }
 
-html,
-body {
-  height: 100%;
-}
-
 body {
   margin: 0;
 }
 
-body > div#postamble {
+header {
   position: sticky;
-  top: 100vh;
+  top: -230px;
+  z-index: var(--z-index-top);
+}
+
+main {
+  min-height: 100vh;
+}
+
+footer {
+  position: sticky;
+  bottom: 0;
+  color: white;
+  background-color: black;
+  opacity: 0.8;
+  backdrop-filter: blur(30px);
 }
 
 p {
@@ -128,12 +137,6 @@ pre.src {
 
 .navigation-panel {
   margin: 10px 0 10px 0;
-}
-
-header.sticky {
-  position: sticky;
-  top: -220px;
-  z-index: var(--z-index-top);
 }
 
 .center {

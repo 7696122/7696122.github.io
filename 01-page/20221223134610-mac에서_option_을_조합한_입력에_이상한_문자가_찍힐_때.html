@@ -219,8 +219,7 @@ pre.src-typescript:before { content: 'Typescript'; }
 <script src='/js/main.js'></script>
 </head>
 <body>
-<header class='sticky'>
-<div class='header'>
+<header id="preamble" class="status">
 <div class="banner">
   <a href="/" class="none-deco">
     <div class="center">
@@ -277,11 +276,8 @@ switch(dir(window.location.href)) {
 <home-button></home-button>
 <forward-button></forward-button>
 </div>
-</div>
-</header><div id="preamble" class="status">
-<div id='updated'>업데이트: 2022-12-25 Sun 20:24</div>
-</div>
-<div id="content" class="content">
+</header>
+<main id="content" class="content">
 <header>
 <h1 class="title">Mac에서 <code>⌥ Option</code> 을 조합한 입력에 이상한 문자가 찍힐 때</h1>
 </header><p>
@@ -303,35 +299,35 @@ Input Method를 변경하는 방법 말곤
 </p>
 
 
-<figure id="org744e877">
+<figure id="org02f72c9">
 <img src="../attach/Screenshot 2022-12-23 at 1.50.20 PM.png" alt="Screenshot 2022-12-23 at 1.50.20 PM.png">
 
 <figcaption><span class="figure-number">Figure 1: </span>System Settings.app/Keyboard/Text Input/Input Sources/Edit</figcaption>
 </figure>
 
 
-<figure id="orgdb65c14">
+<figure id="orgaacbe40">
 <img src="../attach/Screenshot 2022-12-23 at 9.07.37 PM.png" alt="Screenshot 2022-12-23 at 9.07.37 PM.png">
 
 <figcaption><span class="figure-number">Figure 2: </span>English/ABC 상태</figcaption>
 </figure>
 
 
-<figure id="org35f07ee">
+<figure id="orgc3c93c3">
 <img src="../attach/Screenshot 2022-12-23 at 9.10.39 PM.png" alt="Screenshot 2022-12-23 at 9.10.39 PM.png">
 
 <figcaption><span class="figure-number">Figure 3: </span>Others/Unicode Hex Input 선택</figcaption>
 </figure>
 
 
-<figure id="org0ed2759">
+<figure id="orgcf39174">
 <img src="../attach/Screenshot 2022-12-23 at 9.11.32 PM.png" alt="Screenshot 2022-12-23 at 9.11.32 PM.png">
 
 <figcaption><span class="figure-number">Figure 4: </span>Others/Unicode Hex Input 추가</figcaption>
 </figure>
 
 
-<figure id="org4d8c68a">
+<figure id="orge270526">
 <img src="../attach/Screenshot 2022-12-23 at 9.12.39 PM.png" alt="Screenshot 2022-12-23 at 9.12.39 PM.png">
 
 <figcaption><span class="figure-number">Figure 5: </span>English/ABC 제거</figcaption>
@@ -345,13 +341,13 @@ Input Method를 변경하는 방법 말곤
 </p>
 </div>
 </div>
-</div>
-<div id="postamble" class="status">
+</main>
+<footer id="postamble" class="status">
 <div>
 Footer
 </div>
 <script type='module' src='/app.js'></script>
-</div>
+</footer>
 <script>window.klipse_settings = {selector_eval_html: '.src-html',
                              selector_eval_js: '.src-js',
                              selector_eval_python_client: '.src-python',
