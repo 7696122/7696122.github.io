@@ -1,9 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap");
 :root {
   --text-inactive: gray;
 }
 
 * {
   margin: 0;
+  font-family: "Noto Serif KR", serif;
 }
 
 header {
@@ -144,11 +146,6 @@ pre.src {
   text-shadow: -1px 0 gray, 0 1px gray, 1px 0 gray, 0 -1px gray;
 }
 
-.banner {
-  background-size: cover;
-  background-image: url("/img/garden.jpg");
-  border-radius: 16px;
-}
 .banner h1 {
   color: white;
 }
