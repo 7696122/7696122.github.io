@@ -4,7 +4,7 @@
 <!-- 2022-12-31 Sat 03:35 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>sdkman</title>
+<title>Open Graph protocol</title>
 <meta name="author" content="7696122" />
 <meta name="description" content="7696122's Personal Site and Digital Garden" />
 <meta name="keywords" content="personal,blog,site" />
@@ -283,115 +283,22 @@ switch(dir(window.location.href)) {
 </header>
 <main id="content" class="content">
 <header>
-<h1 class="title">sdkman</h1>
+<h1 class="title">Open Graph protocol</h1>
 </header><nav id="table-of-contents" role="doc-toc">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org7161613">1. bash, zsh</a></li>
-<li><a href="#orgead5f6f">2. fish</a></li>
-<li><a href="#org2a2bd7e">3. in</a></li>
-<li><a href="#org19ae8f9">4. Backlinks</a>
-<ul>
-<li><a href="#org69da10c">4.1. jdk</a></li>
-</ul>
-</li>
+<li><a href="#org23bc359">1. Ref</a></li>
 </ul>
 </div>
 </nav>
-<p>
-<a href="https://sdkman.io/install">https://sdkman.io/install</a>
-</p>
 
-<p>
-<a href="#coderef-list_java" class="coderef" onmouseover="CodeHighlightOn(this, 'coderef-list_java');" onmouseout="CodeHighlightOff(this, 'coderef-list_java');">1</a>
-</p>
-
-
-<div id="outline-container-org7161613" class="outline-2">
-<h2 id="org7161613"><span class="section-number-2">1.</span> <a href="#org7161613">bash, zsh</a></h2>
+<div id="outline-container-org23bc359" class="outline-2">
+<h2 id="org23bc359"><span class="section-number-2">1.</span> <a href="#org23bc359">Ref</a></h2>
 <div class="outline-text-2" id="text-1">
-<div class="org-src-container">
-<pre class="src src-sh">curl -s <span style="color: #8b2252;">"https://get.sdkman.io"</span> | bash
-</pre>
-</div>
-
 <p>
-위 명령으로 .bash_profile .zshrc 생성됨
+<a href="https://ogp.me/">The Open Graph protocol</a>
 </p>
-
-<p>
-.bash_profile .zshrc created by the above command
-</p>
-
-<div class="org-src-container">
-<pre class="src src-bash">source <span style="color: #8b2252;">"$HOME/.sdkman/bin/sdkman-init.sh"</span>
-</pre>
-</div>
-</div>
-</div>
-
-<div id="outline-container-orgead5f6f" class="outline-2">
-<h2 id="orgead5f6f"><span class="section-number-2">2.</span> <a href="#orgead5f6f">fish</a></h2>
-<div class="outline-text-2" id="text-2">
-<pre class="example" id="orgff48bf9">
-&gt; source "$HOME/.sdkman/bin/sdkman-init.sh"
-~/.sdkman/bin/sdkman-init.sh (line 46): Expected end of the statement, but found an incomplete token
-        Linux)
-             ^
-from sourcing file ~/.sdkman/bin/sdkman-init.sh
-source: Error while reading file “/Users/mnml/.sdkman/bin/sdkman-init.sh”
-</pre>
-
-<p>
-<a href="https://github.com/reitzig/sdkman-for-fish">https://github.com/reitzig/sdkman-for-fish</a>
-</p>
-
-<div class="org-src-container">
-<pre class="src src-fish"><span style="color: #483d8b;">fisher</span> install reitzig/sdkman-for-fish@v1.<span style="color: #008b8b;">4.0</span>
-</pre>
-</div>
-</div>
-</div>
-
-<div id="outline-container-org2a2bd7e" class="outline-2">
-<h2 id="org2a2bd7e"><span class="section-number-2">3.</span> <a href="#org2a2bd7e">in</a></h2>
-<div class="outline-text-2" id="text-3">
-<div class="org-src-container">
-<pre class="src src-sh"><span id="coderef-list_java" class="coderef-off"><span class="linenr">1: </span>sdk list java</span>
-<span class="linenr">2: </span>sdk install java 19.0.1-amzn
-</pre>
-</div>
-
-<pre class="example" id="org6a0bedf">
-Corretto      |     | 19.0.1       | amzn    |            | 19.0.1-amzn
-              | &gt;&gt;&gt; | 17.0.5       | amzn    | installed  | 17.0.5-amzn
-              |     | 11.0.17      | amzn    |            | 11.0.17-amzn
-</pre>
-</div>
-</div>
-
-
-<div id="outline-container-org19ae8f9" class="outline-2 references">
-<h2 id="org19ae8f9"><span class="section-number-2">4.</span> <a href="#org19ae8f9">Backlinks</a></h2>
-<div class="outline-text-2" id="text-4">
-<hr>
-</div>
-<div id="outline-container-org69da10c" class="outline-3">
-<h3 id="org69da10c"><span class="section-number-3">4.1.</span> <a href="#org69da10c"><a href="20221215113524-java_development.html#ID-6F9CE491-DB45-47D6-A8BA-0246ED4E6B50">jdk</a></a></h3>
-<div class="outline-text-3" id="text-4-1">
-<p>
-여러 버전의 jdk와 각종 java 관련 도구들을 사용하기 편한
-<a href="20221215113855-sdkman.html#ID-c2412661-9172-4eee-a8d1-b9994dce406b">sdkman</a>을 사용
-</p>
-
-<div class="org-src-container">
-<pre class="src src-conf" id="org43f1d3f"><span style="color: #a0522d;">java</span>=11.0.17-amzn
-<span style="color: #a0522d;">gradle</span>=7.6
-
-</pre>
-</div>
-</div>
 </div>
 </div>
 </main>
