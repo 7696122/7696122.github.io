@@ -4,7 +4,7 @@
 <!-- 2022-12-30 Fri 16:59 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>76 Digital Garden</title>
+<title>sitemaps</title>
 <meta name="author" content="7696122" />
 <meta name="description" content="7696122's Personal Site and Digital Garden" />
 <meta name="keywords" content="personal,blog,site" />
@@ -291,54 +291,83 @@ switch(dir(window.location.href)) {
 </div>
 </header>
 <main id="content" class="content">
-
-<div id="outline-container-org3954202" class="outline-2">
-<h2 id="org3954202"><a href="#org3954202">최근글</a></h2>
-<div class="outline-text-2" id="text-org3954202">
-<ul class="org-ul">
-<li><p>
-<a href="../roam/20221230075633-top_21_google_tag_manager_extensions_and_tools_for_fast_and_efficient_work.html">Top 21 Google Tag Manager Extensions and Tools for Fast and Efficient Work</a>
-</p>
-
-<p>
-2022-12-30
-</p></li>
-<li><p>
-<a href="../roam/20221228120251-org_commentary.html">org-commentary</a>
-</p>
-
-<p>
-2022-12-28
-</p></li>
-<li><p>
-<a href="../roam/20221228092901-sitemaps.html">sitemaps</a>
-</p>
-
-<p>
-2022-12-28
-</p></li>
-<li><p>
-<a href="../roam/20220214135127-주택구입부담지수_주택금융통계시스템_hf_한국주택금융공사.html">주택구입부담지수@주택금융통계시스템-HF 한국주택금융공사</a>
-</p>
-
-<p>
-2022-12-28
-</p></li>
-<li><p>
-<a href="../roam/20221227122221-typescript를_활용한_함수형_프로그래밍_온보딩.html">TypeScript를 활용한 함수형 프로그래밍 온보딩</a>
-</p>
-
-<p>
-2022-12-27
-</p></li>
-<li><p>
-<a href="../roam/20221227084347-seo_검색엔진_최적화.html">seo, 검색엔진 최적화</a>
-</p>
-
-<p>
-2022-12-27
-</p></li>
+<header>
+<h1 class="title">sitemaps</h1>
+</header><nav id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org167161f">1. sitemaps.org - Home</a></li>
+<li><a href="#org81a76bf">2. sitemap 생성</a></li>
+<li><a href="#org1697f09">3. Ref</a></li>
 </ul>
+</div>
+</nav>
+
+<div id="outline-container-org167161f" class="outline-2">
+<h2 id="org167161f"><span class="section-number-2">1.</span> <a href="#org167161f"><a href="https://www.sitemaps.org">sitemaps.org - Home</a></a></h2>
+<div class="outline-text-2" id="text-1">
+<div class="org-src-container">
+<pre class="src src-xml">&lt;?<span style="color: #a020f0;">xml</span> <span style="color: #8b2252;">version="1.0" encoding="UTF-8"</span>?&gt;
+&lt;<span style="color: #0000ff;">urlset</span> <span style="color: #483d8b;">xmlns</span>=<span style="color: #8b2252;">"http://www.sitemaps.org/schemas/sitemap/0.9"</span>&gt;
+   &lt;<span style="color: #0000ff;">url</span>&gt;
+      &lt;<span style="color: #0000ff;">loc</span>&gt;http://www.example.com/&lt;/<span style="color: #0000ff;">loc</span>&gt;
+      &lt;<span style="color: #0000ff;">lastmod</span>&gt;2005-01-01&lt;/<span style="color: #0000ff;">lastmod</span>&gt;
+      &lt;<span style="color: #0000ff;">changefreq</span>&gt;monthly&lt;/<span style="color: #0000ff;">changefreq</span>&gt;
+      &lt;<span style="color: #0000ff;">priority</span>&gt;0.8&lt;/<span style="color: #0000ff;">priority</span>&gt;
+   &lt;/<span style="color: #0000ff;">url</span>&gt;
+&lt;/<span style="color: #0000ff;">urlset</span>&gt;
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org81a76bf" class="outline-2">
+<h2 id="org81a76bf"><span class="section-number-2">2.</span> <a href="#org81a76bf">sitemap 생성</a></h2>
+<div class="outline-text-2" id="text-2">
+<div class="org-src-container">
+<pre class="src src-elisp">(<span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">templated-html-create-sitemap-xml</span> (output directory base-url <span style="color: #228b22;">&amp;rest</span> regexp)
+  <span style="color: #8b2252;">"https://www.sitemaps.org/protocol.html"</span>
+  (<span style="color: #a020f0;">let*</span> ((rx (<span style="color: #a020f0;">or</span> regexp <span style="color: #8b2252;">"\\.html$"</span>)))
+    (<span style="color: #a020f0;">with-temp-file</span> output
+      (insert <span style="color: #8b2252;">"&lt;?xml version=\"1.0\" encoding=\"UTF-8\"?&gt;</span>
+<span style="color: #8b2252;">&lt;urlset</span>
+<span style="color: #8b2252;">      xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\"</span>
+<span style="color: #8b2252;">      xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"</span>
+<span style="color: #8b2252;">      xsi:schemaLocation=\"http://www.sitemaps.org/schemas/sitemap/0.9</span>
+<span style="color: #8b2252;">      http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd\"&gt;\n"</span>)
+      (insert
+       (format
+        <span style="color: #8b2252;">"&lt;url&gt;\n &lt;loc&gt;%s&lt;/loc&gt;\n &lt;priority&gt;1.00&lt;/priority&gt;\n&lt;/url&gt;\n"</span>
+        base-url))
+
+      (<span style="color: #a020f0;">cl-loop</span> for file in (directory-files-recursively directory rx)
+               do (insert
+                   (format
+                    <span style="color: #8b2252;">"&lt;url&gt;\n &lt;loc&gt;%s/%s&lt;/loc&gt;\n &lt;lastmod&gt;%s&lt;/lastmod&gt;\n &lt;priority&gt;%s&lt;/priority&gt;\n&lt;/url&gt;\n"</span>
+                    base-url (file-relative-name file directory)
+                    (format-time-string <span style="color: #8b2252;">"%Y-%m-%d"</span> (file-attribute-status-change-time (file-attributes file)))
+                    (<span style="color: #a020f0;">if</span> (s-equals? (f-base file) <span style="color: #8b2252;">"index"</span>) <span style="color: #8b2252;">"0.75"</span> <span style="color: #8b2252;">"0.5"</span>))))
+      (insert <span style="color: #8b2252;">"&lt;/urlset&gt;"</span>))))
+
+(<span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">make-sitemap</span> ()
+  (templated-html-create-sitemap-xml
+   <span style="color: #8b2252;">"~/org/dist/public_html/sitemap.xml"</span>
+   <span style="color: #8b2252;">"~/org/dist/public_html"</span>
+   <span style="color: #8b2252;">"https://7696122.github.io"</span>))
+
+;; <span style="color: #b22222;">(make-sitemap)</span>
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org1697f09" class="outline-2">
+<h2 id="org1697f09"><span class="section-number-2">3.</span> <a href="#org1697f09">Ref</a></h2>
+<div class="outline-text-2" id="text-3">
+<p>
+<a href="https://github.com/juanjosegarciaripoll/org-thtml/blob/master/ox-thtml.el">https://github.com/juanjosegarciaripoll/org-thtml/blob/master/ox-thtml.el</a>
+</p>
 </div>
 </div>
 </main>

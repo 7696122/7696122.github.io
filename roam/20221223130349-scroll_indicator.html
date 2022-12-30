@@ -4,7 +4,7 @@
 <!-- 2022-12-30 Fri 16:59 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>76 Digital Garden</title>
+<title>Scroll Indicator</title>
 <meta name="author" content="7696122" />
 <meta name="description" content="7696122's Personal Site and Digital Garden" />
 <meta name="keywords" content="personal,blog,site" />
@@ -291,53 +291,114 @@ switch(dir(window.location.href)) {
 </div>
 </header>
 <main id="content" class="content">
+<header>
+<h1 class="title">Scroll Indicator</h1>
+</header><nav id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgca31fb4">1. Ref</a></li>
+</ul>
+</div>
+</nav>
+<div class="org-src-container">
+<pre><code class="src src-js"><span style="color: #a020f0;">class</span> ScrollIndicator <span style="color: #a020f0;">extends</span> HTMLElement {
+  constructor() {
+    <span style="color: #a020f0;">super</span>();
+  }
 
-<div id="outline-container-org3954202" class="outline-2">
-<h2 id="org3954202"><a href="#org3954202">최근글</a></h2>
-<div class="outline-text-2" id="text-org3954202">
+  render() {
+    <span style="color: #008b8b;">this</span>.attachShadow({ mode: <span style="color: #8b2252;">"open"</span> });
+
+    <span style="color: #a020f0;">const</span> <span style="color: #a0522d;">container</span> = document.createElement(<span style="color: #8b2252;">"div"</span>);
+    container.setAttribute(<span style="color: #8b2252;">"class"</span>, <span style="color: #8b2252;">"progress-container"</span>);
+
+    <span style="color: #a020f0;">const</span> <span style="color: #a0522d;">bar</span> = document.createElement(<span style="color: #8b2252;">"div"</span>);
+    bar.setAttribute(<span style="color: #8b2252;">"class"</span>, <span style="color: #8b2252;">"progress-bar"</span>);
+    bar.setAttribute(<span style="color: #8b2252;">"id"</span>, <span style="color: #8b2252;">"myBar"</span>);
+
+    container.append(bar);
+
+    <span style="color: #a020f0;">const</span> <span style="color: #a0522d;">style</span> = document.createElement(<span style="color: #8b2252;">"style"</span>);
+    style.textContent = <span style="color: #8b2252;">`</span>
+<span style="color: #8b2252;">/* Style the header: fixed position (always stay at the top) */</span>
+<span style="color: #8b2252;">/* The progress container (grey background) */</span>
+<span style="color: #8b2252;">.progress-container {</span>
+<span style="color: #8b2252;">  width: 100%;</span>
+<span style="color: #8b2252;">  height: 8px;</span>
+<span style="color: #8b2252;">  background: black;</span>
+<span style="color: #8b2252;">  // border-radius: 0 0 8px 8px;</span>
+<span style="color: #8b2252;">}</span>
+
+<span style="color: #8b2252;">/* The progress bar (scroll indicator) */</span>
+<span style="color: #8b2252;">.progress-bar {</span>
+<span style="color: #8b2252;">  height: 8px;</span>
+<span style="color: #8b2252;">  background: yellowgreen;</span>
+<span style="color: #8b2252;">  width: 0%;</span>
+<span style="color: #8b2252;">  // border-radius: 0 0 8px 8px;</span>
+<span style="color: #8b2252;">}</span>
+<span style="color: #8b2252;">    `</span>;
+
+    <span style="color: #008b8b;">this</span>.shadowRoot.append(style, container);
+
+    // <span style="color: #b22222;">When the user scrolls the page, execute myFunction</span>
+    window.onscroll = <span style="color: #a020f0;">function</span> () {
+      handleScroll();
+    };
+
+    <span style="color: #a020f0;">function</span> <span style="color: #0000ff;">handleScroll</span>() {
+      <span style="color: #a020f0;">var</span> <span style="color: #a0522d;">winScroll</span> =
+        document.body.scrollTop || document.documentElement.scrollTop;
+      <span style="color: #a020f0;">var</span> <span style="color: #a0522d;">height</span> =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
+      <span style="color: #a020f0;">var</span> <span style="color: #a0522d;">scrolled</span> = (winScroll / height) * 100;
+      bar.style.width = (scrolled &lt;= 100 ? scrolled : 100) + <span style="color: #8b2252;">"%"</span>;
+    }
+  }
+
+  connectedCallback() {
+    <span style="color: #a020f0;">if</span> (!<span style="color: #008b8b;">this</span>.rendered) {
+      <span style="color: #008b8b;">this</span>.render();
+      <span style="color: #008b8b;">this</span>.rendered = <span style="color: #008b8b;">true</span>;
+    }
+  }
+  // <span style="color: #b22222;">disconnectedCallback() {</span>
+  //   <span style="color: #b22222;">/* ... */</span>
+  // <span style="color: #b22222;">}</span>
+  // <span style="color: #b22222;">static get observedAttributes() {</span>
+  //   <span style="color: #b22222;">return [</span>
+  //     <span style="color: #b22222;">/* ... */</span>
+  //   <span style="color: #b22222;">];</span>
+  // <span style="color: #b22222;">}</span>
+  // <span style="color: #b22222;">attributeChangedCallback(name, oldValue, newValue) {</span>
+  //   <span style="color: #b22222;">/* ... */</span>
+  // <span style="color: #b22222;">}</span>
+  // <span style="color: #b22222;">adoptedCallback() {</span>
+  //   <span style="color: #b22222;">/* ... */</span>
+  // <span style="color: #b22222;">}</span>
+}
+
+customElements.define(
+  <span style="color: #8b2252;">"scroll-indicator"</span>,
+  ScrollIndicator
+  // <span style="color: #b22222;">{extends: "div"}</span>
+);
+</code></pre>
+</div>
+
+<div class="org-src-container">
+<pre><code class="src src-html" data-editor-type="html">&lt;<span style="color: #0000ff;">scroll-indicator</span>&gt;&lt;/<span style="color: #0000ff;">scroll-indicator</span>&gt;
+</code></pre>
+</div>
+
+<div id="outline-container-orgca31fb4" class="outline-2">
+<h2 id="orgca31fb4"><span class="section-number-2">1.</span> <a href="#orgca31fb4">Ref</a></h2>
+<div class="outline-text-2" id="text-1">
 <ul class="org-ul">
-<li><p>
-<a href="../roam/20221230075633-top_21_google_tag_manager_extensions_and_tools_for_fast_and_efficient_work.html">Top 21 Google Tag Manager Extensions and Tools for Fast and Efficient Work</a>
-</p>
-
-<p>
-2022-12-30
-</p></li>
-<li><p>
-<a href="../roam/20221228120251-org_commentary.html">org-commentary</a>
-</p>
-
-<p>
-2022-12-28
-</p></li>
-<li><p>
-<a href="../roam/20221228092901-sitemaps.html">sitemaps</a>
-</p>
-
-<p>
-2022-12-28
-</p></li>
-<li><p>
-<a href="../roam/20220214135127-주택구입부담지수_주택금융통계시스템_hf_한국주택금융공사.html">주택구입부담지수@주택금융통계시스템-HF 한국주택금융공사</a>
-</p>
-
-<p>
-2022-12-28
-</p></li>
-<li><p>
-<a href="../roam/20221227122221-typescript를_활용한_함수형_프로그래밍_온보딩.html">TypeScript를 활용한 함수형 프로그래밍 온보딩</a>
-</p>
-
-<p>
-2022-12-27
-</p></li>
-<li><p>
-<a href="../roam/20221227084347-seo_검색엔진_최적화.html">seo, 검색엔진 최적화</a>
-</p>
-
-<p>
-2022-12-27
-</p></li>
+<li><a href="https://www.w3schools.com/howto/howto_js_scroll_indicator.asp">How TO - Scroll Indicator</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components">Web Components</a></li>
+<li><a href="https://css-tricks.com/indicating-scroll-position-on-a-page-with-css/">Indicating Scroll Position on a Page With CSS | CSS-Tricks - CSS-Tricks</a></li>
 </ul>
 </div>
 </div>
