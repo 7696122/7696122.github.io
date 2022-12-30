@@ -3,9 +3,8 @@
   --text-inactive: gray;
 }
 
-* {
-  font-family: "Noto Sans KR", sans-serif;
-  font-family: "Noto Serif KR", serif;
+body {
+  font-family: serif;
 }
 
 header {
