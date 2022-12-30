@@ -147,23 +147,26 @@ pre.src {
   text-shadow: -1px 0 gray, 0 1px gray, 1px 0 gray, 0 -1px gray;
 }
 
-#nav ul {
+nav#nav {
+  padding-top: 8px;
+  background-color: black;
+}
+nav#nav ul {
   display: flex;
   justify-content: space-evenly;
   list-style: none;
   padding: 0.3em;
-  background-color: black;
   margin: 0;
 }
-#nav ul li {
+nav#nav ul li {
   display: inline-block;
 }
-#nav ul li a {
+nav#nav ul li a {
   color: white;
   mix-blend-mode: difference;
   text-decoration: none;
 }
-#nav ul li a:hover {
+nav#nav ul li a:hover {
   text-decoration-line: underline;
 }
 
