@@ -23,7 +23,6 @@ class ScrollIndicator extends HTMLElement {
   width: 100%;
   height: 8px;
   background: black;
-  // border-radius: 0 0 8px 8px;
 }
 
 /* The progress bar (scroll indicator) */
@@ -31,7 +30,6 @@ class ScrollIndicator extends HTMLElement {
   height: 8px;
   background: yellowgreen;
   width: 0%;
-  // border-radius: 0 0 8px 8px;
 }
     `;
 

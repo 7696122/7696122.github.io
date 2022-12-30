@@ -7,19 +7,6 @@
 // document.head.append(script);
 
 const _style = `
-button {
-  color: white;
-  background: black;
-  border: 0;
-  margin: 0;
-  height: 5em;
-  width: 5em;
-}
-
-button:hover {
-  color: gray;
-  cursor: pointer;
-}
 `;
 
 /**

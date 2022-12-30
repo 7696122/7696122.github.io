@@ -1,18 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap");
 :root {
   --text-inactive: gray;
 }
 
 * {
-  margin: 0;
   font-family: "Noto Sans KR", sans-serif;
   font-family: "Noto Serif KR", serif;
 }
 
 header {
   position: sticky;
-  top: 0;
-  top: -120px;
+  top: -130px;
   z-index: var(--z-index-top);
 }
 
@@ -100,11 +98,6 @@ body {
   overflow-y: scroll;
 }
 
-.dark-mode {
-  background-color: black;
-  color: white;
-}
-
 figure img {
   max-width: 100%;
 }
@@ -128,10 +121,6 @@ pre.src {
   backdrop-filter: blur(30px);
 }
 
-.navigation-panel {
-  margin: 10px 0 10px 0;
-}
-
 .center {
   padding: 70px 0;
   text-align: center;
@@ -152,7 +141,6 @@ pre.src {
   align-items: center;
   background-size: cover;
   background-image: url("/img/garden.jpg");
-  border-radius: 16px;
 }
 .banner a {
   text-decoration: none;
@@ -160,28 +148,24 @@ pre.src {
   text-shadow: -1px 0 gray, 0 1px gray, 1px 0 gray, 0 -1px gray;
 }
 
-.highlight {
-  background-color: dimgray;
-}
-
-#nav {
-  background-color: black;
-  border-radius: 8px 8px 0 0;
-}
 #nav ul {
   display: flex;
   justify-content: space-evenly;
   list-style: none;
-  padding: 0;
-  margin: 0 0 0 30px;
-}
-#nav ul a {
-  color: white;
-  text-decoration: none;
+  padding: 0.3em;
+  background-color: black;
+  margin: 0;
 }
 #nav ul li {
   display: inline-block;
-  padding: 0.5em;
+}
+#nav ul li a {
+  color: white;
+  mix-blend-mode: difference;
+  text-decoration: none;
+}
+#nav ul li a:hover {
+  text-decoration-line: underline;
 }
 
 #zettelkasten-list {
@@ -192,7 +176,7 @@ pre.src {
   margin: 0;
 }
 #zettelkasten-list ul li {
-  border: 1px solid gray;
+  border: 1px solid grey;
   border-radius: 0.5em;
   list-style: none;
   padding: 1rem;
