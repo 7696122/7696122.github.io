@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<!-- 2022-12-30 Fri 18:34 -->
+<!-- 2022-12-30 Fri 21:19 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>SEO META in 1 CLICK</title>
@@ -235,18 +235,18 @@ height= width= style=isplay:none;visibility:hidden></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 <div class="banner">
   <a href="/" class="none-deco">
-    <h1 class="shadow">01정원</h1>
-    <h3 class="shadow">7696122</h3>
+    <h1>01정원</h1>
   </a>
 </div>
 
 </div>
 <div class='navigation-panel opacity float'>
 <nav id="nav" aria-label="Main menu">
+
 <ul class="org-ul">
-<li><a href="/home/index.html#ID-7430811a-d538-4138-8787-3c48583b31f7"><i class="fa-solid fa-house"></i> Home</a></li>
-<li><a href="/roam/index.html#ID-5cf31c6f-0c3a-4f6c-8131-01b2e59e8206"><i class="fa-solid fa-box-archive"></i> Roam</a></li>
-<li><a href="/about/index.html#ID-d976f0dc-8ee2-4b1a-ab18-381c0b3fca19"><i class="fa-solid fa-user"></i></i> About</a></li>
+<li><a href="/home/index.html#ID-7430811a-d538-4138-8787-3c48583b31f7">Home</a></li>
+<li><a href="/roam/index.html#ID-5cf31c6f-0c3a-4f6c-8131-01b2e59e8206">Roam</a></li>
+<li><a href="/about/index.html#ID-d976f0dc-8ee2-4b1a-ab18-381c0b3fca19">About</a></li>
 </ul>
 </nav>
 
@@ -258,17 +258,16 @@ const dir = (href) => {
   return _pathname.substring(0, _pathname.lastIndexOf('/') + 1);
 }
 
-const active = (el) => el.parentNode.classList.add(activeClassName);
+const active = (el) => el.textContent = `<${el.textContent} />`;
 
-const homeA = document.querySelector("body > header > div.navigation-panel > nav > ul > li:nth-child(1) > a");
+const homeA = document.querySelector("#nav > ul > li:nth-child(1) > a");
 let homePathname = dir(homeA.href);
-const pageA = document.querySelector("body > header > div.navigation-panel > nav > ul > li:nth-child(2) > a");
+const pageA = document.querySelector("#nav > ul > li:nth-child(2) > a");
 let pagePathname = dir(pageA.href);
-const aboutA = document.querySelector("body > header > div.navigation-panel > nav > ul > li:nth-child(3) > a")
+const aboutA = document.querySelector("#nav > ul > li:nth-child(3) > a")
 let aboutPathname = dir(aboutA.href);
 
 switch(dir(window.location.href)) {
-  // case '/':
   case homePathname:
     active(homeA);
     break;
@@ -314,7 +313,7 @@ switch(dir(window.location.href)) {
 </ul>
 
 
-<figure id="org1c079e9">
+<figure id="org8a2d8f1">
 <img src="../attach/Screenshot 2022-12-27 at 8.48.12 AM.png" alt="Screenshot 2022-12-27 at 8.48.12 AM.png" width="100%">
 
 </figure>
@@ -338,9 +337,7 @@ switch(dir(window.location.href)) {
 </div>
 </main>
 <footer id="postamble" class="status">
-<div>
-Footer
-</div>
+<p>&copy; 2021 01정원 by 7696122</p>
 <script type='module' src='/app.js'></script>
 </footer>
 <script>window.klipse_settings = {selector_eval_html: '.src-html',
