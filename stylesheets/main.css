@@ -184,6 +184,10 @@ pre.src {
   font-size: x-large;
   margin-bottom: 0.5em;
 }
+#zettelkasten-list ul li:hover {
+  font-weight: bold;
+  border: 3px dashed grey;
+}
 #zettelkasten-list ul li p {
   padding: 0;
   margin: 0.3em;
