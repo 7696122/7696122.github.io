@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<!-- 2022-12-31 Sat 17:35 -->
+<!-- 2022-12-31 Sat 20:31 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Open Graph protocol</title>
@@ -289,17 +289,91 @@ switch(dir(window.location.href)) {
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org23bc359">1. Ref</a></li>
+<li><a href="#org8b44fde">1. generate</a></li>
+<li><a href="#orgf0daf9d">2. Debugger</a></li>
+<li><a href="#org23bc359">3. Ref</a></li>
 </ul>
 </div>
 </nav>
 
-<div id="outline-container-org23bc359" class="outline-2">
-<h2 id="org23bc359"><span class="section-number-2">1.</span> <a href="#org23bc359">Ref</a></h2>
+<div id="outline-container-org8b44fde" class="outline-2">
+<h2 id="org8b44fde"><span class="section-number-2">1.</span> <a href="#org8b44fde">generate</a></h2>
 <div class="outline-text-2" id="text-1">
-<p>
-<a href="https://ogp.me/">The Open Graph protocol</a>
-</p>
+<div class="org-src-container">
+<pre class="src src-elisp">(<span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">76/org-html-close-tag</span> (tag <span style="color: #228b22;">&amp;rest</span> attrs)
+  <span style="color: #8b2252;">"Return close-tag for string TAG.</span>
+<span style="color: #8b2252;">ATTRS specify additional attributes."</span>
+  (concat <span style="color: #8b2252;">"&lt;"</span> tag <span style="color: #8b2252;">" "</span>
+          (mapconcat (<span style="color: #a020f0;">lambda</span> (attr)
+                       (format <span style="color: #8b2252;">"%s=\"%s\""</span> (car attr) (cadr attr)))
+                     attrs
+                     <span style="color: #8b2252;">" "</span>)
+      <span style="color: #8b2252;">"&gt;"</span>))
+
+(<span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">76/html-head-extra</span> (file project)
+  <span style="color: #8b2252;">"Return &lt;meta&gt; elements for nice unfurling on Twitter and Slack."</span>
+  (<span style="color: #a020f0;">let*</span> ((info (cdr project))
+         (org-export-options-alist
+          `((<span style="color: #483d8b;">:title</span> <span style="color: #8b2252;">"TITLE"</span> nil nil parse)
+            (<span style="color: #483d8b;">:date</span> <span style="color: #8b2252;">"DATE"</span> nil nil parse)
+            (<span style="color: #483d8b;">:author</span> <span style="color: #8b2252;">"AUTHOR"</span> nil ,(plist-get info <span style="color: #483d8b;">:author</span>) space)
+            (<span style="color: #483d8b;">:description</span> <span style="color: #8b2252;">"DESCRIPTION"</span> nil nil newline)
+            (<span style="color: #483d8b;">:keywords</span> <span style="color: #8b2252;">"KEYWORDS"</span> nil nil space)
+            (<span style="color: #483d8b;">:meta-image</span> <span style="color: #8b2252;">"META_IMAGE"</span> nil ,(plist-get info <span style="color: #483d8b;">:meta-image</span>) nil)
+            (<span style="color: #483d8b;">:meta-type</span> <span style="color: #8b2252;">"META_TYPE"</span> nil ,(plist-get info <span style="color: #483d8b;">:meta-type</span>) nil)))
+         (title (org-publish-find-title file project))
+         (date (org-publish-find-date file project))
+         (author (org-publish-find-property file <span style="color: #483d8b;">:author</span> project))
+         (description (org-publish-find-property file <span style="color: #483d8b;">:description</span> project))
+         (link-home (file-name-as-directory (plist-get info <span style="color: #483d8b;">:html-link-home</span>)))
+         (extension (<span style="color: #a020f0;">or</span> (plist-get info <span style="color: #483d8b;">:html-extension</span>) org-html-extension))
+         (rel-file (org-publish-file-relative-name file info))
+         (full-url (concat link-home (file-name-sans-extension rel-file) <span style="color: #8b2252;">"."</span> extension))
+         (image (concat link-home (org-publish-find-property file <span style="color: #483d8b;">:meta-image</span> project)))
+         (favicon (concat link-home <span style="color: #8b2252;">"favicon.ico"</span>))
+         (type (org-publish-find-property file <span style="color: #483d8b;">:meta-type</span> project)))
+    (mapconcat 'identity
+               `(,(76/org-html-close-tag <span style="color: #8b2252;">"link"</span> '(rel icon) '(type image/x-icon) `(href ,favicon))
+                 ,(76/org-html-close-tag <span style="color: #8b2252;">"link"</span> '(rel alternate) '(type application/rss+xml) '(href <span style="color: #8b2252;">"rss.xml"</span>) '(title <span style="color: #8b2252;">"RSS feed"</span>))
+                 ,(76/org-html-close-tag <span style="color: #8b2252;">"meta"</span> '(property og:title) `(content ,title))
+                 ,(76/org-html-close-tag <span style="color: #8b2252;">"meta"</span> '(property og:url) `(content ,full-url))
+                 ,(<span style="color: #a020f0;">and</span> description
+                       (76/org-html-close-tag <span style="color: #8b2252;">"meta"</span> '(property og:description) `(content ,description)))
+                 ,(76/org-html-close-tag <span style="color: #8b2252;">"meta"</span> '(property og:image) `(content ,image))
+                 ,(76/org-html-close-tag <span style="color: #8b2252;">"meta"</span> '(property og:type) `(content ,type))
+                 ,(<span style="color: #a020f0;">and</span> (equal type <span style="color: #8b2252;">"article"</span>)
+                       (76/org-html-close-tag <span style="color: #8b2252;">"meta"</span> '(property article:author) `(content ,author)))
+                 ,(<span style="color: #a020f0;">and</span> (equal type <span style="color: #8b2252;">"article"</span>)
+                       (76/org-html-close-tag <span style="color: #8b2252;">"meta"</span> '(property article:published_time) `(content ,(format-time-string <span style="color: #8b2252;">"%FT%T%z"</span> date))))
+
+                 ,(76/org-html-close-tag <span style="color: #8b2252;">"meta"</span> '(property twitter:title) `(content ,title))
+                 ,(76/org-html-close-tag <span style="color: #8b2252;">"meta"</span> '(property twitter:url) `(content ,full-url))
+                 ,(76/org-html-close-tag <span style="color: #8b2252;">"meta"</span> '(property twitter:image) `(content ,image))
+                 ,(<span style="color: #a020f0;">and</span> description
+                       (76/org-html-close-tag <span style="color: #8b2252;">"meta"</span> '(property twitter:description) `(content ,description)))
+                 ,(<span style="color: #a020f0;">and</span> description
+                       (76/org-html-close-tag <span style="color: #8b2252;">"meta"</span> '(property twitter:card) '(content summary)))
+                 )
+               <span style="color: #8b2252;">"\n"</span>)))
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgf0daf9d" class="outline-2">
+<h2 id="orgf0daf9d"><span class="section-number-2">2.</span> <a href="#orgf0daf9d">Debugger</a></h2>
+<div class="outline-text-2" id="text-2">
+<ul class="org-ul">
+<li><a href="https://developers.facebook.com/tools/debug/?q=https%3A%2F%2Fnegabaro.github.io%2Fclip-youtube%2F">공유 디버거 - Meta for Developers</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org23bc359" class="outline-2">
+<h2 id="org23bc359"><span class="section-number-2">3.</span> <a href="#org23bc359">Ref</a></h2>
+<div class="outline-text-2" id="text-3">
+<ul class="org-ul">
+<li><a href="https://ogp.me/">The Open Graph protocol</a></li>
+<li id="[[<a href="https://daeguowl.tistory.com/187">https://daeguowl.tistory.com/187</a>][SPA에서 서버사이드랜더링 하지 않고 SEO 우회하기">쌀 팔다 개발자]]</li>
+</ul>
 </div>
 </div>
 </main>
