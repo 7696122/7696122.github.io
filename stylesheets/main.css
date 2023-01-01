@@ -8,7 +8,7 @@ body {
   font-family: serif;
 }
 
-header {
+#preamble {
   position: sticky;
   top: -130px;
   z-index: var(--z-index-top);
