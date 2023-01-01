@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<!-- 2023-01-01 Sun 18:56 -->
+<!-- 2023-01-01 Sun 21:08 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Mac에서 ~⌥ Option~ 을 조합한 입력에 이상한 문자가 찍힐 때</title>
@@ -244,9 +244,9 @@ height= width= style=isplay:none;visibility:hidden></iframe></noscript>
 <nav id="nav" aria-label="Main menu">
 
 <ul class="org-ul">
-<li><a href="/home/index.html#ID-7430811a-d538-4138-8787-3c48583b31f7">Home</a></li>
-<li><a href="/roam/index.html#ID-5cf31c6f-0c3a-4f6c-8131-01b2e59e8206">Roam</a></li>
-<li><a href="/about/index.html#ID-d976f0dc-8ee2-4b1a-ab18-381c0b3fca19">About</a></li>
+<li><a href="/home/index.html#ID-7430811a-d538-4138-8787-3c48583b31f7"><code>Home</code></a></li>
+<li><a href="/roam/index.html#ID-5cf31c6f-0c3a-4f6c-8131-01b2e59e8206"><code>Roam</code></a></li>
+<li><a href="/about/index.html#ID-d976f0dc-8ee2-4b1a-ab18-381c0b3fca19"><code>About</code></a></li>
 </ul>
 </nav>
 
@@ -257,7 +257,7 @@ const dir = (href) => {
   return _pathname.substring(0, _pathname.lastIndexOf('/') + 1);
 }
 
-const active = (el) => el.textContent = `<${el.textContent} />`;
+const active = (el) => el.firstChild.textContent = `<${el.firstChild.textContent} />`;
 
 const homeA = document.querySelector("#nav > ul > li:nth-child(1) > a");
 let homePathname = dir(homeA.href);
@@ -312,35 +312,35 @@ Input Method를 변경하는 방법 말곤
 </p>
 
 
-<figure id="org6ffc428">
+<figure id="org159498b">
 <img src="../attach/Screenshot 2022-12-23 at 1.50.20 PM.png" alt="Screenshot 2022-12-23 at 1.50.20 PM.png">
 
 <figcaption><span class="figure-number">Figure 1: </span>System Settings.app/Keyboard/Text Input/Input Sources/Edit</figcaption>
 </figure>
 
 
-<figure id="org4882a44">
+<figure id="org566e766">
 <img src="../attach/Screenshot 2022-12-23 at 9.07.37 PM.png" alt="Screenshot 2022-12-23 at 9.07.37 PM.png">
 
 <figcaption><span class="figure-number">Figure 2: </span>English/ABC 상태</figcaption>
 </figure>
 
 
-<figure id="org7f37538">
+<figure id="orgadb0fd0">
 <img src="../attach/Screenshot 2022-12-23 at 9.10.39 PM.png" alt="Screenshot 2022-12-23 at 9.10.39 PM.png">
 
 <figcaption><span class="figure-number">Figure 3: </span>Others/Unicode Hex Input 선택</figcaption>
 </figure>
 
 
-<figure id="org6068b8a">
+<figure id="org10cf34d">
 <img src="../attach/Screenshot 2022-12-23 at 9.11.32 PM.png" alt="Screenshot 2022-12-23 at 9.11.32 PM.png">
 
 <figcaption><span class="figure-number">Figure 4: </span>Others/Unicode Hex Input 추가</figcaption>
 </figure>
 
 
-<figure id="org4fc86dc">
+<figure id="orged4e19e">
 <img src="../attach/Screenshot 2022-12-23 at 9.12.39 PM.png" alt="Screenshot 2022-12-23 at 9.12.39 PM.png">
 
 <figcaption><span class="figure-number">Figure 5: </span>English/ABC 제거</figcaption>
@@ -356,7 +356,7 @@ Input Method를 변경하는 방법 말곤
 </div>
 </div>
 <div id="postamble" class="status">
-<p>&copy; 2022 디지털가든 by 7696122</p>
+<span>&copy; 2022 디지털가든 by 7696122</span>
 <script type='module' src='/app.js'></script>
 </div>
 </body>
