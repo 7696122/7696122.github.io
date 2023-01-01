@@ -4,7 +4,7 @@
 <!-- 2023-01-01 Sun 21:27 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>org-roam node 얻기</title>
+<title>Flexbox</title>
 <meta name="author" content="7696122" />
 <meta name="description" content="7696122's Personal Site and Digital Garden" />
 <meta name="keywords" content="personal,blog,site" />
@@ -284,49 +284,24 @@ switch(dir(window.location.href)) {
 </div>
 <div id="content" class="content">
 <header>
-<h1 class="title">org-roam node 얻기</h1>
-</header><div class="org-src-container">
-<label class="org-src-name"><span class="listing-number">Listing 1: </span>org-roam-node-file-by-title</label><pre class="src src-elisp" id="org9b0895e">(<span style="color: #a020f0;">require</span> '<span style="color: #008b8b;">org-roam-node</span>)
-
-(<span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">org-roam-node-file-by-title</span> (_title)
-  (<span style="color: #a020f0;">let</span> ((_roam-node (org-roam-node-from-title-or-alias _title)))
-    (<span style="color: #a020f0;">and</span> _roam-node (org-roam-node-file _roam-node))))
-</pre>
+<h1 class="title">Flexbox</h1>
+</header><nav id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgc0eac18">1. Ref</a></li>
+</ul>
 </div>
+</nav>
 
-<div class="org-src-container">
-<label class="org-src-name"><span class="listing-number">Listing 2: </span>org-roam-node-file-by-title(dash 사용)</label><pre class="src src-elisp" id="org9ef7b96">(<span style="color: #a020f0;">require</span> '<span style="color: #008b8b;">dash</span>)
-(<span style="color: #a020f0;">require</span> '<span style="color: #008b8b;">org-roam-node</span>)
-
-(<span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">org-roam-node-file-by-title</span> (_title)
-  (<span style="color: #a020f0;">--&gt;</span>
-   (org-roam-node-from-title-or-alias _title)
-   (<span style="color: #a020f0;">and</span> it (org-roam-node-file it))))
-</pre>
+<div id="outline-container-orgc0eac18" class="outline-2">
+<h2 id="orgc0eac18"><span class="section-number-2">1.</span> <a href="#orgc0eac18">Ref</a></h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">A Complete Guide to Flexbox | CSS-Tricks - CSS-Tricks</a></li>
+</ul>
 </div>
-
-<pre class="example">
-org-roam-node-file:title
-</pre>
-
-
-<div class="org-src-container">
-<pre class="src src-emacs-lisp">(org-roam-node-file:title <span style="color: #8b2252;">"org-roam node &#50619;&#44592;"</span>)
-</pre>
 </div>
-
-<p>
-/Users/mnml/org/roam/20221219071941-org_roam_node_얻기.org
-</p>
-
-<div class="org-src-container">
-<pre class="src src-emacs-lisp">(org-roam-node-file:title <span style="color: #8b2252;">"org-roam node &#50619;&#44592;2"</span>)
-</pre>
-</div>
-
-<p>
-nil
-</p>
 </div>
 <div id="postamble" class="status">
 <span>&copy; 2022 디지털가든 by 7696122</span>

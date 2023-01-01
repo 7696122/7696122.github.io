@@ -185,5 +185,8 @@ nav#nav ul li a:hover {
 .sitemap > ul > li > a {
   font-size: xx-large;
 }
+.sitemap > ul > li span.timestamp-wrapper {
+  flex-shrink: 0;
+}
 
 /*# sourceMappingURL=main.css.map */
