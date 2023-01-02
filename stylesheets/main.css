@@ -168,6 +168,14 @@ nav#nav ul li a:hover {
   text-decoration-line: underline;
 }
 
+ul.org-ul > li {
+  display: flex;
+  justify-content: space-between;
+}
+ul.org-ul > li > span.timestamp-wrapper {
+  flex-shrink: 0;
+}
+
 .sitemap > ul {
   padding: 0;
 }
