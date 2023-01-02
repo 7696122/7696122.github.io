@@ -168,12 +168,17 @@ nav#nav ul li a:hover {
   text-decoration-line: underline;
 }
 
-ul.org-ul > li {
+.recent ul.org-ul > li {
   display: flex;
   justify-content: space-between;
+  flex-direction: row-reverse;
 }
-ul.org-ul > li > span.timestamp-wrapper {
+.recent ul.org-ul > li > a {
+  text-align: right;
+}
+.recent ul.org-ul > li > span.timestamp-wrapper {
   flex-shrink: 0;
+  flex-basis: 170px;
 }
 
 .sitemap > ul {
