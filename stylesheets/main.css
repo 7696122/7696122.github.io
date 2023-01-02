@@ -183,7 +183,10 @@ nav#nav ul li a:hover {
   margin-bottom: 0.5em;
 }
 .sitemap > ul > li > a {
-  font-size: xx-large;
+  font-size: x-large;
+}
+.sitemap > ul > li > span.timestamp-wrapper {
+  font-size: small;
 }
 .sitemap > ul > li span.timestamp-wrapper {
   flex-shrink: 0;
