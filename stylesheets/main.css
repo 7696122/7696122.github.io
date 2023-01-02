@@ -2,15 +2,19 @@
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Droid+Serif:400,700,400italic,700italic");
 :root {
   --text-inactive: gray;
+  --accent-bg: white;
 }
 
 body {
   font-family: serif;
 }
+body > header {
+  padding: 0;
+}
 
 #preamble {
   position: sticky;
-  top: -130px;
+  top: -150px;
   z-index: var(--z-index-top);
 }
 
@@ -148,7 +152,6 @@ pre.src {
 }
 
 nav#nav {
-  padding-top: 8px;
   background-color: black;
 }
 nav#nav ul {
