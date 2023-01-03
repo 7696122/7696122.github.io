@@ -44,8 +44,8 @@ body > header {
 
 #preamble {
   position: sticky;
-  top: -150px;
-  z-index: var(--z-index-top);
+  top: -127px;
+  z-index: 9999;
 }
 
 p {
