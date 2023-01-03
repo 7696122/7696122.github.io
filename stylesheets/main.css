@@ -1,5 +1,34 @@
 @import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Droid+Serif:400,700,400italic,700italic");
+@media (prefers-color-scheme: light) {
+  .dark {
+    display: none;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    color: lightgray;
+    background: black;
+  }
+
+  .light {
+    display: none;
+  }
+}
+.banner {
+  min-height: 8em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-image: url("/img/garden.jpg");
+}
+.banner a {
+  text-decoration: none;
+  color: white;
+  text-shadow: -1px 0 gray, 0 1px gray, 1px 0 gray, 0 -1px gray;
+}
+
 :root {
   --text-inactive: gray;
   --accent-bg: white;
@@ -28,10 +57,8 @@ p {
 }
 .content li a {
   text-decoration: none;
-  color: black;
 }
 .content li a:hover {
-  color: gray;
   text-decoration: underline;
 }
 .content h1 a:link,
@@ -132,20 +159,6 @@ pre.src {
   -webkit-text-stroke: 1px gray;
 }
 
-.banner {
-  min-height: 8em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
-  background-image: url("/img/garden.jpg");
-}
-.banner a {
-  text-decoration: none;
-  color: white;
-  text-shadow: -1px 0 gray, 0 1px gray, 1px 0 gray, 0 -1px gray;
-}
-
 nav#nav {
   background-color: black;
 }
@@ -177,8 +190,8 @@ nav#nav ul li a:hover {
   text-align: right;
 }
 .recent ul.org-ul > li > span.timestamp-wrapper {
+  font-family: monospace;
   flex-shrink: 0;
-  flex-basis: 170px;
 }
 
 .sitemap > ul {
