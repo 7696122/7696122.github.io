@@ -199,11 +199,10 @@ nav#nav ul li a:hover {
   padding: 0;
 }
 .sitemap > ul > li {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   border: 1px solid grey;
   border-radius: 0.8em;
+  display: flex;
+  flex-direction: column;
   padding: 1rem;
   margin-bottom: 0.5em;
 }
