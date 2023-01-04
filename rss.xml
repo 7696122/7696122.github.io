@@ -6,14 +6,14 @@
 <generator>Emacs webfeeder.el</generator>
 <link>https://7696122.github.io</link>
 <atom:link href="https://7696122.github.io/rss.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Thu, 05 Jan 2023 08:00:59 +0900</lastBuildDate>
+<lastBuildDate>Thu, 05 Jan 2023 08:08:40 +0900</lastBuildDate>
 <item>
   <title>Index</title>
   <description><![CDATA[<main id="content" class="content"> <header> <h1 class="title">Index</h1>
 </header></main>]]></description>
   <link>https://7696122.github.io/roam/blog/theindex.html</link>
   <guid isPermaLink="false">https://7696122.github.io/roam/blog/theindex.html</guid>
-  <pubDate>Thu, 05 Jan 2023 08:00:00 +0900</pubDate>
+  <pubDate>Thu, 05 Jan 2023 08:08:00 +0900</pubDate>
 </item>
 <item>
   <title>Scroll Indicator</title>
@@ -122,11 +122,36 @@ customElements.define(
 </main>]]></description>
   <link>https://7696122.github.io/roam/braindump/20221223130349-scroll_indicator.html</link>
   <guid isPermaLink="false">https://7696122.github.io/roam/braindump/20221223130349-scroll_indicator.html</guid>
-  <pubDate>Thu, 05 Jan 2023 08:00:00 +0900</pubDate>
+  <pubDate>Thu, 05 Jan 2023 08:08:00 +0900</pubDate>
+</item>
+<item>
+  <title>Robox.txt</title>
+  <description><![CDATA[<main id="content" class="content"> <header> <h1 class="title">Robox.txt</h1>
+</header> <nav id="table-of-contents" role="doc-toc"> <h2>Table of Contents</h2>
+ <div id="text-table-of-contents" role="doc-toc">
+ <ul> <li> <a href="#org00d3858">1. Ref</a></li>
+</ul></div>
+</nav> <div class="org-src-container">
+ <pre class="src src-conf">User-agent: *
+Allow:/
+Disallow:
+Sitemap: https://7696122.github.io/sitemap.xml
+</pre>
+</div>
+ <div id="outline-container-org00d3858" class="outline-2">
+ <h2 id="org00d3858"> <span class="section-number-2">1.</span>  <a href="#org00d3858">Ref</a></h2>
+ <div class="outline-text-2" id="text-1">
+ <ul class="org-ul"> <li> <a href="https://developers.google.com/search/docs/crawling-indexing/robots/robots_txt?hl=ko">Google에서 robots.txt 사양을 해석하는 방법  |  문서  |  Google Developers</a></li>
+</ul></div>
+</div>
+</main>]]></description>
+  <link>https://7696122.github.io/roam/braindump/20221231035949-robox_txt.html</link>
+  <guid isPermaLink="false">https://7696122.github.io/roam/braindump/20221231035949-robox_txt.html</guid>
+  <pubDate>Thu, 05 Jan 2023 08:08:00 +0900</pubDate>
 </item>
 <item>
   <title>디지털가든</title>
-  <description><![CDATA[<main id="content" class="content"> <div class="sitemap" id="org0930ecf">
+  <description><![CDATA[<main id="content" class="content"> <div class="sitemap" id="org28e4791">
  <ul class="org-ul"> <li> <a href="20230105075603-git에서_html이_binary로_표시되는_문제.html">git에서 html이 binary로 표시되는 문제</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-05 목></span></span></li>
  <li> <a href="20230104035041-weblorg.html">weblorg</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-04 수></span></span></li>
  <li> <a href="20230104021551-devenv.html">devenv</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-04 수></span></span></li>
@@ -171,7 +196,7 @@ customElements.define(
 </main>]]></description>
   <link>https://7696122.github.io/roam/braindump/index.html</link>
   <guid isPermaLink="false">https://7696122.github.io/roam/braindump/index.html</guid>
-  <pubDate>Thu, 05 Jan 2023 08:00:00 +0900</pubDate>
+  <pubDate>Thu, 05 Jan 2023 08:08:00 +0900</pubDate>
 </item>
 <item>
   <title>Index</title>
@@ -191,14 +216,14 @@ customElements.define(
 </main>]]></description>
   <link>https://7696122.github.io/roam/braindump/theindex.html</link>
   <guid isPermaLink="false">https://7696122.github.io/roam/braindump/theindex.html</guid>
-  <pubDate>Thu, 05 Jan 2023 08:00:00 +0900</pubDate>
+  <pubDate>Thu, 05 Jan 2023 08:08:00 +0900</pubDate>
 </item>
 <item>
   <title>Today</title>
   <description><![CDATA[<main id="content" class="content"> <div id="outline-container-orga1b2772" class="outline-2">
  <h2 id="orga1b2772"> <a href="#orga1b2772">오늘</a></h2>
  <div class="outline-text-2" id="text-orga1b2772">
- <div class="today" id="org422159f">
+ <div class="today" id="orgaf25a51">
  <blockquote>
  <p>
 정리 필요
@@ -211,7 +236,7 @@ customElements.define(
  <div id="outline-container-orgbd7fed5" class="outline-2">
  <h2 id="orgbd7fed5"> <a href="#orgbd7fed5">최근 글</a></h2>
  <div class="outline-text-2" id="text-orgbd7fed5">
- <div class="recent" id="org8bd1320">
+ <div class="recent" id="orgdbfd35b">
  <ul class="org-ul"> <li> <a href="../roam/braindump/20230105075603-git에서_html이_binary로_표시되는_문제.html">git에서 html이 binary로 표시되는 문제</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-05 목></span></span></li>
  <li> <a href="../roam/braindump/20230104035041-weblorg.html">weblorg</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-04 수></span></span></li>
  <li> <a href="../roam/braindump/20230104021551-devenv.html">devenv</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-04 수></span></span></li>
@@ -228,7 +253,7 @@ customElements.define(
 </main>]]></description>
   <link>https://7696122.github.io/index.html</link>
   <guid isPermaLink="false">https://7696122.github.io/index.html</guid>
-  <pubDate>Thu, 05 Jan 2023 08:00:00 +0900</pubDate>
+  <pubDate>Thu, 05 Jan 2023 08:08:00 +0900</pubDate>
 </item>
 <item>
   <title>Index</title>
@@ -261,7 +286,7 @@ customElements.define(
 </main>]]></description>
   <link>https://7696122.github.io/theindex.html</link>
   <guid isPermaLink="false">https://7696122.github.io/theindex.html</guid>
-  <pubDate>Thu, 05 Jan 2023 08:00:00 +0900</pubDate>
+  <pubDate>Thu, 05 Jan 2023 08:08:00 +0900</pubDate>
 </item>
 <item>
   <title>git에서 html이 binary로 표시되는 문제</title>
@@ -1894,21 +1919,6 @@ SPA
 </main>]]></description>
   <link>https://7696122.github.io/roam/braindump/20221231032602-open_graph_protocol.html</link>
   <guid isPermaLink="false">https://7696122.github.io/roam/braindump/20221231032602-open_graph_protocol.html</guid>
-  <pubDate>Thu, 05 Jan 2023 07:48:00 +0900</pubDate>
-</item>
-<item>
-  <title>Robox.txt</title>
-  <description><![CDATA[<main id="content" class="content"> <header> <h1 class="title">Robox.txt</h1>
-</header> <div class="org-src-container">
- <pre class="src src-conf">User-agent: *
-Allow:/
-Disallow:
-Sitemap: https://7696122.github.io/sitemap.xml
-</pre>
-</div>
-</main>]]></description>
-  <link>https://7696122.github.io/roam/braindump/20221231035949-robox_txt.html</link>
-  <guid isPermaLink="false">https://7696122.github.io/roam/braindump/20221231035949-robox_txt.html</guid>
   <pubDate>Thu, 05 Jan 2023 07:48:00 +0900</pubDate>
 </item>
 <item>
