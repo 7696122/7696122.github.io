@@ -6,7 +6,214 @@
 <generator>Emacs webfeeder.el</generator>
 <link>https://7696122.github.io</link>
 <atom:link href="https://7696122.github.io/rss.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Thu, 05 Jan 2023 07:48:28 +0900</lastBuildDate>
+<lastBuildDate>Thu, 05 Jan 2023 07:53:47 +0900</lastBuildDate>
+<item>
+  <title>Index</title>
+  <description><![CDATA[<main id="content" class="content"> <header> <h1 class="title">Index</h1>
+</header></main>]]></description>
+  <link>https://7696122.github.io/roam/blog/theindex.html</link>
+  <guid isPermaLink="false">https://7696122.github.io/roam/blog/theindex.html</guid>
+  <pubDate>Thu, 05 Jan 2023 07:53:00 +0900</pubDate>
+</item>
+<item>
+  <title>Scroll Indicator</title>
+  <description><![CDATA[<main id="content" class="content"> <header> <h1 class="title">Scroll Indicator</h1>
+</header> <nav id="table-of-contents" role="doc-toc"> <h2>Table of Contents</h2>
+ <div id="text-table-of-contents" role="doc-toc">
+ <ul> <li> <a href="#orge59ce35">1. Ref</a></li>
+</ul></div>
+</nav> <div class="org-src-container">
+ <pre class="src src-js"> <span style="color: #a020f0;">class</span> ScrollIndicator  <span style="color: #a020f0;">extends</span> HTMLElement {
+  constructor() {
+     <span style="color: #a020f0;">super</span>();
+  }
+
+  render() {
+     <span style="color: #008b8b;">this</span>.attachShadow({ mode:  <span style="color: #8b2252;">"open"</span> });
+
+     <span style="color: #a020f0;">const</span>  <span style="color: #a0522d;">container</span> = document.createElement( <span style="color: #8b2252;">"div"</span>);
+    container.setAttribute( <span style="color: #8b2252;">"class"</span>,  <span style="color: #8b2252;">"progress-container"</span>);
+
+     <span style="color: #a020f0;">const</span>  <span style="color: #a0522d;">bar</span> = document.createElement( <span style="color: #8b2252;">"div"</span>);
+    bar.setAttribute( <span style="color: #8b2252;">"class"</span>,  <span style="color: #8b2252;">"progress-bar"</span>);
+    bar.setAttribute( <span style="color: #8b2252;">"id"</span>,  <span style="color: #8b2252;">"myBar"</span>);
+
+    container.append(bar);
+
+     <span style="color: #a020f0;">const</span>  <span style="color: #a0522d;">style</span> = document.createElement( <span style="color: #8b2252;">"style"</span>);
+    style.textContent =  <span style="color: #8b2252;">`</span>
+ <span style="color: #8b2252;">/* Style the header: fixed position (always stay at the top) */</span>
+ <span style="color: #8b2252;">/* The progress container (grey background) */</span>
+ <span style="color: #8b2252;">.progress-container {</span>
+ <span style="color: #8b2252;">  width: 100%;</span>
+ <span style="color: #8b2252;">  height: 8px;</span>
+ <span style="color: #8b2252;">  // background: black;</span>
+ <span style="color: #8b2252;">}</span>
+
+ <span style="color: #8b2252;">/* The progress bar (scroll indicator) */</span>
+ <span style="color: #8b2252;">.progress-bar {</span>
+ <span style="color: #8b2252;">  height: 8px;</span>
+ <span style="color: #8b2252;">  background: yellowgreen;</span>
+ <span style="color: #8b2252;">  width: 0%;</span>
+ <span style="color: #8b2252;">}</span>
+ <span style="color: #8b2252;">    `</span>;
+
+     <span style="color: #008b8b;">this</span>.shadowRoot.append(style, container);
+
+    //  <span style="color: #b22222;">When the user scrolls the page, execute myFunction</span>
+    window.onscroll =  <span style="color: #a020f0;">function</span> () {
+      handleScroll();
+    };
+
+     <span style="color: #a020f0;">function</span>  <span style="color: #0000ff;">handleScroll</span>() {
+       <span style="color: #a020f0;">var</span>  <span style="color: #a0522d;">winScroll</span> =
+        document.body.scrollTop || document.documentElement.scrollTop;
+       <span style="color: #a020f0;">var</span>  <span style="color: #a0522d;">height</span> =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
+       <span style="color: #a020f0;">var</span>  <span style="color: #a0522d;">scrolled</span> = (winScroll / height) * 100;
+      bar.style.width = (scrolled <= 100 ? scrolled : 100) +  <span style="color: #8b2252;">"%"</span>;
+    }
+  }
+
+  connectedCallback() {
+     <span style="color: #a020f0;">if</span> (! <span style="color: #008b8b;">this</span>.rendered) {
+       <span style="color: #008b8b;">this</span>.render();
+       <span style="color: #008b8b;">this</span>.rendered =  <span style="color: #008b8b;">true</span>;
+    }
+  }
+  //  <span style="color: #b22222;">disconnectedCallback() {</span>
+  //    <span style="color: #b22222;">/* ... */</span>
+  //  <span style="color: #b22222;">}</span>
+  //  <span style="color: #b22222;">static get observedAttributes() {</span>
+  //    <span style="color: #b22222;">return [</span>
+  //      <span style="color: #b22222;">/* ... */</span>
+  //    <span style="color: #b22222;">];</span>
+  //  <span style="color: #b22222;">}</span>
+  //  <span style="color: #b22222;">attributeChangedCallback(name, oldValue, newValue) {</span>
+  //    <span style="color: #b22222;">/* ... */</span>
+  //  <span style="color: #b22222;">}</span>
+  //  <span style="color: #b22222;">adoptedCallback() {</span>
+  //    <span style="color: #b22222;">/* ... */</span>
+  //  <span style="color: #b22222;">}</span>
+}
+
+customElements.define(
+   <span style="color: #8b2252;">"scroll-indicator"</span>,
+  ScrollIndicator
+  //  <span style="color: #b22222;">{extends: "div"}</span>
+);
+</pre>
+</div>
+
+ <div class="org-src-container">
+ <pre class="src src-html">< <span style="color: #0000ff;">scroll-indicator</span>></ <span style="color: #0000ff;">scroll-indicator</span>>
+</pre>
+</div>
+
+ <div id="outline-container-orge59ce35" class="outline-2">
+ <h2 id="orge59ce35"> <span class="section-number-2">1.</span>  <a href="#orge59ce35">Ref</a></h2>
+ <div class="outline-text-2" id="text-1">
+ <ul class="org-ul"> <li> <a href="https://www.w3schools.com/howto/howto_js_scroll_indicator.asp">How TO - Scroll Indicator</a></li>
+ <li> <a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components">Web Components</a></li>
+ <li> <a href="https://css-tricks.com/indicating-scroll-position-on-a-page-with-css/">Indicating Scroll Position on a Page With CSS | CSS-Tricks - CSS-Tricks</a></li>
+</ul></div>
+</div>
+</main>]]></description>
+  <link>https://7696122.github.io/roam/braindump/20221223130349-scroll_indicator.html</link>
+  <guid isPermaLink="false">https://7696122.github.io/roam/braindump/20221223130349-scroll_indicator.html</guid>
+  <pubDate>Thu, 05 Jan 2023 07:53:00 +0900</pubDate>
+</item>
+<item>
+  <title>Index</title>
+  <description><![CDATA[<main id="content" class="content"> <header> <h1 class="title">Index</h1>
+</header> <nav id="table-of-contents" role="doc-toc"> <h2>Table of Contents</h2>
+ <div id="text-table-of-contents" role="doc-toc">
+ <ul> <li> <a href="#orgc2dfcb7">1. E</a></li>
+</ul></div>
+</nav> <div id="outline-container-orgc2dfcb7" class="outline-2">
+ <h2 id="orgc2dfcb7"> <span class="section-number-2">1.</span>  <a href="#orgc2dfcb7">E</a></h2>
+ <div class="outline-text-2" id="text-1">
+ <ul class="org-ul"> <li>emacs
+ <ul class="org-ul"> <li> <a href="20230104035041-weblorg.html">weblorg</a></li>
+</ul></li>
+</ul></div>
+</div>
+</main>]]></description>
+  <link>https://7696122.github.io/roam/braindump/theindex.html</link>
+  <guid isPermaLink="false">https://7696122.github.io/roam/braindump/theindex.html</guid>
+  <pubDate>Thu, 05 Jan 2023 07:53:00 +0900</pubDate>
+</item>
+<item>
+  <title>Today</title>
+  <description><![CDATA[<main id="content" class="content"> <div id="outline-container-orga1b2772" class="outline-2">
+ <h2 id="orga1b2772"> <a href="#orga1b2772">오늘</a></h2>
+ <div class="outline-text-2" id="text-orga1b2772">
+ <div class="today" id="org7f36269">
+ <blockquote>
+ <p>
+정리 필요
+</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+ <div id="outline-container-orgbd7fed5" class="outline-2">
+ <h2 id="orgbd7fed5"> <a href="#orgbd7fed5">최근 글</a></h2>
+ <div class="outline-text-2" id="text-orgbd7fed5">
+ <div class="recent" id="orgad563e8">
+ <ul class="org-ul"> <li> <a href="../roam/braindump/20230104035041-weblorg.html">weblorg</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-04 수></span></span></li>
+ <li> <a href="../roam/braindump/20230104021551-devenv.html">devenv</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-04 수></span></span></li>
+ <li> <a href="../roam/braindump/20221222073142-http_cookie.html">HTTP cookie</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-04 수></span></span></li>
+ <li> <a href="../roam/braindump/20221224093736-서울광장_스케이트장.html">서울광장 스케이트장</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-04 수></span></span></li>
+ <li> <a href="../roam/braindump/20230103224157-금융안정보고서.html">금융안정보고서</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-03 화></span></span></li>
+ <li> <a href="../roam/braindump/20230103225802-경제금융용어_700선.html">경제금융용어 700선</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-03 화></span></span></li>
+ <li> <a href="../roam/braindump/20221231032602-open_graph_protocol.html">Open Graph protocol</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-03 화></span></span></li>
+ <li> <a href="../roam/braindump/20230102111337-user_agent_reduction.html">User-Agent Reduction</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-02 월></span></span></li>
+ <li> <a href="../roam/braindump/20230101212637-flexbox.html">Flexbox</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-01 일></span></span></li>
+ <li> <a href="../roam/braindump/20221231035949-robox_txt.html">Robox.txt</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2022-12-31 토></span></span></li>
+</ul></div>
+</div>
+</div>
+</main>]]></description>
+  <link>https://7696122.github.io/index.html</link>
+  <guid isPermaLink="false">https://7696122.github.io/index.html</guid>
+  <pubDate>Thu, 05 Jan 2023 07:53:00 +0900</pubDate>
+</item>
+<item>
+  <title>Index</title>
+  <description><![CDATA[<main id="content" class="content"> <header> <h1 class="title">Index</h1>
+</header> <nav id="table-of-contents" role="doc-toc"> <h2>Table of Contents</h2>
+ <div id="text-table-of-contents" role="doc-toc">
+ <ul> <li> <a href="#orgbca3dfc">1. A</a></li>
+ <li> <a href="#org640c3f8">2. B</a></li>
+ <li> <a href="#orgb74fb86">3. H</a></li>
+</ul></div>
+</nav> <div id="outline-container-orgbca3dfc" class="outline-2">
+ <h2 id="orgbca3dfc"> <span class="section-number-2">1.</span>  <a href="#orgbca3dfc">A</a></h2>
+ <div class="outline-text-2" id="text-1">
+ <ul class="org-ul"> <li> <a href="about/index.html">about</a></li>
+</ul></div>
+</div>
+ <div id="outline-container-org640c3f8" class="outline-2">
+ <h2 id="org640c3f8"> <span class="section-number-2">2.</span>  <a href="#org640c3f8">B</a></h2>
+ <div class="outline-text-2" id="text-2">
+ <ul class="org-ul"> <li> <a href="roam/blog/index.html">blog</a></li>
+ <li> <a href="roam/braindump/index.html">braindump</a></li>
+</ul></div>
+</div>
+ <div id="outline-container-orgb74fb86" class="outline-2">
+ <h2 id="orgb74fb86"> <span class="section-number-2">3.</span>  <a href="#orgb74fb86">H</a></h2>
+ <div class="outline-text-2" id="text-3">
+ <ul class="org-ul"> <li> <a href="home/index.html">home</a></li>
+</ul></div>
+</div>
+</main>]]></description>
+  <link>https://7696122.github.io/theindex.html</link>
+  <guid isPermaLink="false">https://7696122.github.io/theindex.html</guid>
+  <pubDate>Thu, 05 Jan 2023 07:53:00 +0900</pubDate>
+</item>
 <item>
   <title>디지털가든</title>
   <description><![CDATA[<main id="content" class="content"> <ul class="org-ul"> <li>쓰기</li>
@@ -961,115 +1168,6 @@ nil
   <pubDate>Thu, 05 Jan 2023 07:48:00 +0900</pubDate>
 </item>
 <item>
-  <title>Scroll Indicator</title>
-  <description><![CDATA[<main id="content" class="content"> <header> <h1 class="title">Scroll Indicator</h1>
-</header> <nav id="table-of-contents" role="doc-toc"> <h2>Table of Contents</h2>
- <div id="text-table-of-contents" role="doc-toc">
- <ul> <li> <a href="#orge59ce35">1. Ref</a></li>
-</ul></div>
-</nav> <div class="org-src-container">
- <pre class="src src-js"> <span style="color: #a020f0;">class</span> ScrollIndicator  <span style="color: #a020f0;">extends</span> HTMLElement {
-  constructor() {
-     <span style="color: #a020f0;">super</span>();
-  }
-
-  render() {
-     <span style="color: #008b8b;">this</span>.attachShadow({ mode:  <span style="color: #8b2252;">"open"</span> });
-
-     <span style="color: #a020f0;">const</span>  <span style="color: #a0522d;">container</span> = document.createElement( <span style="color: #8b2252;">"div"</span>);
-    container.setAttribute( <span style="color: #8b2252;">"class"</span>,  <span style="color: #8b2252;">"progress-container"</span>);
-
-     <span style="color: #a020f0;">const</span>  <span style="color: #a0522d;">bar</span> = document.createElement( <span style="color: #8b2252;">"div"</span>);
-    bar.setAttribute( <span style="color: #8b2252;">"class"</span>,  <span style="color: #8b2252;">"progress-bar"</span>);
-    bar.setAttribute( <span style="color: #8b2252;">"id"</span>,  <span style="color: #8b2252;">"myBar"</span>);
-
-    container.append(bar);
-
-     <span style="color: #a020f0;">const</span>  <span style="color: #a0522d;">style</span> = document.createElement( <span style="color: #8b2252;">"style"</span>);
-    style.textContent =  <span style="color: #8b2252;">`</span>
- <span style="color: #8b2252;">/* Style the header: fixed position (always stay at the top) */</span>
- <span style="color: #8b2252;">/* The progress container (grey background) */</span>
- <span style="color: #8b2252;">.progress-container {</span>
- <span style="color: #8b2252;">  width: 100%;</span>
- <span style="color: #8b2252;">  height: 8px;</span>
- <span style="color: #8b2252;">  // background: black;</span>
- <span style="color: #8b2252;">}</span>
-
- <span style="color: #8b2252;">/* The progress bar (scroll indicator) */</span>
- <span style="color: #8b2252;">.progress-bar {</span>
- <span style="color: #8b2252;">  height: 8px;</span>
- <span style="color: #8b2252;">  background: yellowgreen;</span>
- <span style="color: #8b2252;">  width: 0%;</span>
- <span style="color: #8b2252;">}</span>
- <span style="color: #8b2252;">    `</span>;
-
-     <span style="color: #008b8b;">this</span>.shadowRoot.append(style, container);
-
-    //  <span style="color: #b22222;">When the user scrolls the page, execute myFunction</span>
-    window.onscroll =  <span style="color: #a020f0;">function</span> () {
-      handleScroll();
-    };
-
-     <span style="color: #a020f0;">function</span>  <span style="color: #0000ff;">handleScroll</span>() {
-       <span style="color: #a020f0;">var</span>  <span style="color: #a0522d;">winScroll</span> =
-        document.body.scrollTop || document.documentElement.scrollTop;
-       <span style="color: #a020f0;">var</span>  <span style="color: #a0522d;">height</span> =
-        document.documentElement.scrollHeight -
-        document.documentElement.clientHeight;
-       <span style="color: #a020f0;">var</span>  <span style="color: #a0522d;">scrolled</span> = (winScroll / height) * 100;
-      bar.style.width = (scrolled <= 100 ? scrolled : 100) +  <span style="color: #8b2252;">"%"</span>;
-    }
-  }
-
-  connectedCallback() {
-     <span style="color: #a020f0;">if</span> (! <span style="color: #008b8b;">this</span>.rendered) {
-       <span style="color: #008b8b;">this</span>.render();
-       <span style="color: #008b8b;">this</span>.rendered =  <span style="color: #008b8b;">true</span>;
-    }
-  }
-  //  <span style="color: #b22222;">disconnectedCallback() {</span>
-  //    <span style="color: #b22222;">/* ... */</span>
-  //  <span style="color: #b22222;">}</span>
-  //  <span style="color: #b22222;">static get observedAttributes() {</span>
-  //    <span style="color: #b22222;">return [</span>
-  //      <span style="color: #b22222;">/* ... */</span>
-  //    <span style="color: #b22222;">];</span>
-  //  <span style="color: #b22222;">}</span>
-  //  <span style="color: #b22222;">attributeChangedCallback(name, oldValue, newValue) {</span>
-  //    <span style="color: #b22222;">/* ... */</span>
-  //  <span style="color: #b22222;">}</span>
-  //  <span style="color: #b22222;">adoptedCallback() {</span>
-  //    <span style="color: #b22222;">/* ... */</span>
-  //  <span style="color: #b22222;">}</span>
-}
-
-customElements.define(
-   <span style="color: #8b2252;">"scroll-indicator"</span>,
-  ScrollIndicator
-  //  <span style="color: #b22222;">{extends: "div"}</span>
-);
-</pre>
-</div>
-
- <div class="org-src-container">
- <pre class="src src-html">< <span style="color: #0000ff;">scroll-indicator</span>></ <span style="color: #0000ff;">scroll-indicator</span>>
-</pre>
-</div>
-
- <div id="outline-container-orge59ce35" class="outline-2">
- <h2 id="orge59ce35"> <span class="section-number-2">1.</span>  <a href="#orge59ce35">Ref</a></h2>
- <div class="outline-text-2" id="text-1">
- <ul class="org-ul"> <li> <a href="https://www.w3schools.com/howto/howto_js_scroll_indicator.asp">How TO - Scroll Indicator</a></li>
- <li> <a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components">Web Components</a></li>
- <li> <a href="https://css-tricks.com/indicating-scroll-position-on-a-page-with-css/">Indicating Scroll Position on a Page With CSS | CSS-Tricks - CSS-Tricks</a></li>
-</ul></div>
-</div>
-</main>]]></description>
-  <link>https://7696122.github.io/roam/braindump/20221223130349-scroll_indicator.html</link>
-  <guid isPermaLink="false">https://7696122.github.io/roam/braindump/20221223130349-scroll_indicator.html</guid>
-  <pubDate>Thu, 05 Jan 2023 07:48:00 +0900</pubDate>
-</item>
-<item>
   <title>Mac에서 ~⌥ Option~ 을 조합한 입력에 이상한 문자가 찍힐 때</title>
   <description><![CDATA[<main id="content" class="content"> <header> <h1 class="title">Mac에서  <code>⌥ Option</code> 을 조합한 입력에 이상한 문자가 찍힐 때</h1>
 </header> <nav id="table-of-contents" role="doc-toc"> <h2>Table of Contents</h2>
@@ -1962,104 +2060,6 @@ User-Agent string에는 많은 엔트로피(정보량)가 담겨 있어 개인�
   <link>https://7696122.github.io/roam/braindump/index.html</link>
   <guid isPermaLink="false">https://7696122.github.io/roam/braindump/index.html</guid>
   <pubDate>Thu, 05 Jan 2023 07:48:00 +0900</pubDate>
-</item>
-<item>
-  <title>Index</title>
-  <description><![CDATA[<main id="content" class="content"> <header> <h1 class="title">Index</h1>
-</header> <nav id="table-of-contents" role="doc-toc"> <h2>Table of Contents</h2>
- <div id="text-table-of-contents" role="doc-toc">
- <ul> <li> <a href="#orgc2dfcb7">1. E</a></li>
-</ul></div>
-</nav> <div id="outline-container-orgc2dfcb7" class="outline-2">
- <h2 id="orgc2dfcb7"> <span class="section-number-2">1.</span>  <a href="#orgc2dfcb7">E</a></h2>
- <div class="outline-text-2" id="text-1">
- <ul class="org-ul"> <li>emacs
- <ul class="org-ul"> <li> <a href="20230104035041-weblorg.html">weblorg</a></li>
-</ul></li>
-</ul></div>
-</div>
-</main>]]></description>
-  <link>https://7696122.github.io/roam/braindump/theindex.html</link>
-  <guid isPermaLink="false">https://7696122.github.io/roam/braindump/theindex.html</guid>
-  <pubDate>Thu, 05 Jan 2023 07:48:00 +0900</pubDate>
-</item>
-<item>
-  <title>Today</title>
-  <description><![CDATA[<main id="content" class="content"> <div id="outline-container-orga1b2772" class="outline-2">
- <h2 id="orga1b2772"> <a href="#orga1b2772">오늘</a></h2>
- <div class="outline-text-2" id="text-orga1b2772">
- <div class="today" id="orga4fb34b">
- <blockquote>
- <p>
-감기
-</p>
-</blockquote>
-
-</div>
-</div>
-</div>
- <div id="outline-container-orgbd7fed5" class="outline-2">
- <h2 id="orgbd7fed5"> <a href="#orgbd7fed5">최근 글</a></h2>
- <div class="outline-text-2" id="text-orgbd7fed5">
- <div class="recent" id="org99889ac">
- <ul class="org-ul"> <li> <a href="../roam/braindump/20230104035041-weblorg.html">weblorg</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-04 수></span></span></li>
- <li> <a href="../roam/braindump/20230104021551-devenv.html">devenv</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-04 수></span></span></li>
- <li> <a href="../roam/braindump/20221222073142-http_cookie.html">HTTP cookie</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-04 수></span></span></li>
- <li> <a href="../roam/braindump/20221224093736-서울광장_스케이트장.html">서울광장 스케이트장</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-04 수></span></span></li>
- <li> <a href="../roam/braindump/20230103224157-금융안정보고서.html">금융안정보고서</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-03 화></span></span></li>
- <li> <a href="../roam/braindump/20230103225802-경제금융용어_700선.html">경제금융용어 700선</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-03 화></span></span></li>
- <li> <a href="../roam/braindump/20221231032602-open_graph_protocol.html">Open Graph protocol</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-03 화></span></span></li>
- <li> <a href="../roam/braindump/20230102111337-user_agent_reduction.html">User-Agent Reduction</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-02 월></span></span></li>
- <li> <a href="../roam/braindump/20230101212637-flexbox.html">Flexbox</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-01 일></span></span></li>
- <li> <a href="../roam/braindump/20221231035949-robox_txt.html">Robox.txt</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2022-12-31 토></span></span></li>
-</ul></div>
-</div>
-</div>
-</main>]]></description>
-  <link>https://7696122.github.io/index.html</link>
-  <guid isPermaLink="false">https://7696122.github.io/index.html</guid>
-  <pubDate>Thu, 05 Jan 2023 07:48:00 +0900</pubDate>
-</item>
-<item>
-  <title>Index</title>
-  <description><![CDATA[<main id="content" class="content"> <header> <h1 class="title">Index</h1>
-</header> <nav id="table-of-contents" role="doc-toc"> <h2>Table of Contents</h2>
- <div id="text-table-of-contents" role="doc-toc">
- <ul> <li> <a href="#orgbca3dfc">1. A</a></li>
- <li> <a href="#org640c3f8">2. B</a></li>
- <li> <a href="#orgb74fb86">3. H</a></li>
-</ul></div>
-</nav> <div id="outline-container-orgbca3dfc" class="outline-2">
- <h2 id="orgbca3dfc"> <span class="section-number-2">1.</span>  <a href="#orgbca3dfc">A</a></h2>
- <div class="outline-text-2" id="text-1">
- <ul class="org-ul"> <li> <a href="about/index.html">about</a></li>
-</ul></div>
-</div>
- <div id="outline-container-org640c3f8" class="outline-2">
- <h2 id="org640c3f8"> <span class="section-number-2">2.</span>  <a href="#org640c3f8">B</a></h2>
- <div class="outline-text-2" id="text-2">
- <ul class="org-ul"> <li> <a href="roam/blog/index.html">blog</a></li>
- <li> <a href="roam/braindump/index.html">braindump</a></li>
-</ul></div>
-</div>
- <div id="outline-container-orgb74fb86" class="outline-2">
- <h2 id="orgb74fb86"> <span class="section-number-2">3.</span>  <a href="#orgb74fb86">H</a></h2>
- <div class="outline-text-2" id="text-3">
- <ul class="org-ul"> <li> <a href="home/index.html">home</a></li>
-</ul></div>
-</div>
-</main>]]></description>
-  <link>https://7696122.github.io/theindex.html</link>
-  <guid isPermaLink="false">https://7696122.github.io/theindex.html</guid>
-  <pubDate>Thu, 05 Jan 2023 07:48:00 +0900</pubDate>
-</item>
-<item>
-  <title>Index</title>
-  <description><![CDATA[<main id="content" class="content"> <header> <h1 class="title">Index</h1>
-</header></main>]]></description>
-  <link>https://7696122.github.io/roam/blog/theindex.html</link>
-  <guid isPermaLink="false">https://7696122.github.io/roam/blog/theindex.html</guid>
-  <pubDate>Thu, 05 Jan 2023 07:47:00 +0900</pubDate>
 </item>
 </channel>
 </rss>
