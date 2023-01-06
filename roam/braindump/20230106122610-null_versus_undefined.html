@@ -4,7 +4,7 @@
 <!-- 2023-01-06 금 13:48 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>HTTP cookie</title>
+<title>null versus undefined</title>
 <meta name="author" content="7696122" />
 <meta name="description" content="7696122's Personal Site and Digital Garden" />
 <meta name="keywords" content="personal,blog,site" />
@@ -108,142 +108,38 @@ switch(dir(window.location.href)) {
 </header>
 <main id="content" class="content">
 <header>
-<h1 class="title">HTTP cookie</h1>
+<h1 class="title">null versus undefined</h1>
 </header><nav id="table-of-contents" role="doc-toc">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org29273a1">1. Using HTTP cookies</a>
-<ul>
-<li><a href="#org69c24c6">1.1. HTTP cookie (web cookie, browser cookie)</a>
-<ul>
-<li><a href="#org73560bc">1.1.1. a small piece of data</a></li>
-<li><a href="#orga307626">1.1.2. mainly used for three purposes</a></li>
-<li><a href="#org543e6fd">1.1.3. <b>modern storage APIs are now recommended</b></a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#org24fc270">2. Creating cookies</a></li>
-<li><a href="#org65d7c44">3. ref</a></li>
+<li><a href="#orgded5ca4">1. null</a></li>
+<li><a href="#org587c1db">2. undefined</a></li>
 </ul>
 </div>
 </nav>
 
-<div id="outline-container-org29273a1" class="outline-2">
-<h2 id="org29273a1"><span class="section-number-2">1.</span> <a href="#org29273a1">Using HTTP cookies</a></h2>
+<div id="outline-container-orgded5ca4" class="outline-2">
+<h2 id="orgded5ca4"><span class="section-number-2">1.</span> <a href="#orgded5ca4">null</a></h2>
 <div class="outline-text-2" id="text-1">
-</div>
-<div id="outline-container-org69c24c6" class="outline-3">
-<h3 id="org69c24c6"><span class="section-number-3">1.1.</span> <a href="#org69c24c6">HTTP cookie (web cookie, browser cookie)</a></h3>
-<div class="outline-text-3" id="text-1-1">
-</div>
-<div id="outline-container-org73560bc" class="outline-4">
-<h4 id="org73560bc"><span class="section-number-4">1.1.1.</span> <a href="#org73560bc">a small piece of data</a></h4>
-<div class="outline-text-4" id="text-1-1-1">
 <ul class="org-ul">
-<li><b>server</b>
-<ul class="org-ul">
-<li>sent</li>
-<li>to user's web browser</li>
-</ul></li>
-<li><b>browser</b>
-<ul class="org-ul">
-<li>may store the cookie</li>
-<li>and send it back
-<ul class="org-ul">
-<li>to the same server</li>
-<li>with later requests</li>
-</ul></li>
-</ul></li>
-<li><b>HTTP cookie</b> is used to tell
-<ul class="org-ul">
-<li>if two request come from the same browser
-<ul class="org-ul">
-<li>keeping a user logged in, for example</li>
-</ul></li>
-</ul></li>
-<li>It remembers sateful information
-<ul class="org-ul">
-<li>for the <b><span class="underline">stateless HTTP protocol</span></b></li>
-</ul></li>
+<li>null 이라는 값으로 할당된 것</li>
+<li>무언가 있는데, 사용할 준비가 덜 된 상태</li>
+<li>null 타입은 null만 할당 가능</li>
+<li>런타임에서 typeof 하면 object</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orga307626" class="outline-4">
-<h4 id="orga307626"><span class="section-number-4">1.1.2.</span> <a href="#orga307626">mainly used for three purposes</a></h4>
-<div class="outline-text-4" id="text-1-1-2">
-<ul class="org-ul">
-<li><b>Session management</b>
-<ul class="org-ul">
-<li>Loings, shopping carts, game scores</li>
-<li>or <b>anything else the server should remember</b></li>
-</ul></li>
-<li>Personalization
-<ul class="org-ul">
-<li>User preferrnces</li>
-<li>themes</li>
-<li>and other settings</li>
-</ul></li>
-<li>Tracking
-<ul class="org-ul">
-<li>Recoding and analyzing user behavior</li>
-</ul></li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-org543e6fd" class="outline-4">
-<h4 id="org543e6fd"><span class="section-number-4">1.1.3.</span> <a href="#org543e6fd"><b>modern storage APIs are now recommended</b></a></h4>
-<div class="outline-text-4" id="text-1-1-3">
-<ul class="org-ul">
-<li><b>Cookies</b> are <b>sent with every request</b>, so they can <b>worsen performance</b> (especially for mobile data connections).</li>
-<li>Modern APIs for client storage are
-<ul class="org-ul">
-<li><span class="underline">Web Storage API</span>
-<ul class="org-ul">
-<li>localStorage</li>
-<li>sessionStorage</li>
-</ul></li>
-<li><span class="underline">IndexedDB</span></li>
-</ul></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-
-<div id="outline-container-org24fc270" class="outline-2">
-<h2 id="org24fc270"><span class="section-number-2">2.</span> <a href="#org24fc270">Creating cookies</a></h2>
+<div id="outline-container-org587c1db" class="outline-2">
+<h2 id="org587c1db"><span class="section-number-2">2.</span> <a href="#org587c1db">undefined</a></h2>
 <div class="outline-text-2" id="text-2">
 <ul class="org-ul">
-<li>a <b>server</b> can <b>send</b> one or more <b>Set-Cookie header</b>
-<ul class="org-ul">
-<li>with the response</li>
-<li>After receiving an HTTP request</li>
-</ul></li>
-<li>The browser useally
-<ul class="org-ul">
-<li>stores the cookie</li>
-<li>send it</li>
-<li>with requests
-<ul class="org-ul">
-<li>made to the <b>same server</b></li>
-<li>inside <b>Cookie HTTP header</b></li>
-</ul></li>
-</ul></li>
-<li>can specify</li>
+<li>값이 할당되지 않는 변수는 undefined라는 값을 가진다</li>
+<li>무언가 아예 준비가 안된 상태</li>
+<li>object의 property가 없을 때도 undefined</li>
+<li>런타임에서 typeof 하면 undefined</li>
 </ul>
-</div>
-</div>
-
-<div id="outline-container-org65d7c44" class="outline-2">
-<h2 id="org65d7c44"><span class="section-number-2">3.</span> <a href="#org65d7c44">ref</a></h2>
-<div class="outline-text-2" id="text-3">
-<p>
-<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies">https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies</a>
-</p>
 </div>
 </div>
 </main>
