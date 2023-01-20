@@ -1,3 +1,4 @@
+// [[file:../../../public/_org-templates/_nav.org::*script][script:1]]
 const path = (href) => new URL(href).pathname;
 
 const dir = (href) => {
@@ -60,3 +61,4 @@ const menuLength = document
 //     active(a5);
 //     break;
 // }
+// script:1 ends here
