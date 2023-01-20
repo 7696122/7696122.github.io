@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<!-- 2023-01-20 금 05:30 -->
+<!-- 2023-01-20 금 13:16 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Dart</title>
@@ -51,7 +51,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src='https://www.googletagmanager.com/ns.html?id=GTM-P3KXTHX'
 height='0' width='0' style='display:none;visibility:hidden'></iframe></noscript>
 <!-- End Google Tag Manager (noscript) --><header id="preamble" class="status">
-<div class="banner" id="org3eaa197">
+<div class="banner" id="org057dbc0">
 <a href="/" class="none-deco">
 <!-- <span id="icon">여기엔</span> -->
 <h1>디지털가든</h1>
@@ -70,59 +70,62 @@ height='0' width='0' style='display:none;visibility:hidden'></iframe></noscript>
 </ul>
 </nav>
 
-<script>
-const path = (href) => new URL(href).pathname;
+<div class="org-src-container">
+<pre class="src src-js"><span style="color: #a020f0;">const</span> <span style="color: #a0522d;">path</span> = (href) =&gt; <span style="color: #a020f0;">new</span> <span style="color: #228b22;">URL</span>(href).pathname;
 
-const dir = (href) => {
-  let _pathname = path(href);
-  return _pathname.substring(0, _pathname.lastIndexOf('/') + 1);
+<span style="color: #a020f0;">const</span> <span style="color: #a0522d;">dir</span> = (href) =&gt; {
+  <span style="color: #a020f0;">let</span> <span style="color: #a0522d;">_pathname</span> = path(href);
+  <span style="color: #a020f0;">return</span> _pathname.substring(0, _pathname.lastIndexOf(<span style="color: #8b2252;">'/'</span>) + 1);
 }
 
-const decolateTag = (el) => el.firstChild.textContent = `<${el.firstChild.textContent} />`
+<span style="color: #a020f0;">const</span> <span style="color: #a0522d;">decolateTag</span> = (el) =&gt; el.firstChild.textContent = <span style="color: #8b2252;">`&lt;${el.firstChild.textContent} /&gt;`</span>
 
-const active = (el) => {
+<span style="color: #a020f0;">const</span> <span style="color: #a0522d;">active</span> = (el) =&gt; {
   decolateTag(el);
 }
 
-const menuLength = document.getElementsByTagName('nav')[0].getElementsByTagName('li').length;
+<span style="color: #a020f0;">const</span> <span style="color: #a0522d;">menuLength</span> = document.getElementsByTagName(<span style="color: #8b2252;">'nav'</span>)[0].getElementsByTagName(<span style="color: #8b2252;">'li'</span>).length;
 
-[...Array(menuLength)].forEach((_, i) => {
-  const a = document.querySelector(`#nav > ul > li:nth-child(${i}) > a`);
+[...Array(menuLength)].forEach((_, i) =&gt; {
+  <span style="color: #a020f0;">const</span> <span style="color: #a0522d;">a</span> = document.querySelector(<span style="color: #8b2252;">`#nav &gt; ul &gt; li:nth-child(${i}) &gt; a`</span>);
   console.log(a);
-  let p = dir(a.href);
-  if(dir(window.location.href)) {
+  <span style="color: #a020f0;">let</span> <span style="color: #a0522d;">p</span> = dir(a.href);
+  <span style="color: #a020f0;">if</span>(dir(window.location.href)) {
     active(a);
   }
 })
 
-// const a1 = document.querySelector("#nav > ul > li:nth-child(1) > a");
-// let p1 = dir(a1.href);
-// const a2 = document.querySelector("#nav > ul > li:nth-child(2) > a");
-// let p2 = dir(a2.href);
-// const a3 = document.querySelector("#nav > ul > li:nth-child(3) > a")
-// let p3 = dir(a3.href);
-// const a4 = document.querySelector("#nav > ul > li:nth-child(4) > a")
-// let p4 = dir(a4.href);
-// const a5 = document.querySelector("#nav > ul > li:nth-child(5) > a")
-// let p5 = dir(a5.href);
+// <span style="color: #b22222;">const a1 = document.querySelector("#nav &gt; ul &gt; li:nth-child(1) &gt; a");</span>
+// <span style="color: #b22222;">let p1 = dir(a1.href);</span>
+// <span style="color: #b22222;">const a2 = document.querySelector("#nav &gt; ul &gt; li:nth-child(2) &gt; a");</span>
+// <span style="color: #b22222;">let p2 = dir(a2.href);</span>
+// <span style="color: #b22222;">const a3 = document.querySelector("#nav &gt; ul &gt; li:nth-child(3) &gt; a")</span>
+// <span style="color: #b22222;">let p3 = dir(a3.href);</span>
+// <span style="color: #b22222;">const a4 = document.querySelector("#nav &gt; ul &gt; li:nth-child(4) &gt; a")</span>
+// <span style="color: #b22222;">let p4 = dir(a4.href);</span>
+// <span style="color: #b22222;">const a5 = document.querySelector("#nav &gt; ul &gt; li:nth-child(5) &gt; a")</span>
+// <span style="color: #b22222;">let p5 = dir(a5.href);</span>
 //
-// switch(dir(window.location.href)) {
-//   case p1:
-//     active(a1);
-//     break;
-//   case p2:
-//     active(a2);
-//     break;
-//   case p3:
-//     active(a3);
-//     break;
-//   case p4:
-//     active(a4);
-//     break;
-//   case p5:
-//     active(a5);
-//     break;
-// }
+// <span style="color: #b22222;">switch(dir(window.location.href)) {</span>
+//   <span style="color: #b22222;">case p1:</span>
+//     <span style="color: #b22222;">active(a1);</span>
+//     <span style="color: #b22222;">break;</span>
+//   <span style="color: #b22222;">case p2:</span>
+//     <span style="color: #b22222;">active(a2);</span>
+//     <span style="color: #b22222;">break;</span>
+//   <span style="color: #b22222;">case p3:</span>
+//     <span style="color: #b22222;">active(a3);</span>
+//     <span style="color: #b22222;">break;</span>
+//   <span style="color: #b22222;">case p4:</span>
+//     <span style="color: #b22222;">active(a4);</span>
+//     <span style="color: #b22222;">break;</span>
+//   <span style="color: #b22222;">case p5:</span>
+//     <span style="color: #b22222;">active(a5);</span>
+//     <span style="color: #b22222;">break;</span>
+// <span style="color: #b22222;">}</span>
+</pre>
+</div>
+<script>
 </script>
 
 <scroll-indicator></scroll-indicator>
