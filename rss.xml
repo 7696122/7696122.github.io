@@ -6,7 +6,161 @@
 <generator>Emacs webfeeder.el</generator>
 <link>https://7696122.github.io</link>
 <atom:link href="https://7696122.github.io/rss.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Tue, 24 Jan 2023 20:39:58 +0900</lastBuildDate>
+<lastBuildDate>Tue, 24 Jan 2023 20:51:11 +0900</lastBuildDate>
+<item>
+  <title>디지털가든</title>
+  <description><![CDATA[<main id="content" class="content"> <div class="sitemap" id="org7ed5a9b">
+ <p>
+
+</p>
+
+</div>
+</main>]]></description>
+  <link>https://7696122.github.io/02 blog/index.html</link>
+  <guid isPermaLink="false">https://7696122.github.io/02 blog/index.html</guid>
+  <pubDate>Tue, 24 Jan 2023 20:51:00 +0900</pubDate>
+</item>
+<item>
+  <title>Index</title>
+  <description><![CDATA[<main id="content" class="content"> <header> <h1 class="title">Index</h1>
+</header> <nav id="table-of-contents" role="doc-toc"> <h2>Table of Contents</h2>
+ <div id="text-table-of-contents" role="doc-toc">
+ <ul> <li> <a href="#orgc2dfcb7">1. E</a></li>
+</ul></div>
+</nav> <div id="outline-container-orgc2dfcb7" class="outline-2">
+ <h2 id="orgc2dfcb7"> <span class="section-number-2">1.</span>  <a href="#orgc2dfcb7">E</a></h2>
+ <div class="outline-text-2" id="text-1">
+ <ul class="org-ul"> <li>emacs
+ <ul class="org-ul"> <li> <a href="20230104035041-weblorg.html">weblorg</a></li>
+</ul></li>
+</ul></div>
+</div>
+</main>]]></description>
+  <link>https://7696122.github.io/03 braindump/theindex.html</link>
+  <guid isPermaLink="false">https://7696122.github.io/03 braindump/theindex.html</guid>
+  <pubDate>Tue, 24 Jan 2023 20:51:00 +0900</pubDate>
+</item>
+<item>
+  <title>디지털가든</title>
+  <description><![CDATA[<main id="content" class="content"> <div class="sitemap" id="orgc7f856c">
+ <ul class="org-ul"> <li> <a href="2023-01-24.html">2023-01-24</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-24 화></span></span></li>
+</ul></div>
+</main>]]></description>
+  <link>https://7696122.github.io/04 journal/index.html</link>
+  <guid isPermaLink="false">https://7696122.github.io/04 journal/index.html</guid>
+  <pubDate>Tue, 24 Jan 2023 20:51:00 +0900</pubDate>
+</item>
+<item>
+  <title>Index</title>
+  <description><![CDATA[<main id="content" class="content"> <header> <h1 class="title">Index</h1>
+</header></main>]]></description>
+  <link>https://7696122.github.io/04 journal/theindex.html</link>
+  <guid isPermaLink="false">https://7696122.github.io/04 journal/theindex.html</guid>
+  <pubDate>Tue, 24 Jan 2023 20:51:00 +0900</pubDate>
+</item>
+<item>
+  <title>Index</title>
+  <description><![CDATA[<main id="content" class="content"> <header> <h1 class="title">Index</h1>
+</header></main>]]></description>
+  <link>https://7696122.github.io/roam/blog/theindex.html</link>
+  <guid isPermaLink="false">https://7696122.github.io/roam/blog/theindex.html</guid>
+  <pubDate>Tue, 24 Jan 2023 20:51:00 +0900</pubDate>
+</item>
+<item>
+  <title>디지털가든</title>
+  <description><![CDATA[<main id="content" class="content"> <div id="outline-container-orga1b2772" class="outline-2">
+ <h2 id="orga1b2772"> <a href="#orga1b2772">오늘</a></h2>
+ <div class="outline-text-2" id="text-orga1b2772">
+ <div class="today" id="orge878a51">
+ <blockquote>
+ <p>
+ <strike>21(토) ~ 24(월)까지 빨간날</strike>
+</p>
+
+ <p>
+> 끝났다
+</p>
+
+ <p>
+ <a href="https://www.hani.co.kr/arti/society/society_general/1076781.html">“연휴를 하루 까먹은 기분” 내일 출근길은 더 춥다 : 사회일반 : 사회 : 뉴스 : 한겨레</a>
+</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+
+ <div id="outline-container-orgbd7fed5" class="outline-2">
+ <h2 id="orgbd7fed5"> <a href="#orgbd7fed5">최근 글</a></h2>
+ <div class="outline-text-2" id="text-orgbd7fed5">
+ <div class="recent" id="orgb1c8ddb">
+ <ul class="org-ul"> <li> <a href="../roam/braindump/20230118064536-git_subtree.html">Git subtree</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-18 수></span></span></li>
+ <li> <a href="../roam/braindump/20230117125941-1인_개발자.html">1인 개발자</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-17 화></span></span></li>
+ <li> <a href="../roam/braindump/20230117063749-google_maps_api.html">google maps api</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-17 화></span></span></li>
+ <li> <a href="../roam/braindump/20230106212912-dart.html">dart</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-06 금></span></span></li>
+ <li> <a href="../roam/braindump/20230106122610-null_versus_undefined.html">null versus undefined</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-06 금></span></span></li>
+ <li> <a href="../roam/braindump/20230106073641-get_filetags.html">Get #+filetags:</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-06 금></span></span></li>
+ <li> <a href="../roam/braindump/20230105075603-git에서_html이_binary로_표시되는_문제.html">git에서 html이 binary로 표시되는 문제</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-05 목></span></span></li>
+ <li> <a href="../roam/braindump/20230104035041-weblorg.html">weblorg</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-04 수></span></span></li>
+ <li> <a href="../roam/braindump/20230104021551-devenv.html">devenv</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-04 수></span></span></li>
+ <li> <a href="../roam/braindump/20221222073142-http_cookie.html">HTTP cookie</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-04 수></span></span></li>
+</ul></div>
+</div>
+</div>
+
+ <div id="outline-container-org08d1d02" class="outline-2">
+ <h2 id="org08d1d02"> <a href="#org08d1d02">Sitemap && Feed</a></h2>
+ <div class="outline-text-2" id="text-org08d1d02">
+ <dl class="org-dl"> <dt>sitemap</dt> <dd> <a href="https://7696122.github.io/sitemap.xml">https://7696122.github.io/sitemap.xml</a></dd>
+ <dt>feed</dt> <dd> <a href="https://7696122.github.io/rss.xml">https://7696122.github.io/rss.xml</a></dd>
+</dl></div>
+</div>
+</main>]]></description>
+  <link>https://7696122.github.io/index.html</link>
+  <guid isPermaLink="false">https://7696122.github.io/index.html</guid>
+  <pubDate>Tue, 24 Jan 2023 20:51:00 +0900</pubDate>
+</item>
+<item>
+  <title>Index</title>
+  <description><![CDATA[<main id="content" class="content"> <header> <h1 class="title">Index</h1>
+</header> <nav id="table-of-contents" role="doc-toc"> <h2>Table of Contents</h2>
+ <div id="text-table-of-contents" role="doc-toc">
+ <ul> <li> <a href="#orgbca3dfc">1. A</a></li>
+ <li> <a href="#org640c3f8">2. B</a></li>
+ <li> <a href="#orgb74fb86">3. H</a></li>
+ <li> <a href="#orgf86a0b7">4. J</a></li>
+</ul></div>
+</nav> <div id="outline-container-orgbca3dfc" class="outline-2">
+ <h2 id="orgbca3dfc"> <span class="section-number-2">1.</span>  <a href="#orgbca3dfc">A</a></h2>
+ <div class="outline-text-2" id="text-1">
+ <ul class="org-ul"> <li> <a href="05 about/index.html">about</a></li>
+</ul></div>
+</div>
+ <div id="outline-container-org640c3f8" class="outline-2">
+ <h2 id="org640c3f8"> <span class="section-number-2">2.</span>  <a href="#org640c3f8">B</a></h2>
+ <div class="outline-text-2" id="text-2">
+ <ul class="org-ul"> <li> <a href="02 blog/index.html">blog</a></li>
+ <li> <a href="04 journal/index.html">braindump</a></li>
+ <li> <a href="03 braindump/index.html">braindump</a></li>
+</ul></div>
+</div>
+ <div id="outline-container-orgb74fb86" class="outline-2">
+ <h2 id="orgb74fb86"> <span class="section-number-2">3.</span>  <a href="#orgb74fb86">H</a></h2>
+ <div class="outline-text-2" id="text-3">
+ <ul class="org-ul"> <li> <a href="01 home/index.html">home</a></li>
+</ul></div>
+</div>
+ <div id="outline-container-orgf86a0b7" class="outline-2">
+ <h2 id="orgf86a0b7"> <span class="section-number-2">4.</span>  <a href="#orgf86a0b7">J</a></h2>
+ <div class="outline-text-2" id="text-4">
+ <ul class="org-ul"> <li> <a href="04 journal/index.html">Journal</a></li>
+</ul></div>
+</div>
+</main>]]></description>
+  <link>https://7696122.github.io/theindex.html</link>
+  <guid isPermaLink="false">https://7696122.github.io/theindex.html</guid>
+  <pubDate>Tue, 24 Jan 2023 20:51:00 +0900</pubDate>
+</item>
 <item>
   <title>디지털가든</title>
   <description><![CDATA[<main id="content" class="content"> <div id="outline-container-orge9ed2df" class="outline-2">
@@ -26,19 +180,6 @@
 </main>]]></description>
   <link>https://7696122.github.io/01 home/index.html</link>
   <guid isPermaLink="false">https://7696122.github.io/01 home/index.html</guid>
-  <pubDate>Tue, 24 Jan 2023 20:39:00 +0900</pubDate>
-</item>
-<item>
-  <title>디지털가든</title>
-  <description><![CDATA[<main id="content" class="content"> <div class="sitemap" id="org22b4a0b">
- <p>
-
-</p>
-
-</div>
-</main>]]></description>
-  <link>https://7696122.github.io/02 blog/index.html</link>
-  <guid isPermaLink="false">https://7696122.github.io/02 blog/index.html</guid>
   <pubDate>Tue, 24 Jan 2023 20:39:00 +0900</pubDate>
 </item>
 <item>
@@ -2128,49 +2269,11 @@ User-Agent string에는 많은 엔트로피(정보량)가 담겨 있어 개인�
   <pubDate>Tue, 24 Jan 2023 20:39:00 +0900</pubDate>
 </item>
 <item>
-  <title>Index</title>
-  <description><![CDATA[<main id="content" class="content"> <header> <h1 class="title">Index</h1>
-</header> <nav id="table-of-contents" role="doc-toc"> <h2>Table of Contents</h2>
- <div id="text-table-of-contents" role="doc-toc">
- <ul> <li> <a href="#orgc2dfcb7">1. E</a></li>
-</ul></div>
-</nav> <div id="outline-container-orgc2dfcb7" class="outline-2">
- <h2 id="orgc2dfcb7"> <span class="section-number-2">1.</span>  <a href="#orgc2dfcb7">E</a></h2>
- <div class="outline-text-2" id="text-1">
- <ul class="org-ul"> <li>emacs
- <ul class="org-ul"> <li> <a href="20230104035041-weblorg.html">weblorg</a></li>
-</ul></li>
-</ul></div>
-</div>
-</main>]]></description>
-  <link>https://7696122.github.io/03 braindump/theindex.html</link>
-  <guid isPermaLink="false">https://7696122.github.io/03 braindump/theindex.html</guid>
-  <pubDate>Tue, 24 Jan 2023 20:39:00 +0900</pubDate>
-</item>
-<item>
   <title>2023-01-24</title>
   <description><![CDATA[<main id="content" class="content"> <header> <h1 class="title">2023-01-24</h1>
 </header></main>]]></description>
   <link>https://7696122.github.io/04 journal/2023-01-24.html</link>
   <guid isPermaLink="false">https://7696122.github.io/04 journal/2023-01-24.html</guid>
-  <pubDate>Tue, 24 Jan 2023 20:39:00 +0900</pubDate>
-</item>
-<item>
-  <title>디지털가든</title>
-  <description><![CDATA[<main id="content" class="content"> <div class="sitemap" id="org90afb15">
- <ul class="org-ul"> <li> <a href="2023-01-24.html">2023-01-24</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-24 화></span></span></li>
-</ul></div>
-</main>]]></description>
-  <link>https://7696122.github.io/04 journal/index.html</link>
-  <guid isPermaLink="false">https://7696122.github.io/04 journal/index.html</guid>
-  <pubDate>Tue, 24 Jan 2023 20:39:00 +0900</pubDate>
-</item>
-<item>
-  <title>Index</title>
-  <description><![CDATA[<main id="content" class="content"> <header> <h1 class="title">Index</h1>
-</header></main>]]></description>
-  <link>https://7696122.github.io/04 journal/theindex.html</link>
-  <guid isPermaLink="false">https://7696122.github.io/04 journal/theindex.html</guid>
   <pubDate>Tue, 24 Jan 2023 20:39:00 +0900</pubDate>
 </item>
 <item>
@@ -2182,101 +2285,6 @@ User-Agent string에는 많은 엔트로피(정보량)가 담겨 있어 개인�
 </ul></main>]]></description>
   <link>https://7696122.github.io/05 about/index.html</link>
   <guid isPermaLink="false">https://7696122.github.io/05 about/index.html</guid>
-  <pubDate>Tue, 24 Jan 2023 20:39:00 +0900</pubDate>
-</item>
-<item>
-  <title>Index</title>
-  <description><![CDATA[<main id="content" class="content"> <header> <h1 class="title">Index</h1>
-</header></main>]]></description>
-  <link>https://7696122.github.io/roam/blog/theindex.html</link>
-  <guid isPermaLink="false">https://7696122.github.io/roam/blog/theindex.html</guid>
-  <pubDate>Tue, 24 Jan 2023 20:39:00 +0900</pubDate>
-</item>
-<item>
-  <title>디지털가든</title>
-  <description><![CDATA[<main id="content" class="content"> <div id="outline-container-orga1b2772" class="outline-2">
- <h2 id="orga1b2772"> <a href="#orga1b2772">오늘</a></h2>
- <div class="outline-text-2" id="text-orga1b2772">
- <div class="today" id="orga9d52ab">
- <blockquote>
- <p>
-21(토) ~ 24(월)까지 빨간날
-</p>
-</blockquote>
-
-</div>
-</div>
-</div>
-
- <div id="outline-container-orgbd7fed5" class="outline-2">
- <h2 id="orgbd7fed5"> <a href="#orgbd7fed5">최근 글</a></h2>
- <div class="outline-text-2" id="text-orgbd7fed5">
- <div class="recent" id="orgbbe10bb">
- <ul class="org-ul"> <li> <a href="../roam/braindump/20230118064536-git_subtree.html">Git subtree</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-18 수></span></span></li>
- <li> <a href="../roam/braindump/20230117125941-1인_개발자.html">1인 개발자</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-17 화></span></span></li>
- <li> <a href="../roam/braindump/20230117063749-google_maps_api.html">google maps api</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-17 화></span></span></li>
- <li> <a href="../roam/braindump/20230106212912-dart.html">dart</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-06 금></span></span></li>
- <li> <a href="../roam/braindump/20230106122610-null_versus_undefined.html">null versus undefined</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-06 금></span></span></li>
- <li> <a href="../roam/braindump/20230106073641-get_filetags.html">Get #+filetags:</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-06 금></span></span></li>
- <li> <a href="../roam/braindump/20230105075603-git에서_html이_binary로_표시되는_문제.html">git에서 html이 binary로 표시되는 문제</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-05 목></span></span></li>
- <li> <a href="../roam/braindump/20230104035041-weblorg.html">weblorg</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-04 수></span></span></li>
- <li> <a href="../roam/braindump/20230104021551-devenv.html">devenv</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-04 수></span></span></li>
- <li> <a href="../roam/braindump/20221222073142-http_cookie.html">HTTP cookie</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-04 수></span></span></li>
-</ul></div>
-</div>
-</div>
-
- <div id="outline-container-org08d1d02" class="outline-2">
- <h2 id="org08d1d02"> <a href="#org08d1d02">Sitemap && Feed</a></h2>
- <div class="outline-text-2" id="text-org08d1d02">
- <dl class="org-dl"> <dt>sitemap</dt> <dd> <a href="https://7696122.github.io/sitemap.xml">https://7696122.github.io/sitemap.xml</a></dd>
- <dt>feed</dt> <dd> <a href="https://7696122.github.io/rss.xml">https://7696122.github.io/rss.xml</a></dd>
-</dl></div>
-</div>
-</main>]]></description>
-  <link>https://7696122.github.io/index.html</link>
-  <guid isPermaLink="false">https://7696122.github.io/index.html</guid>
-  <pubDate>Tue, 24 Jan 2023 20:39:00 +0900</pubDate>
-</item>
-<item>
-  <title>Index</title>
-  <description><![CDATA[<main id="content" class="content"> <header> <h1 class="title">Index</h1>
-</header> <nav id="table-of-contents" role="doc-toc"> <h2>Table of Contents</h2>
- <div id="text-table-of-contents" role="doc-toc">
- <ul> <li> <a href="#orgbca3dfc">1. A</a></li>
- <li> <a href="#org640c3f8">2. B</a></li>
- <li> <a href="#orgb74fb86">3. H</a></li>
- <li> <a href="#orgf86a0b7">4. J</a></li>
-</ul></div>
-</nav> <div id="outline-container-orgbca3dfc" class="outline-2">
- <h2 id="orgbca3dfc"> <span class="section-number-2">1.</span>  <a href="#orgbca3dfc">A</a></h2>
- <div class="outline-text-2" id="text-1">
- <ul class="org-ul"> <li> <a href="05 about/index.html">about</a></li>
-</ul></div>
-</div>
- <div id="outline-container-org640c3f8" class="outline-2">
- <h2 id="org640c3f8"> <span class="section-number-2">2.</span>  <a href="#org640c3f8">B</a></h2>
- <div class="outline-text-2" id="text-2">
- <ul class="org-ul"> <li> <a href="02 blog/index.html">blog</a></li>
- <li> <a href="04 journal/index.html">braindump</a></li>
- <li> <a href="03 braindump/index.html">braindump</a></li>
-</ul></div>
-</div>
- <div id="outline-container-orgb74fb86" class="outline-2">
- <h2 id="orgb74fb86"> <span class="section-number-2">3.</span>  <a href="#orgb74fb86">H</a></h2>
- <div class="outline-text-2" id="text-3">
- <ul class="org-ul"> <li> <a href="01 home/index.html">home</a></li>
-</ul></div>
-</div>
- <div id="outline-container-orgf86a0b7" class="outline-2">
- <h2 id="orgf86a0b7"> <span class="section-number-2">4.</span>  <a href="#orgf86a0b7">J</a></h2>
- <div class="outline-text-2" id="text-4">
- <ul class="org-ul"> <li> <a href="04 journal/index.html">Journal</a></li>
-</ul></div>
-</div>
-</main>]]></description>
-  <link>https://7696122.github.io/theindex.html</link>
-  <guid isPermaLink="false">https://7696122.github.io/theindex.html</guid>
   <pubDate>Tue, 24 Jan 2023 20:39:00 +0900</pubDate>
 </item>
 </channel>
