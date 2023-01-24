@@ -4,7 +4,7 @@
 <!-- 2023-01-24 화 20:39 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>디지털가든</title>
+<title>org-roam node 얻기</title>
 <meta name="author" content="7696122" />
 <meta name="description" content="7696122's Personal Site and Digital Garden" />
 <meta name="keywords" content="personal,blog,site" />
@@ -78,13 +78,49 @@ height='0' width='0' style='display:none;visibility:hidden'></iframe></noscript>
 </header>
 <main id="content" class="content">
 <header>
-<h1 class="title">디지털가든</h1>
-</header><div class="sitemap" id="orgaea5a91">
-<p>
+<h1 class="title">org-roam node 얻기</h1>
+</header><div class="org-src-container">
+<label class="org-src-name"><span class="listing-number">Listing 1: </span>org-roam-node-file-by-title</label><pre class="src src-elisp" id="org142560a">(<span style="color: #a020f0;">require</span> '<span style="color: #008b8b;">org-roam-node</span>)
 
+(<span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">org-roam-node-file-by-title</span> (_title)
+  (<span style="color: #a020f0;">let</span> ((_roam-node (org-roam-node-from-title-or-alias _title)))
+    (<span style="color: #a020f0;">and</span> _roam-node (org-roam-node-file _roam-node))))
+</pre>
+</div>
+
+<div class="org-src-container">
+<label class="org-src-name"><span class="listing-number">Listing 2: </span>org-roam-node-file-by-title(dash 사용)</label><pre class="src src-elisp" id="org48981f7">(<span style="color: #a020f0;">require</span> '<span style="color: #008b8b;">dash</span>)
+(<span style="color: #a020f0;">require</span> '<span style="color: #008b8b;">org-roam-node</span>)
+
+(<span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">org-roam-node-file-by-title</span> (_title)
+  (<span style="color: #a020f0;">--&gt;</span>
+   (org-roam-node-from-title-or-alias _title)
+   (<span style="color: #a020f0;">and</span> it (org-roam-node-file it))))
+</pre>
+</div>
+
+<pre class="example">
+org-roam-node-file:title
+</pre>
+
+
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">(org-roam-node-file:title <span style="color: #8b2252;">"org-roam node &#50619;&#44592;"</span>)
+</pre>
+</div>
+
+<p>
+/Users/mnml/org/roam/20221219071941-org_roam_node_얻기.org
 </p>
 
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">(org-roam-node-file:title <span style="color: #8b2252;">"org-roam node &#50619;&#44592;2"</span>)
+</pre>
 </div>
+
+<p>
+nil
+</p>
 </main>
 <footer id="postamble" class="status">
 <p>© 2023 디지털가든 by 7696122</p>

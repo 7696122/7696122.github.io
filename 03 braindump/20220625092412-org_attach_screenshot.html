@@ -4,7 +4,7 @@
 <!-- 2023-01-24 화 20:39 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>디지털가든</title>
+<title>org-attach-screenshot</title>
 <meta name="author" content="7696122" />
 <meta name="description" content="7696122's Personal Site and Digital Garden" />
 <meta name="keywords" content="personal,blog,site" />
@@ -78,12 +78,48 @@ height='0' width='0' style='display:none;visibility:hidden'></iframe></noscript>
 </header>
 <main id="content" class="content">
 <header>
-<h1 class="title">디지털가든</h1>
-</header><div class="sitemap" id="orgaea5a91">
-<p>
+<h1 class="title">org-attach-screenshot</h1>
+</header><nav id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org7cf75df">1. package</a></li>
+<li><a href="#org29e6e02">2. config</a></li>
+</ul>
+</div>
+</nav>
 
-</p>
+<div id="outline-container-org7cf75df" class="outline-2">
+<h2 id="org7cf75df"><span class="section-number-2">1.</span> <a href="#org7cf75df">package</a></h2>
+<div class="outline-text-2" id="text-1">
+<div class="org-src-container">
+<pre class="src src-elisp" id="orgf0463f4"><span style="color: #a020f0;">(package!</span> org-attach-screenshot)
+</pre>
+</div>
+</div>
+</div>
 
+<div id="outline-container-org29e6e02" class="outline-2">
+<h2 id="org29e6e02"><span class="section-number-2">2.</span> <a href="#org29e6e02">config</a></h2>
+<div class="outline-text-2" id="text-2">
+<div class="org-src-container">
+<pre class="src src-elisp" id="org27417bf"><span style="color: #a020f0;">(use-package!</span> org-attach-screenshot
+  <span style="color: #483d8b;">:defer</span> t
+  <span style="color: #483d8b;">:bind</span> (<span style="color: #8b2252;">"&lt;f6&gt; s"</span> . org-attach-screenshot)
+  <span style="color: #483d8b;">:config</span>
+  (<span style="color: #a020f0;">setq</span>
+   ;; <span style="color: #b22222;">org-attach-screenshot-dirfunction</span>
+   ;; <span style="color: #b22222;">(lambda ()</span>
+   ;;   <span style="color: #b22222;">(progn (cl-assert (buffer-file-name))</span>
+   ;;          <span style="color: #b22222;">(concat (file-name-sans-extension (buffer-file-name))</span>
+   ;;                  <span style="color: #b22222;">"-att")))</span>
+   org-attach-screenshot-command-line
+   <span style="color: #8b2252;">"screencapture -s %f"</span>
+   ;; <span style="color: #b22222;">"gnome-screenshot -a -f %f"</span>
+   ))
+</pre>
+</div>
+</div>
 </div>
 </main>
 <footer id="postamble" class="status">
