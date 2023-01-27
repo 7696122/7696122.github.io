@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<!-- 2023-01-27 금 22:50 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Open Graph protocol</title>
+<meta name="author" content="7696122" />
+<meta name="description" content="7696122's Personal Site and Digital Garden" />
+<meta name="keywords" content="personal,blog,site" />
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' href='https://cdn.simplecss.org/simple.min.css'>
+<link href='/stylesheets/main.css' media='screen, projection' rel='stylesheet' type='text/css' />
+<style>
+pre.src-typescript:before { content: 'Typescript'; }
+</style>
+<link rel='stylesheet' href='/stylesheets/pesticide.css'>
+<meta name='apple-mobile-web-app-capable' content='yes'>
+<meta name='google-site-verification' content='dGwvD5f5bqXp49tDOO198L4-_t5ac3obXyDtsFOaO9A' />
+<meta name="naver-site-verification" content="239442e3d7dc2e5c0530ef2a4b3120eb551cceba" />
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P3KXTHX');</script>
+<!-- End Google Tag Manager -->
+<script async src='https://www.googletagmanager.com/gtag/js?id=G-PNL4G4DJ5G'></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PNL4G4DJ5G');
+</script>
+<script async src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1952559036808755' crossorigin='anonymous'></script>
+<script src='https://www.googleoptimize.com/optimize.js?id=OPT-52ZFWV8'></script>
+<script src='https://kit.fontawesome.com/fb2f5d37eb.js' crossorigin='anonymous'></script>
+<script src='https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js'></script>
+<script src='https://npmcdn.com/underscore.string@3.3.6/dist/underscore.string.min.js'></script>
+<script src='/js/highlighter-ref-code-blockscript.js'></script>
+<script src='/js/scroll-indicator.js'></script>
+<script src='/js/navigator.js'></script>
+<script src='/js/sticky-header.js'></script>
+<script src='/js/main.js'></script>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src='https://www.googletagmanager.com/ns.html?id=GTM-P3KXTHX'
+height='0' width='0' style='display:none;visibility:hidden'></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --><header id="preamble" class="status">
+<div class="banner" id="org7a00621">
+<a href="/" class="none-deco">
+<!-- <span id="icon">여기엔</span> -->
+<h1>디지털가든</h1>
+</a>
+
+</div>
+
+<div class='navigation-panel opacity float'>
+<nav id="nav" aria-label="Main menu">
+<ul class="org-ul">
+<li><a href="/home/index.html#ID-7430811a-d538-4138-8787-3c48583b31f7"><span>Home</span></a></li>
+<li><a href="/blog/index.html#ID-3793791c-825f-4287-9066-29fd5938b0da"><span>Blog</span></a></li>
+<li><a href="/braindump/index.html#ID-5cf31c6f-0c3a-4f6c-8131-01b2e59e8206"><span>Braindump</span></a></li>
+<li><a href="/journal/index.html#ID-0d8d5d1d-78e3-48eb-9943-05c1bb78b51d"><span>Journal</span></a></li>
+<li><a href="/about/index.html#ID-d976f0dc-8ee2-4b1a-ab18-381c0b3fca19"><span>About</span></a></li>
+</ul>
+</nav>
+
+
+<script type="text/javascript" src="/js/nav.js"></script>
+
+<scroll-indicator></scroll-indicator>
+</div>
+</header>
+<main id="content" class="content">
+<header>
+<h1 class="title">Open Graph protocol</h1>
+</header><nav id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgc68d617">1. generate</a></li>
+<li><a href="#org0bb5f73">2. Debugger</a></li>
+<li><a href="#org997db16">3. Ref</a></li>
+<li><a href="#orgf98c83c">4. Backlinks</a>
+<ul>
+<li><a href="#orgda85a42">4.1. nextjs</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</nav>
+
+<div id="outline-container-orgc68d617" class="outline-2">
+<h2 id="orgc68d617"><span class="section-number-2">1.</span> <a href="#orgc68d617">generate</a></h2>
+<div class="outline-text-2" id="text-1">
+<div class="org-src-container">
+<pre class="src src-elisp">(<span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">76/org-html-close-tag</span> (tag <span style="color: #228b22;">&amp;rest</span> attrs)
+  <span style="color: #8b2252;">"Return close-tag for string TAG.</span>
+<span style="color: #8b2252;">ATTRS specify additional attributes."</span>
+  (concat <span style="color: #8b2252;">"&lt;"</span> tag <span style="color: #8b2252;">" "</span>
+          (mapconcat (<span style="color: #a020f0;">lambda</span> (attr)
+                       (format <span style="color: #8b2252;">"%s=\"%s\""</span> (car attr) (cadr attr)))
+                     attrs
+                     <span style="color: #8b2252;">" "</span>)
+      <span style="color: #8b2252;">"&gt;"</span>))
+
+(<span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">76/html-head-extra</span> (file project)
+  <span style="color: #8b2252;">"Return &lt;meta&gt; elements for nice unfurling on Twitter and Slack."</span>
+  (<span style="color: #a020f0;">let*</span> ((info (cdr project))
+         (org-export-options-alist
+          `((<span style="color: #483d8b;">:title</span> <span style="color: #8b2252;">"TITLE"</span> nil nil parse)
+            (<span style="color: #483d8b;">:date</span> <span style="color: #8b2252;">"DATE"</span> nil nil parse)
+            (<span style="color: #483d8b;">:author</span> <span style="color: #8b2252;">"AUTHOR"</span> nil ,(plist-get info <span style="color: #483d8b;">:author</span>) space)
+            (<span style="color: #483d8b;">:description</span> <span style="color: #8b2252;">"DESCRIPTION"</span> nil nil newline)
+            (<span style="color: #483d8b;">:keywords</span> <span style="color: #8b2252;">"KEYWORDS"</span> nil nil space)
+            (<span style="color: #483d8b;">:meta-image</span> <span style="color: #8b2252;">"META_IMAGE"</span> nil ,(plist-get info <span style="color: #483d8b;">:meta-image</span>) nil)
+            (<span style="color: #483d8b;">:meta-type</span> <span style="color: #8b2252;">"META_TYPE"</span> nil ,(plist-get info <span style="color: #483d8b;">:meta-type</span>) nil)))
+         (title (org-publish-find-title file project))
+         (date (org-publish-find-date file project))
+         (author (org-publish-find-property file <span style="color: #483d8b;">:author</span> project))
+         (description (org-publish-find-property file <span style="color: #483d8b;">:description</span> project))
+         (link-home (file-name-as-directory (plist-get info <span style="color: #483d8b;">:html-link-home</span>)))
+         (extension (<span style="color: #a020f0;">or</span> (plist-get info <span style="color: #483d8b;">:html-extension</span>) org-html-extension))
+         (rel-file (org-publish-file-relative-name file info))
+         (full-url (concat link-home (file-name-sans-extension rel-file) <span style="color: #8b2252;">"."</span> extension))
+         (image (concat link-home (org-publish-find-property file <span style="color: #483d8b;">:meta-image</span> project)))
+         (favicon (concat link-home <span style="color: #8b2252;">"favicon.ico"</span>))
+         (type (org-publish-find-property file <span style="color: #483d8b;">:meta-type</span> project)))
+    (mapconcat 'identity
+               `(,(76/org-html-close-tag <span style="color: #8b2252;">"link"</span> '(rel icon) '(type image/x-icon) `(href ,favicon))
+                 ,(76/org-html-close-tag <span style="color: #8b2252;">"link"</span> '(rel alternate) '(type application/rss+xml) '(href <span style="color: #8b2252;">"rss.xml"</span>) '(title <span style="color: #8b2252;">"RSS feed"</span>))
+                 ,(76/org-html-close-tag <span style="color: #8b2252;">"meta"</span> '(property og:title) `(content ,title))
+                 ,(76/org-html-close-tag <span style="color: #8b2252;">"meta"</span> '(property og:url) `(content ,full-url))
+                 ,(<span style="color: #a020f0;">and</span> description
+                       (76/org-html-close-tag <span style="color: #8b2252;">"meta"</span> '(property og:description) `(content ,description)))
+                 ,(76/org-html-close-tag <span style="color: #8b2252;">"meta"</span> '(property og:image) `(content ,image))
+                 ,(76/org-html-close-tag <span style="color: #8b2252;">"meta"</span> '(property og:type) `(content ,type))
+                 ,(<span style="color: #a020f0;">and</span> (equal type <span style="color: #8b2252;">"article"</span>)
+                       (76/org-html-close-tag <span style="color: #8b2252;">"meta"</span> '(property article:author) `(content ,author)))
+                 ,(<span style="color: #a020f0;">and</span> (equal type <span style="color: #8b2252;">"article"</span>)
+                       (76/org-html-close-tag <span style="color: #8b2252;">"meta"</span> '(property article:published_time) `(content ,(format-time-string <span style="color: #8b2252;">"%FT%T%z"</span> date))))
+
+                 ,(76/org-html-close-tag <span style="color: #8b2252;">"meta"</span> '(property twitter:title) `(content ,title))
+                 ,(76/org-html-close-tag <span style="color: #8b2252;">"meta"</span> '(property twitter:url) `(content ,full-url))
+                 ,(76/org-html-close-tag <span style="color: #8b2252;">"meta"</span> '(property twitter:image) `(content ,image))
+                 ,(<span style="color: #a020f0;">and</span> description
+                       (76/org-html-close-tag <span style="color: #8b2252;">"meta"</span> '(property twitter:description) `(content ,description)))
+                 ,(<span style="color: #a020f0;">and</span> description
+                       (76/org-html-close-tag <span style="color: #8b2252;">"meta"</span> '(property twitter:card) '(content summary)))
+                 )
+               <span style="color: #8b2252;">"\n"</span>)))
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org0bb5f73" class="outline-2">
+<h2 id="org0bb5f73"><span class="section-number-2">2.</span> <a href="#org0bb5f73">Debugger</a></h2>
+<div class="outline-text-2" id="text-2">
+<ul class="org-ul">
+<li><a href="https://developers.facebook.com/tools/debug/?q=https%3A%2F%2Fnegabaro.github.io%2Fclip-youtube%2F">공유 디버거 - Meta for Developers</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org997db16" class="outline-2">
+<h2 id="org997db16"><span class="section-number-2">3.</span> <a href="#org997db16">Ref</a></h2>
+<div class="outline-text-2" id="text-3">
+<ul class="org-ul">
+<li><a href="https://ogp.me/">The Open Graph protocol</a></li>
+<li><a href="https://nextjs.org/learn/seo/rendering-and-ranking/metadata">Metadata - Rendering and Ranking | Learn Next.js</a></li>
+<li id="[[<a href="https://daeguowl.tistory.com/187">https://daeguowl.tistory.com/187</a>][SPA에서 서버사이드랜더링 하지 않고 SEO 우회하기">쌀 팔다 개발자]]</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgf98c83c" class="outline-2 references">
+<h2 id="orgf98c83c"><span class="section-number-2">4.</span> <a href="#orgf98c83c">Backlinks</a></h2>
+<div class="outline-text-2" id="text-4">
+<hr>
+</div>
+<div id="outline-container-orgda85a42" class="outline-3">
+<h3 id="orgda85a42"><span class="section-number-3">4.1.</span> <a href="#orgda85a42"><a href="../blog/_20230104091359-nextjs.html#ID-9074e093-230d-4858-be18-ffb0fcc8eb16">nextjs</a></a></h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+SPA
+<a href="20221231032602-open_graph_protocol.html#ID-bfe8f424-312b-487c-b9bf-ae28b4f781f0">Open Graph protocol</a>
+</p>
+</div>
+</div>
+</div>
+</main>
+<footer id="postamble" class="status">
+<p>© 2023 디지털가든 by 7696122</p>
+<script type='module' src='/app.js'></script>
+</footer>
+</body>
+</html>
