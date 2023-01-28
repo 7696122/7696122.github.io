@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<!-- 2023-01-28 토 17:05 -->
+<!-- 2023-01-28 토 21:50 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>java development</title>
@@ -193,7 +193,8 @@
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   .org-svg { }
 </style>
-<link rel='stylesheet' href='https://cdn.simplecss.org/simple.min.css'>
+<link rel='stylesheet' href='/css/tufte.css' type='text/css' />
+<link rel='stylesheet' href='/css/latex.css' type='text/css' />
 <link href='/stylesheets/main.css' media='screen, projection' rel='stylesheet' type='text/css' />
 <style>
 pre.src-typescript:before { content: 'Typescript'; }
@@ -201,7 +202,7 @@ pre.src-typescript:before { content: 'Typescript'; }
 <link rel='stylesheet' href='/stylesheets/pesticide.css'>
 <meta name='apple-mobile-web-app-capable' content='yes'>
 <meta name='google-site-verification' content='dGwvD5f5bqXp49tDOO198L4-_t5ac3obXyDtsFOaO9A' />
-<meta name="naver-site-verification" content="239442e3d7dc2e5c0530ef2a4b3120eb551cceba" />
+<meta name='naver-site-verification' content='239442e3d7dc2e5c0530ef2a4b3120eb551cceba' />
 
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -235,7 +236,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src='https://www.googletagmanager.com/ns.html?id=GTM-P3KXTHX'
 height='0' width='0' style='display:none;visibility:hidden'></iframe></noscript>
 <!-- End Google Tag Manager (noscript) --><header id="preamble" class="status">
-<div class="banner" id="orgac98eaf">
+<div class="banner" id="org43d2cb0">
 <a href="/" class="none-deco">
 <!-- <span id="icon">여기엔</span> -->
 <h1>디지털가든</h1>
@@ -249,6 +250,7 @@ height='0' width='0' style='display:none;visibility:hidden'></iframe></noscript>
 <li><a href="../home/index.html"><span>Home</span></a></li>
 <li><a href="../blog/index.html"><span>Blog</span></a></li>
 <li><a href="../braindump/index.html"><span>Braindump</span></a></li>
+<li><a href="../books/index.html"><span>Books</span></a></li>
 <li><a href="../about/index.html"><span>About</span></a></li>
 </ul>
 </nav>
@@ -274,14 +276,12 @@ java로 개발한다면
 <a href="20221215113855-sdkman.html#ID-c2412661-9172-4eee-a8d1-b9994dce406b">sdkman</a>을 사용
 </p>
 
-<div class="org-src-container">
-<pre class="src src-conf" id="orgceaf9eb"># <span style="color: #b22222;">Enable auto-env through the sdkman_auto_env config</span>
+<pre class="code"><code># <span style="color: #b22222;">Enable auto-env through the sdkman_auto_env config</span>
 # <span style="color: #b22222;">Add key=value pairs of SDKs to use below</span>
 <span style="color: #a0522d;">java</span>=11.0.17-amzn
 <span style="color: #a0522d;">gradle</span>=7.6
 
-</pre>
-</div>
+</code></pre>
 </div>
 </div>
 
@@ -305,10 +305,8 @@ gradlew를 사용하려면 gradle이 있어야 하더라
 <code>gradle-wrapper.jar</code> 가 없다면 아래 명령어로 설치
 </p>
 
-<div class="org-src-container">
-<pre class="src src-shell">gradle wrapper
-</pre>
-</div>
+<pre class="code"><code>gradle wrapper
+</code></pre>
 
 <pre class="example">
 ./gradle

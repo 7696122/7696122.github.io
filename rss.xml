@@ -6,7 +6,7 @@
 <generator>Emacs webfeeder.el</generator>
 <link>https://7696122.github.io</link>
 <atom:link href="https://7696122.github.io/rss.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Sat, 28 Jan 2023 17:05:41 +0900</lastBuildDate>
+<lastBuildDate>Sat, 28 Jan 2023 21:50:44 +0900</lastBuildDate>
 <item>
   <title>디지털가든</title>
   <description><![CDATA[<main id="content" class="content"> <ul class="org-ul"> <li>쓰기</li>
@@ -16,11 +16,11 @@
 </ul></main>]]></description>
   <link>https://7696122.github.io/about/index.html</link>
   <guid isPermaLink="false">https://7696122.github.io/about/index.html</guid>
-  <pubDate>Sat, 28 Jan 2023 17:05:00 +0900</pubDate>
+  <pubDate>Sat, 28 Jan 2023 21:50:00 +0900</pubDate>
 </item>
 <item>
   <title>디지털가든</title>
-  <description><![CDATA[<main id="content" class="content"> <div class="sitemap" id="orge8b416c">
+  <description><![CDATA[<main id="content" class="content"> <div class="sitemap" id="org0e267f0">
  <p>
 
 </p>
@@ -29,7 +29,7 @@
 </main>]]></description>
   <link>https://7696122.github.io/blog/index.html</link>
   <guid isPermaLink="false">https://7696122.github.io/blog/index.html</guid>
-  <pubDate>Sat, 28 Jan 2023 17:05:00 +0900</pubDate>
+  <pubDate>Sat, 28 Jan 2023 21:50:00 +0900</pubDate>
 </item>
 <item>
   <title>Index</title>
@@ -37,7 +37,58 @@
 </header></main>]]></description>
   <link>https://7696122.github.io/blog/theindex.html</link>
   <guid isPermaLink="false">https://7696122.github.io/blog/theindex.html</guid>
-  <pubDate>Sat, 28 Jan 2023 17:05:00 +0900</pubDate>
+  <pubDate>Sat, 28 Jan 2023 21:50:00 +0900</pubDate>
+</item>
+<item>
+  <title>books</title>
+  <description><![CDATA[<main id="content" class="content"> <header> <h1 class="title">books</h1>
+</header> <div id="outline-container-orgef43c19" class="outline-2">
+ <h2 id="orgef43c19"> <span class="section-number-2">1.</span>  <a href="#orgef43c19">알고리즘 비밀의 문을 열다 :처음 배우는 알고리즘,토머스 코멘 지음</a></h2>
+ <div class="outline-text-2" id="text-1">
+</div>
+</div>
+ <div id="outline-container-org2ad455d" class="outline-2">
+ <h2 id="org2ad455d"> <span class="section-number-2">2.</span>  <a href="#org2ad455d">인클루시브 디자인 패턴 :접근성 있는 웹디자인하기,헤이던 피커링 지음</a></h2>
+ <div class="outline-text-2" id="text-2">
+</div>
+</div>
+ <div id="outline-container-orge9e5e77" class="outline-2">
+ <h2 id="orge9e5e77"> <span class="section-number-2">3.</span>  <a href="#orge9e5e77">컴퓨팅 사고 :소프트웨어를 통한 문제해결</a></h2>
+ <div class="outline-text-2" id="text-3">
+</div>
+</div>
+ <div id="outline-container-org2987df2" class="outline-2">
+ <h2 id="org2987df2"> <span class="section-number-2">4.</span>  <a href="#org2987df2">마이크로카피 :UX 디자이너의 글쓰기</a></h2>
+ <div class="outline-text-2" id="text-4">
+</div>
+</div>
+ <div id="outline-container-org2335e90" class="outline-2">
+ <h2 id="org2335e90"> <span class="section-number-2">5.</span>  <a href="#org2335e90">1달러 프로토타입 :빠르고 획기적으로 서비스 변화를 줄 수 있는 포스트잇 한 묶음의 비밀!</a></h2>
+ <div class="outline-text-2" id="text-5">
+</div>
+</div>
+ <div id="outline-container-orgf10c1ff" class="outline-2">
+ <h2 id="orgf10c1ff"> <span class="section-number-2">6.</span>  <a href="#orgf10c1ff">자바스크립트 코딩의 기술 :똑똑하게 코딩하는 법</a></h2>
+ <div class="outline-text-2" id="text-6">
+</div>
+</div>
+ <div id="outline-container-org18de8af" class="outline-2">
+ <h2 id="org18de8af"> <span class="section-number-2">7.</span>  <a href="#org18de8af">(코딩의 수학적 기초를 다지는) 알고리즘 퍼즐 68 :더 빠르고 간단하게 구현하는 프로그래밍의 즐거움 ,기초편</a></h2>
+ <div class="outline-text-2" id="text-7">
+</div>
+</div>
+</main>]]></description>
+  <link>https://7696122.github.io/books/index.html</link>
+  <guid isPermaLink="false">https://7696122.github.io/books/index.html</guid>
+  <pubDate>Sat, 28 Jan 2023 21:50:00 +0900</pubDate>
+</item>
+<item>
+  <title>Index</title>
+  <description><![CDATA[<main id="content" class="content"> <header> <h1 class="title">Index</h1>
+</header></main>]]></description>
+  <link>https://7696122.github.io/books/theindex.html</link>
+  <guid isPermaLink="false">https://7696122.github.io/books/theindex.html</guid>
+  <pubDate>Sat, 28 Jan 2023 21:50:00 +0900</pubDate>
 </item>
 <item>
   <title>org-appear</title>
@@ -45,18 +96,15 @@
 </header> <div id="outline-container-orgd394735" class="outline-2">
  <h2 id="orgd394735"> <span class="section-number-2">1.</span>  <a href="#orgd394735">package</a></h2>
  <div class="outline-text-2" id="text-1">
- <div class="org-src-container">
- <pre class="src src-elisp" id="orgfedaf35"> <span style="color: #a020f0;">(package!</span> org-appear)
-</pre>
-</div>
+ <pre class="code"> <code> <span style="color: #a020f0;">(package!</span> org-appear)
+</code></pre>
 </div>
 </div>
 
  <div id="outline-container-orgff54470" class="outline-2">
  <h2 id="orgff54470"> <span class="section-number-2">2.</span>  <a href="#orgff54470">config</a></h2>
  <div class="outline-text-2" id="text-2">
- <div class="org-src-container">
- <pre class="src src-elisp" id="orge96edd6"> <span style="color: #a020f0;">(use-package!</span> org-appear
+ <pre class="code"> <code> <span style="color: #a020f0;">(use-package!</span> org-appear
    <span style="color: #483d8b;">:defer</span> t
    <span style="color: #483d8b;">:custom</span>
   (org-appear-autoemphasis t)
@@ -69,8 +117,7 @@
   (org-appear-trigger 'always)
    <span style="color: #483d8b;">:hook</span>
   (org-mode . org-appear-mode))
-</pre>
-</div>
+</code></pre>
 </div>
 </div>
 
@@ -100,7 +147,7 @@
 </main>]]></description>
   <link>https://7696122.github.io/braindump/20220618132712_org_agenda.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/20220618132712_org_agenda.html</guid>
-  <pubDate>Sat, 28 Jan 2023 17:05:00 +0900</pubDate>
+  <pubDate>Sat, 28 Jan 2023 21:50:00 +0900</pubDate>
 </item>
 <item>
   <title>org-attach-screenshot</title>
@@ -108,18 +155,15 @@
 </header> <div id="outline-container-orge84fae8" class="outline-2">
  <h2 id="orge84fae8"> <span class="section-number-2">1.</span>  <a href="#orge84fae8">package</a></h2>
  <div class="outline-text-2" id="text-1">
- <div class="org-src-container">
- <pre class="src src-elisp" id="org5470491"> <span style="color: #a020f0;">(package!</span> org-attach-screenshot)
-</pre>
-</div>
+ <pre class="code"> <code> <span style="color: #a020f0;">(package!</span> org-attach-screenshot)
+</code></pre>
 </div>
 </div>
 
  <div id="outline-container-org5a512d6" class="outline-2">
  <h2 id="org5a512d6"> <span class="section-number-2">2.</span>  <a href="#org5a512d6">config</a></h2>
  <div class="outline-text-2" id="text-2">
- <div class="org-src-container">
- <pre class="src src-elisp" id="org0793f17"> <span style="color: #a020f0;">(use-package!</span> org-attach-screenshot
+ <pre class="code"> <code> <span style="color: #a020f0;">(use-package!</span> org-attach-screenshot
    <span style="color: #483d8b;">:defer</span> t
    <span style="color: #483d8b;">:bind</span> ( <span style="color: #8b2252;">"<f6> s"</span> . org-attach-screenshot)
    <span style="color: #483d8b;">:config</span>
@@ -133,14 +177,13 @@
     <span style="color: #8b2252;">"screencapture -s %f"</span>
    ;;  <span style="color: #b22222;">"gnome-screenshot -a -f %f"</span>
    ))
-</pre>
-</div>
+</code></pre>
 </div>
 </div>
 </main>]]></description>
   <link>https://7696122.github.io/braindump/20220625092412-org_attach_screenshot.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/20220625092412-org_attach_screenshot.html</guid>
-  <pubDate>Sat, 28 Jan 2023 17:05:00 +0900</pubDate>
+  <pubDate>Sat, 28 Jan 2023 21:50:00 +0900</pubDate>
 </item>
 <item>
   <title>prodigy</title>
@@ -148,8 +191,7 @@
 </header> <div id="outline-container-org1cf9a75" class="outline-2">
  <h2 id="org1cf9a75"> <span class="section-number-2">1.</span>  <a href="#org1cf9a75">config</a></h2>
  <div class="outline-text-2" id="text-1">
- <div class="org-src-container">
- <pre class="src src-elisp" id="org1e8dbf5"> <span style="color: #a020f0;">(use-package!</span> prodigy
+ <pre class="code"> <code> <span style="color: #a020f0;">(use-package!</span> prodigy
   ;;  <span style="color: #b22222;">:config</span>
   ;;  <span style="color: #b22222;">(prodigy-define-service</span>
   ;;    <span style="color: #b22222;">:command (lambda (&rest args)</span>
@@ -157,14 +199,13 @@
   ;;                 <span style="color: #b22222;">;; ...</span>
   ;;                 <span style="color: #b22222;">)))</span>
   )
-</pre>
-</div>
+</code></pre>
 </div>
 </div>
 </main>]]></description>
   <link>https://7696122.github.io/braindump/20221214102741-prodigy.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/20221214102741-prodigy.html</guid>
-  <pubDate>Sat, 28 Jan 2023 17:05:00 +0900</pubDate>
+  <pubDate>Sat, 28 Jan 2023 21:50:00 +0900</pubDate>
 </item>
 <item>
   <title>java development</title>
@@ -182,14 +223,12 @@ java로 개발한다면
  <a href="20221215113855-sdkman.html#ID-c2412661-9172-4eee-a8d1-b9994dce406b">sdkman</a>을 사용
 </p>
 
- <div class="org-src-container">
- <pre class="src src-conf" id="orgceaf9eb">#  <span style="color: #b22222;">Enable auto-env through the sdkman_auto_env config</span>
+ <pre class="code"> <code>#  <span style="color: #b22222;">Enable auto-env through the sdkman_auto_env config</span>
 #  <span style="color: #b22222;">Add key=value pairs of SDKs to use below</span>
  <span style="color: #a0522d;">java</span>=11.0.17-amzn
  <span style="color: #a0522d;">gradle</span>=7.6
 
-</pre>
-</div>
+</code></pre>
 </div>
 </div>
 
@@ -213,10 +252,8 @@ gradlew를 사용하려면 gradle이 있어야 하더라
  <code>gradle-wrapper.jar</code> 가 없다면 아래 명령어로 설치
 </p>
 
- <div class="org-src-container">
- <pre class="src src-shell">gradle wrapper
-</pre>
-</div>
+ <pre class="code"> <code>gradle wrapper
+</code></pre>
 
  <pre class="example">
 ./gradle
@@ -231,7 +268,7 @@ gradlew를 사용하려면 gradle이 있어야 하더라
 </main>]]></description>
   <link>https://7696122.github.io/braindump/20221215113524-java_development.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/20221215113524-java_development.html</guid>
-  <pubDate>Sat, 28 Jan 2023 17:05:00 +0900</pubDate>
+  <pubDate>Sat, 28 Jan 2023 21:50:00 +0900</pubDate>
 </item>
 <item>
   <title>sdkman</title>
@@ -248,10 +285,8 @@ gradlew를 사용하려면 gradle이 있어야 하더라
  <div id="outline-container-org1802176" class="outline-2">
  <h2 id="org1802176"> <span class="section-number-2">1.</span>  <a href="#org1802176">bash, zsh</a></h2>
  <div class="outline-text-2" id="text-1">
- <div class="org-src-container">
- <pre class="src src-sh">curl -s  <span style="color: #8b2252;">"https://get.sdkman.io"</span> | bash
-</pre>
-</div>
+ <pre class="code"> <code>curl -s  <span style="color: #8b2252;">"https://get.sdkman.io"</span> | bash
+</code></pre>
 
  <p>
 위 명령으로 .bash_profile .zshrc 생성됨
@@ -261,17 +296,15 @@ gradlew를 사용하려면 gradle이 있어야 하더라
 .bash_profile .zshrc created by the above command
 </p>
 
- <div class="org-src-container">
- <pre class="src src-bash"> <span style="color: #483d8b;">source</span>  <span style="color: #8b2252;">"$HOME/.sdkman/bin/sdkman-init.sh"</span>
-</pre>
-</div>
+ <pre class="code"> <code> <span style="color: #483d8b;">source</span>  <span style="color: #8b2252;">"$HOME/.sdkman/bin/sdkman-init.sh"</span>
+</code></pre>
 </div>
 </div>
 
  <div id="outline-container-org4604623" class="outline-2">
  <h2 id="org4604623"> <span class="section-number-2">2.</span>  <a href="#org4604623">fish</a></h2>
  <div class="outline-text-2" id="text-2">
- <pre class="example" id="orgf877932">
+ <pre class="example" id="orgf9d4107">
 > source "$HOME/.sdkman/bin/sdkman-init.sh"
 ~/.sdkman/bin/sdkman-init.sh (line 46): Expected end of the statement, but found an incomplete token
         Linux)
@@ -284,23 +317,19 @@ source: Error while reading file “/Users/mnml/.sdkman/bin/sdkman-init.sh”
  <a href="https://github.com/reitzig/sdkman-for-fish">https://github.com/reitzig/sdkman-for-fish</a>
 </p>
 
- <div class="org-src-container">
- <pre class="src src-fish"> <span style="color: #483d8b;">fisher</span> install reitzig/sdkman-for-fish@v1. <span style="color: #008b8b;">4.0</span>
-</pre>
-</div>
+ <pre class="code"> <code> <span style="color: #483d8b;">fisher</span> install reitzig/sdkman-for-fish@v1. <span style="color: #008b8b;">4.0</span>
+</code></pre>
 </div>
 </div>
 
  <div id="outline-container-orgc04c439" class="outline-2">
  <h2 id="orgc04c439"> <span class="section-number-2">3.</span>  <a href="#orgc04c439">in</a></h2>
  <div class="outline-text-2" id="text-3">
- <div class="org-src-container">
- <pre class="src src-sh"> <span id="coderef-list_java" class="coderef-off"> <span class="linenr">1: </span>sdk list java</span>
+ <pre class="code"> <code> <span id="coderef-list_java" class="coderef-off"> <span class="linenr">1: </span>sdk list java</span>
  <span class="linenr">2: </span>sdk install java 19.0.1-amzn
-</pre>
-</div>
+</code></pre>
 
- <pre class="example" id="orgb246fdc">
+ <pre class="example" id="org5be9c0e">
 Corretto      |     | 19.0.1       | amzn    |            | 19.0.1-amzn
               | >>> | 17.0.5       | amzn    | installed  | 17.0.5-amzn
               |     | 11.0.17      | amzn    |            | 11.0.17-amzn
@@ -321,19 +350,17 @@ Corretto      |     | 19.0.1       | amzn    |            | 19.0.1-amzn
  <a href="20221215113855-sdkman.html#ID-c2412661-9172-4eee-a8d1-b9994dce406b">sdkman</a>을 사용
 </p>
 
- <div class="org-src-container">
- <pre class="src src-conf" id="org885865e"> <span style="color: #a0522d;">java</span>=11.0.17-amzn
+ <pre class="code"> <code> <span style="color: #a0522d;">java</span>=11.0.17-amzn
  <span style="color: #a0522d;">gradle</span>=7.6
 
-</pre>
-</div>
+</code></pre>
 </div>
 </div>
 </div>
 </main>]]></description>
   <link>https://7696122.github.io/braindump/20221215113855-sdkman.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/20221215113855-sdkman.html</guid>
-  <pubDate>Sat, 28 Jan 2023 17:05:00 +0900</pubDate>
+  <pubDate>Sat, 28 Jan 2023 21:50:00 +0900</pubDate>
 </item>
 <item>
   <title>org-unique-id</title>
@@ -341,32 +368,27 @@ Corretto      |     | 19.0.1       | amzn    |            | 19.0.1-amzn
 </header> <div id="outline-container-package-nkwgej60goj0" class="outline-2">
  <h2 id="package-nkwgej60goj0"> <span class="section-number-2">1.</span>  <a href="#package-nkwgej60goj0">package</a></h2>
  <div class="outline-text-2" id="text-package-nkwgej60goj0">
- <div class="org-src-container">
- <pre class="src src-elisp" id="org9407300"> <span style="color: #a020f0;">(package!</span> org-unique-id)
-</pre>
-</div>
+ <pre class="code"> <code> <span style="color: #a020f0;">(package!</span> org-unique-id)
+</code></pre>
 </div>
 </div>
 
  <div id="outline-container-config-x10hej60goj0" class="outline-2">
  <h2 id="config-x10hej60goj0"> <span class="section-number-2">2.</span>  <a href="#config-x10hej60goj0">config</a></h2>
  <div class="outline-text-2" id="text-config-x10hej60goj0">
- <div class="org-src-container">
- <pre class="src src-elisp" id="orgf05c2cc"> <span style="color: #a020f0;">(use-package!</span> org-unique-id)
-</pre>
-</div>
+ <pre class="code"> <code> <span style="color: #a020f0;">(use-package!</span> org-unique-id)
+</code></pre>
 </div>
 </div>
 
  <div id="outline-container-org51ffe92" class="outline-2">
  <h2 id="org51ffe92"> <span class="section-number-2">3.</span>  <a href="#org51ffe92">이렇게 돼</a></h2>
  <div class="outline-text-2" id="text-3">
- <pre class="example" id="org497b201">
+ <pre class="example" id="orgbd404e4">
 M-x org-unique-id
 </pre>
 
- <div class="org-src-container">
- <pre class="src src-diff">modified   roam/20221218171719-org_unique_id.org
+ <pre class="code"> <code>modified   roam/20221218171719-org_unique_id.org
  <span style="background-color: #d9d9d9;">@@ -6,12 +6,18 @@</span>
  #+title: org-unique-id
 
@@ -386,14 +408,13 @@ M-x org-unique-id
  #+name: org-unique-id/config@emacs
  #+begin_src elisp
  (use-package! org-unique-id)
-</pre>
-</div>
+</code></pre>
 </div>
 </div>
 </main>]]></description>
   <link>https://7696122.github.io/braindump/20221218171719-org_unique_id.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/20221218171719-org_unique_id.html</guid>
-  <pubDate>Sat, 28 Jan 2023 17:05:00 +0900</pubDate>
+  <pubDate>Sat, 28 Jan 2023 21:50:00 +0900</pubDate>
 </item>
 <item>
   <title>디지털 가든 만들기</title>
@@ -405,21 +426,18 @@ M-x org-unique-id
 emacs를  <a href="#coderef-batch" class="coderef" onmouseover="CodeHighlightOn(this, 'coderef-batch');" onmouseout="CodeHighlightOff(this, 'coderef-batch');">batch 모드</a>로 실행해야지 빠른 속도로 사이트를 생성할 수 있다.
 </p>
 
- <div class="org-src-container">
- <pre class="src src-sh">emacs -Q  <span style="color: #8b2252;">\</span>
+ <pre class="code"> <code>emacs -Q  <span style="color: #8b2252;">\</span>
  <span id="coderef-batch" class="coderef-off">    --batch  <span style="color: #8b2252;">\</span></span>
     -l publish.el  <span style="color: #8b2252;">\</span>
     -f org-publish-all
-</pre>
-</div>
+</code></pre>
 </div>
 </div>
 
  <div id="outline-container-orgd77ee40" class="outline-2">
  <h2 id="orgd77ee40"> <span class="section-number-2">2.</span>  <a href="#orgd77ee40">Syntax Highlight</a></h2>
  <div class="outline-text-2" id="text-2">
- <div class="org-src-container">
- <pre class="src src-emacs-lisp">;;  <span style="color: #b22222;">[[https://emacs.stackexchange.com/questions/38437/org-mode-batch-export-missing-syntax-highlighting/38515#38515][org-mode batch export: Missing syntax highlighting - Emacs Stack Exchange]]</span>
+ <pre class="code"> <code>;;  <span style="color: #b22222;">[[https://emacs.stackexchange.com/questions/38437/org-mode-batch-export-missing-syntax-highlighting/38515#38515][org-mode batch export: Missing syntax highlighting - Emacs Stack Exchange]]</span>
 ( <span style="color: #a020f0;">require</span> ' <span style="color: #008b8b;">font-lock</span>)
 ( <span style="color: #a020f0;">require</span> ' <span style="color: #008b8b;">subr-x</span>) ;;  <span style="color: #b22222;">for `</span> <span style="color: #008b8b;">when-let</span> <span style="color: #b22222;">'</span>
 
@@ -533,8 +551,7 @@ emacs를  <a href="#coderef-batch" class="coderef" onmouseover="CodeHighlightOn(
 ;;  <span style="color: #b22222;">(print-args-and-ret face-background)</span>
 ;;  <span style="color: #b22222;">(print-args-and-ret face-attribute)</span>
 
-</pre>
-</div>
+</code></pre>
 </div>
 </div>
 
@@ -545,8 +562,7 @@ emacs를  <a href="#coderef-batch" class="coderef" onmouseover="CodeHighlightOn(
  <a href="https://org-roam.discourse.group/t/export-backlinks-on-org-export/1756/29">참조</a>
 </p>
 
- <div class="org-src-container">
- <pre class="src src-emacs-lisp">( <span style="color: #a020f0;">require</span> ' <span style="color: #008b8b;">org-roam</span>)
+ <pre class="code"> <code>( <span style="color: #a020f0;">require</span> ' <span style="color: #008b8b;">org-roam</span>)
 
 ( <span style="color: #a020f0;">setq</span> org-roam-db-location  <span style="color: #8b2252;">"~/doomemacs/.local/cache/org-roam.db"</span>)
 
@@ -617,8 +633,7 @@ emacs를  <a href="#coderef-batch" class="coderef" onmouseover="CodeHighlightOn(
               (insert reference))))))))
 
 (add-hook 'org-export-before-processing-hook 'collect-backlinks-string)
-</pre>
-</div>
+</code></pre>
 </div>
 </div>
 
@@ -633,7 +648,7 @@ emacs를  <a href="#coderef-batch" class="coderef" onmouseover="CodeHighlightOn(
 </main>]]></description>
   <link>https://7696122.github.io/braindump/20221219061119-디지털가든_만들기.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/20221219061119-디지털가든_만들기.html</guid>
-  <pubDate>Sat, 28 Jan 2023 17:05:00 +0900</pubDate>
+  <pubDate>Sat, 28 Jan 2023 21:50:00 +0900</pubDate>
 </item>
 <item>
   <title>HTTP cookie</title>
@@ -735,13 +750,12 @@ emacs를  <a href="#coderef-batch" class="coderef" onmouseover="CodeHighlightOn(
 </main>]]></description>
   <link>https://7696122.github.io/braindump/20221222073142-http_cookie.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/20221222073142-http_cookie.html</guid>
-  <pubDate>Sat, 28 Jan 2023 17:05:00 +0900</pubDate>
+  <pubDate>Sat, 28 Jan 2023 21:50:00 +0900</pubDate>
 </item>
 <item>
   <title>Scroll Indicator</title>
   <description><![CDATA[<main id="content" class="content"> <header> <h1 class="title">Scroll Indicator</h1>
-</header> <div class="org-src-container">
- <pre class="src src-js"> <span style="color: #a020f0;">class</span> ScrollIndicator  <span style="color: #a020f0;">extends</span> HTMLElement {
+</header> <pre class="code"> <code> <span style="color: #a020f0;">class</span> ScrollIndicator  <span style="color: #a020f0;">extends</span> HTMLElement {
   constructor() {
      <span style="color: #a020f0;">super</span>();
   }
@@ -821,13 +835,10 @@ customElements.define(
   ScrollIndicator
   //  <span style="color: #b22222;">{extends: "div"}</span>
 );
-</pre>
-</div>
+</code></pre>
 
- <div class="org-src-container">
- <pre class="src src-html">< <span style="color: #0000ff;">scroll-indicator</span>></ <span style="color: #0000ff;">scroll-indicator</span>>
-</pre>
-</div>
+ <pre class="code"> <code>< <span style="color: #0000ff;">scroll-indicator</span>></ <span style="color: #0000ff;">scroll-indicator</span>>
+</code></pre>
 
  <div id="outline-container-org067d565" class="outline-2">
  <h2 id="org067d565"> <span class="section-number-2">1.</span>  <a href="#org067d565">Ref</a></h2>
@@ -840,7 +851,7 @@ customElements.define(
 </main>]]></description>
   <link>https://7696122.github.io/braindump/20221223130349-scroll_indicator.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/20221223130349-scroll_indicator.html</guid>
-  <pubDate>Sat, 28 Jan 2023 17:05:00 +0900</pubDate>
+  <pubDate>Sat, 28 Jan 2023 21:50:00 +0900</pubDate>
 </item>
 <item>
   <title>create-link</title>
@@ -848,30 +859,26 @@ customElements.define(
 </header> <div id="outline-container-org0ac6792" class="outline-2">
  <h2 id="org0ac6792"> <span class="section-number-2">1.</span>  <a href="#org0ac6792">package</a></h2>
  <div class="outline-text-2" id="text-1">
- <div class="org-src-container">
- <pre class="src src-elisp" id="orgc646df5"> <span style="color: #a020f0;">(package!</span> create-link)
-</pre>
-</div>
+ <pre class="code"> <code> <span style="color: #a020f0;">(package!</span> create-link)
+</code></pre>
 </div>
 </div>
  <div id="outline-container-orgd53ae9a" class="outline-2">
  <h2 id="orgd53ae9a"> <span class="section-number-2">2.</span>  <a href="#orgd53ae9a">config</a></h2>
  <div class="outline-text-2" id="text-2">
- <div class="org-src-container">
- <pre class="src src-elisp" id="org1684e0e"> <span style="color: #a020f0;">(use-package!</span> create-link
+ <pre class="code"> <code> <span style="color: #a020f0;">(use-package!</span> create-link
    <span style="color: #483d8b;">:custom</span>
   (create-link-default-format
    'create-link-format-html
    ;;  <span style="color: #b22222;">'create-link-format-org</span>
    ))
-</pre>
-</div>
+</code></pre>
 </div>
 </div>
 </main>]]></description>
   <link>https://7696122.github.io/braindump/20221224094210-create_link.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/20221224094210-create_link.html</guid>
-  <pubDate>Sat, 28 Jan 2023 17:05:00 +0900</pubDate>
+  <pubDate>Sat, 28 Jan 2023 21:50:00 +0900</pubDate>
 </item>
 <item>
   <title>webfeeder</title>
@@ -879,25 +886,21 @@ customElements.define(
 </header> <div id="outline-container-org7ed5e7b" class="outline-2">
  <h2 id="org7ed5e7b"> <span class="section-number-2">1.</span>  <a href="#org7ed5e7b">package</a></h2>
  <div class="outline-text-2" id="text-1">
- <div class="org-src-container">
- <pre class="src src-elisp" id="org25ba51b"> <span style="color: #a020f0;">(package!</span> webfeeder)
-</pre>
-</div>
+ <pre class="code"> <code> <span style="color: #a020f0;">(package!</span> webfeeder)
+</code></pre>
 </div>
 </div>
  <div id="outline-container-org85096dc" class="outline-2">
  <h2 id="org85096dc"> <span class="section-number-2">2.</span>  <a href="#org85096dc">config</a></h2>
  <div class="outline-text-2" id="text-2">
- <div class="org-src-container">
- <pre class="src src-elisp" id="orgded1dcc"> <span style="color: #a020f0;">(use-package!</span> webfeeder)
-</pre>
-</div>
+ <pre class="code"> <code> <span style="color: #a020f0;">(use-package!</span> webfeeder)
+</code></pre>
 </div>
 </div>
 </main>]]></description>
   <link>https://7696122.github.io/braindump/20221225211539-webfeeder.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/20221225211539-webfeeder.html</guid>
-  <pubDate>Sat, 28 Jan 2023 17:05:00 +0900</pubDate>
+  <pubDate>Sat, 28 Jan 2023 21:50:00 +0900</pubDate>
 </item>
 <item>
   <title>bookmarks</title>
@@ -907,7 +910,7 @@ customElements.define(
 </dl></main>]]></description>
   <link>https://7696122.github.io/braindump/20221227080025-bookmarks.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/20221227080025-bookmarks.html</guid>
-  <pubDate>Sat, 28 Jan 2023 17:05:00 +0900</pubDate>
+  <pubDate>Sat, 28 Jan 2023 21:50:00 +0900</pubDate>
 </item>
 <item>
   <title>SEO META in 1 CLICK</title>
@@ -916,7 +919,7 @@ customElements.define(
  <h2 id="org39b4b58"> <span class="section-number-2">1.</span>  <a href="#org39b4b58">크롬 익스텐션</a></h2>
  <div class="outline-text-2" id="text-1">
  <ul class="org-ul"> <li> <a href="https://chrome.google.com/webstore/detail/seo-meta-in-1-click/bjogjfinolnhfhkbipphpdlldadpnmhc">SEO META in 1 CLICK - Chrome 웹 스토어</a></li>
-</ul> <figure id="org6a390d7"> <img src="../attach/Screenshot 2022-12-27 at 8.48.12 AM.png" alt="Screenshot 2022-12-27 at 8.48.12 AM.png" width="100%"></img></figure></div>
+</ul> <figure id="org35820f9"> <img src="../attach/Screenshot 2022-12-27 at 8.48.12 AM.png" alt="Screenshot 2022-12-27 at 8.48.12 AM.png" width="100%"></img></figure></div>
 </div>
 
 
@@ -936,7 +939,7 @@ customElements.define(
 </main>]]></description>
   <link>https://7696122.github.io/braindump/20221227084435-seo_meta_in_1_click.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/20221227084435-seo_meta_in_1_click.html</guid>
-  <pubDate>Sat, 28 Jan 2023 17:05:00 +0900</pubDate>
+  <pubDate>Sat, 28 Jan 2023 21:50:00 +0900</pubDate>
 </item>
 <item>
   <title>sitemaps</title>
@@ -944,8 +947,7 @@ customElements.define(
 </header> <div id="outline-container-orgaf0e3a2" class="outline-2">
  <h2 id="orgaf0e3a2"> <span class="section-number-2">1.</span>  <a href="#orgaf0e3a2"></a> <a href="https://www.sitemaps.org">sitemaps.org - Home</a></h2>
  <div class="outline-text-2" id="text-1">
- <div class="org-src-container">
- <pre class="src src-xml"><? <span style="color: #a020f0;">xml</span>  <span style="color: #8b2252;">version="1.0" encoding="UTF-8"</span>?>
+ <pre class="code"> <code><? <span style="color: #a020f0;">xml</span>  <span style="color: #8b2252;">version="1.0" encoding="UTF-8"</span>?>
 < <span style="color: #0000ff;">urlset</span>  <span style="color: #483d8b;">xmlns</span>= <span style="color: #8b2252;">"http://www.sitemaps.org/schemas/sitemap/0.9"</span>>
    < <span style="color: #0000ff;">url</span>>
       < <span style="color: #0000ff;">loc</span>>http://www.example.com/</ <span style="color: #0000ff;">loc</span>>
@@ -954,16 +956,14 @@ customElements.define(
       < <span style="color: #0000ff;">priority</span>>0.8</ <span style="color: #0000ff;">priority</span>>
    </ <span style="color: #0000ff;">url</span>>
 </ <span style="color: #0000ff;">urlset</span>>
-</pre>
-</div>
+</code></pre>
 </div>
 </div>
 
  <div id="outline-container-orge7da18c" class="outline-2">
  <h2 id="orge7da18c"> <span class="section-number-2">2.</span>  <a href="#orge7da18c">sitemap 생성</a></h2>
  <div class="outline-text-2" id="text-2">
- <div class="org-src-container">
- <pre class="src src-elisp">( <span style="color: #a020f0;">defun</span>  <span style="color: #0000ff;">templated-html-create-sitemap-xml</span> (output directory base-url  <span style="color: #228b22;">&rest</span> regexp)
+ <pre class="code"> <code>( <span style="color: #a020f0;">defun</span>  <span style="color: #0000ff;">templated-html-create-sitemap-xml</span> (output directory base-url  <span style="color: #228b22;">&rest</span> regexp)
    <span style="color: #8b2252;">"https://www.sitemaps.org/protocol.html"</span>
   ( <span style="color: #a020f0;">let*</span> ((rx ( <span style="color: #a020f0;">or</span> regexp  <span style="color: #8b2252;">"\\.html$"</span>)))
     ( <span style="color: #a020f0;">with-temp-file</span> output
@@ -994,8 +994,7 @@ customElements.define(
     <span style="color: #8b2252;">"https://7696122.github.io"</span>))
 
 ;;  <span style="color: #b22222;">(make-sitemap)</span>
-</pre>
-</div>
+</code></pre>
 </div>
 </div>
 
@@ -1010,7 +1009,7 @@ customElements.define(
 </main>]]></description>
   <link>https://7696122.github.io/braindump/20221228092901-sitemaps.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/20221228092901-sitemaps.html</guid>
-  <pubDate>Sat, 28 Jan 2023 17:05:00 +0900</pubDate>
+  <pubDate>Sat, 28 Jan 2023 21:50:00 +0900</pubDate>
 </item>
 <item>
   <title>org-commentary</title>
@@ -1018,25 +1017,21 @@ customElements.define(
 </header> <div id="outline-container-orgbf1ebbc" class="outline-2">
  <h2 id="orgbf1ebbc"> <span class="section-number-2">1.</span>  <a href="#orgbf1ebbc">package</a></h2>
  <div class="outline-text-2" id="text-1">
- <div class="org-src-container">
- <pre class="src src-elisp" id="org6f0add3"> <span style="color: #a020f0;">(package!</span> org-commentary)
-</pre>
-</div>
+ <pre class="code"> <code> <span style="color: #a020f0;">(package!</span> org-commentary)
+</code></pre>
 </div>
 </div>
  <div id="outline-container-orgc9c551f" class="outline-2">
  <h2 id="orgc9c551f"> <span class="section-number-2">2.</span>  <a href="#orgc9c551f">config</a></h2>
  <div class="outline-text-2" id="text-2">
- <div class="org-src-container">
- <pre class="src src-elisp" id="org4f16b2b"> <span style="color: #a020f0;">(use-package!</span> org-commentary)
-</pre>
-</div>
+ <pre class="code"> <code> <span style="color: #a020f0;">(use-package!</span> org-commentary)
+</code></pre>
 </div>
 </div>
 </main>]]></description>
   <link>https://7696122.github.io/braindump/20221228120251-org_commentary.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/20221228120251-org_commentary.html</guid>
-  <pubDate>Sat, 28 Jan 2023 17:05:00 +0900</pubDate>
+  <pubDate>Sat, 28 Jan 2023 21:50:00 +0900</pubDate>
 </item>
 <item>
   <title>Top 21 Google Tag Manager Extensions and Tools for Fast and Efficient Work</title>
@@ -1047,7 +1042,7 @@ customElements.define(
 </main>]]></description>
   <link>https://7696122.github.io/braindump/20221230075633-top_21_google_tag_manager_extensions_and_tools_for_fast_and_efficient_work.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/20221230075633-top_21_google_tag_manager_extensions_and_tools_for_fast_and_efficient_work.html</guid>
-  <pubDate>Sat, 28 Jan 2023 17:05:00 +0900</pubDate>
+  <pubDate>Sat, 28 Jan 2023 21:50:00 +0900</pubDate>
 </item>
 <item>
   <title>web fonts</title>
@@ -1058,7 +1053,7 @@ customElements.define(
 </main>]]></description>
   <link>https://7696122.github.io/braindump/20221230174154-web_fonts.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/20221230174154-web_fonts.html</guid>
-  <pubDate>Sat, 28 Jan 2023 17:05:00 +0900</pubDate>
+  <pubDate>Sat, 28 Jan 2023 21:50:00 +0900</pubDate>
 </item>
 <item>
   <title>Web Layouts - Grid &amp; Flex</title>
@@ -1074,7 +1069,7 @@ customElements.define(
 </main>]]></description>
   <link>https://7696122.github.io/braindump/20221230192412-web_layouts_grid_flex.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/20221230192412-web_layouts_grid_flex.html</guid>
-  <pubDate>Sat, 28 Jan 2023 17:05:00 +0900</pubDate>
+  <pubDate>Sat, 28 Jan 2023 21:50:00 +0900</pubDate>
 </item>
 <item>
   <title>css reset</title>
@@ -1088,7 +1083,7 @@ customElements.define(
 </main>]]></description>
   <link>https://7696122.github.io/braindump/20221231003500-css_reset.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/20221231003500-css_reset.html</guid>
-  <pubDate>Sat, 28 Jan 2023 17:05:00 +0900</pubDate>
+  <pubDate>Sat, 28 Jan 2023 21:50:00 +0900</pubDate>
 </item>
 <item>
   <title>Open Graph protocol</title>
@@ -1096,8 +1091,7 @@ customElements.define(
 </header> <div id="outline-container-orgc68d617" class="outline-2">
  <h2 id="orgc68d617"> <span class="section-number-2">1.</span>  <a href="#orgc68d617">generate</a></h2>
  <div class="outline-text-2" id="text-1">
- <div class="org-src-container">
- <pre class="src src-elisp">( <span style="color: #a020f0;">defun</span>  <span style="color: #0000ff;">76/org-html-close-tag</span> (tag  <span style="color: #228b22;">&rest</span> attrs)
+ <pre class="code"> <code>( <span style="color: #a020f0;">defun</span>  <span style="color: #0000ff;">76/org-html-close-tag</span> (tag  <span style="color: #228b22;">&rest</span> attrs)
    <span style="color: #8b2252;">"Return close-tag for string TAG.</span>
  <span style="color: #8b2252;">ATTRS specify additional attributes."</span>
   (concat  <span style="color: #8b2252;">"<"</span> tag  <span style="color: #8b2252;">" "</span>
@@ -1152,8 +1146,7 @@ customElements.define(
                        (76/org-html-close-tag  <span style="color: #8b2252;">"meta"</span> '(property twitter:card) '(content summary)))
                  )
                 <span style="color: #8b2252;">"\n"</span>)))
-</pre>
-</div>
+</code></pre>
 </div>
 </div>
  <div id="outline-container-org0bb5f73" class="outline-2">
@@ -1189,18 +1182,16 @@ SPA
 </main>]]></description>
   <link>https://7696122.github.io/braindump/20221231032602-open_graph_protocol.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/20221231032602-open_graph_protocol.html</guid>
-  <pubDate>Sat, 28 Jan 2023 17:05:00 +0900</pubDate>
+  <pubDate>Sat, 28 Jan 2023 21:50:00 +0900</pubDate>
 </item>
 <item>
   <title>Robox.txt</title>
   <description><![CDATA[<main id="content" class="content"> <header> <h1 class="title">Robox.txt</h1>
-</header> <div class="org-src-container">
- <pre class="src src-conf">User-agent: *
+</header> <pre class="code"> <code>User-agent: *
 Allow:/
 Disallow:
 Sitemap: https://7696122.github.io/sitemap.xml
-</pre>
-</div>
+</code></pre>
  <div id="outline-container-orgda88766" class="outline-2">
  <h2 id="orgda88766"> <span class="section-number-2">1.</span>  <a href="#orgda88766">Ref</a></h2>
  <div class="outline-text-2" id="text-1">
@@ -1210,7 +1201,7 @@ Sitemap: https://7696122.github.io/sitemap.xml
 </main>]]></description>
   <link>https://7696122.github.io/braindump/20221231035949-robox_txt.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/20221231035949-robox_txt.html</guid>
-  <pubDate>Sat, 28 Jan 2023 17:05:00 +0900</pubDate>
+  <pubDate>Sat, 28 Jan 2023 21:50:00 +0900</pubDate>
 </item>
 <item>
   <title>ox-json</title>
@@ -1218,25 +1209,21 @@ Sitemap: https://7696122.github.io/sitemap.xml
 </header> <div id="outline-container-orge0cfd12" class="outline-2">
  <h2 id="orge0cfd12"> <span class="section-number-2">1.</span>  <a href="#orge0cfd12">package</a></h2>
  <div class="outline-text-2" id="text-1">
- <div class="org-src-container">
- <pre class="src src-elisp" id="orga917cf7"> <span style="color: #a020f0;">(package!</span> ox-json)
-</pre>
-</div>
+ <pre class="code"> <code> <span style="color: #a020f0;">(package!</span> ox-json)
+</code></pre>
 </div>
 </div>
  <div id="outline-container-orga08322e" class="outline-2">
  <h2 id="orga08322e"> <span class="section-number-2">2.</span>  <a href="#orga08322e">config</a></h2>
  <div class="outline-text-2" id="text-2">
- <div class="org-src-container">
- <pre class="src src-elisp" id="org42fb556"> <span style="color: #a020f0;">(use-package!</span> ox-json)
-</pre>
-</div>
+ <pre class="code"> <code> <span style="color: #a020f0;">(use-package!</span> ox-json)
+</code></pre>
 </div>
 </div>
 </main>]]></description>
   <link>https://7696122.github.io/braindump/20221231132050-ox_json.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/20221231132050-ox_json.html</guid>
-  <pubDate>Sat, 28 Jan 2023 17:05:00 +0900</pubDate>
+  <pubDate>Sat, 28 Jan 2023 21:50:00 +0900</pubDate>
 </item>
 <item>
   <title>Flexbox</title>
@@ -1250,7 +1237,7 @@ Sitemap: https://7696122.github.io/sitemap.xml
 </main>]]></description>
   <link>https://7696122.github.io/braindump/20230101212637-flexbox.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/20230101212637-flexbox.html</guid>
-  <pubDate>Sat, 28 Jan 2023 17:05:00 +0900</pubDate>
+  <pubDate>Sat, 28 Jan 2023 21:50:00 +0900</pubDate>
 </item>
 <item>
   <title>User-Agent Reduction</title>
@@ -1258,10 +1245,8 @@ Sitemap: https://7696122.github.io/sitemap.xml
 </header> <div id="outline-container-org1b237d9" class="outline-2">
  <h2 id="org1b237d9"> <span class="section-number-2">1.</span>  <a href="#org1b237d9"></a> <a href="https://developer.mozilla.org/en-US/docs/Web/API/Navigator/userAgent">User-Agent</a></h2>
  <div class="outline-text-2" id="text-1">
- <div class="org-src-container">
- <pre class="src src-js">navigator.userAgent
-</pre>
-</div>
+ <pre class="code"> <code>navigator.userAgent
+</code></pre>
 
  <ol class="org-ol"> <li>특정 버전의 버그</li>
  <li>OS의 동작 차이</li>
@@ -1290,7 +1275,7 @@ User-Agent string에는 많은 엔트로피(정보량)가 담겨 있어 개인�
 </main>]]></description>
   <link>https://7696122.github.io/braindump/20230102111337-user_agent_reduction.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/20230102111337-user_agent_reduction.html</guid>
-  <pubDate>Sat, 28 Jan 2023 17:05:00 +0900</pubDate>
+  <pubDate>Sat, 28 Jan 2023 21:50:00 +0900</pubDate>
 </item>
 <item>
   <title>devenv</title>
@@ -1304,7 +1289,7 @@ User-Agent string에는 많은 엔트로피(정보량)가 담겨 있어 개인�
 </main>]]></description>
   <link>https://7696122.github.io/braindump/20230104021551-devenv.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/20230104021551-devenv.html</guid>
-  <pubDate>Sat, 28 Jan 2023 17:05:00 +0900</pubDate>
+  <pubDate>Sat, 28 Jan 2023 21:50:00 +0900</pubDate>
 </item>
 <item>
   <title>weblorg</title>
@@ -1312,34 +1297,28 @@ User-Agent string에는 많은 엔트로피(정보량)가 담겨 있어 개인�
 </header> <div id="outline-container-org13de66b" class="outline-2">
  <h2 id="org13de66b"> <span class="section-number-2">1.</span>  <a href="#org13de66b">package</a></h2>
  <div class="outline-text-2" id="text-1">
- <div class="org-src-container">
- <pre class="src src-elisp" id="orge3398b0"> <span style="color: #a020f0;">(package!</span> weblorg)
-</pre>
-</div>
+ <pre class="code"> <code> <span style="color: #a020f0;">(package!</span> weblorg)
+</code></pre>
 </div>
 </div>
  <div id="outline-container-org4b4c854" class="outline-2">
  <h2 id="org4b4c854"> <span class="section-number-2">2.</span>  <a href="#org4b4c854">config</a></h2>
  <div class="outline-text-2" id="text-2">
- <div class="org-src-container">
- <pre class="src src-elisp" id="orgbd49a87"> <span style="color: #a020f0;">(use-package!</span> weblorg)
-</pre>
-</div>
+ <pre class="code"> <code> <span style="color: #a020f0;">(use-package!</span> weblorg)
+</code></pre>
 </div>
 </div>
 </main>]]></description>
   <link>https://7696122.github.io/braindump/20230104035041-weblorg.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/20230104035041-weblorg.html</guid>
-  <pubDate>Sat, 28 Jan 2023 17:05:00 +0900</pubDate>
+  <pubDate>Sat, 28 Jan 2023 21:50:00 +0900</pubDate>
 </item>
 <item>
   <title>Get #+filetags:</title>
   <description><![CDATA[<main id="content" class="content"> <header> <h1 class="title">Get #+filetags:</h1>
-</header> <div class="org-src-container">
- <pre class="src src-emacs-lisp" id="orga9f6027">( <span style="color: #a020f0;">let</span> ((K (s-upcase keyword)))
+</header> <pre class="code"> <code>( <span style="color: #a020f0;">let</span> ((K (s-upcase keyword)))
   (cadr (assoc K (org-collect-keywords `(,K)))))
-</pre>
-</div>
+</code></pre>
 
  <div id="outline-container-org11ae122" class="outline-2">
  <h2 id="org11ae122"> <span class="section-number-2">1.</span>  <a href="#org11ae122">Ref</a></h2>
@@ -1350,7 +1329,7 @@ User-Agent string에는 많은 엔트로피(정보량)가 담겨 있어 개인�
 </main>]]></description>
   <link>https://7696122.github.io/braindump/20230106073641-get_filetags.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/20230106073641-get_filetags.html</guid>
-  <pubDate>Sat, 28 Jan 2023 17:05:00 +0900</pubDate>
+  <pubDate>Sat, 28 Jan 2023 21:50:00 +0900</pubDate>
 </item>
 <item>
   <title>null versus undefined</title>
@@ -1377,7 +1356,7 @@ User-Agent string에는 많은 엔트로피(정보량)가 담겨 있어 개인�
 </main>]]></description>
   <link>https://7696122.github.io/braindump/20230106122610-null_versus_undefined.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/20230106122610-null_versus_undefined.html</guid>
-  <pubDate>Sat, 28 Jan 2023 17:05:00 +0900</pubDate>
+  <pubDate>Sat, 28 Jan 2023 21:50:00 +0900</pubDate>
 </item>
 <item>
   <title>Dart</title>
@@ -1397,10 +1376,8 @@ User-Agent string에는 많은 엔트로피(정보량)가 담겨 있어 개인�
  <li> <p>
 로컬 변수로 사용
 </p>
- <div class="org-src-container">
- <pre class="src src-dart"> <span style="color: #a020f0;">var</span>  <span style="color: #a0522d;">a</span> =  <span style="color: #8b2252;">'a'</span>;
-</pre>
-</div></li>
+ <pre class="code"> <code> <span style="color: #a020f0;">var</span>  <span style="color: #a0522d;">a</span> =  <span style="color: #8b2252;">'a'</span>;
+</code></pre></li>
 </ul></div>
 </div>
  <div id="outline-container-org43b187b" class="outline-3">
@@ -1410,10 +1387,8 @@ User-Agent string에는 많은 엔트로피(정보량)가 담겨 있어 개인�
  <li> <p>
 맴버 변수로 사용
 </p>
- <div class="org-src-container">
- <pre class="src src-dart"> <span style="color: #228b22;">String</span>  <span style="color: #a0522d;">b</span> =  <span style="color: #8b2252;">'b'</span>;
-</pre>
-</div></li>
+ <pre class="code"> <code> <span style="color: #228b22;">String</span>  <span style="color: #a0522d;">b</span> =  <span style="color: #8b2252;">'b'</span>;
+</code></pre></li>
 </ul></div>
 </div>
 </div>
@@ -1421,8 +1396,7 @@ User-Agent string에는 많은 엔트로피(정보량)가 담겨 있어 개인�
  <div id="outline-container-org65df1fe" class="outline-2">
  <h2 id="org65df1fe"> <span class="section-number-2">2.</span>  <a href="#org65df1fe">Dynamic Type</a></h2>
  <div class="outline-text-2" id="text-2">
- <div class="org-src-container">
- <pre class="src src-dart"> <span style="color: #228b22;">void</span>  <span style="color: #0000ff;">main</span>( <span style="color: #228b22;">List</span>< <span style="color: #228b22;">String</span>>  <span style="color: #a0522d;">args</span>) {
+ <pre class="code"> <code> <span style="color: #228b22;">void</span>  <span style="color: #0000ff;">main</span>( <span style="color: #228b22;">List</span>< <span style="color: #228b22;">String</span>>  <span style="color: #a0522d;">args</span>) {
    <span style="color: #a020f0;">var</span>  <span style="color: #a0522d;">a</span>; //  <span style="color: #b22222;">암묵적 다이나믹</span>
   a =  <span style="color: #8b2252;">'a'</span>; //  <span style="color: #b22222;">string</span>
   a =  <span style="color: #008b8b;">1</span>; //
@@ -1437,14 +1411,13 @@ User-Agent string에는 많은 엔트로피(정보량)가 담겨 있어 개인�
    <span style="color: #a020f0;">if</span> (c  <span style="color: #a020f0;">is</span>  <span style="color: #228b22;">String</span>) {
   }
 }
-</pre>
-</div>
+</code></pre>
 </div>
 </div>
 </main>]]></description>
   <link>https://7696122.github.io/braindump/20230106212912-dart.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/20230106212912-dart.html</guid>
-  <pubDate>Sat, 28 Jan 2023 17:05:00 +0900</pubDate>
+  <pubDate>Sat, 28 Jan 2023 21:50:00 +0900</pubDate>
 </item>
 <item>
   <title>google maps api</title>
@@ -1467,7 +1440,7 @@ User-Agent string에는 많은 엔트로피(정보량)가 담겨 있어 개인�
 </main>]]></description>
   <link>https://7696122.github.io/braindump/20230117063749-google_maps_api.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/20230117063749-google_maps_api.html</guid>
-  <pubDate>Sat, 28 Jan 2023 17:05:00 +0900</pubDate>
+  <pubDate>Sat, 28 Jan 2023 21:50:00 +0900</pubDate>
 </item>
 <item>
   <title>1인 개발자</title>
@@ -1479,7 +1452,7 @@ User-Agent string에는 많은 엔트로피(정보량)가 담겨 있어 개인�
 </ul></main>]]></description>
   <link>https://7696122.github.io/braindump/20230117125941-1인_개발자.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/20230117125941-1인_개발자.html</guid>
-  <pubDate>Sat, 28 Jan 2023 17:05:00 +0900</pubDate>
+  <pubDate>Sat, 28 Jan 2023 21:50:00 +0900</pubDate>
 </item>
 <item>
   <title>Git subtree</title>
@@ -1490,7 +1463,7 @@ User-Agent string에는 많은 엔트로피(정보량)가 담겨 있어 개인�
 </main>]]></description>
   <link>https://7696122.github.io/braindump/20230118064536-git_subtree.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/20230118064536-git_subtree.html</guid>
-  <pubDate>Sat, 28 Jan 2023 17:05:00 +0900</pubDate>
+  <pubDate>Sat, 28 Jan 2023 21:50:00 +0900</pubDate>
 </item>
 <item>
   <title>PARA Method</title>
@@ -1524,23 +1497,23 @@ Inactive items from the other 3 categories <br></br> <b>비활성 항목</b> <br
  <h2 id="org6929266"> <span class="section-number-2">3.</span>  <a href="#org6929266">Backlinks</a></h2>
  <div class="outline-text-2" id="text-3">
  <hr></hr></div>
- <div id="outline-container-orga32475f" class="outline-3">
- <h3 id="orga32475f"> <span class="section-number-3">3.1.</span>  <a href="#orga32475f"></a> <a href="../roam/slipbox.html#ID-279872b9-dcd3-44d8-a750-06bbf1a6f361">Slipbox</a></h3>
+ <div id="outline-container-org0218311" class="outline-3">
+ <h3 id="org0218311"> <span class="section-number-3">3.1.</span>  <a href="#org0218311"></a> <a href="../index.html#ID-c71d831b-e577-489c-a67e-b7a516afc273">Root of Org</a></h3>
  <div class="outline-text-3" id="text-3-1">
- <p>
- <a href="https://jethrokuan.github.io/org-roam-guide/">https://jethrokuan.github.io/org-roam-guide/</a> <br></br> <a href="20230122174210-para_method.html#ID-284D68DE-EF29-49FB-A80E-C17B848ADA6B">PARA Method</a> <br></br></p>
-
-
  <hr></hr></div>
 </div>
- <div id="outline-container-org0218311" class="outline-3">
- <h3 id="org0218311"> <span class="section-number-3">3.2.</span>  <a href="#org0218311"></a> <a href="../index.html#ID-c71d831b-e577-489c-a67e-b7a516afc273">Root of Org</a></h3>
+ <div id="outline-container-orga32475f" class="outline-3">
+ <h3 id="orga32475f"> <span class="section-number-3">3.2.</span>  <a href="#orga32475f"></a> <a href="slipbox.html#ID-279872b9-dcd3-44d8-a750-06bbf1a6f361">Slipbox</a></h3>
+ <div class="outline-text-3" id="text-3-2">
+ <p>
+ <a href="https://jethrokuan.github.io/org-roam-guide/">https://jethrokuan.github.io/org-roam-guide/</a> <br></br> <a href="20230122174210-para_method.html#ID-284D68DE-EF29-49FB-A80E-C17B848ADA6B">PARA Method</a> <br></br></p>
+</div>
 </div>
 </div>
 </main>]]></description>
   <link>https://7696122.github.io/braindump/20230122174210-para_method.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/20230122174210-para_method.html</guid>
-  <pubDate>Sat, 28 Jan 2023 17:05:00 +0900</pubDate>
+  <pubDate>Sat, 28 Jan 2023 21:50:00 +0900</pubDate>
 </item>
 <item>
   <title>Mac에서 ~⌥ Option~ 을 조합한 입력에 이상한 문자가 찍힐 때</title>
@@ -1564,7 +1537,7 @@ Input Method를 변경하는 방법 말곤
 </p>
 
 
- <figure id="org6486a52"> <img src="../../attach/Screenshot 2022-12-23 at 1.50.20 PM.png" alt="Screenshot 2022-12-23 at 1.50.20 PM.png"></img> <figcaption> <span class="figure-number">Figure 1: </span>System Settings.app/Keyboard/Text Input/Input Sources/Edit</figcaption></figure> <figure id="orgd47e583"> <img src="../../attach/Screenshot 2022-12-23 at 9.07.37 PM.png" alt="Screenshot 2022-12-23 at 9.07.37 PM.png"></img> <figcaption> <span class="figure-number">Figure 2: </span>English/ABC 상태</figcaption></figure> <figure id="org56b5d97"> <img src="../../attach/Screenshot 2022-12-23 at 9.10.39 PM.png" alt="Screenshot 2022-12-23 at 9.10.39 PM.png"></img> <figcaption> <span class="figure-number">Figure 3: </span>Others/Unicode Hex Input 선택</figcaption></figure> <figure id="orgb104efe"> <img src="../../attach/Screenshot 2022-12-23 at 9.11.32 PM.png" alt="Screenshot 2022-12-23 at 9.11.32 PM.png"></img> <figcaption> <span class="figure-number">Figure 4: </span>Others/Unicode Hex Input 추가</figcaption></figure> <figure id="org39389a8"> <img src="../../attach/Screenshot 2022-12-23 at 9.12.39 PM.png" alt="Screenshot 2022-12-23 at 9.12.39 PM.png"></img> <figcaption> <span class="figure-number">Figure 5: </span>English/ABC 제거</figcaption></figure> <div id="outline-container-org9c6648f" class="outline-2">
+ <figure id="org2fcfccc"> <img src="../../attach/Screenshot 2022-12-23 at 1.50.20 PM.png" alt="Screenshot 2022-12-23 at 1.50.20 PM.png"></img> <figcaption> <span class="figure-number">Figure 1: </span>System Settings.app/Keyboard/Text Input/Input Sources/Edit</figcaption></figure> <figure id="orgb635242"> <img src="../../attach/Screenshot 2022-12-23 at 9.07.37 PM.png" alt="Screenshot 2022-12-23 at 9.07.37 PM.png"></img> <figcaption> <span class="figure-number">Figure 2: </span>English/ABC 상태</figcaption></figure> <figure id="org4dea7b1"> <img src="../../attach/Screenshot 2022-12-23 at 9.10.39 PM.png" alt="Screenshot 2022-12-23 at 9.10.39 PM.png"></img> <figcaption> <span class="figure-number">Figure 3: </span>Others/Unicode Hex Input 선택</figcaption></figure> <figure id="orgb7b008c"> <img src="../../attach/Screenshot 2022-12-23 at 9.11.32 PM.png" alt="Screenshot 2022-12-23 at 9.11.32 PM.png"></img> <figcaption> <span class="figure-number">Figure 4: </span>Others/Unicode Hex Input 추가</figcaption></figure> <figure id="orgaba5d8d"> <img src="../../attach/Screenshot 2022-12-23 at 9.12.39 PM.png" alt="Screenshot 2022-12-23 at 9.12.39 PM.png"></img> <figcaption> <span class="figure-number">Figure 5: </span>English/ABC 제거</figcaption></figure> <div id="outline-container-org9c6648f" class="outline-2">
  <h2 id="org9c6648f"> <span class="section-number-2">1.</span>  <a href="#org9c6648f">Ref</a></h2>
  <div class="outline-text-2" id="text-1">
  <p>
@@ -1575,7 +1548,7 @@ Input Method를 변경하는 방법 말곤
 </main>]]></description>
   <link>https://7696122.github.io/braindump/Mac에서_Option을_조합한_입력에_이상한_문자가_찍힐_때.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/Mac에서_Option을_조합한_입력에_이상한_문자가_찍힐_때.html</guid>
-  <pubDate>Sat, 28 Jan 2023 17:05:00 +0900</pubDate>
+  <pubDate>Sat, 28 Jan 2023 21:50:00 +0900</pubDate>
 </item>
 <item>
   <title>TypeScript를 활용한 함수형 프로그래밍 온보딩</title>
@@ -1588,33 +1561,31 @@ Input Method를 변경하는 방법 말곤
  <li> <a href="https://medium.com/@indongyoo/functional-es-2-%ED%95%A8%EC%88%98%ED%98%95-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B4%80%EC%A0%90%EC%97%90%EC%84%9C-%EB%B0%94%EB%9D%BC%EB%B3%B8-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%9D%98-%EA%B0%92-703ebd418bc">Functional.es - 2. 함수형 프로그래밍 관점에서 바라본 자바스크립트의 값 | by 유인동 | Medium</a></li>
 </ul></li>
  <li> <a href="https://www.typescriptlang.org/docs/handbook/2/narrowing.html#using-type-predicates">TypeScript: Documentation - Narrowing</a></li>
-</ul> <div class="org-src-container">
- <pre class="src src-typescript"> <span style="color: #a020f0;">export</span>  <span style="color: #a020f0;">const</span>  <span style="color: #a0522d;">isSome</span> = <A>(oa:  <span style="color: #228b22;">Option</span>< <span style="color: #228b22;">A</span>>):  <span style="color: #a0522d;">oa</span>  <span style="color: #a020f0;">is</span>  <span style="color: #228b22;">Some</span>< <span style="color: #228b22;">A</span>>  <span style="color: #a020f0;">=></span> oa._tag ===  <span style="color: #8b2252;">"Some"</span>;
+</ul> <pre class="code"> <code> <span style="color: #a020f0;">export</span>  <span style="color: #a020f0;">const</span>  <span style="color: #a0522d;">isSome</span> = <A>(oa:  <span style="color: #228b22;">Option</span>< <span style="color: #228b22;">A</span>>):  <span style="color: #a0522d;">oa</span>  <span style="color: #a020f0;">is</span>  <span style="color: #228b22;">Some</span>< <span style="color: #228b22;">A</span>>  <span style="color: #a020f0;">=></span> oa._tag ===  <span style="color: #8b2252;">"Some"</span>;
  <span style="color: #a020f0;">export</span>  <span style="color: #a020f0;">const</span>  <span style="color: #a0522d;">isNone</span> = <A>(oa:  <span style="color: #228b22;">Option</span>< <span style="color: #228b22;">A</span>>):  <span style="color: #a0522d;">oa</span>  <span style="color: #a020f0;">is</span>  <span style="color: #228b22;">None</span>  <span style="color: #a020f0;">=></span> oa._tag ===  <span style="color: #8b2252;">"None"</span>;
-</pre>
-</div>
+</code></pre>
 </div>
 </div>
 </main>]]></description>
   <link>https://7696122.github.io/braindump/TypeScript를_활용한_함수형_프로그래밍_온보딩.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/TypeScript를_활용한_함수형_프로그래밍_온보딩.html</guid>
-  <pubDate>Sat, 28 Jan 2023 17:05:00 +0900</pubDate>
+  <pubDate>Sat, 28 Jan 2023 21:50:00 +0900</pubDate>
 </item>
 <item>
   <title>Emacs에서 제곱미터 입력하기</title>
   <description><![CDATA[<main id="content" class="content"> <header> <h1 class="title">Emacs에서 제곱미터 입력하기</h1>
 </header> <p>
- <code>C-x 8 RET</code> <sup> <a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup></p>
- <blockquote>
- <p>
-Signature
-(insert-char CHARACTER &optional COUNT INHERIT)
+ <code>C-x 8 RET</code> <label for="1" class="margin-toggle sidenote-number"></label> <input type="checkbox" id="1" class="margin-toggle"></input> <span class="sidenote">
+ <a href="https://emacs.stackexchange.com/a/5652">How to input special character, such as Celsius symbol, and common greek lett…</a>
+</span>
 </p>
-</blockquote>
 
 
- <figure id="org637e214"> <img src="../attach/Screenshot 2023-01-28 at 8.53.09 AM.png" alt="Screenshot 2023-01-28 at 8.53.09 AM.png"></img> <figcaption> <span class="figure-number">Figure 1: </span>insert-char 화면</figcaption></figure> <p>
-제곱미터 = Square M Squared <sup> <a id="fnr.2" class="footref" href="#fn.2" role="doc-backlink">2</a></sup></p>
+ <figure id="org440d704"> <img src="../attach/Screenshot 2023-01-28 at 8.53.09 AM.png" alt="Screenshot 2023-01-28 at 8.53.09 AM.png"></img> <figcaption> <span class="figure-number">Figure 1: </span>insert-char 화면</figcaption></figure> <p>
+제곱미터 = Square M Squared <label for="2" class="margin-toggle sidenote-number"></label> <input type="checkbox" id="2" class="margin-toggle"></input> <span class="sidenote">
+ <a href="https://www.compart.com/en/unicode/U+33A1">“㎡” U+33A1 Square M Squared Unicode Character</a>
+</span>
+</p>
 
  <div id="outline-container-org651f101" class="outline-2 references">
  <h2 id="org651f101"> <span class="section-number-2">1.</span>  <a href="#org651f101">Backlinks</a></h2>
@@ -1623,15 +1594,15 @@ Signature
  <div id="outline-container-org1991c11" class="outline-3">
  <h3 id="org1991c11"> <span class="section-number-3">1.1.</span>  <a href="#org1991c11"></a> <a href="주택구입부담지수_주택금융통계시스템-HF_한국주택금융공사.html#ID-8db31db0-1e6b-4cb3-8169-21a1638862ce">주택구입부담지수@주택금융통계시스템-HF 한국주택금융공사</a></h3>
  <div class="outline-text-3" id="text-1-1">
- <table> <colgroup> <col class="org-right"></col> <col class="org-right"></col></colgroup> <thead> <tr> <th scope="col" class="org-right">분류</th>
+ <table> <colgroup> <col class="org-center"></col> <col class="org-right"></col></colgroup> <thead> <tr> <th scope="col" class="org-center">분류</th>
  <th scope="col" class="org-right">주택구입부담지수(서울)</th>
-</tr></thead> <tbody> <tr> <td class="org-right">60㎡ 이하</td>
+</tr></thead> <tbody> <tr> <td class="org-center">60㎡ 이하</td>
  <td class="org-right">154.8</td>
-</tr> <tr> <td class="org-right">60 ~ 85㎡ 이하</td>
+</tr> <tr> <td class="org-center">60 ~ 85㎡ 이하</td>
  <td class="org-right">220.5</td>
-</tr> <tr> <td class="org-right">83 ~ 135㎡ 이하</td>
+</tr> <tr> <td class="org-center">83 ~ 135㎡ 이하</td>
  <td class="org-right">301.8</td>
-</tr> <tr> <td class="org-right">135㎡ 초과</td>
+</tr> <tr> <td class="org-center">135㎡ 초과</td>
  <td class="org-right">509.6</td>
 </tr></tbody></table> <p>
  <a href="emacs에서_제곱미터_입력하기.html#ID-3f37b59d-6696-42f4-ae43-e0f6e2e18c17">Emacs에서 제곱미터 입력하기</a>
@@ -1639,32 +1610,16 @@ Signature
 </div>
 </div>
 </div>
- <div id="footnotes">
- <h2 class="footnotes">Footnotes: </h2>
- <div id="text-footnotes">
-
- <div class="footdef"> <sup> <a id="fn.1" class="footnum" href="#fnr.1" role="doc-backlink">1</a></sup> <div class="footpara" role="doc-footnote"> <p class="footpara">
- <a href="https://emacs.stackexchange.com/a/5652">How to input special character, such as Celsius symbol, and common greek lett…</a>
-</p></div></div>
-
- <div class="footdef"> <sup> <a id="fn.2" class="footnum" href="#fnr.2" role="doc-backlink">2</a></sup> <div class="footpara" role="doc-footnote"> <p class="footpara">
- <a href="https://www.compart.com/en/unicode/U+33A1">“㎡” U+33A1 Square M Squared Unicode Character</a>
-</p></div></div>
-
-
-</div>
-</div></main>]]></description>
+</main>]]></description>
   <link>https://7696122.github.io/braindump/emacs에서_제곱미터_입력하기.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/emacs에서_제곱미터_입력하기.html</guid>
-  <pubDate>Sat, 28 Jan 2023 17:05:00 +0900</pubDate>
+  <pubDate>Sat, 28 Jan 2023 21:50:00 +0900</pubDate>
 </item>
 <item>
   <title>git에서 html이 binary로 표시되는 문제</title>
   <description><![CDATA[<main id="content" class="content"> <header> <h1 class="title">git에서 html이 binary로 표시되는 문제</h1>
-</header> <div class="org-src-container">
- <pre class="src src-gitconfig" id="orgdcec990">*.html text
-</pre>
-</div>
+</header> <pre class="code"> <code>*.html text
+</code></pre>
 
  <div id="outline-container-org3160c4a" class="outline-2">
  <h2 id="org3160c4a"> <span class="section-number-2">1.</span>  <a href="#org3160c4a">Ref</a></h2>
@@ -1675,13 +1630,14 @@ Signature
 </main>]]></description>
   <link>https://7696122.github.io/braindump/git에서_html이_binary로_표시되는_문제.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/git에서_html이_binary로_표시되는_문제.html</guid>
-  <pubDate>Sat, 28 Jan 2023 17:05:00 +0900</pubDate>
+  <pubDate>Sat, 28 Jan 2023 21:50:00 +0900</pubDate>
 </item>
 <item>
   <title>디지털가든</title>
-  <description><![CDATA[<main id="content" class="content"> <div class="sitemap" id="orge6e10a0">
+  <description><![CDATA[<main id="content" class="content"> <div class="sitemap" id="org80c81be">
  <ul class="org-ul"> <li> <a href="emacs에서_제곱미터_입력하기.html">Emacs에서 제곱미터 입력하기</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-28 토></span></span></li>
  <li> <a href="20221219061119-디지털가든_만들기.html">디지털 가든 만들기</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-27 금></span></span></li>
+ <li> <a href="slipbox.html">Slipbox</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-24 화></span></span></li>
  <li> <a href="20230122174210-para_method.html">PARA Method</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-24 화></span></span></li>
  <li> <a href="20230118064536-git_subtree.html">Git subtree</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-18 수></span></span></li>
  <li> <a href="20230117125941-1인_개발자.html">1인 개발자</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-17 화></span></span></li>
@@ -1731,7 +1687,7 @@ Signature
 </main>]]></description>
   <link>https://7696122.github.io/braindump/index.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/index.html</guid>
-  <pubDate>Sat, 28 Jan 2023 17:05:00 +0900</pubDate>
+  <pubDate>Sat, 28 Jan 2023 21:50:00 +0900</pubDate>
 </item>
 <item>
   <title>npm 없이 js 라이브러리 사용하기</title>
@@ -1749,65 +1705,55 @@ npm을 사용하면 좋지만 그러지 못할 땐
 </p>
 
 
- <figure id="org4874ff0"> <img src="../attach/Screenshot 2022-12-18 at 7.43.25 PM.png" alt="Screenshot 2022-12-18 at 7.43.25 PM.png" width="100%"></img></figure> <p>
+ <figure id="org563d49b"> <img src="../attach/Screenshot 2022-12-18 at 7.43.25 PM.png" alt="Screenshot 2022-12-18 at 7.43.25 PM.png" width="100%"></img></figure> <p>
  <a href="https://www.jsdelivr.com/package/npm/lodash?tab=collection">https://www.jsdelivr.com/package/npm/lodash?tab=collection</a>
 </p>
 
 
- <figure id="org6155d37"> <img src="../attach/Screenshot 2022-12-18 at 9.00.50 PM.png" alt="Screenshot 2022-12-18 at 9.00.50 PM.png" width="100%"></img></figure> <p>
+ <figure id="org801d608"> <img src="../attach/Screenshot 2022-12-18 at 9.00.50 PM.png" alt="Screenshot 2022-12-18 at 9.00.50 PM.png" width="100%"></img></figure> <p>
  <a href="#coderef-src" class="coderef" onmouseover="CodeHighlightOn(this, 'coderef-src');" onmouseout="CodeHighlightOff(this, 'coderef-src');">스크립트 로딩 코드</a>
 </p>
 
- <div class="org-src-container">
- <pre class="src src-html"> <span id="coderef-src" class="coderef-off">< <span style="color: #0000ff;">script</span>  <span style="color: #a0522d;">src</span>= <span style="color: #8b2252;">"https://cdn.jsdelivr.net/npm/lodash@4/lodash.min.js"</span>></ <span style="color: #0000ff;">script</span>></span>
-</pre>
-</div>
+ <pre class="code"> <code> <span id="coderef-src" class="coderef-off">< <span style="color: #0000ff;">script</span>  <span style="color: #a0522d;">src</span>= <span style="color: #8b2252;">"https://cdn.jsdelivr.net/npm/lodash@4/lodash.min.js"</span>></ <span style="color: #0000ff;">script</span>></span>
+</code></pre>
 </main>]]></description>
   <link>https://7696122.github.io/braindump/npm_없이_js_라이브러리_사용하기.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/npm_없이_js_라이브러리_사용하기.html</guid>
-  <pubDate>Sat, 28 Jan 2023 17:05:00 +0900</pubDate>
+  <pubDate>Sat, 28 Jan 2023 21:50:00 +0900</pubDate>
 </item>
 <item>
   <title>org-roam node 얻기</title>
   <description><![CDATA[<main id="content" class="content"> <header> <h1 class="title">org-roam node 얻기</h1>
-</header> <div class="org-src-container">
- <label class="org-src-name"> <span class="listing-number">Listing 1: </span>org-roam-node-file-by-title</label> <pre class="src src-elisp" id="org398a464">( <span style="color: #a020f0;">require</span> ' <span style="color: #008b8b;">org-roam-node</span>)
+</header> <pre class="code"> <code>( <span style="color: #a020f0;">require</span> ' <span style="color: #008b8b;">org-roam-node</span>)
 
 ( <span style="color: #a020f0;">defun</span>  <span style="color: #0000ff;">org-roam-node-file-by-title</span> (_title)
   ( <span style="color: #a020f0;">let</span> ((_roam-node (org-roam-node-from-title-or-alias _title)))
     ( <span style="color: #a020f0;">and</span> _roam-node (org-roam-node-file _roam-node))))
-</pre>
-</div>
+</code></pre>
 
- <div class="org-src-container">
- <label class="org-src-name"> <span class="listing-number">Listing 2: </span>org-roam-node-file-by-title(dash 사용)</label> <pre class="src src-elisp" id="org353284c">( <span style="color: #a020f0;">require</span> ' <span style="color: #008b8b;">dash</span>)
+ <pre class="code"> <code>( <span style="color: #a020f0;">require</span> ' <span style="color: #008b8b;">dash</span>)
 ( <span style="color: #a020f0;">require</span> ' <span style="color: #008b8b;">org-roam-node</span>)
 
 ( <span style="color: #a020f0;">defun</span>  <span style="color: #0000ff;">org-roam-node-file-by-title</span> (_title)
   ( <span style="color: #a020f0;">--></span>
    (org-roam-node-from-title-or-alias _title)
    ( <span style="color: #a020f0;">and</span> it (org-roam-node-file it))))
-</pre>
-</div>
+</code></pre>
 
  <pre class="example">
 org-roam-node-file:title
 </pre>
 
 
- <div class="org-src-container">
- <pre class="src src-emacs-lisp">(org-roam-node-file:title  <span style="color: #8b2252;">"org-roam node 얻기"</span>)
-</pre>
-</div>
+ <pre class="code"> <code>(org-roam-node-file:title  <span style="color: #8b2252;">"org-roam node 얻기"</span>)
+</code></pre>
 
  <p>
 /Users/mnml/org/roam/20221219071941-org_roam_node_얻기.org
 </p>
 
- <div class="org-src-container">
- <pre class="src src-emacs-lisp">(org-roam-node-file:title  <span style="color: #8b2252;">"org-roam node 얻기2"</span>)
-</pre>
-</div>
+ <pre class="code"> <code>(org-roam-node-file:title  <span style="color: #8b2252;">"org-roam node 얻기2"</span>)
+</code></pre>
 
  <p>
 nil
@@ -1815,7 +1761,7 @@ nil
 </main>]]></description>
   <link>https://7696122.github.io/braindump/org-roam_node_얻기.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/org-roam_node_얻기.html</guid>
-  <pubDate>Sat, 28 Jan 2023 17:05:00 +0900</pubDate>
+  <pubDate>Sat, 28 Jan 2023 21:50:00 +0900</pubDate>
 </item>
 <item>
   <title>seo, 검색엔진 최적화</title>
@@ -1823,8 +1769,8 @@ nil
 </header> <p>
  <a href="https://developer.mozilla.org/ko/docs/Glossary/SEO">SEO - MDN Web Docs 용어 사전: 웹 용어 정의 | MDN</a>
 </p>
- <p class="verse">
-SEO(검색 엔진 최적화)는 웹사이트가 검색 결과에 더 잘 보이도록 최적화하는 과정입니다. 검색 랭크 개선이라고도 합니다. <br></br></p>
+ <div class="epigraph"> <blockquote>
+SEO(검색 엔진 최적화)는 웹사이트가 검색 결과에 더 잘 보이도록 최적화하는 과정입니다. 검색 랭크 개선이라고도 합니다. <br></br></blockquote></div>
 
  <div id="outline-container-org8c8d9ab" class="outline-2">
  <h2 id="org8c8d9ab"> <span class="section-number-2">1.</span>  <a href="#org8c8d9ab">검증</a></h2>
@@ -1837,7 +1783,24 @@ SEO(검색 엔진 최적화)는 웹사이트가 검색 결과에 더 잘 보이�
 </main>]]></description>
   <link>https://7696122.github.io/braindump/seo_검색엔진 최적화.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/seo_검색엔진 최적화.html</guid>
-  <pubDate>Sat, 28 Jan 2023 17:05:00 +0900</pubDate>
+  <pubDate>Sat, 28 Jan 2023 21:50:00 +0900</pubDate>
+</item>
+<item>
+  <title>Slipbox</title>
+  <description><![CDATA[<main id="content" class="content"> <header> <h1 class="title">Slipbox</h1>
+</header> <div id="outline-container-org0210dc9" class="outline-2">
+ <h2 id="org0210dc9"> <span class="section-number-2">1.</span>  <a href="#org0210dc9"> <span class="todo TODO">TODO</span> Make Slipbox</a></h2>
+ <div class="outline-text-2" id="text-1">
+ <p>
+ <a href="https://jethrokuan.github.io/org-roam-guide/">https://jethrokuan.github.io/org-roam-guide/</a>
+ <a href="20230122174210-para_method.html#ID-284D68DE-EF29-49FB-A80E-C17B848ADA6B">PARA Method</a>
+</p>
+</div>
+</div>
+</main>]]></description>
+  <link>https://7696122.github.io/braindump/slipbox.html</link>
+  <guid isPermaLink="false">https://7696122.github.io/braindump/slipbox.html</guid>
+  <pubDate>Sat, 28 Jan 2023 21:50:00 +0900</pubDate>
 </item>
 <item>
   <title>Index</title>
@@ -1853,7 +1816,7 @@ SEO(검색 엔진 최적화)는 웹사이트가 검색 결과에 더 잘 보이�
 </main>]]></description>
   <link>https://7696122.github.io/braindump/theindex.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/theindex.html</guid>
-  <pubDate>Sat, 28 Jan 2023 17:05:00 +0900</pubDate>
+  <pubDate>Sat, 28 Jan 2023 21:50:00 +0900</pubDate>
 </item>
 <item>
   <title>경제금융용어 700선</title>
@@ -1867,7 +1830,7 @@ SEO(검색 엔진 최적화)는 웹사이트가 검색 결과에 더 잘 보이�
 </main>]]></description>
   <link>https://7696122.github.io/braindump/경제금융용어_700선.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/경제금융용어_700선.html</guid>
-  <pubDate>Sat, 28 Jan 2023 17:05:00 +0900</pubDate>
+  <pubDate>Sat, 28 Jan 2023 21:50:00 +0900</pubDate>
 </item>
 <item>
   <title>금융안정보고서</title>
@@ -1881,7 +1844,7 @@ SEO(검색 엔진 최적화)는 웹사이트가 검색 결과에 더 잘 보이�
 </main>]]></description>
   <link>https://7696122.github.io/braindump/금융안정보고서.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/금융안정보고서.html</guid>
-  <pubDate>Sat, 28 Jan 2023 17:05:00 +0900</pubDate>
+  <pubDate>Sat, 28 Jan 2023 21:50:00 +0900</pubDate>
 </item>
 <item>
   <title>동등비교 연산자</title>
@@ -1892,7 +1855,7 @@ SEO(검색 엔진 최적화)는 웹사이트가 검색 결과에 더 잘 보이�
 </main>]]></description>
   <link>https://7696122.github.io/braindump/동등비교_연산자.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/동등비교_연산자.html</guid>
-  <pubDate>Sat, 28 Jan 2023 17:05:00 +0900</pubDate>
+  <pubDate>Sat, 28 Jan 2023 21:50:00 +0900</pubDate>
 </item>
 <item>
   <title>뚝섬ㆍ잠원 눈썰매장</title>
@@ -1946,7 +1909,7 @@ SEO(검색 엔진 최적화)는 웹사이트가 검색 결과에 더 잘 보이�
 </main>]]></description>
   <link>https://7696122.github.io/braindump/뚝섬_잠원_눈썰매장.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/뚝섬_잠원_눈썰매장.html</guid>
-  <pubDate>Sat, 28 Jan 2023 17:05:00 +0900</pubDate>
+  <pubDate>Sat, 28 Jan 2023 21:50:00 +0900</pubDate>
 </item>
 <item>
   <title>명조체·고딕체/세리프·산세리프/Serif·Sans-Serif</title>
@@ -1964,7 +1927,9 @@ SEO(검색 엔진 최적화)는 웹사이트가 검색 결과에 더 잘 보이�
  <div id="outline-container-org8044351" class="outline-2">
  <h2 id="org8044351"> <span class="section-number-2">2.</span>  <a href="#org8044351">고딕체/산세리프(Sans-Serif)</a></h2>
  <div class="outline-text-2" id="text-2">
- <ul class="org-ul"> <li> <b>삐침 없음</b> (Sans <sup> <a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup>)</li>
+ <ul class="org-ul"> <li> <b>삐침 없음</b> (Sans <label for="1" class="margin-toggle sidenote-number"></label> <input type="checkbox" id="1" class="margin-toggle"></input> <span class="sidenote">
+ <a href="https://dict.naver.com/frkodict/#/search?query=sans">프랑스어 사전</a>, “없음” 뜻
+</span>)</li>
  <li>굵기: 가로획 = 세로획</li>
 </ul></div>
 </div>
@@ -1977,20 +1942,10 @@ SEO(검색 엔진 최적화)는 웹사이트가 검색 결과에 더 잘 보이�
  <li> <a href="https://brunch.co.kr/@airsucb/38">글꼴의 기본: 세리프와 산세리프</a></li>
 </ul></div>
 </div>
- <div id="footnotes">
- <h2 class="footnotes">Footnotes: </h2>
- <div id="text-footnotes">
-
- <div class="footdef"> <sup> <a id="fn.1" class="footnum" href="#fnr.1" role="doc-backlink">1</a></sup> <div class="footpara" role="doc-footnote"> <p class="footpara">
- <a href="https://dict.naver.com/frkodict/#/search?query=sans">프랑스어 사전</a>, “없음” 뜻
-</p></div></div>
-
-
-</div>
-</div></main>]]></description>
+</main>]]></description>
   <link>https://7696122.github.io/braindump/명조체_고딕체_세리프_산세리프_Serif_Sans-Serif.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/명조체_고딕체_세리프_산세리프_Serif_Sans-Serif.html</guid>
-  <pubDate>Sat, 28 Jan 2023 17:05:00 +0900</pubDate>
+  <pubDate>Sat, 28 Jan 2023 21:50:00 +0900</pubDate>
 </item>
 <item>
   <title>서울광장 스케이트장</title>
@@ -2039,7 +1994,7 @@ SEO(검색 엔진 최적화)는 웹사이트가 검색 결과에 더 잘 보이�
 </main>]]></description>
   <link>https://7696122.github.io/braindump/서울광장_스케이트장.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/서울광장_스케이트장.html</guid>
-  <pubDate>Sat, 28 Jan 2023 17:05:00 +0900</pubDate>
+  <pubDate>Sat, 28 Jan 2023 21:50:00 +0900</pubDate>
 </item>
 <item>
   <title>주택구입부담지수@주택금융통계시스템-HF 한국주택금융공사</title>
@@ -2054,15 +2009,15 @@ SEO(검색 엔진 최적화)는 웹사이트가 검색 결과에 더 잘 보이�
  <div id="outline-container-org5a8a7d1" class="outline-2">
  <h2 id="org5a8a7d1"> <span class="section-number-2">2.</span>  <a href="#org5a8a7d1">2022/3Q</a></h2>
  <div class="outline-text-2" id="text-2">
- <table> <colgroup> <col class="org-right"></col> <col class="org-right"></col></colgroup> <thead> <tr> <th scope="col" class="org-right">분류</th>
+ <table> <colgroup> <col class="org-center"></col> <col class="org-right"></col></colgroup> <thead> <tr> <th scope="col" class="org-center">분류</th>
  <th scope="col" class="org-right">주택구입부담지수(서울)</th>
-</tr></thead> <tbody> <tr> <td class="org-right">60㎡ 이하</td>
+</tr></thead> <tbody> <tr> <td class="org-center">60㎡ 이하</td>
  <td class="org-right">154.8</td>
-</tr> <tr> <td class="org-right">60 ~ 85㎡ 이하</td>
+</tr> <tr> <td class="org-center">60 ~ 85㎡ 이하</td>
  <td class="org-right">220.5</td>
-</tr> <tr> <td class="org-right">83 ~ 135㎡ 이하</td>
+</tr> <tr> <td class="org-center">83 ~ 135㎡ 이하</td>
  <td class="org-right">301.8</td>
-</tr> <tr> <td class="org-right">135㎡ 초과</td>
+</tr> <tr> <td class="org-center">135㎡ 초과</td>
  <td class="org-right">509.6</td>
 </tr></tbody></table> <p>
  <a href="emacs에서_제곱미터_입력하기.html#ID-3f37b59d-6696-42f4-ae43-e0f6e2e18c17">Emacs에서 제곱미터 입력하기</a>
@@ -2072,7 +2027,7 @@ SEO(검색 엔진 최적화)는 웹사이트가 검색 결과에 더 잘 보이�
 </main>]]></description>
   <link>https://7696122.github.io/braindump/주택구입부담지수_주택금융통계시스템-HF_한국주택금융공사.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/주택구입부담지수_주택금융통계시스템-HF_한국주택금융공사.html</guid>
-  <pubDate>Sat, 28 Jan 2023 17:05:00 +0900</pubDate>
+  <pubDate>Sat, 28 Jan 2023 21:50:00 +0900</pubDate>
 </item>
 <item>
   <title>디지털가든</title>
@@ -2087,17 +2042,19 @@ SEO(검색 엔진 최적화)는 웹사이트가 검색 결과에 더 잘 보이�
  <div id="outline-container-org09e8b83" class="outline-2">
  <h2 id="org09e8b83"> <a href="#org09e8b83">도서관에서</a></h2>
  <div class="outline-text-2" id="text-org09e8b83">
- <ul class="org-ul"> <li> <a href="https://nl.go.kr/kolisnet/search/searchResultDetail.do?tab=ALL&subTab=&pageNum=1&pageSize=15&sortField=&sortOrder=&facetCollType=&facetYear=&facetKdc=&facetLang=&keywordType1=total&keyword1=%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EB%8A%94+%EC%99%9C+%EA%B7%B8+%EB%AA%A8%EC%96%91%EC%9D%BC%EA%B9%8C&bookFilter=BKGM%2CYON%2CBKDM%2CNK%2CNP%2COT&ufKey=44255733&bibPageSize=10&bibPageNum=1&bibEdit=&bibSortField=&bibSortOrder=&publishFormCode=BO&bibKey=769106346#mark">자바스크립트는 왜 그 모양일까? : 더글러스 크락포드가 알려주는 위험한 자바스크립트를 안전하게 사용하는 법 / 더글러스 크락포드 지음</a></li>
-</ul></div>
+ <p>
+ <a href="../../books/index.html#ID-0f161ec5-c454-4c04-acd7-0da1a0457048">books</a>
+</p>
+</div>
 </div>
 </main>]]></description>
   <link>https://7696122.github.io/home/index.html</link>
   <guid isPermaLink="false">https://7696122.github.io/home/index.html</guid>
-  <pubDate>Sat, 28 Jan 2023 17:05:00 +0900</pubDate>
+  <pubDate>Sat, 28 Jan 2023 21:50:00 +0900</pubDate>
 </item>
 <item>
   <title>디지털가든</title>
-  <description><![CDATA[<main id="content" class="content"> <div class="sitemap" id="org5d7124e">
+  <description><![CDATA[<main id="content" class="content"> <div class="sitemap" id="org5f61530">
  <ul class="org-ul"> <li> <a href="2023_01_27.html">Jan 27th, 2023</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-27 금></span></span></li>
  <li> <a href="journal.html">journal</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-27 금></span></span></li>
  <li> <a href="2023-01-23.html">2023-01-23</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-24 화></span></span></li>
@@ -2131,19 +2088,20 @@ SEO(검색 엔진 최적화)는 웹사이트가 검색 결과에 더 잘 보이�
 </main>]]></description>
   <link>https://7696122.github.io/journal/index.html</link>
   <guid isPermaLink="false">https://7696122.github.io/journal/index.html</guid>
-  <pubDate>Sat, 28 Jan 2023 17:05:00 +0900</pubDate>
+  <pubDate>Sat, 28 Jan 2023 21:50:00 +0900</pubDate>
 </item>
 <item>
   <title>디지털가든</title>
   <description><![CDATA[<main id="content" class="content"> <div id="outline-container-orga1b2772" class="outline-2">
  <h2 id="orga1b2772"> <a href="#orga1b2772">오늘</a></h2>
  <div class="outline-text-2" id="text-orga1b2772">
- <div class="today" id="orgc2bf4c4">
- <blockquote>
+ <div class="today" id="org73c3b8a">
+ <div class="epigraph"> <blockquote>
  <p>
 개춥다.
 </p>
-</blockquote>
+
+</blockquote></div>
 
 </div>
 </div>
@@ -2152,9 +2110,10 @@ SEO(검색 엔진 최적화)는 웹사이트가 검색 결과에 더 잘 보이�
  <div id="outline-container-orgbd7fed5" class="outline-2">
  <h2 id="orgbd7fed5"> <a href="#orgbd7fed5">최근 글</a></h2>
  <div class="outline-text-2" id="text-orgbd7fed5">
- <div class="recent" id="orgadb2715">
+ <div class="recent" id="org4c9c729">
  <ul class="org-ul"> <li> <a href="../braindump/emacs에서_제곱미터_입력하기.html">Emacs에서 제곱미터 입력하기</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-28 토></span></span></li>
  <li> <a href="../braindump/20221219061119-디지털가든_만들기.html">디지털 가든 만들기</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-27 금></span></span></li>
+ <li> <a href="../braindump/slipbox.html">Slipbox</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-24 화></span></span></li>
  <li> <a href="../braindump/20230122174210-para_method.html">PARA Method</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-24 화></span></span></li>
  <li> <a href="../braindump/20230118064536-git_subtree.html">Git subtree</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-18 수></span></span></li>
  <li> <a href="../braindump/20230117125941-1인_개발자.html">1인 개발자</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-17 화></span></span></li>
@@ -2162,7 +2121,6 @@ SEO(검색 엔진 최적화)는 웹사이트가 검색 결과에 더 잘 보이�
  <li> <a href="../braindump/뚝섬_잠원_눈썰매장.html">뚝섬ㆍ잠원 눈썰매장</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-13 금></span></span></li>
  <li> <a href="../braindump/Mac에서_Option을_조합한_입력에_이상한_문자가_찍힐_때.html">Mac에서  <code>⌥ Option</code> 을 조합한 입력에 이상한 문자가 찍힐 때</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-13 금></span></span></li>
  <li> <a href="../braindump/20230106212912-dart.html">Dart</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
- <li> <a href="../braindump/20230106122610-null_versus_undefined.html">null versus undefined</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
 </ul></div>
 </div>
 </div>
@@ -2177,7 +2135,7 @@ SEO(검색 엔진 최적화)는 웹사이트가 검색 결과에 더 잘 보이�
 </main>]]></description>
   <link>https://7696122.github.io/index.html</link>
   <guid isPermaLink="false">https://7696122.github.io/index.html</guid>
-  <pubDate>Sat, 28 Jan 2023 17:05:00 +0900</pubDate>
+  <pubDate>Sat, 28 Jan 2023 21:50:00 +0900</pubDate>
 </item>
 <item>
   <title>Index</title>
@@ -2211,7 +2169,7 @@ SEO(검색 엔진 최적화)는 웹사이트가 검색 결과에 더 잘 보이�
 </main>]]></description>
   <link>https://7696122.github.io/theindex.html</link>
   <guid isPermaLink="false">https://7696122.github.io/theindex.html</guid>
-  <pubDate>Sat, 28 Jan 2023 17:05:00 +0900</pubDate>
+  <pubDate>Sat, 28 Jan 2023 21:50:00 +0900</pubDate>
 </item>
 </channel>
 </rss>

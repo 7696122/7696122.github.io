@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<!-- 2023-01-28 토 17:05 -->
+<!-- 2023-01-28 토 21:50 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>org-roam node 얻기</title>
@@ -193,7 +193,8 @@
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   .org-svg { }
 </style>
-<link rel='stylesheet' href='https://cdn.simplecss.org/simple.min.css'>
+<link rel='stylesheet' href='/css/tufte.css' type='text/css' />
+<link rel='stylesheet' href='/css/latex.css' type='text/css' />
 <link href='/stylesheets/main.css' media='screen, projection' rel='stylesheet' type='text/css' />
 <style>
 pre.src-typescript:before { content: 'Typescript'; }
@@ -201,7 +202,7 @@ pre.src-typescript:before { content: 'Typescript'; }
 <link rel='stylesheet' href='/stylesheets/pesticide.css'>
 <meta name='apple-mobile-web-app-capable' content='yes'>
 <meta name='google-site-verification' content='dGwvD5f5bqXp49tDOO198L4-_t5ac3obXyDtsFOaO9A' />
-<meta name="naver-site-verification" content="239442e3d7dc2e5c0530ef2a4b3120eb551cceba" />
+<meta name='naver-site-verification' content='239442e3d7dc2e5c0530ef2a4b3120eb551cceba' />
 
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -235,7 +236,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src='https://www.googletagmanager.com/ns.html?id=GTM-P3KXTHX'
 height='0' width='0' style='display:none;visibility:hidden'></iframe></noscript>
 <!-- End Google Tag Manager (noscript) --><header id="preamble" class="status">
-<div class="banner" id="orgac98eaf">
+<div class="banner" id="org43d2cb0">
 <a href="/" class="none-deco">
 <!-- <span id="icon">여기엔</span> -->
 <h1>디지털가든</h1>
@@ -249,6 +250,7 @@ height='0' width='0' style='display:none;visibility:hidden'></iframe></noscript>
 <li><a href="../home/index.html"><span>Home</span></a></li>
 <li><a href="../blog/index.html"><span>Blog</span></a></li>
 <li><a href="../braindump/index.html"><span>Braindump</span></a></li>
+<li><a href="../books/index.html"><span>Books</span></a></li>
 <li><a href="../about/index.html"><span>About</span></a></li>
 </ul>
 </nav>
@@ -261,44 +263,36 @@ height='0' width='0' style='display:none;visibility:hidden'></iframe></noscript>
 <main id="content" class="content">
 <header>
 <h1 class="title">org-roam node 얻기</h1>
-</header><div class="org-src-container">
-<label class="org-src-name"><span class="listing-number">Listing 1: </span>org-roam-node-file-by-title</label><pre class="src src-elisp" id="org398a464">(<span style="color: #a020f0;">require</span> '<span style="color: #008b8b;">org-roam-node</span>)
+</header><pre class="code"><code>(<span style="color: #a020f0;">require</span> '<span style="color: #008b8b;">org-roam-node</span>)
 
 (<span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">org-roam-node-file-by-title</span> (_title)
   (<span style="color: #a020f0;">let</span> ((_roam-node (org-roam-node-from-title-or-alias _title)))
     (<span style="color: #a020f0;">and</span> _roam-node (org-roam-node-file _roam-node))))
-</pre>
-</div>
+</code></pre>
 
-<div class="org-src-container">
-<label class="org-src-name"><span class="listing-number">Listing 2: </span>org-roam-node-file-by-title(dash 사용)</label><pre class="src src-elisp" id="org353284c">(<span style="color: #a020f0;">require</span> '<span style="color: #008b8b;">dash</span>)
+<pre class="code"><code>(<span style="color: #a020f0;">require</span> '<span style="color: #008b8b;">dash</span>)
 (<span style="color: #a020f0;">require</span> '<span style="color: #008b8b;">org-roam-node</span>)
 
 (<span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">org-roam-node-file-by-title</span> (_title)
   (<span style="color: #a020f0;">--&gt;</span>
    (org-roam-node-from-title-or-alias _title)
    (<span style="color: #a020f0;">and</span> it (org-roam-node-file it))))
-</pre>
-</div>
+</code></pre>
 
 <pre class="example">
 org-roam-node-file:title
 </pre>
 
 
-<div class="org-src-container">
-<pre class="src src-emacs-lisp">(org-roam-node-file:title <span style="color: #8b2252;">"org-roam node &#50619;&#44592;"</span>)
-</pre>
-</div>
+<pre class="code"><code>(org-roam-node-file:title <span style="color: #8b2252;">"org-roam node &#50619;&#44592;"</span>)
+</code></pre>
 
 <p>
 /Users/mnml/org/roam/20221219071941-org_roam_node_얻기.org
 </p>
 
-<div class="org-src-container">
-<pre class="src src-emacs-lisp">(org-roam-node-file:title <span style="color: #8b2252;">"org-roam node &#50619;&#44592;2"</span>)
-</pre>
-</div>
+<pre class="code"><code>(org-roam-node-file:title <span style="color: #8b2252;">"org-roam node &#50619;&#44592;2"</span>)
+</code></pre>
 
 <p>
 nil
