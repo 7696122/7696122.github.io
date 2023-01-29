@@ -6,7 +6,7 @@
 <generator>Emacs webfeeder.el</generator>
 <link>https://7696122.github.io</link>
 <atom:link href="https://7696122.github.io/rss.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Sun, 29 Jan 2023 08:45:02 +0900</lastBuildDate>
+<lastBuildDate>Sun, 29 Jan 2023 11:18:06 +0900</lastBuildDate>
 <item>
   <title>디지털가든</title>
   <description><![CDATA[<main id="content" class="content"> <ul class="org-ul"> <li>쓰기</li>
@@ -16,11 +16,11 @@
 </ul></main>]]></description>
   <link>https://7696122.github.io/about/index.html</link>
   <guid isPermaLink="false">https://7696122.github.io/about/index.html</guid>
-  <pubDate>Sun, 29 Jan 2023 08:45:00 +0900</pubDate>
+  <pubDate>Sun, 29 Jan 2023 11:18:00 +0900</pubDate>
 </item>
 <item>
   <title>디지털가든</title>
-  <description><![CDATA[<main id="content" class="content"> <div class="sitemap" id="org7c540ee">
+  <description><![CDATA[<main id="content" class="content"> <div class="sitemap" id="orgae3ee55">
  <p>
 
 </p>
@@ -29,49 +29,7 @@
 </main>]]></description>
   <link>https://7696122.github.io/blog/index.html</link>
   <guid isPermaLink="false">https://7696122.github.io/blog/index.html</guid>
-  <pubDate>Sun, 29 Jan 2023 08:45:00 +0900</pubDate>
-</item>
-<item>
-  <title>Index</title>
-  <description><![CDATA[<main id="content" class="content"> <header> <h1 class="title">Index</h1>
-</header> <div id="outline-container-orgbca3dfc" class="outline-2">
- <h2 id="orgbca3dfc"> <span class="section-number-2">1.</span>  <a href="#orgbca3dfc">A</a></h2>
- <div class="outline-text-2" id="text-1">
- <ul class="org-ul"> <li> <a href="about/index.html">about</a></li>
-</ul></div>
-</div>
- <div id="outline-container-org640c3f8" class="outline-2">
- <h2 id="org640c3f8"> <span class="section-number-2">2.</span>  <a href="#org640c3f8">B</a></h2>
- <div class="outline-text-2" id="text-2">
- <ul class="org-ul"> <li> <a href="blog/index.html">blog</a></li>
- <li> <a href="journal/index.html">braindump</a></li>
- <li> <a href="braindump/index.html">braindump</a></li>
-</ul></div>
-</div>
- <div id="outline-container-orgb74fb86" class="outline-2">
- <h2 id="orgb74fb86"> <span class="section-number-2">3.</span>  <a href="#orgb74fb86">H</a></h2>
- <div class="outline-text-2" id="text-3">
- <ul class="org-ul"> <li> <a href="home/index.html">home</a></li>
-</ul></div>
-</div>
- <div id="outline-container-orgf86a0b7" class="outline-2">
- <h2 id="orgf86a0b7"> <span class="section-number-2">4.</span>  <a href="#orgf86a0b7">J</a></h2>
- <div class="outline-text-2" id="text-4">
- <ul class="org-ul"> <li> <a href="journal/index.html">Journal</a></li>
-</ul></div>
-</div>
-</main>]]></description>
-  <link>https://7696122.github.io/theindex.html</link>
-  <guid isPermaLink="false">https://7696122.github.io/theindex.html</guid>
-  <pubDate>Sun, 29 Jan 2023 08:45:00 +0900</pubDate>
-</item>
-<item>
-  <title>Index</title>
-  <description><![CDATA[<main id="content" class="content"> <header> <h1 class="title">Index</h1>
-</header></main>]]></description>
-  <link>https://7696122.github.io/blog/theindex.html</link>
-  <guid isPermaLink="false">https://7696122.github.io/blog/theindex.html</guid>
-  <pubDate>Sun, 29 Jan 2023 08:44:00 +0900</pubDate>
+  <pubDate>Sun, 29 Jan 2023 11:18:00 +0900</pubDate>
 </item>
 <item>
   <title>books</title>
@@ -114,7 +72,7 @@
 </main>]]></description>
   <link>https://7696122.github.io/books/index.html</link>
   <guid isPermaLink="false">https://7696122.github.io/books/index.html</guid>
-  <pubDate>Sun, 29 Jan 2023 08:44:00 +0900</pubDate>
+  <pubDate>Sun, 29 Jan 2023 11:18:00 +0900</pubDate>
 </item>
 <item>
   <title>Index</title>
@@ -122,7 +80,481 @@
 </header></main>]]></description>
   <link>https://7696122.github.io/books/theindex.html</link>
   <guid isPermaLink="false">https://7696122.github.io/books/theindex.html</guid>
-  <pubDate>Sun, 29 Jan 2023 08:44:00 +0900</pubDate>
+  <pubDate>Sun, 29 Jan 2023 11:18:00 +0900</pubDate>
+</item>
+<item>
+  <title>HTTP cookie</title>
+  <description><![CDATA[<main id="content" class="content"> <header> <h1 class="title">HTTP cookie</h1>
+</header> <div id="outline-container-org941eabd" class="outline-2">
+ <h2 id="org941eabd"> <span class="section-number-2">1.</span>  <a href="#org941eabd">Using HTTP cookies</a></h2>
+ <div class="outline-text-2" id="text-1">
+</div>
+ <div id="outline-container-org1641708" class="outline-3">
+ <h3 id="org1641708"> <span class="section-number-3">1.1.</span>  <a href="#org1641708">HTTP cookie (web cookie, browser cookie)</a></h3>
+ <div class="outline-text-3" id="text-1-1">
+</div>
+ <div id="outline-container-org913ca19" class="outline-4">
+ <h4 id="org913ca19"> <span class="section-number-4">1.1.1.</span>  <a href="#org913ca19">a small piece of data</a></h4>
+ <div class="outline-text-4" id="text-1-1-1">
+ <ul class="org-ul"> <li> <b>server</b>
+ <ul class="org-ul"> <li>sent</li>
+ <li>to user's web browser</li>
+</ul></li>
+ <li> <b>browser</b>
+ <ul class="org-ul"> <li>may store the cookie</li>
+ <li>and send it back
+ <ul class="org-ul"> <li>to the same server</li>
+ <li>with later requests</li>
+</ul></li>
+</ul></li>
+ <li> <b>HTTP cookie</b> is used to tell
+ <ul class="org-ul"> <li>if two request come from the same browser
+ <ul class="org-ul"> <li>keeping a user logged in, for example</li>
+</ul></li>
+</ul></li>
+ <li>It remembers sateful information
+ <ul class="org-ul"> <li>for the  <b> <span class="underline">stateless HTTP protocol</span></b></li>
+</ul></li>
+</ul></div>
+</div>
+
+ <div id="outline-container-org0dbc084" class="outline-4">
+ <h4 id="org0dbc084"> <span class="section-number-4">1.1.2.</span>  <a href="#org0dbc084">mainly used for three purposes</a></h4>
+ <div class="outline-text-4" id="text-1-1-2">
+ <ul class="org-ul"> <li> <b>Session management</b>
+ <ul class="org-ul"> <li>Loings, shopping carts, game scores</li>
+ <li>or  <b>anything else the server should remember</b></li>
+</ul></li>
+ <li>Personalization
+ <ul class="org-ul"> <li>User preferrnces</li>
+ <li>themes</li>
+ <li>and other settings</li>
+</ul></li>
+ <li>Tracking
+ <ul class="org-ul"> <li>Recoding and analyzing user behavior</li>
+</ul></li>
+</ul></div>
+</div>
+
+ <div id="outline-container-orgbd9ace9" class="outline-4">
+ <h4 id="orgbd9ace9"> <span class="section-number-4">1.1.3.</span>  <a href="#orgbd9ace9"> <b>modern storage APIs are now recommended</b></a></h4>
+ <div class="outline-text-4" id="text-1-1-3">
+ <ul class="org-ul"> <li> <b>Cookies</b> are  <b>sent with every request</b>, so they can  <b>worsen performance</b> (especially for mobile data connections).</li>
+ <li>Modern APIs for client storage are
+ <ul class="org-ul"> <li> <span class="underline">Web Storage API</span>
+ <ul class="org-ul"> <li>localStorage</li>
+ <li>sessionStorage</li>
+</ul></li>
+ <li> <span class="underline">IndexedDB</span></li>
+</ul></li>
+</ul></div>
+</div>
+</div>
+</div>
+
+ <div id="outline-container-org5b4678c" class="outline-2">
+ <h2 id="org5b4678c"> <span class="section-number-2">2.</span>  <a href="#org5b4678c">Creating cookies</a></h2>
+ <div class="outline-text-2" id="text-2">
+ <ul class="org-ul"> <li>a  <b>server</b> can  <b>send</b> one or more  <b>Set-Cookie header</b>
+ <ul class="org-ul"> <li>with the response</li>
+ <li>After receiving an HTTP request</li>
+</ul></li>
+ <li>The browser useally
+ <ul class="org-ul"> <li>stores the cookie</li>
+ <li>send it</li>
+ <li>with requests
+ <ul class="org-ul"> <li>made to the  <b>same server</b></li>
+ <li>inside  <b>Cookie HTTP header</b></li>
+</ul></li>
+</ul></li>
+ <li>can specify</li>
+</ul></div>
+</div>
+
+ <div id="outline-container-org4e3a8c7" class="outline-2">
+ <h2 id="org4e3a8c7"> <span class="section-number-2">3.</span>  <a href="#org4e3a8c7">ref</a></h2>
+ <div class="outline-text-2" id="text-3">
+ <p>
+ <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies">https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies</a>
+</p>
+</div>
+</div>
+</main>]]></description>
+  <link>https://7696122.github.io/braindump/20221222073142-http_cookie.html</link>
+  <guid isPermaLink="false">https://7696122.github.io/braindump/20221222073142-http_cookie.html</guid>
+  <pubDate>Sun, 29 Jan 2023 11:18:00 +0900</pubDate>
+</item>
+<item>
+  <title>Scroll Indicator</title>
+  <description><![CDATA[<main id="content" class="content"> <header> <h1 class="title">Scroll Indicator</h1>
+</header> <div class="org-src-container">
+ <pre class="src src-js"> <span style="color: #a020f0;">class</span> ScrollIndicator  <span style="color: #a020f0;">extends</span> HTMLElement {
+  constructor() {
+     <span style="color: #a020f0;">super</span>();
+  }
+
+  render() {
+     <span style="color: #008b8b;">this</span>.attachShadow({ mode:  <span style="color: #8b2252;">"open"</span> });
+
+     <span style="color: #a020f0;">const</span>  <span style="color: #a0522d;">container</span> = document.createElement( <span style="color: #8b2252;">"div"</span>);
+    container.setAttribute( <span style="color: #8b2252;">"class"</span>,  <span style="color: #8b2252;">"progress-container"</span>);
+
+     <span style="color: #a020f0;">const</span>  <span style="color: #a0522d;">bar</span> = document.createElement( <span style="color: #8b2252;">"div"</span>);
+    bar.setAttribute( <span style="color: #8b2252;">"class"</span>,  <span style="color: #8b2252;">"progress-bar"</span>);
+    bar.setAttribute( <span style="color: #8b2252;">"id"</span>,  <span style="color: #8b2252;">"myBar"</span>);
+
+    container.append(bar);
+
+     <span style="color: #a020f0;">const</span>  <span style="color: #a0522d;">style</span> = document.createElement( <span style="color: #8b2252;">"style"</span>);
+    style.textContent =  <span style="color: #8b2252;">`</span>
+ <span style="color: #8b2252;">/* Style the header: fixed position (always stay at the top) */</span>
+ <span style="color: #8b2252;">/* The progress container (grey background) */</span>
+ <span style="color: #8b2252;">.progress-container {</span>
+ <span style="color: #8b2252;">  width: 100%;</span>
+ <span style="color: #8b2252;">  height: 8px;</span>
+ <span style="color: #8b2252;">  // background: black;</span>
+ <span style="color: #8b2252;">}</span>
+
+ <span style="color: #8b2252;">/* The progress bar (scroll indicator) */</span>
+ <span style="color: #8b2252;">.progress-bar {</span>
+ <span style="color: #8b2252;">  height: 8px;</span>
+ <span style="color: #8b2252;">  background: yellowgreen;</span>
+ <span style="color: #8b2252;">  width: 0%;</span>
+ <span style="color: #8b2252;">}</span>
+ <span style="color: #8b2252;">    `</span>;
+
+     <span style="color: #008b8b;">this</span>.shadowRoot.append(style, container);
+
+    //  <span style="color: #b22222;">When the user scrolls the page, execute myFunction</span>
+    window.onscroll =  <span style="color: #a020f0;">function</span> () {
+      handleScroll();
+    };
+
+     <span style="color: #a020f0;">function</span>  <span style="color: #0000ff;">handleScroll</span>() {
+       <span style="color: #a020f0;">var</span>  <span style="color: #a0522d;">winScroll</span> =
+        document.body.scrollTop || document.documentElement.scrollTop;
+       <span style="color: #a020f0;">var</span>  <span style="color: #a0522d;">height</span> =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
+       <span style="color: #a020f0;">var</span>  <span style="color: #a0522d;">scrolled</span> = (winScroll / height) * 100;
+      bar.style.width = (scrolled <= 100 ? scrolled : 100) +  <span style="color: #8b2252;">"%"</span>;
+    }
+  }
+
+  connectedCallback() {
+     <span style="color: #a020f0;">if</span> (! <span style="color: #008b8b;">this</span>.rendered) {
+       <span style="color: #008b8b;">this</span>.render();
+       <span style="color: #008b8b;">this</span>.rendered =  <span style="color: #008b8b;">true</span>;
+    }
+  }
+  //  <span style="color: #b22222;">disconnectedCallback() {</span>
+  //    <span style="color: #b22222;">/* ... */</span>
+  //  <span style="color: #b22222;">}</span>
+  //  <span style="color: #b22222;">static get observedAttributes() {</span>
+  //    <span style="color: #b22222;">return [</span>
+  //      <span style="color: #b22222;">/* ... */</span>
+  //    <span style="color: #b22222;">];</span>
+  //  <span style="color: #b22222;">}</span>
+  //  <span style="color: #b22222;">attributeChangedCallback(name, oldValue, newValue) {</span>
+  //    <span style="color: #b22222;">/* ... */</span>
+  //  <span style="color: #b22222;">}</span>
+  //  <span style="color: #b22222;">adoptedCallback() {</span>
+  //    <span style="color: #b22222;">/* ... */</span>
+  //  <span style="color: #b22222;">}</span>
+}
+
+customElements.define(
+   <span style="color: #8b2252;">"scroll-indicator"</span>,
+  ScrollIndicator
+  //  <span style="color: #b22222;">{extends: "div"}</span>
+);
+</pre>
+</div>
+
+ <div class="org-src-container">
+ <pre class="src src-html">< <span style="color: #0000ff;">scroll-indicator</span>></ <span style="color: #0000ff;">scroll-indicator</span>>
+</pre>
+</div>
+
+ <div id="outline-container-org067d565" class="outline-2">
+ <h2 id="org067d565"> <span class="section-number-2">1.</span>  <a href="#org067d565">Ref</a></h2>
+ <div class="outline-text-2" id="text-1">
+ <ul class="org-ul"> <li> <a href="https://www.w3schools.com/howto/howto_js_scroll_indicator.asp">How TO - Scroll Indicator</a></li>
+ <li> <a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components">Web Components</a></li>
+ <li> <a href="https://css-tricks.com/indicating-scroll-position-on-a-page-with-css/">Indicating Scroll Position on a Page With CSS | CSS-Tricks - CSS-Tricks</a></li>
+</ul></div>
+</div>
+</main>]]></description>
+  <link>https://7696122.github.io/braindump/20221223130349-scroll_indicator.html</link>
+  <guid isPermaLink="false">https://7696122.github.io/braindump/20221223130349-scroll_indicator.html</guid>
+  <pubDate>Sun, 29 Jan 2023 11:18:00 +0900</pubDate>
+</item>
+<item>
+  <title>bookmarks</title>
+  <description><![CDATA[<main id="content" class="content"> <header> <h1 class="title">bookmarks</h1>
+</header> <dl class="org-dl"> <dt>검색인진최적화에 대한 좋을 글들이 많음</dt> <dd> <a href="https://www.ascentkorea.com/which-is-better-for-seo-single-page-vs-multi-page/">싱글페이지 VS 멀티페이지 무엇이 더 좋은 선택일까?(SINGLE PAGE VS MULTI PAGE) - 어센트 코리아</a></dd>
+ <dt>유용한 메모들 많음</dt> <dd> <a href="https://seorenn.github.io/">Home - Seorenn</a></dd>
+</dl></main>]]></description>
+  <link>https://7696122.github.io/braindump/20221227080025-bookmarks.html</link>
+  <guid isPermaLink="false">https://7696122.github.io/braindump/20221227080025-bookmarks.html</guid>
+  <pubDate>Sun, 29 Jan 2023 11:18:00 +0900</pubDate>
+</item>
+<item>
+  <title>Mac에서 ~⌥ Option~ 을 조합한 입력에 이상한 문자가 찍힐 때</title>
+  <description><![CDATA[<main id="content" class="content"> <header> <h1 class="title">Mac에서  <code>⌥ Option</code> 을 조합한 입력에 이상한 문자가 찍힐 때</h1>
+</header> <p>
+ <code>⌥ Option</code> +  <code>\</code> 를 누르니  <code>«</code> 가 입력된다.
+</p>
+
+ <p>
+특수 문자를 Option키와 조합해서 입력하는 편의성을 위한 기능이겠지만 불필요하다.
+</p>
+
+ <p>
+ <a href="https://ko.wikihow.com/%EB%A7%A5%EC%97%90%EC%84%9C-%ED%8A%B9%EC%88%98-%EB%AC%B8%EC%9E%90-%EC%9E%85%EB%A0%A5%ED%95%98%EB%8A%94-%EB%B2%95">맥에서 특수 문자 입력하는 법</a>
+</p>
+
+ <p>
+해당 기능을 비활성화 시키는 방법을 찾아 봤지만
+Input Method를 변경하는 방법 말곤
+찾지 못했다.
+</p>
+
+
+ <figure id="org21c9e1e"> <img src="../../attach/Screenshot 2022-12-23 at 1.50.20 PM.png" alt="Screenshot 2022-12-23 at 1.50.20 PM.png"></img> <figcaption> <span class="figure-number">Figure 1: </span>System Settings.app/Keyboard/Text Input/Input Sources/Edit</figcaption></figure> <figure id="org6a77a4c"> <img src="../../attach/Screenshot 2022-12-23 at 9.07.37 PM.png" alt="Screenshot 2022-12-23 at 9.07.37 PM.png"></img> <figcaption> <span class="figure-number">Figure 2: </span>English/ABC 상태</figcaption></figure> <figure id="orga78a2af"> <img src="../../attach/Screenshot 2022-12-23 at 9.10.39 PM.png" alt="Screenshot 2022-12-23 at 9.10.39 PM.png"></img> <figcaption> <span class="figure-number">Figure 3: </span>Others/Unicode Hex Input 선택</figcaption></figure> <figure id="orgd372c0f"> <img src="../../attach/Screenshot 2022-12-23 at 9.11.32 PM.png" alt="Screenshot 2022-12-23 at 9.11.32 PM.png"></img> <figcaption> <span class="figure-number">Figure 4: </span>Others/Unicode Hex Input 추가</figcaption></figure> <figure id="org9fbbc6a"> <img src="../../attach/Screenshot 2022-12-23 at 9.12.39 PM.png" alt="Screenshot 2022-12-23 at 9.12.39 PM.png"></img> <figcaption> <span class="figure-number">Figure 5: </span>English/ABC 제거</figcaption></figure> <div id="outline-container-org9c6648f" class="outline-2">
+ <h2 id="org9c6648f"> <span class="section-number-2">1.</span>  <a href="#org9c6648f">Ref</a></h2>
+ <div class="outline-text-2" id="text-1">
+ <p>
+ <a href="https://stackoverflow.com/a/61482531">https://stackoverflow.com/a/61482531</a>
+</p>
+</div>
+</div>
+</main>]]></description>
+  <link>https://7696122.github.io/braindump/Mac에서_Option을_조합한_입력에_이상한_문자가_찍힐_때.html</link>
+  <guid isPermaLink="false">https://7696122.github.io/braindump/Mac에서_Option을_조합한_입력에_이상한_문자가_찍힐_때.html</guid>
+  <pubDate>Sun, 29 Jan 2023 11:18:00 +0900</pubDate>
+</item>
+<item>
+  <title>디지털가든</title>
+  <description><![CDATA[<main id="content" class="content"> <div class="sitemap" id="orgfff0e36">
+ <ul class="org-ul"> <li> <a href="emacs에서_제곱미터_입력하기.html">Emacs에서 제곱미터 입력하기</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-28 토></span></span></li>
+ <li> <a href="20221219061119-디지털가든_만들기.html">디지털 가든 만들기</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-27 금></span></span></li>
+ <li> <a href="slipbox.html">Slipbox</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-24 화></span></span></li>
+ <li> <a href="20230122174210-para_method.html">PARA Method</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-24 화></span></span></li>
+ <li> <a href="20230118064536-git_subtree.html">Git subtree</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-18 수></span></span></li>
+ <li> <a href="20230117125941-1인_개발자.html">1인 개발자</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-17 화></span></span></li>
+ <li> <a href="20230117063749-google_maps_api.html">google maps api</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-17 화></span></span></li>
+ <li> <a href="뚝섬_잠원_눈썰매장.html">뚝섬ㆍ잠원 눈썰매장</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-13 금></span></span></li>
+ <li> <a href="Mac에서_Option을_조합한_입력에_이상한_문자가_찍힐_때.html">Mac에서  <code>⌥ Option</code> 을 조합한 입력에 이상한 문자가 찍힐 때</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-13 금></span></span></li>
+ <li> <a href="20230106212912-dart.html">Dart</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+ <li> <a href="20230106122610-null_versus_undefined.html">null versus undefined</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+ <li> <a href="20230106073641-get_filetags.html">Get #+filetags:</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+ <li> <a href="git에서_html이_binary로_표시되는_문제.html">git에서 html이 binary로 표시되는 문제</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+ <li> <a href="20230104035041-weblorg.html">weblorg</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+ <li> <a href="20230104021551-devenv.html">devenv</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+ <li> <a href="경제금융용어_700선.html">경제금융용어 700선</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+ <li> <a href="금융안정보고서.html">금융안정보고서</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+ <li> <a href="20230102111337-user_agent_reduction.html">User-Agent Reduction</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+ <li> <a href="20230101212637-flexbox.html">Flexbox</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+ <li> <a href="20221231132050-ox_json.html">ox-json</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+ <li> <a href="20221231035949-robox_txt.html">Robox.txt</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+ <li> <a href="20221231032602-open_graph_protocol.html">Open Graph protocol</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+ <li> <a href="20221231003500-css_reset.html">css reset</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+ <li> <a href="20221230192412-web_layouts_grid_flex.html">Web Layouts - Grid & Flex</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+ <li> <a href="명조체_고딕체_세리프_산세리프_Serif_Sans-Serif.html">명조체·고딕체/세리프·산세리프/Serif·Sans-Serif</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+ <li> <a href="20221230174154-web_fonts.html">web fonts</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+ <li> <a href="20221230075633-top_21_google_tag_manager_extensions_and_tools_for_fast_and_efficient_work.html">Top 21 Google Tag Manager Extensions and Tools for Fast and Efficient Work</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+ <li> <a href="20221228120251-org_commentary.html">org-commentary</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+ <li> <a href="20221228092901-sitemaps.html">sitemaps</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+ <li> <a href="TypeScript를_활용한_함수형_프로그래밍_온보딩.html">TypeScript를 활용한 함수형 프로그래밍 온보딩</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+ <li> <a href="20221227084435-seo_meta_in_1_click.html">SEO META in 1 CLICK</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+ <li> <a href="seo_검색엔진 최적화.html">seo, 검색엔진 최적화</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+ <li> <a href="20221227080025-bookmarks.html">bookmarks</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+ <li> <a href="20221225211539-webfeeder.html">webfeeder</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+ <li> <a href="20221224094210-create_link.html">create-link</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+ <li> <a href="서울광장_스케이트장.html">서울광장 스케이트장</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+ <li> <a href="20221223130349-scroll_indicator.html">Scroll Indicator</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+ <li> <a href="20221222073142-http_cookie.html">HTTP cookie</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+ <li> <a href="org-roam_node_얻기.html">org-roam node 얻기</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+ <li> <a href="20221218171719-org_unique_id.html">org-unique-id</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+ <li> <a href="npm_없이_js_라이브러리_사용하기.html">npm 없이 js 라이브러리 사용하기</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+ <li> <a href="20221215113855-sdkman.html">sdkman</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+ <li> <a href="20221215113524-java_development.html">java development</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+ <li> <a href="20221214102741-prodigy.html">prodigy</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+ <li> <a href="동등비교_연산자.html">동등비교 연산자</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+ <li> <a href="20220625092412-org_attach_screenshot.html">org-attach-screenshot</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+ <li> <a href="20220618132712_org_agenda.html">org-appear</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+ <li> <a href="주택구입부담지수_주택금융통계시스템-HF_한국주택금융공사.html">주택구입부담지수@주택금융통계시스템-HF 한국주택금융공사</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+</ul></div>
+</main>]]></description>
+  <link>https://7696122.github.io/braindump/index.html</link>
+  <guid isPermaLink="false">https://7696122.github.io/braindump/index.html</guid>
+  <pubDate>Sun, 29 Jan 2023 11:18:00 +0900</pubDate>
+</item>
+<item>
+  <title>Index</title>
+  <description><![CDATA[<main id="content" class="content"> <header> <h1 class="title">Index</h1>
+</header> <div id="outline-container-org3b7d8a3" class="outline-2">
+ <h2 id="org3b7d8a3"> <span class="section-number-2">1.</span>  <a href="#org3b7d8a3">E</a></h2>
+ <div class="outline-text-2" id="text-1">
+ <ul class="org-ul"> <li>emacs
+ <ul class="org-ul"> <li> <a href="20230104035041-weblorg.html">weblorg</a></li>
+</ul></li>
+</ul></div>
+</div>
+</main>]]></description>
+  <link>https://7696122.github.io/braindump/theindex.html</link>
+  <guid isPermaLink="false">https://7696122.github.io/braindump/theindex.html</guid>
+  <pubDate>Sun, 29 Jan 2023 11:18:00 +0900</pubDate>
+</item>
+<item>
+  <title>디지털가든</title>
+  <description><![CDATA[<main id="content" class="content"> <div id="outline-container-org52827c2" class="outline-2">
+ <h2 id="org52827c2"> <a href="#org52827c2">디지털 정원 꾸미기</a></h2>
+ <div class="outline-text-2" id="text-org52827c2">
+ <ul class="org-ul"> <li> <a href="https://brunch.co.kr/@kys4620/155">디지털 정원</a></li>
+ <li> <a href="https://maggieappleton.com/garden-history">the Digital Garden</a></li>
+</ul></div>
+</div>
+
+ <div id="outline-container-org09e8b83" class="outline-2">
+ <h2 id="org09e8b83"> <a href="#org09e8b83">도서관에서</a></h2>
+ <div class="outline-text-2" id="text-org09e8b83">
+ <p>
+ <a href="../../books/index.html#ID-0f161ec5-c454-4c04-acd7-0da1a0457048">books</a>
+</p>
+</div>
+</div>
+</main>]]></description>
+  <link>https://7696122.github.io/home/index.html</link>
+  <guid isPermaLink="false">https://7696122.github.io/home/index.html</guid>
+  <pubDate>Sun, 29 Jan 2023 11:18:00 +0900</pubDate>
+</item>
+<item>
+  <title>디지털가든</title>
+  <description><![CDATA[<main id="content" class="content"> <div class="sitemap" id="org0adc6a1">
+ <ul class="org-ul"> <li> <a href="2023_01_27.html">Jan 27th, 2023</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-27 금></span></span></li>
+ <li> <a href="journal.html">journal</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-27 금></span></span></li>
+ <li> <a href="2023-01-23.html">2023-01-23</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-24 화></span></span></li>
+ <li> <a href="2023-01-11.html">2023-01-11</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-24 화></span></span></li>
+ <li> <a href="2023-01-07.html">2023-01-07</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-24 화></span></span></li>
+ <li> <a href="2023-01-24.html">2023-01-24</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-24 화></span></span></li>
+ <li> <a href="2023-01-20.html">2023-01-20</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-20 금></span></span></li>
+ <li> <a href="2023-01-19.html">2023-01-19</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-19 목></span></span></li>
+ <li> <a href="2023-01-18.html">2023-01-18</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-19 목></span></span></li>
+ <li> <a href="2023-01-17.html">2023-01-17</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-17 화></span></span></li>
+ <li> <a href="2023-01-16.html">2023-01-16</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-16 월></span></span></li>
+ <li> <a href="2023-01-15.html">2023-01-15</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-15 일></span></span></li>
+ <li> <a href="2023-01-14.html">2023-01-14</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-15 일></span></span></li>
+ <li> <a href="2023-01-13.html">2023-01-13</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-13 금></span></span></li>
+ <li> <a href="2023-01-12.html">2023-01-12</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-13 금></span></span></li>
+ <li> <a href="2023-01-10.html">2023-01-10</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-11 수></span></span></li>
+ <li> <a href="2023-01-09.html">2023-01-09</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+ <li> <a href="2023-01-08.html">2023-01-08</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+ <li> <a href="2023-01-04.html">2023-01-04</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+ <li> <a href="2022_08_17.html">Aug 17th, 2022</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+ <li> <a href="2022-12-21.html">2022-12-21</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+ <li> <a href="2022-12-13.html">2022-12-13</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+ <li> <a href="2022-12-11.html">2022-12-11</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+ <li> <a href="2022-12-08.html">2022-12-08</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+ <li> <a href="2022-11-29.html">2022-11-29</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+ <li> <a href="2022-11-25.html">2022-11-25</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+ <li> <a href="2022-11-24.html">2022-11-24</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+ <li> <a href="2022-11-19.html">2022-11-19</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+ <li> <a href="2022-11-17.html">2022-11-17</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+</ul></div>
+</main>]]></description>
+  <link>https://7696122.github.io/journal/index.html</link>
+  <guid isPermaLink="false">https://7696122.github.io/journal/index.html</guid>
+  <pubDate>Sun, 29 Jan 2023 11:18:00 +0900</pubDate>
+</item>
+<item>
+  <title>디지털가든</title>
+  <description><![CDATA[<main id="content" class="content"> <div id="outline-container-orga1b2772" class="outline-2">
+ <h2 id="orga1b2772"> <a href="#orga1b2772">오늘</a></h2>
+ <div class="outline-text-2" id="text-orga1b2772">
+ <div class="today" id="org71ae850">
+ <blockquote>
+ <p>
+개춥다.
+</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+
+ <div id="outline-container-orgbd7fed5" class="outline-2">
+ <h2 id="orgbd7fed5"> <a href="#orgbd7fed5">최근 글</a></h2>
+ <div class="outline-text-2" id="text-orgbd7fed5">
+ <div class="recent" id="org7c9b89f">
+ <ul class="org-ul"> <li> <a href="../braindump/emacs에서_제곱미터_입력하기.html">Emacs에서 제곱미터 입력하기</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-28 토></span></span></li>
+ <li> <a href="../braindump/20221219061119-디지털가든_만들기.html">디지털 가든 만들기</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-27 금></span></span></li>
+ <li> <a href="../braindump/slipbox.html">Slipbox</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-24 화></span></span></li>
+ <li> <a href="../braindump/20230122174210-para_method.html">PARA Method</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-24 화></span></span></li>
+ <li> <a href="../braindump/20230118064536-git_subtree.html">Git subtree</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-18 수></span></span></li>
+ <li> <a href="../braindump/20230117125941-1인_개발자.html">1인 개발자</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-17 화></span></span></li>
+ <li> <a href="../braindump/20230117063749-google_maps_api.html">google maps api</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-17 화></span></span></li>
+ <li> <a href="../braindump/뚝섬_잠원_눈썰매장.html">뚝섬ㆍ잠원 눈썰매장</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-13 금></span></span></li>
+ <li> <a href="../braindump/Mac에서_Option을_조합한_입력에_이상한_문자가_찍힐_때.html">Mac에서  <code>⌥ Option</code> 을 조합한 입력에 이상한 문자가 찍힐 때</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-13 금></span></span></li>
+ <li> <a href="../braindump/20230106212912-dart.html">Dart</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+</ul></div>
+</div>
+</div>
+
+ <div id="outline-container-org08d1d02" class="outline-2">
+ <h2 id="org08d1d02"> <a href="#org08d1d02">Sitemap && Feed</a></h2>
+ <div class="outline-text-2" id="text-org08d1d02">
+ <dl class="org-dl"> <dt>sitemap</dt> <dd> <a href="https://7696122.github.io/sitemap.xml">https://7696122.github.io/sitemap.xml</a></dd>
+ <dt>feed</dt> <dd> <a href="https://7696122.github.io/rss.xml">https://7696122.github.io/rss.xml</a></dd>
+</dl></div>
+</div>
+</main>]]></description>
+  <link>https://7696122.github.io/index.html</link>
+  <guid isPermaLink="false">https://7696122.github.io/index.html</guid>
+  <pubDate>Sun, 29 Jan 2023 11:18:00 +0900</pubDate>
+</item>
+<item>
+  <title>Index</title>
+  <description><![CDATA[<main id="content" class="content"> <header> <h1 class="title">Index</h1>
+</header> <div id="outline-container-orgbca3dfc" class="outline-2">
+ <h2 id="orgbca3dfc"> <span class="section-number-2">1.</span>  <a href="#orgbca3dfc">A</a></h2>
+ <div class="outline-text-2" id="text-1">
+ <ul class="org-ul"> <li> <a href="about/index.html">about</a></li>
+</ul></div>
+</div>
+ <div id="outline-container-org640c3f8" class="outline-2">
+ <h2 id="org640c3f8"> <span class="section-number-2">2.</span>  <a href="#org640c3f8">B</a></h2>
+ <div class="outline-text-2" id="text-2">
+ <ul class="org-ul"> <li> <a href="blog/index.html">blog</a></li>
+ <li> <a href="journal/index.html">braindump</a></li>
+ <li> <a href="braindump/index.html">braindump</a></li>
+</ul></div>
+</div>
+ <div id="outline-container-orgb74fb86" class="outline-2">
+ <h2 id="orgb74fb86"> <span class="section-number-2">3.</span>  <a href="#orgb74fb86">H</a></h2>
+ <div class="outline-text-2" id="text-3">
+ <ul class="org-ul"> <li> <a href="home/index.html">home</a></li>
+</ul></div>
+</div>
+ <div id="outline-container-orgf86a0b7" class="outline-2">
+ <h2 id="orgf86a0b7"> <span class="section-number-2">4.</span>  <a href="#orgf86a0b7">J</a></h2>
+ <div class="outline-text-2" id="text-4">
+ <ul class="org-ul"> <li> <a href="journal/index.html">Journal</a></li>
+</ul></div>
+</div>
+</main>]]></description>
+  <link>https://7696122.github.io/theindex.html</link>
+  <guid isPermaLink="false">https://7696122.github.io/theindex.html</guid>
+  <pubDate>Sun, 29 Jan 2023 11:18:00 +0900</pubDate>
+</item>
+<item>
+  <title>Index</title>
+  <description><![CDATA[<main id="content" class="content"> <header> <h1 class="title">Index</h1>
+</header></main>]]></description>
+  <link>https://7696122.github.io/blog/theindex.html</link>
+  <guid isPermaLink="false">https://7696122.github.io/blog/theindex.html</guid>
+  <pubDate>Sun, 29 Jan 2023 11:17:00 +0900</pubDate>
 </item>
 <item>
   <title>org-appear</title>
@@ -185,7 +617,7 @@
 </main>]]></description>
   <link>https://7696122.github.io/braindump/20220618132712_org_agenda.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/20220618132712_org_agenda.html</guid>
-  <pubDate>Sun, 29 Jan 2023 08:44:00 +0900</pubDate>
+  <pubDate>Sun, 29 Jan 2023 11:17:00 +0900</pubDate>
 </item>
 <item>
   <title>org-attach-screenshot</title>
@@ -225,7 +657,7 @@
 </main>]]></description>
   <link>https://7696122.github.io/braindump/20220625092412-org_attach_screenshot.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/20220625092412-org_attach_screenshot.html</guid>
-  <pubDate>Sun, 29 Jan 2023 08:44:00 +0900</pubDate>
+  <pubDate>Sun, 29 Jan 2023 11:17:00 +0900</pubDate>
 </item>
 <item>
   <title>prodigy</title>
@@ -249,7 +681,7 @@
 </main>]]></description>
   <link>https://7696122.github.io/braindump/20221214102741-prodigy.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/20221214102741-prodigy.html</guid>
-  <pubDate>Sun, 29 Jan 2023 08:44:00 +0900</pubDate>
+  <pubDate>Sun, 29 Jan 2023 11:17:00 +0900</pubDate>
 </item>
 <item>
   <title>java development</title>
@@ -316,7 +748,7 @@ gradlew를 사용하려면 gradle이 있어야 하더라
 </main>]]></description>
   <link>https://7696122.github.io/braindump/20221215113524-java_development.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/20221215113524-java_development.html</guid>
-  <pubDate>Sun, 29 Jan 2023 08:44:00 +0900</pubDate>
+  <pubDate>Sun, 29 Jan 2023 11:17:00 +0900</pubDate>
 </item>
 <item>
   <title>sdkman</title>
@@ -356,7 +788,7 @@ gradlew를 사용하려면 gradle이 있어야 하더라
  <div id="outline-container-org4604623" class="outline-2">
  <h2 id="org4604623"> <span class="section-number-2">2.</span>  <a href="#org4604623">fish</a></h2>
  <div class="outline-text-2" id="text-2">
- <pre class="example" id="org6a8253e">
+ <pre class="example" id="org10cb048">
 > source "$HOME/.sdkman/bin/sdkman-init.sh"
 ~/.sdkman/bin/sdkman-init.sh (line 46): Expected end of the statement, but found an incomplete token
         Linux)
@@ -385,7 +817,7 @@ source: Error while reading file “/Users/mnml/.sdkman/bin/sdkman-init.sh”
 </pre>
 </div>
 
- <pre class="example" id="org10bb5a8">
+ <pre class="example" id="org1cfe82d">
 Corretto      |     | 19.0.1       | amzn    |            | 19.0.1-amzn
               | >>> | 17.0.5       | amzn    | installed  | 17.0.5-amzn
               |     | 11.0.17      | amzn    |            | 11.0.17-amzn
@@ -418,7 +850,7 @@ Corretto      |     | 19.0.1       | amzn    |            | 19.0.1-amzn
 </main>]]></description>
   <link>https://7696122.github.io/braindump/20221215113855-sdkman.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/20221215113855-sdkman.html</guid>
-  <pubDate>Sun, 29 Jan 2023 08:44:00 +0900</pubDate>
+  <pubDate>Sun, 29 Jan 2023 11:17:00 +0900</pubDate>
 </item>
 <item>
   <title>org-unique-id</title>
@@ -446,7 +878,7 @@ Corretto      |     | 19.0.1       | amzn    |            | 19.0.1-amzn
  <div id="outline-container-org51ffe92" class="outline-2">
  <h2 id="org51ffe92"> <span class="section-number-2">3.</span>  <a href="#org51ffe92">이렇게 돼</a></h2>
  <div class="outline-text-2" id="text-3">
- <pre class="example" id="org8cbe9b6">
+ <pre class="example" id="orgfdd49ff">
 M-x org-unique-id
 </pre>
 
@@ -478,7 +910,7 @@ M-x org-unique-id
 </main>]]></description>
   <link>https://7696122.github.io/braindump/20221218171719-org_unique_id.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/20221218171719-org_unique_id.html</guid>
-  <pubDate>Sun, 29 Jan 2023 08:44:00 +0900</pubDate>
+  <pubDate>Sun, 29 Jan 2023 11:17:00 +0900</pubDate>
 </item>
 <item>
   <title>디지털 가든 만들기</title>
@@ -718,214 +1150,7 @@ emacs를  <a href="#coderef-batch" class="coderef" onmouseover="CodeHighlightOn(
 </main>]]></description>
   <link>https://7696122.github.io/braindump/20221219061119-디지털가든_만들기.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/20221219061119-디지털가든_만들기.html</guid>
-  <pubDate>Sun, 29 Jan 2023 08:44:00 +0900</pubDate>
-</item>
-<item>
-  <title>HTTP cookie</title>
-  <description><![CDATA[<main id="content" class="content"> <header> <h1 class="title">HTTP cookie</h1>
-</header> <div id="outline-container-org941eabd" class="outline-2">
- <h2 id="org941eabd"> <span class="section-number-2">1.</span>  <a href="#org941eabd">Using HTTP cookies</a></h2>
- <div class="outline-text-2" id="text-1">
-</div>
- <div id="outline-container-org1641708" class="outline-3">
- <h3 id="org1641708"> <span class="section-number-3">1.1.</span>  <a href="#org1641708">HTTP cookie (web cookie, browser cookie)</a></h3>
- <div class="outline-text-3" id="text-1-1">
-</div>
- <div id="outline-container-org913ca19" class="outline-4">
- <h4 id="org913ca19"> <span class="section-number-4">1.1.1.</span>  <a href="#org913ca19">a small piece of data</a></h4>
- <div class="outline-text-4" id="text-1-1-1">
- <ul class="org-ul"> <li> <b>server</b>
- <ul class="org-ul"> <li>sent</li>
- <li>to user's web browser</li>
-</ul></li>
- <li> <b>browser</b>
- <ul class="org-ul"> <li>may store the cookie</li>
- <li>and send it back
- <ul class="org-ul"> <li>to the same server</li>
- <li>with later requests</li>
-</ul></li>
-</ul></li>
- <li> <b>HTTP cookie</b> is used to tell
- <ul class="org-ul"> <li>if two request come from the same browser
- <ul class="org-ul"> <li>keeping a user logged in, for example</li>
-</ul></li>
-</ul></li>
- <li>It remembers sateful information
- <ul class="org-ul"> <li>for the  <b> <span class="underline">stateless HTTP protocol</span></b></li>
-</ul></li>
-</ul></div>
-</div>
-
- <div id="outline-container-org0dbc084" class="outline-4">
- <h4 id="org0dbc084"> <span class="section-number-4">1.1.2.</span>  <a href="#org0dbc084">mainly used for three purposes</a></h4>
- <div class="outline-text-4" id="text-1-1-2">
- <ul class="org-ul"> <li> <b>Session management</b>
- <ul class="org-ul"> <li>Loings, shopping carts, game scores</li>
- <li>or  <b>anything else the server should remember</b></li>
-</ul></li>
- <li>Personalization
- <ul class="org-ul"> <li>User preferrnces</li>
- <li>themes</li>
- <li>and other settings</li>
-</ul></li>
- <li>Tracking
- <ul class="org-ul"> <li>Recoding and analyzing user behavior</li>
-</ul></li>
-</ul></div>
-</div>
-
- <div id="outline-container-orgbd9ace9" class="outline-4">
- <h4 id="orgbd9ace9"> <span class="section-number-4">1.1.3.</span>  <a href="#orgbd9ace9"> <b>modern storage APIs are now recommended</b></a></h4>
- <div class="outline-text-4" id="text-1-1-3">
- <ul class="org-ul"> <li> <b>Cookies</b> are  <b>sent with every request</b>, so they can  <b>worsen performance</b> (especially for mobile data connections).</li>
- <li>Modern APIs for client storage are
- <ul class="org-ul"> <li> <span class="underline">Web Storage API</span>
- <ul class="org-ul"> <li>localStorage</li>
- <li>sessionStorage</li>
-</ul></li>
- <li> <span class="underline">IndexedDB</span></li>
-</ul></li>
-</ul></div>
-</div>
-</div>
-</div>
-
- <div id="outline-container-org5b4678c" class="outline-2">
- <h2 id="org5b4678c"> <span class="section-number-2">2.</span>  <a href="#org5b4678c">Creating cookies</a></h2>
- <div class="outline-text-2" id="text-2">
- <ul class="org-ul"> <li>a  <b>server</b> can  <b>send</b> one or more  <b>Set-Cookie header</b>
- <ul class="org-ul"> <li>with the response</li>
- <li>After receiving an HTTP request</li>
-</ul></li>
- <li>The browser useally
- <ul class="org-ul"> <li>stores the cookie</li>
- <li>send it</li>
- <li>with requests
- <ul class="org-ul"> <li>made to the  <b>same server</b></li>
- <li>inside  <b>Cookie HTTP header</b></li>
-</ul></li>
-</ul></li>
- <li>can specify</li>
-</ul></div>
-</div>
-
- <div id="outline-container-org4e3a8c7" class="outline-2">
- <h2 id="org4e3a8c7"> <span class="section-number-2">3.</span>  <a href="#org4e3a8c7">ref</a></h2>
- <div class="outline-text-2" id="text-3">
- <p>
- <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies">https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies</a>
-</p>
-</div>
-</div>
-</main>]]></description>
-  <link>https://7696122.github.io/braindump/20221222073142-http_cookie.html</link>
-  <guid isPermaLink="false">https://7696122.github.io/braindump/20221222073142-http_cookie.html</guid>
-  <pubDate>Sun, 29 Jan 2023 08:44:00 +0900</pubDate>
-</item>
-<item>
-  <title>Scroll Indicator</title>
-  <description><![CDATA[<main id="content" class="content"> <header> <h1 class="title">Scroll Indicator</h1>
-</header> <div class="org-src-container">
- <pre class="src src-js"> <span style="color: #a020f0;">class</span> ScrollIndicator  <span style="color: #a020f0;">extends</span> HTMLElement {
-  constructor() {
-     <span style="color: #a020f0;">super</span>();
-  }
-
-  render() {
-     <span style="color: #008b8b;">this</span>.attachShadow({ mode:  <span style="color: #8b2252;">"open"</span> });
-
-     <span style="color: #a020f0;">const</span>  <span style="color: #a0522d;">container</span> = document.createElement( <span style="color: #8b2252;">"div"</span>);
-    container.setAttribute( <span style="color: #8b2252;">"class"</span>,  <span style="color: #8b2252;">"progress-container"</span>);
-
-     <span style="color: #a020f0;">const</span>  <span style="color: #a0522d;">bar</span> = document.createElement( <span style="color: #8b2252;">"div"</span>);
-    bar.setAttribute( <span style="color: #8b2252;">"class"</span>,  <span style="color: #8b2252;">"progress-bar"</span>);
-    bar.setAttribute( <span style="color: #8b2252;">"id"</span>,  <span style="color: #8b2252;">"myBar"</span>);
-
-    container.append(bar);
-
-     <span style="color: #a020f0;">const</span>  <span style="color: #a0522d;">style</span> = document.createElement( <span style="color: #8b2252;">"style"</span>);
-    style.textContent =  <span style="color: #8b2252;">`</span>
- <span style="color: #8b2252;">/* Style the header: fixed position (always stay at the top) */</span>
- <span style="color: #8b2252;">/* The progress container (grey background) */</span>
- <span style="color: #8b2252;">.progress-container {</span>
- <span style="color: #8b2252;">  width: 100%;</span>
- <span style="color: #8b2252;">  height: 8px;</span>
- <span style="color: #8b2252;">  // background: black;</span>
- <span style="color: #8b2252;">}</span>
-
- <span style="color: #8b2252;">/* The progress bar (scroll indicator) */</span>
- <span style="color: #8b2252;">.progress-bar {</span>
- <span style="color: #8b2252;">  height: 8px;</span>
- <span style="color: #8b2252;">  background: yellowgreen;</span>
- <span style="color: #8b2252;">  width: 0%;</span>
- <span style="color: #8b2252;">}</span>
- <span style="color: #8b2252;">    `</span>;
-
-     <span style="color: #008b8b;">this</span>.shadowRoot.append(style, container);
-
-    //  <span style="color: #b22222;">When the user scrolls the page, execute myFunction</span>
-    window.onscroll =  <span style="color: #a020f0;">function</span> () {
-      handleScroll();
-    };
-
-     <span style="color: #a020f0;">function</span>  <span style="color: #0000ff;">handleScroll</span>() {
-       <span style="color: #a020f0;">var</span>  <span style="color: #a0522d;">winScroll</span> =
-        document.body.scrollTop || document.documentElement.scrollTop;
-       <span style="color: #a020f0;">var</span>  <span style="color: #a0522d;">height</span> =
-        document.documentElement.scrollHeight -
-        document.documentElement.clientHeight;
-       <span style="color: #a020f0;">var</span>  <span style="color: #a0522d;">scrolled</span> = (winScroll / height) * 100;
-      bar.style.width = (scrolled <= 100 ? scrolled : 100) +  <span style="color: #8b2252;">"%"</span>;
-    }
-  }
-
-  connectedCallback() {
-     <span style="color: #a020f0;">if</span> (! <span style="color: #008b8b;">this</span>.rendered) {
-       <span style="color: #008b8b;">this</span>.render();
-       <span style="color: #008b8b;">this</span>.rendered =  <span style="color: #008b8b;">true</span>;
-    }
-  }
-  //  <span style="color: #b22222;">disconnectedCallback() {</span>
-  //    <span style="color: #b22222;">/* ... */</span>
-  //  <span style="color: #b22222;">}</span>
-  //  <span style="color: #b22222;">static get observedAttributes() {</span>
-  //    <span style="color: #b22222;">return [</span>
-  //      <span style="color: #b22222;">/* ... */</span>
-  //    <span style="color: #b22222;">];</span>
-  //  <span style="color: #b22222;">}</span>
-  //  <span style="color: #b22222;">attributeChangedCallback(name, oldValue, newValue) {</span>
-  //    <span style="color: #b22222;">/* ... */</span>
-  //  <span style="color: #b22222;">}</span>
-  //  <span style="color: #b22222;">adoptedCallback() {</span>
-  //    <span style="color: #b22222;">/* ... */</span>
-  //  <span style="color: #b22222;">}</span>
-}
-
-customElements.define(
-   <span style="color: #8b2252;">"scroll-indicator"</span>,
-  ScrollIndicator
-  //  <span style="color: #b22222;">{extends: "div"}</span>
-);
-</pre>
-</div>
-
- <div class="org-src-container">
- <pre class="src src-html">< <span style="color: #0000ff;">scroll-indicator</span>></ <span style="color: #0000ff;">scroll-indicator</span>>
-</pre>
-</div>
-
- <div id="outline-container-org067d565" class="outline-2">
- <h2 id="org067d565"> <span class="section-number-2">1.</span>  <a href="#org067d565">Ref</a></h2>
- <div class="outline-text-2" id="text-1">
- <ul class="org-ul"> <li> <a href="https://www.w3schools.com/howto/howto_js_scroll_indicator.asp">How TO - Scroll Indicator</a></li>
- <li> <a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components">Web Components</a></li>
- <li> <a href="https://css-tricks.com/indicating-scroll-position-on-a-page-with-css/">Indicating Scroll Position on a Page With CSS | CSS-Tricks - CSS-Tricks</a></li>
-</ul></div>
-</div>
-</main>]]></description>
-  <link>https://7696122.github.io/braindump/20221223130349-scroll_indicator.html</link>
-  <guid isPermaLink="false">https://7696122.github.io/braindump/20221223130349-scroll_indicator.html</guid>
-  <pubDate>Sun, 29 Jan 2023 08:44:00 +0900</pubDate>
+  <pubDate>Sun, 29 Jan 2023 11:17:00 +0900</pubDate>
 </item>
 <item>
   <title>create-link</title>
@@ -956,7 +1181,7 @@ customElements.define(
 </main>]]></description>
   <link>https://7696122.github.io/braindump/20221224094210-create_link.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/20221224094210-create_link.html</guid>
-  <pubDate>Sun, 29 Jan 2023 08:44:00 +0900</pubDate>
+  <pubDate>Sun, 29 Jan 2023 11:17:00 +0900</pubDate>
 </item>
 <item>
   <title>webfeeder</title>
@@ -982,17 +1207,7 @@ customElements.define(
 </main>]]></description>
   <link>https://7696122.github.io/braindump/20221225211539-webfeeder.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/20221225211539-webfeeder.html</guid>
-  <pubDate>Sun, 29 Jan 2023 08:44:00 +0900</pubDate>
-</item>
-<item>
-  <title>bookmarks</title>
-  <description><![CDATA[<main id="content" class="content"> <header> <h1 class="title">bookmarks</h1>
-</header> <dl class="org-dl"> <dt>검색인진최적화에 대한 좋을 글들이 많음</dt> <dd> <a href="https://www.ascentkorea.com/which-is-better-for-seo-single-page-vs-multi-page/">싱글페이지 VS 멀티페이지 무엇이 더 좋은 선택일까?(SINGLE PAGE VS MULTI PAGE) - 어센트 코리아</a></dd>
- <dt>유용한 메모들 많음</dt> <dd> <a href="https://seorenn.github.io/">Home - Seorenn</a></dd>
-</dl></main>]]></description>
-  <link>https://7696122.github.io/braindump/20221227080025-bookmarks.html</link>
-  <guid isPermaLink="false">https://7696122.github.io/braindump/20221227080025-bookmarks.html</guid>
-  <pubDate>Sun, 29 Jan 2023 08:44:00 +0900</pubDate>
+  <pubDate>Sun, 29 Jan 2023 11:17:00 +0900</pubDate>
 </item>
 <item>
   <title>SEO META in 1 CLICK</title>
@@ -1001,7 +1216,7 @@ customElements.define(
  <h2 id="org39b4b58"> <span class="section-number-2">1.</span>  <a href="#org39b4b58">크롬 익스텐션</a></h2>
  <div class="outline-text-2" id="text-1">
  <ul class="org-ul"> <li> <a href="https://chrome.google.com/webstore/detail/seo-meta-in-1-click/bjogjfinolnhfhkbipphpdlldadpnmhc">SEO META in 1 CLICK - Chrome 웹 스토어</a></li>
-</ul> <figure id="orgbbf1676"> <img src="../attach/Screenshot 2022-12-27 at 8.48.12 AM.png" alt="Screenshot 2022-12-27 at 8.48.12 AM.png" width="100%"></img></figure></div>
+</ul> <figure id="org83f2b16"> <img src="../attach/Screenshot 2022-12-27 at 8.48.12 AM.png" alt="Screenshot 2022-12-27 at 8.48.12 AM.png" width="100%"></img></figure></div>
 </div>
 
 
@@ -1021,7 +1236,7 @@ customElements.define(
 </main>]]></description>
   <link>https://7696122.github.io/braindump/20221227084435-seo_meta_in_1_click.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/20221227084435-seo_meta_in_1_click.html</guid>
-  <pubDate>Sun, 29 Jan 2023 08:44:00 +0900</pubDate>
+  <pubDate>Sun, 29 Jan 2023 11:17:00 +0900</pubDate>
 </item>
 <item>
   <title>sitemaps</title>
@@ -1095,7 +1310,7 @@ customElements.define(
 </main>]]></description>
   <link>https://7696122.github.io/braindump/20221228092901-sitemaps.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/20221228092901-sitemaps.html</guid>
-  <pubDate>Sun, 29 Jan 2023 08:44:00 +0900</pubDate>
+  <pubDate>Sun, 29 Jan 2023 11:17:00 +0900</pubDate>
 </item>
 <item>
   <title>org-commentary</title>
@@ -1121,7 +1336,7 @@ customElements.define(
 </main>]]></description>
   <link>https://7696122.github.io/braindump/20221228120251-org_commentary.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/20221228120251-org_commentary.html</guid>
-  <pubDate>Sun, 29 Jan 2023 08:44:00 +0900</pubDate>
+  <pubDate>Sun, 29 Jan 2023 11:17:00 +0900</pubDate>
 </item>
 <item>
   <title>Top 21 Google Tag Manager Extensions and Tools for Fast and Efficient Work</title>
@@ -1132,7 +1347,7 @@ customElements.define(
 </main>]]></description>
   <link>https://7696122.github.io/braindump/20221230075633-top_21_google_tag_manager_extensions_and_tools_for_fast_and_efficient_work.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/20221230075633-top_21_google_tag_manager_extensions_and_tools_for_fast_and_efficient_work.html</guid>
-  <pubDate>Sun, 29 Jan 2023 08:44:00 +0900</pubDate>
+  <pubDate>Sun, 29 Jan 2023 11:17:00 +0900</pubDate>
 </item>
 <item>
   <title>web fonts</title>
@@ -1143,7 +1358,7 @@ customElements.define(
 </main>]]></description>
   <link>https://7696122.github.io/braindump/20221230174154-web_fonts.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/20221230174154-web_fonts.html</guid>
-  <pubDate>Sun, 29 Jan 2023 08:44:00 +0900</pubDate>
+  <pubDate>Sun, 29 Jan 2023 11:17:00 +0900</pubDate>
 </item>
 <item>
   <title>Web Layouts - Grid &amp; Flex</title>
@@ -1159,7 +1374,7 @@ customElements.define(
 </main>]]></description>
   <link>https://7696122.github.io/braindump/20221230192412-web_layouts_grid_flex.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/20221230192412-web_layouts_grid_flex.html</guid>
-  <pubDate>Sun, 29 Jan 2023 08:44:00 +0900</pubDate>
+  <pubDate>Sun, 29 Jan 2023 11:17:00 +0900</pubDate>
 </item>
 <item>
   <title>css reset</title>
@@ -1173,7 +1388,7 @@ customElements.define(
 </main>]]></description>
   <link>https://7696122.github.io/braindump/20221231003500-css_reset.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/20221231003500-css_reset.html</guid>
-  <pubDate>Sun, 29 Jan 2023 08:44:00 +0900</pubDate>
+  <pubDate>Sun, 29 Jan 2023 11:17:00 +0900</pubDate>
 </item>
 <item>
   <title>Open Graph protocol</title>
@@ -1274,7 +1489,7 @@ SPA
 </main>]]></description>
   <link>https://7696122.github.io/braindump/20221231032602-open_graph_protocol.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/20221231032602-open_graph_protocol.html</guid>
-  <pubDate>Sun, 29 Jan 2023 08:44:00 +0900</pubDate>
+  <pubDate>Sun, 29 Jan 2023 11:17:00 +0900</pubDate>
 </item>
 <item>
   <title>Robox.txt</title>
@@ -1295,7 +1510,7 @@ Sitemap: https://7696122.github.io/sitemap.xml
 </main>]]></description>
   <link>https://7696122.github.io/braindump/20221231035949-robox_txt.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/20221231035949-robox_txt.html</guid>
-  <pubDate>Sun, 29 Jan 2023 08:44:00 +0900</pubDate>
+  <pubDate>Sun, 29 Jan 2023 11:17:00 +0900</pubDate>
 </item>
 <item>
   <title>ox-json</title>
@@ -1321,7 +1536,7 @@ Sitemap: https://7696122.github.io/sitemap.xml
 </main>]]></description>
   <link>https://7696122.github.io/braindump/20221231132050-ox_json.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/20221231132050-ox_json.html</guid>
-  <pubDate>Sun, 29 Jan 2023 08:44:00 +0900</pubDate>
+  <pubDate>Sun, 29 Jan 2023 11:17:00 +0900</pubDate>
 </item>
 <item>
   <title>Flexbox</title>
@@ -1335,7 +1550,7 @@ Sitemap: https://7696122.github.io/sitemap.xml
 </main>]]></description>
   <link>https://7696122.github.io/braindump/20230101212637-flexbox.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/20230101212637-flexbox.html</guid>
-  <pubDate>Sun, 29 Jan 2023 08:44:00 +0900</pubDate>
+  <pubDate>Sun, 29 Jan 2023 11:17:00 +0900</pubDate>
 </item>
 <item>
   <title>User-Agent Reduction</title>
@@ -1375,7 +1590,7 @@ User-Agent string에는 많은 엔트로피(정보량)가 담겨 있어 개인�
 </main>]]></description>
   <link>https://7696122.github.io/braindump/20230102111337-user_agent_reduction.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/20230102111337-user_agent_reduction.html</guid>
-  <pubDate>Sun, 29 Jan 2023 08:44:00 +0900</pubDate>
+  <pubDate>Sun, 29 Jan 2023 11:17:00 +0900</pubDate>
 </item>
 <item>
   <title>devenv</title>
@@ -1389,7 +1604,7 @@ User-Agent string에는 많은 엔트로피(정보량)가 담겨 있어 개인�
 </main>]]></description>
   <link>https://7696122.github.io/braindump/20230104021551-devenv.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/20230104021551-devenv.html</guid>
-  <pubDate>Sun, 29 Jan 2023 08:44:00 +0900</pubDate>
+  <pubDate>Sun, 29 Jan 2023 11:17:00 +0900</pubDate>
 </item>
 <item>
   <title>weblorg</title>
@@ -1415,7 +1630,7 @@ User-Agent string에는 많은 엔트로피(정보량)가 담겨 있어 개인�
 </main>]]></description>
   <link>https://7696122.github.io/braindump/20230104035041-weblorg.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/20230104035041-weblorg.html</guid>
-  <pubDate>Sun, 29 Jan 2023 08:44:00 +0900</pubDate>
+  <pubDate>Sun, 29 Jan 2023 11:17:00 +0900</pubDate>
 </item>
 <item>
   <title>Get #+filetags:</title>
@@ -1435,7 +1650,7 @@ User-Agent string에는 많은 엔트로피(정보량)가 담겨 있어 개인�
 </main>]]></description>
   <link>https://7696122.github.io/braindump/20230106073641-get_filetags.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/20230106073641-get_filetags.html</guid>
-  <pubDate>Sun, 29 Jan 2023 08:44:00 +0900</pubDate>
+  <pubDate>Sun, 29 Jan 2023 11:17:00 +0900</pubDate>
 </item>
 <item>
   <title>null versus undefined</title>
@@ -1462,7 +1677,7 @@ User-Agent string에는 많은 엔트로피(정보량)가 담겨 있어 개인�
 </main>]]></description>
   <link>https://7696122.github.io/braindump/20230106122610-null_versus_undefined.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/20230106122610-null_versus_undefined.html</guid>
-  <pubDate>Sun, 29 Jan 2023 08:44:00 +0900</pubDate>
+  <pubDate>Sun, 29 Jan 2023 11:17:00 +0900</pubDate>
 </item>
 <item>
   <title>Dart</title>
@@ -1529,7 +1744,7 @@ User-Agent string에는 많은 엔트로피(정보량)가 담겨 있어 개인�
 </main>]]></description>
   <link>https://7696122.github.io/braindump/20230106212912-dart.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/20230106212912-dart.html</guid>
-  <pubDate>Sun, 29 Jan 2023 08:44:00 +0900</pubDate>
+  <pubDate>Sun, 29 Jan 2023 11:17:00 +0900</pubDate>
 </item>
 <item>
   <title>google maps api</title>
@@ -1552,7 +1767,7 @@ User-Agent string에는 많은 엔트로피(정보량)가 담겨 있어 개인�
 </main>]]></description>
   <link>https://7696122.github.io/braindump/20230117063749-google_maps_api.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/20230117063749-google_maps_api.html</guid>
-  <pubDate>Sun, 29 Jan 2023 08:44:00 +0900</pubDate>
+  <pubDate>Sun, 29 Jan 2023 11:17:00 +0900</pubDate>
 </item>
 <item>
   <title>1인 개발자</title>
@@ -1564,7 +1779,7 @@ User-Agent string에는 많은 엔트로피(정보량)가 담겨 있어 개인�
 </ul></main>]]></description>
   <link>https://7696122.github.io/braindump/20230117125941-1인_개발자.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/20230117125941-1인_개발자.html</guid>
-  <pubDate>Sun, 29 Jan 2023 08:44:00 +0900</pubDate>
+  <pubDate>Sun, 29 Jan 2023 11:17:00 +0900</pubDate>
 </item>
 <item>
   <title>Git subtree</title>
@@ -1575,7 +1790,7 @@ User-Agent string에는 많은 엔트로피(정보량)가 담겨 있어 개인�
 </main>]]></description>
   <link>https://7696122.github.io/braindump/20230118064536-git_subtree.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/20230118064536-git_subtree.html</guid>
-  <pubDate>Sun, 29 Jan 2023 08:44:00 +0900</pubDate>
+  <pubDate>Sun, 29 Jan 2023 11:17:00 +0900</pubDate>
 </item>
 <item>
   <title>PARA Method</title>
@@ -1625,42 +1840,7 @@ Inactive items from the other 3 categories <br></br> <b>비활성 항목</b> <br
 </main>]]></description>
   <link>https://7696122.github.io/braindump/20230122174210-para_method.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/20230122174210-para_method.html</guid>
-  <pubDate>Sun, 29 Jan 2023 08:44:00 +0900</pubDate>
-</item>
-<item>
-  <title>Mac에서 ~⌥ Option~ 을 조합한 입력에 이상한 문자가 찍힐 때</title>
-  <description><![CDATA[<main id="content" class="content"> <header> <h1 class="title">Mac에서  <code>⌥ Option</code> 을 조합한 입력에 이상한 문자가 찍힐 때</h1>
-</header> <p>
- <code>⌥ Option</code> +  <code>\</code> 를 누르니  <code>«</code> 가 입력된다.
-</p>
-
- <p>
-특수 문자를 Option키와 조합해서 입력하는 편의성을 위한 기능이겠지만 불필요하다.
-</p>
-
- <p>
- <a href="https://ko.wikihow.com/%EB%A7%A5%EC%97%90%EC%84%9C-%ED%8A%B9%EC%88%98-%EB%AC%B8%EC%9E%90-%EC%9E%85%EB%A0%A5%ED%95%98%EB%8A%94-%EB%B2%95">맥에서 특수 문자 입력하는 법</a>
-</p>
-
- <p>
-해당 기능을 비활성화 시키는 방법을 찾아 봤지만
-Input Method를 변경하는 방법 말곤
-찾지 못했다.
-</p>
-
-
- <figure id="org56b5726"> <img src="../../attach/Screenshot 2022-12-23 at 1.50.20 PM.png" alt="Screenshot 2022-12-23 at 1.50.20 PM.png"></img> <figcaption> <span class="figure-number">Figure 1: </span>System Settings.app/Keyboard/Text Input/Input Sources/Edit</figcaption></figure> <figure id="orgb6e3af0"> <img src="../../attach/Screenshot 2022-12-23 at 9.07.37 PM.png" alt="Screenshot 2022-12-23 at 9.07.37 PM.png"></img> <figcaption> <span class="figure-number">Figure 2: </span>English/ABC 상태</figcaption></figure> <figure id="org6a20ce3"> <img src="../../attach/Screenshot 2022-12-23 at 9.10.39 PM.png" alt="Screenshot 2022-12-23 at 9.10.39 PM.png"></img> <figcaption> <span class="figure-number">Figure 3: </span>Others/Unicode Hex Input 선택</figcaption></figure> <figure id="orgb30ea07"> <img src="../../attach/Screenshot 2022-12-23 at 9.11.32 PM.png" alt="Screenshot 2022-12-23 at 9.11.32 PM.png"></img> <figcaption> <span class="figure-number">Figure 4: </span>Others/Unicode Hex Input 추가</figcaption></figure> <figure id="org3c6aa54"> <img src="../../attach/Screenshot 2022-12-23 at 9.12.39 PM.png" alt="Screenshot 2022-12-23 at 9.12.39 PM.png"></img> <figcaption> <span class="figure-number">Figure 5: </span>English/ABC 제거</figcaption></figure> <div id="outline-container-org9c6648f" class="outline-2">
- <h2 id="org9c6648f"> <span class="section-number-2">1.</span>  <a href="#org9c6648f">Ref</a></h2>
- <div class="outline-text-2" id="text-1">
- <p>
- <a href="https://stackoverflow.com/a/61482531">https://stackoverflow.com/a/61482531</a>
-</p>
-</div>
-</div>
-</main>]]></description>
-  <link>https://7696122.github.io/braindump/Mac에서_Option을_조합한_입력에_이상한_문자가_찍힐_때.html</link>
-  <guid isPermaLink="false">https://7696122.github.io/braindump/Mac에서_Option을_조합한_입력에_이상한_문자가_찍힐_때.html</guid>
-  <pubDate>Sun, 29 Jan 2023 08:44:00 +0900</pubDate>
+  <pubDate>Sun, 29 Jan 2023 11:17:00 +0900</pubDate>
 </item>
 <item>
   <title>TypeScript를 활용한 함수형 프로그래밍 온보딩</title>
@@ -1683,7 +1863,7 @@ Input Method를 변경하는 방법 말곤
 </main>]]></description>
   <link>https://7696122.github.io/braindump/TypeScript를_활용한_함수형_프로그래밍_온보딩.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/TypeScript를_활용한_함수형_프로그래밍_온보딩.html</guid>
-  <pubDate>Sun, 29 Jan 2023 08:44:00 +0900</pubDate>
+  <pubDate>Sun, 29 Jan 2023 11:17:00 +0900</pubDate>
 </item>
 <item>
   <title>Emacs에서 제곱미터 입력하기</title>
@@ -1692,7 +1872,7 @@ Input Method를 변경하는 방법 말곤
  <code>C-x 8 RET</code> <sup> <a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup></p>
 
 
- <figure id="org16c0294"> <img src="../attach/Screenshot 2023-01-28 at 8.53.09 AM.png" alt="Screenshot 2023-01-28 at 8.53.09 AM.png"></img> <figcaption> <span class="figure-number">Figure 1: </span>insert-char 화면</figcaption></figure> <p>
+ <figure id="orgebcf830"> <img src="../attach/Screenshot 2023-01-28 at 8.53.09 AM.png" alt="Screenshot 2023-01-28 at 8.53.09 AM.png"></img> <figcaption> <span class="figure-number">Figure 1: </span>insert-char 화면</figcaption></figure> <p>
 제곱미터 = Square M Squared <sup> <a id="fnr.2" class="footref" href="#fn.2" role="doc-backlink">2</a></sup></p>
 
  <div id="outline-container-org651f101" class="outline-2 references">
@@ -1735,7 +1915,7 @@ Input Method를 변경하는 방법 말곤
 </div></main>]]></description>
   <link>https://7696122.github.io/braindump/emacs에서_제곱미터_입력하기.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/emacs에서_제곱미터_입력하기.html</guid>
-  <pubDate>Sun, 29 Jan 2023 08:44:00 +0900</pubDate>
+  <pubDate>Sun, 29 Jan 2023 11:17:00 +0900</pubDate>
 </item>
 <item>
   <title>git에서 html이 binary로 표시되는 문제</title>
@@ -1754,64 +1934,7 @@ Input Method를 변경하는 방법 말곤
 </main>]]></description>
   <link>https://7696122.github.io/braindump/git에서_html이_binary로_표시되는_문제.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/git에서_html이_binary로_표시되는_문제.html</guid>
-  <pubDate>Sun, 29 Jan 2023 08:44:00 +0900</pubDate>
-</item>
-<item>
-  <title>디지털가든</title>
-  <description><![CDATA[<main id="content" class="content"> <div class="sitemap" id="orge218104">
- <ul class="org-ul"> <li> <a href="emacs에서_제곱미터_입력하기.html">Emacs에서 제곱미터 입력하기</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-28 토></span></span></li>
- <li> <a href="20221219061119-디지털가든_만들기.html">디지털 가든 만들기</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-27 금></span></span></li>
- <li> <a href="slipbox.html">Slipbox</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-24 화></span></span></li>
- <li> <a href="20230122174210-para_method.html">PARA Method</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-24 화></span></span></li>
- <li> <a href="20230118064536-git_subtree.html">Git subtree</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-18 수></span></span></li>
- <li> <a href="20230117125941-1인_개발자.html">1인 개발자</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-17 화></span></span></li>
- <li> <a href="20230117063749-google_maps_api.html">google maps api</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-17 화></span></span></li>
- <li> <a href="뚝섬_잠원_눈썰매장.html">뚝섬ㆍ잠원 눈썰매장</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-13 금></span></span></li>
- <li> <a href="Mac에서_Option을_조합한_입력에_이상한_문자가_찍힐_때.html">Mac에서  <code>⌥ Option</code> 을 조합한 입력에 이상한 문자가 찍힐 때</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-13 금></span></span></li>
- <li> <a href="20230106212912-dart.html">Dart</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
- <li> <a href="20230106122610-null_versus_undefined.html">null versus undefined</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
- <li> <a href="20230106073641-get_filetags.html">Get #+filetags:</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
- <li> <a href="git에서_html이_binary로_표시되는_문제.html">git에서 html이 binary로 표시되는 문제</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
- <li> <a href="20230104035041-weblorg.html">weblorg</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
- <li> <a href="20230104021551-devenv.html">devenv</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
- <li> <a href="경제금융용어_700선.html">경제금융용어 700선</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
- <li> <a href="금융안정보고서.html">금융안정보고서</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
- <li> <a href="20230102111337-user_agent_reduction.html">User-Agent Reduction</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
- <li> <a href="20230101212637-flexbox.html">Flexbox</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
- <li> <a href="20221231132050-ox_json.html">ox-json</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
- <li> <a href="20221231035949-robox_txt.html">Robox.txt</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
- <li> <a href="20221231032602-open_graph_protocol.html">Open Graph protocol</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
- <li> <a href="20221231003500-css_reset.html">css reset</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
- <li> <a href="20221230192412-web_layouts_grid_flex.html">Web Layouts - Grid & Flex</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
- <li> <a href="명조체_고딕체_세리프_산세리프_Serif_Sans-Serif.html">명조체·고딕체/세리프·산세리프/Serif·Sans-Serif</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
- <li> <a href="20221230174154-web_fonts.html">web fonts</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
- <li> <a href="20221230075633-top_21_google_tag_manager_extensions_and_tools_for_fast_and_efficient_work.html">Top 21 Google Tag Manager Extensions and Tools for Fast and Efficient Work</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
- <li> <a href="20221228120251-org_commentary.html">org-commentary</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
- <li> <a href="20221228092901-sitemaps.html">sitemaps</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
- <li> <a href="TypeScript를_활용한_함수형_프로그래밍_온보딩.html">TypeScript를 활용한 함수형 프로그래밍 온보딩</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
- <li> <a href="20221227084435-seo_meta_in_1_click.html">SEO META in 1 CLICK</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
- <li> <a href="seo_검색엔진 최적화.html">seo, 검색엔진 최적화</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
- <li> <a href="20221227080025-bookmarks.html">bookmarks</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
- <li> <a href="20221225211539-webfeeder.html">webfeeder</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
- <li> <a href="20221224094210-create_link.html">create-link</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
- <li> <a href="서울광장_스케이트장.html">서울광장 스케이트장</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
- <li> <a href="20221223130349-scroll_indicator.html">Scroll Indicator</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
- <li> <a href="20221222073142-http_cookie.html">HTTP cookie</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
- <li> <a href="org-roam_node_얻기.html">org-roam node 얻기</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
- <li> <a href="20221218171719-org_unique_id.html">org-unique-id</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
- <li> <a href="npm_없이_js_라이브러리_사용하기.html">npm 없이 js 라이브러리 사용하기</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
- <li> <a href="20221215113855-sdkman.html">sdkman</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
- <li> <a href="20221215113524-java_development.html">java development</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
- <li> <a href="20221214102741-prodigy.html">prodigy</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
- <li> <a href="동등비교_연산자.html">동등비교 연산자</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
- <li> <a href="20220625092412-org_attach_screenshot.html">org-attach-screenshot</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
- <li> <a href="20220618132712_org_agenda.html">org-appear</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
- <li> <a href="주택구입부담지수_주택금융통계시스템-HF_한국주택금융공사.html">주택구입부담지수@주택금융통계시스템-HF 한국주택금융공사</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
-</ul></div>
-</main>]]></description>
-  <link>https://7696122.github.io/braindump/index.html</link>
-  <guid isPermaLink="false">https://7696122.github.io/braindump/index.html</guid>
-  <pubDate>Sun, 29 Jan 2023 08:44:00 +0900</pubDate>
+  <pubDate>Sun, 29 Jan 2023 11:17:00 +0900</pubDate>
 </item>
 <item>
   <title>npm 없이 js 라이브러리 사용하기</title>
@@ -1829,12 +1952,12 @@ npm을 사용하면 좋지만 그러지 못할 땐
 </p>
 
 
- <figure id="org10db318"> <img src="../attach/Screenshot 2022-12-18 at 7.43.25 PM.png" alt="Screenshot 2022-12-18 at 7.43.25 PM.png" width="100%"></img></figure> <p>
+ <figure id="org79deb56"> <img src="../attach/Screenshot 2022-12-18 at 7.43.25 PM.png" alt="Screenshot 2022-12-18 at 7.43.25 PM.png" width="100%"></img></figure> <p>
  <a href="https://www.jsdelivr.com/package/npm/lodash?tab=collection">https://www.jsdelivr.com/package/npm/lodash?tab=collection</a>
 </p>
 
 
- <figure id="org50a520f"> <img src="../attach/Screenshot 2022-12-18 at 9.00.50 PM.png" alt="Screenshot 2022-12-18 at 9.00.50 PM.png" width="100%"></img></figure> <p>
+ <figure id="orgcc52476"> <img src="../attach/Screenshot 2022-12-18 at 9.00.50 PM.png" alt="Screenshot 2022-12-18 at 9.00.50 PM.png" width="100%"></img></figure> <p>
  <a href="#coderef-src" class="coderef" onmouseover="CodeHighlightOn(this, 'coderef-src');" onmouseout="CodeHighlightOff(this, 'coderef-src');">스크립트 로딩 코드</a>
 </p>
 
@@ -1845,7 +1968,7 @@ npm을 사용하면 좋지만 그러지 못할 땐
 </main>]]></description>
   <link>https://7696122.github.io/braindump/npm_없이_js_라이브러리_사용하기.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/npm_없이_js_라이브러리_사용하기.html</guid>
-  <pubDate>Sun, 29 Jan 2023 08:44:00 +0900</pubDate>
+  <pubDate>Sun, 29 Jan 2023 11:17:00 +0900</pubDate>
 </item>
 <item>
   <title>org-roam node 얻기</title>
@@ -1895,7 +2018,7 @@ nil
 </main>]]></description>
   <link>https://7696122.github.io/braindump/org-roam_node_얻기.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/org-roam_node_얻기.html</guid>
-  <pubDate>Sun, 29 Jan 2023 08:44:00 +0900</pubDate>
+  <pubDate>Sun, 29 Jan 2023 11:17:00 +0900</pubDate>
 </item>
 <item>
   <title>seo, 검색엔진 최적화</title>
@@ -1917,7 +2040,7 @@ SEO(검색 엔진 최적화)는 웹사이트가 검색 결과에 더 잘 보이�
 </main>]]></description>
   <link>https://7696122.github.io/braindump/seo_검색엔진 최적화.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/seo_검색엔진 최적화.html</guid>
-  <pubDate>Sun, 29 Jan 2023 08:44:00 +0900</pubDate>
+  <pubDate>Sun, 29 Jan 2023 11:17:00 +0900</pubDate>
 </item>
 <item>
   <title>Slipbox</title>
@@ -1934,23 +2057,7 @@ SEO(검색 엔진 최적화)는 웹사이트가 검색 결과에 더 잘 보이�
 </main>]]></description>
   <link>https://7696122.github.io/braindump/slipbox.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/slipbox.html</guid>
-  <pubDate>Sun, 29 Jan 2023 08:44:00 +0900</pubDate>
-</item>
-<item>
-  <title>Index</title>
-  <description><![CDATA[<main id="content" class="content"> <header> <h1 class="title">Index</h1>
-</header> <div id="outline-container-org3b7d8a3" class="outline-2">
- <h2 id="org3b7d8a3"> <span class="section-number-2">1.</span>  <a href="#org3b7d8a3">E</a></h2>
- <div class="outline-text-2" id="text-1">
- <ul class="org-ul"> <li>emacs
- <ul class="org-ul"> <li> <a href="20230104035041-weblorg.html">weblorg</a></li>
-</ul></li>
-</ul></div>
-</div>
-</main>]]></description>
-  <link>https://7696122.github.io/braindump/theindex.html</link>
-  <guid isPermaLink="false">https://7696122.github.io/braindump/theindex.html</guid>
-  <pubDate>Sun, 29 Jan 2023 08:44:00 +0900</pubDate>
+  <pubDate>Sun, 29 Jan 2023 11:17:00 +0900</pubDate>
 </item>
 <item>
   <title>경제금융용어 700선</title>
@@ -1964,7 +2071,7 @@ SEO(검색 엔진 최적화)는 웹사이트가 검색 결과에 더 잘 보이�
 </main>]]></description>
   <link>https://7696122.github.io/braindump/경제금융용어_700선.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/경제금융용어_700선.html</guid>
-  <pubDate>Sun, 29 Jan 2023 08:44:00 +0900</pubDate>
+  <pubDate>Sun, 29 Jan 2023 11:17:00 +0900</pubDate>
 </item>
 <item>
   <title>금융안정보고서</title>
@@ -1978,7 +2085,7 @@ SEO(검색 엔진 최적화)는 웹사이트가 검색 결과에 더 잘 보이�
 </main>]]></description>
   <link>https://7696122.github.io/braindump/금융안정보고서.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/금융안정보고서.html</guid>
-  <pubDate>Sun, 29 Jan 2023 08:44:00 +0900</pubDate>
+  <pubDate>Sun, 29 Jan 2023 11:17:00 +0900</pubDate>
 </item>
 <item>
   <title>동등비교 연산자</title>
@@ -1989,7 +2096,7 @@ SEO(검색 엔진 최적화)는 웹사이트가 검색 결과에 더 잘 보이�
 </main>]]></description>
   <link>https://7696122.github.io/braindump/동등비교_연산자.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/동등비교_연산자.html</guid>
-  <pubDate>Sun, 29 Jan 2023 08:44:00 +0900</pubDate>
+  <pubDate>Sun, 29 Jan 2023 11:17:00 +0900</pubDate>
 </item>
 <item>
   <title>뚝섬ㆍ잠원 눈썰매장</title>
@@ -2043,7 +2150,7 @@ SEO(검색 엔진 최적화)는 웹사이트가 검색 결과에 더 잘 보이�
 </main>]]></description>
   <link>https://7696122.github.io/braindump/뚝섬_잠원_눈썰매장.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/뚝섬_잠원_눈썰매장.html</guid>
-  <pubDate>Sun, 29 Jan 2023 08:44:00 +0900</pubDate>
+  <pubDate>Sun, 29 Jan 2023 11:17:00 +0900</pubDate>
 </item>
 <item>
   <title>명조체·고딕체/세리프·산세리프/Serif·Sans-Serif</title>
@@ -2087,7 +2194,7 @@ SEO(검색 엔진 최적화)는 웹사이트가 검색 결과에 더 잘 보이�
 </div></main>]]></description>
   <link>https://7696122.github.io/braindump/명조체_고딕체_세리프_산세리프_Serif_Sans-Serif.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/명조체_고딕체_세리프_산세리프_Serif_Sans-Serif.html</guid>
-  <pubDate>Sun, 29 Jan 2023 08:44:00 +0900</pubDate>
+  <pubDate>Sun, 29 Jan 2023 11:17:00 +0900</pubDate>
 </item>
 <item>
   <title>서울광장 스케이트장</title>
@@ -2136,7 +2243,7 @@ SEO(검색 엔진 최적화)는 웹사이트가 검색 결과에 더 잘 보이�
 </main>]]></description>
   <link>https://7696122.github.io/braindump/서울광장_스케이트장.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/서울광장_스케이트장.html</guid>
-  <pubDate>Sun, 29 Jan 2023 08:44:00 +0900</pubDate>
+  <pubDate>Sun, 29 Jan 2023 11:17:00 +0900</pubDate>
 </item>
 <item>
   <title>주택구입부담지수@주택금융통계시스템-HF 한국주택금융공사</title>
@@ -2169,114 +2276,7 @@ SEO(검색 엔진 최적화)는 웹사이트가 검색 결과에 더 잘 보이�
 </main>]]></description>
   <link>https://7696122.github.io/braindump/주택구입부담지수_주택금융통계시스템-HF_한국주택금융공사.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/주택구입부담지수_주택금융통계시스템-HF_한국주택금융공사.html</guid>
-  <pubDate>Sun, 29 Jan 2023 08:44:00 +0900</pubDate>
-</item>
-<item>
-  <title>디지털가든</title>
-  <description><![CDATA[<main id="content" class="content"> <div id="outline-container-org52827c2" class="outline-2">
- <h2 id="org52827c2"> <a href="#org52827c2">디지털 정원 꾸미기</a></h2>
- <div class="outline-text-2" id="text-org52827c2">
- <ul class="org-ul"> <li> <a href="https://brunch.co.kr/@kys4620/155">디지털 정원</a></li>
- <li> <a href="https://maggieappleton.com/garden-history">the Digital Garden</a></li>
-</ul></div>
-</div>
-
- <div id="outline-container-org09e8b83" class="outline-2">
- <h2 id="org09e8b83"> <a href="#org09e8b83">도서관에서</a></h2>
- <div class="outline-text-2" id="text-org09e8b83">
- <p>
- <a href="../../books/index.html#ID-0f161ec5-c454-4c04-acd7-0da1a0457048">books</a>
-</p>
-</div>
-</div>
-</main>]]></description>
-  <link>https://7696122.github.io/home/index.html</link>
-  <guid isPermaLink="false">https://7696122.github.io/home/index.html</guid>
-  <pubDate>Sun, 29 Jan 2023 08:44:00 +0900</pubDate>
-</item>
-<item>
-  <title>디지털가든</title>
-  <description><![CDATA[<main id="content" class="content"> <div class="sitemap" id="orgedd3189">
- <ul class="org-ul"> <li> <a href="2023_01_27.html">Jan 27th, 2023</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-27 금></span></span></li>
- <li> <a href="journal.html">journal</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-27 금></span></span></li>
- <li> <a href="2023-01-23.html">2023-01-23</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-24 화></span></span></li>
- <li> <a href="2023-01-11.html">2023-01-11</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-24 화></span></span></li>
- <li> <a href="2023-01-07.html">2023-01-07</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-24 화></span></span></li>
- <li> <a href="2023-01-24.html">2023-01-24</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-24 화></span></span></li>
- <li> <a href="2023-01-20.html">2023-01-20</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-20 금></span></span></li>
- <li> <a href="2023-01-19.html">2023-01-19</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-19 목></span></span></li>
- <li> <a href="2023-01-18.html">2023-01-18</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-19 목></span></span></li>
- <li> <a href="2023-01-17.html">2023-01-17</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-17 화></span></span></li>
- <li> <a href="2023-01-16.html">2023-01-16</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-16 월></span></span></li>
- <li> <a href="2023-01-15.html">2023-01-15</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-15 일></span></span></li>
- <li> <a href="2023-01-14.html">2023-01-14</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-15 일></span></span></li>
- <li> <a href="2023-01-13.html">2023-01-13</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-13 금></span></span></li>
- <li> <a href="2023-01-12.html">2023-01-12</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-13 금></span></span></li>
- <li> <a href="2023-01-10.html">2023-01-10</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-11 수></span></span></li>
- <li> <a href="2023-01-09.html">2023-01-09</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
- <li> <a href="2023-01-08.html">2023-01-08</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
- <li> <a href="2023-01-04.html">2023-01-04</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
- <li> <a href="2022_08_17.html">Aug 17th, 2022</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
- <li> <a href="2022-12-21.html">2022-12-21</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
- <li> <a href="2022-12-13.html">2022-12-13</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
- <li> <a href="2022-12-11.html">2022-12-11</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
- <li> <a href="2022-12-08.html">2022-12-08</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
- <li> <a href="2022-11-29.html">2022-11-29</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
- <li> <a href="2022-11-25.html">2022-11-25</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
- <li> <a href="2022-11-24.html">2022-11-24</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
- <li> <a href="2022-11-19.html">2022-11-19</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
- <li> <a href="2022-11-17.html">2022-11-17</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
-</ul></div>
-</main>]]></description>
-  <link>https://7696122.github.io/journal/index.html</link>
-  <guid isPermaLink="false">https://7696122.github.io/journal/index.html</guid>
-  <pubDate>Sun, 29 Jan 2023 08:44:00 +0900</pubDate>
-</item>
-<item>
-  <title>디지털가든</title>
-  <description><![CDATA[<main id="content" class="content"> <div id="outline-container-orga1b2772" class="outline-2">
- <h2 id="orga1b2772"> <a href="#orga1b2772">오늘</a></h2>
- <div class="outline-text-2" id="text-orga1b2772">
- <div class="today" id="org2abe3c8">
- <blockquote>
- <p>
-개춥다.
-</p>
-</blockquote>
-
-</div>
-</div>
-</div>
-
- <div id="outline-container-orgbd7fed5" class="outline-2">
- <h2 id="orgbd7fed5"> <a href="#orgbd7fed5">최근 글</a></h2>
- <div class="outline-text-2" id="text-orgbd7fed5">
- <div class="recent" id="orgfedb774">
- <ul class="org-ul"> <li> <a href="../braindump/emacs에서_제곱미터_입력하기.html">Emacs에서 제곱미터 입력하기</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-28 토></span></span></li>
- <li> <a href="../braindump/20221219061119-디지털가든_만들기.html">디지털 가든 만들기</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-27 금></span></span></li>
- <li> <a href="../braindump/slipbox.html">Slipbox</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-24 화></span></span></li>
- <li> <a href="../braindump/20230122174210-para_method.html">PARA Method</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-24 화></span></span></li>
- <li> <a href="../braindump/20230118064536-git_subtree.html">Git subtree</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-18 수></span></span></li>
- <li> <a href="../braindump/20230117125941-1인_개발자.html">1인 개발자</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-17 화></span></span></li>
- <li> <a href="../braindump/20230117063749-google_maps_api.html">google maps api</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-17 화></span></span></li>
- <li> <a href="../braindump/뚝섬_잠원_눈썰매장.html">뚝섬ㆍ잠원 눈썰매장</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-13 금></span></span></li>
- <li> <a href="../braindump/Mac에서_Option을_조합한_입력에_이상한_문자가_찍힐_때.html">Mac에서  <code>⌥ Option</code> 을 조합한 입력에 이상한 문자가 찍힐 때</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-13 금></span></span></li>
- <li> <a href="../braindump/20230106212912-dart.html">Dart</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
-</ul></div>
-</div>
-</div>
-
- <div id="outline-container-org08d1d02" class="outline-2">
- <h2 id="org08d1d02"> <a href="#org08d1d02">Sitemap && Feed</a></h2>
- <div class="outline-text-2" id="text-org08d1d02">
- <dl class="org-dl"> <dt>sitemap</dt> <dd> <a href="https://7696122.github.io/sitemap.xml">https://7696122.github.io/sitemap.xml</a></dd>
- <dt>feed</dt> <dd> <a href="https://7696122.github.io/rss.xml">https://7696122.github.io/rss.xml</a></dd>
-</dl></div>
-</div>
-</main>]]></description>
-  <link>https://7696122.github.io/index.html</link>
-  <guid isPermaLink="false">https://7696122.github.io/index.html</guid>
-  <pubDate>Sun, 29 Jan 2023 08:44:00 +0900</pubDate>
+  <pubDate>Sun, 29 Jan 2023 11:17:00 +0900</pubDate>
 </item>
 </channel>
 </rss>
