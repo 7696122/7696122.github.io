@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<!-- 2023-01-28 토 22:02 -->
+<!-- 2023-01-29 일 08:44 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>sdkman</title>
@@ -193,8 +193,6 @@
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   .org-svg { }
 </style>
-<link rel='stylesheet' href='/css/tufte.css' type='text/css' />
-<link rel='stylesheet' href='/css/latex.css' type='text/css' />
 <link href='/stylesheets/main.css' media='screen, projection' rel='stylesheet' type='text/css' />
 <style>
 pre.src-typescript:before { content: 'Typescript'; }
@@ -236,7 +234,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src='https://www.googletagmanager.com/ns.html?id=GTM-P3KXTHX'
 height='0' width='0' style='display:none;visibility:hidden'></iframe></noscript>
 <!-- End Google Tag Manager (noscript) --><header id="preamble" class="status">
-<div class="banner" id="orgd16d382">
+<div class="banner" id="org988da20">
 <a href="/" class="none-deco">
 <!-- <span id="icon">여기엔</span> -->
 <h1>디지털가든</h1>
@@ -275,8 +273,10 @@ height='0' width='0' style='display:none;visibility:hidden'></iframe></noscript>
 <div id="outline-container-org1802176" class="outline-2">
 <h2 id="org1802176"><span class="section-number-2">1.</span> <a href="#org1802176">bash, zsh</a></h2>
 <div class="outline-text-2" id="text-1">
-<pre class="code"><code>curl -s <span style="color: #8b2252;">"https://get.sdkman.io"</span> | bash
-</code></pre>
+<div class="org-src-container">
+<pre class="src src-sh">curl -s <span style="color: #8b2252;">"https://get.sdkman.io"</span> | bash
+</pre>
+</div>
 
 <p>
 위 명령으로 .bash_profile .zshrc 생성됨
@@ -286,15 +286,17 @@ height='0' width='0' style='display:none;visibility:hidden'></iframe></noscript>
 .bash_profile .zshrc created by the above command
 </p>
 
-<pre class="code"><code><span style="color: #483d8b;">source</span> <span style="color: #8b2252;">"$HOME/.sdkman/bin/sdkman-init.sh"</span>
-</code></pre>
+<div class="org-src-container">
+<pre class="src src-bash">source <span style="color: #8b2252;">"$HOME/.sdkman/bin/sdkman-init.sh"</span>
+</pre>
+</div>
 </div>
 </div>
 
 <div id="outline-container-org4604623" class="outline-2">
 <h2 id="org4604623"><span class="section-number-2">2.</span> <a href="#org4604623">fish</a></h2>
 <div class="outline-text-2" id="text-2">
-<pre class="example" id="org74dc79c">
+<pre class="example" id="org6a8253e">
 &gt; source "$HOME/.sdkman/bin/sdkman-init.sh"
 ~/.sdkman/bin/sdkman-init.sh (line 46): Expected end of the statement, but found an incomplete token
         Linux)
@@ -307,19 +309,23 @@ source: Error while reading file “/Users/mnml/.sdkman/bin/sdkman-init.sh”
 <a href="https://github.com/reitzig/sdkman-for-fish">https://github.com/reitzig/sdkman-for-fish</a>
 </p>
 
-<pre class="code"><code><span style="color: #483d8b;">fisher</span> install reitzig/sdkman-for-fish@v1.<span style="color: #008b8b;">4.0</span>
-</code></pre>
+<div class="org-src-container">
+<pre class="src src-fish"><span style="color: #483d8b;">fisher</span> install reitzig/sdkman-for-fish@v1.<span style="color: #008b8b;">4.0</span>
+</pre>
+</div>
 </div>
 </div>
 
 <div id="outline-container-orgc04c439" class="outline-2">
 <h2 id="orgc04c439"><span class="section-number-2">3.</span> <a href="#orgc04c439">in</a></h2>
 <div class="outline-text-2" id="text-3">
-<pre class="code"><code><span id="coderef-list_java" class="coderef-off"><span class="linenr">1: </span>sdk list java</span>
+<div class="org-src-container">
+<pre class="src src-sh"><span id="coderef-list_java" class="coderef-off"><span class="linenr">1: </span>sdk list java</span>
 <span class="linenr">2: </span>sdk install java 19.0.1-amzn
-</code></pre>
+</pre>
+</div>
 
-<pre class="example" id="orgf29baf2">
+<pre class="example" id="org10bb5a8">
 Corretto      |     | 19.0.1       | amzn    |            | 19.0.1-amzn
               | &gt;&gt;&gt; | 17.0.5       | amzn    | installed  | 17.0.5-amzn
               |     | 11.0.17      | amzn    |            | 11.0.17-amzn
@@ -341,10 +347,12 @@ Corretto      |     | 19.0.1       | amzn    |            | 19.0.1-amzn
 <a href="20221215113855-sdkman.html#ID-c2412661-9172-4eee-a8d1-b9994dce406b">sdkman</a>을 사용
 </p>
 
-<pre class="code"><code><span style="color: #a0522d;">java</span>=11.0.17-amzn
+<div class="org-src-container">
+<pre class="src src-conf" id="org878170b"><span style="color: #a0522d;">java</span>=11.0.17-amzn
 <span style="color: #a0522d;">gradle</span>=7.6
 
-</code></pre>
+</pre>
+</div>
 </div>
 </div>
 </div>

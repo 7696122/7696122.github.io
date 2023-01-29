@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<!-- 2023-01-28 토 22:02 -->
+<!-- 2023-01-29 일 08:44 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Dart</title>
@@ -193,8 +193,6 @@
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   .org-svg { }
 </style>
-<link rel='stylesheet' href='/css/tufte.css' type='text/css' />
-<link rel='stylesheet' href='/css/latex.css' type='text/css' />
 <link href='/stylesheets/main.css' media='screen, projection' rel='stylesheet' type='text/css' />
 <style>
 pre.src-typescript:before { content: 'Typescript'; }
@@ -236,7 +234,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src='https://www.googletagmanager.com/ns.html?id=GTM-P3KXTHX'
 height='0' width='0' style='display:none;visibility:hidden'></iframe></noscript>
 <!-- End Google Tag Manager (noscript) --><header id="preamble" class="status">
-<div class="banner" id="orgd16d382">
+<div class="banner" id="org988da20">
 <a href="/" class="none-deco">
 <!-- <span id="icon">여기엔</span> -->
 <h1>디지털가든</h1>
@@ -279,8 +277,10 @@ height='0' width='0' style='display:none;visibility:hidden'></iframe></noscript>
 <li><p>
 로컬 변수로 사용
 </p>
-<pre class="code"><code><span style="color: #a020f0;">var</span> <span style="color: #a0522d;">a</span> = <span style="color: #8b2252;">'a'</span>;
-</code></pre></li>
+<div class="org-src-container">
+<pre class="src src-dart"><span style="color: #a020f0;">var</span> <span style="color: #a0522d;">a</span> = <span style="color: #8b2252;">'a'</span>;
+</pre>
+</div></li>
 </ul>
 </div>
 </div>
@@ -292,8 +292,10 @@ height='0' width='0' style='display:none;visibility:hidden'></iframe></noscript>
 <li><p>
 맴버 변수로 사용
 </p>
-<pre class="code"><code><span style="color: #228b22;">String</span> <span style="color: #a0522d;">b</span> = <span style="color: #8b2252;">'b'</span>;
-</code></pre></li>
+<div class="org-src-container">
+<pre class="src src-dart"><span style="color: #228b22;">String</span> <span style="color: #a0522d;">b</span> = <span style="color: #8b2252;">'b'</span>;
+</pre>
+</div></li>
 </ul>
 </div>
 </div>
@@ -302,7 +304,8 @@ height='0' width='0' style='display:none;visibility:hidden'></iframe></noscript>
 <div id="outline-container-org65df1fe" class="outline-2">
 <h2 id="org65df1fe"><span class="section-number-2">2.</span> <a href="#org65df1fe">Dynamic Type</a></h2>
 <div class="outline-text-2" id="text-2">
-<pre class="code"><code><span style="color: #228b22;">void</span> <span style="color: #0000ff;">main</span>(<span style="color: #228b22;">List</span>&lt;<span style="color: #228b22;">String</span>&gt; <span style="color: #a0522d;">args</span>) {
+<div class="org-src-container">
+<pre class="src src-dart"><span style="color: #228b22;">void</span> <span style="color: #0000ff;">main</span>(<span style="color: #228b22;">List</span>&lt;<span style="color: #228b22;">String</span>&gt; <span style="color: #a0522d;">args</span>) {
   <span style="color: #a020f0;">var</span> <span style="color: #a0522d;">a</span>; // <span style="color: #b22222;">&#50516;&#47925;&#51201; &#45796;&#51060;&#45208;&#48121;</span>
   a = <span style="color: #8b2252;">'a'</span>; // <span style="color: #b22222;">string</span>
   a = <span style="color: #008b8b;">1</span>; //
@@ -317,7 +320,8 @@ height='0' width='0' style='display:none;visibility:hidden'></iframe></noscript>
   <span style="color: #a020f0;">if</span> (c <span style="color: #a020f0;">is</span> <span style="color: #228b22;">String</span>) {
   }
 }
-</code></pre>
+</pre>
+</div>
 </div>
 </div>
 </main>

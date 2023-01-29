@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<!-- 2023-01-28 토 22:02 -->
+<!-- 2023-01-29 일 08:44 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Open Graph protocol</title>
@@ -193,8 +193,6 @@
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   .org-svg { }
 </style>
-<link rel='stylesheet' href='/css/tufte.css' type='text/css' />
-<link rel='stylesheet' href='/css/latex.css' type='text/css' />
 <link href='/stylesheets/main.css' media='screen, projection' rel='stylesheet' type='text/css' />
 <style>
 pre.src-typescript:before { content: 'Typescript'; }
@@ -236,7 +234,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src='https://www.googletagmanager.com/ns.html?id=GTM-P3KXTHX'
 height='0' width='0' style='display:none;visibility:hidden'></iframe></noscript>
 <!-- End Google Tag Manager (noscript) --><header id="preamble" class="status">
-<div class="banner" id="orgd16d382">
+<div class="banner" id="org988da20">
 <a href="/" class="none-deco">
 <!-- <span id="icon">여기엔</span> -->
 <h1>디지털가든</h1>
@@ -267,7 +265,8 @@ height='0' width='0' style='display:none;visibility:hidden'></iframe></noscript>
 <div id="outline-container-orgc68d617" class="outline-2">
 <h2 id="orgc68d617"><span class="section-number-2">1.</span> <a href="#orgc68d617">generate</a></h2>
 <div class="outline-text-2" id="text-1">
-<pre class="code"><code>(<span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">76/org-html-close-tag</span> (tag <span style="color: #228b22;">&amp;rest</span> attrs)
+<div class="org-src-container">
+<pre class="src src-elisp">(<span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">76/org-html-close-tag</span> (tag <span style="color: #228b22;">&amp;rest</span> attrs)
   <span style="color: #8b2252;">"Return close-tag for string TAG.</span>
 <span style="color: #8b2252;">ATTRS specify additional attributes."</span>
   (concat <span style="color: #8b2252;">"&lt;"</span> tag <span style="color: #8b2252;">" "</span>
@@ -322,7 +321,8 @@ height='0' width='0' style='display:none;visibility:hidden'></iframe></noscript>
                        (76/org-html-close-tag <span style="color: #8b2252;">"meta"</span> '(property twitter:card) '(content summary)))
                  )
                <span style="color: #8b2252;">"\n"</span>)))
-</code></pre>
+</pre>
+</div>
 </div>
 </div>
 <div id="outline-container-org0bb5f73" class="outline-2">
