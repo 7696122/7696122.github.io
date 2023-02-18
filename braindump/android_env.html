@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
+<!-- 2023-02-18 토 19:32 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>디지털가든</title>
+<title>android env</title>
 <meta name="author" content="7696122" />
 <meta name="description" content="7696122's Personal Site and Digital Garden" />
 <meta name="keywords" content="personal,blog,site" />
@@ -233,7 +234,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src='https://www.googletagmanager.com/ns.html?id=GTM-P3KXTHX'
 height='0' width='0' style='display:none;visibility:hidden'></iframe></noscript>
 <!-- End Google Tag Manager (noscript) --><header id="preamble" class="status">
-<div class="banner" id="org95678c0">
+<div class="banner" id="orgd3bdfbf">
 <a href="/" class="none-deco">
 <!-- <span id="icon">여기엔</span> -->
 <h1>디지털가든</h1>
@@ -259,12 +260,19 @@ height='0' width='0' style='display:none;visibility:hidden'></iframe></noscript>
 </header>
 <main id="content" class="content">
 <header>
-<h1 class="title">디지털가든</h1>
-</header><div class="sitemap" id="org0b28999">
-<p>
+<h1 class="title">android env</h1>
+</header><div class="org-src-container">
+<pre class="src src-sh" id="org57e5eeb"><span style="color: #483d8b;">export</span> <span style="color: #a0522d;">ANDROID_HOME</span>=$<span style="color: #a0522d;">HOME</span>/Library/Android/sdk
+<span style="color: #483d8b;">export</span> <span style="color: #a0522d;">PATH</span>=$<span style="color: #a0522d;">PATH</span>:$<span style="color: #a0522d;">ANDROID_HOME</span>/emulator
+<span style="color: #483d8b;">export</span> <span style="color: #a0522d;">PATH</span>=$<span style="color: #a0522d;">PATH</span>:$<span style="color: #a0522d;">ANDROID_HOME</span>/platform-tools
+</pre>
+</div>
 
-</p>
-
+<div class="org-src-container">
+<pre class="src src-fish" id="org97c5dea"><span style="color: #a020f0;">set</span> -x <span style="color: #a0522d;">ANDROID_HOME</span> <span style="color: #8b2252;">$</span><span style="color: #a0522d;">HOME/Library/Android/sdk</span>
+<span style="color: #a020f0;">set</span> -x <span style="color: #a0522d;">PATH</span> <span style="color: #8b2252;">$</span><span style="color: #a0522d;">PATH</span>:<span style="color: #8b2252;">$</span><span style="color: #a0522d;">ANDROID_HOME/emulator</span>
+<span style="color: #a020f0;">set</span> -x <span style="color: #a0522d;">PATH</span> <span style="color: #8b2252;">$</span><span style="color: #a0522d;">PATH</span>:<span style="color: #8b2252;">$</span><span style="color: #a0522d;">ANDROID_HOME/platform-tools</span>
+</pre>
 </div>
 </main>
 <footer id="postamble" class="status">

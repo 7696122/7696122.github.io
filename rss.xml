@@ -6,7 +6,335 @@
 <generator>Emacs webfeeder.el</generator>
 <link>https://7696122.github.io</link>
 <atom:link href="https://7696122.github.io/rss.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Wed, 15 Feb 2023 06:20:37 +0900</lastBuildDate>
+<lastBuildDate>Sat, 18 Feb 2023 19:32:12 +0900</lastBuildDate>
+<item>
+  <title>Index</title>
+  <description><![CDATA[<main id="content" class="content"> <header> <h1 class="title">Index</h1>
+</header></main>]]></description>
+  <link>https://7696122.github.io/blog/theindex.html</link>
+  <guid isPermaLink="false">https://7696122.github.io/blog/theindex.html</guid>
+  <pubDate>Sat, 18 Feb 2023 19:32:00 +0900</pubDate>
+</item>
+<item>
+  <title>Index</title>
+  <description><![CDATA[<main id="content" class="content"> <header> <h1 class="title">Index</h1>
+</header></main>]]></description>
+  <link>https://7696122.github.io/books/theindex.html</link>
+  <guid isPermaLink="false">https://7696122.github.io/books/theindex.html</guid>
+  <pubDate>Sat, 18 Feb 2023 19:32:00 +0900</pubDate>
+</item>
+<item>
+  <title>Scroll Indicator</title>
+  <description><![CDATA[<main id="content" class="content"> <header> <h1 class="title">Scroll Indicator</h1>
+</header> <div class="org-src-container">
+ <pre class="src src-js"> <span style="color: #a020f0;">class</span> ScrollIndicator  <span style="color: #a020f0;">extends</span> HTMLElement {
+  constructor() {
+     <span style="color: #a020f0;">super</span>();
+  }
+
+  render() {
+     <span style="color: #008b8b;">this</span>.attachShadow({ mode:  <span style="color: #8b2252;">"open"</span> });
+
+     <span style="color: #a020f0;">const</span>  <span style="color: #a0522d;">container</span> = document.createElement( <span style="color: #8b2252;">"div"</span>);
+    container.setAttribute( <span style="color: #8b2252;">"class"</span>,  <span style="color: #8b2252;">"progress-container"</span>);
+
+     <span style="color: #a020f0;">const</span>  <span style="color: #a0522d;">bar</span> = document.createElement( <span style="color: #8b2252;">"div"</span>);
+    bar.setAttribute( <span style="color: #8b2252;">"class"</span>,  <span style="color: #8b2252;">"progress-bar"</span>);
+    bar.setAttribute( <span style="color: #8b2252;">"id"</span>,  <span style="color: #8b2252;">"myBar"</span>);
+
+    container.append(bar);
+
+     <span style="color: #a020f0;">const</span>  <span style="color: #a0522d;">style</span> = document.createElement( <span style="color: #8b2252;">"style"</span>);
+    style.textContent =  <span style="color: #8b2252;">`</span>
+ <span style="color: #8b2252;">/* Style the header: fixed position (always stay at the top) */</span>
+ <span style="color: #8b2252;">/* The progress container (grey background) */</span>
+ <span style="color: #8b2252;">.progress-container {</span>
+ <span style="color: #8b2252;">  width: 100%;</span>
+ <span style="color: #8b2252;">  height: 8px;</span>
+ <span style="color: #8b2252;">  // background: black;</span>
+ <span style="color: #8b2252;">}</span>
+
+ <span style="color: #8b2252;">/* The progress bar (scroll indicator) */</span>
+ <span style="color: #8b2252;">.progress-bar {</span>
+ <span style="color: #8b2252;">  height: 8px;</span>
+ <span style="color: #8b2252;">  background: yellowgreen;</span>
+ <span style="color: #8b2252;">  width: 0%;</span>
+ <span style="color: #8b2252;">}</span>
+ <span style="color: #8b2252;">    `</span>;
+
+     <span style="color: #008b8b;">this</span>.shadowRoot.append(style, container);
+
+    //  <span style="color: #b22222;">When the user scrolls the page, execute myFunction</span>
+    window.onscroll =  <span style="color: #a020f0;">function</span> () {
+      handleScroll();
+    };
+
+     <span style="color: #a020f0;">function</span>  <span style="color: #0000ff;">handleScroll</span>() {
+       <span style="color: #a020f0;">var</span>  <span style="color: #a0522d;">winScroll</span> =
+        document.body.scrollTop || document.documentElement.scrollTop;
+       <span style="color: #a020f0;">var</span>  <span style="color: #a0522d;">height</span> =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
+       <span style="color: #a020f0;">var</span>  <span style="color: #a0522d;">scrolled</span> = (winScroll / height) * 100;
+      bar.style.width = (scrolled <= 100 ? scrolled : 100) +  <span style="color: #8b2252;">"%"</span>;
+    }
+  }
+
+  connectedCallback() {
+     <span style="color: #a020f0;">if</span> (! <span style="color: #008b8b;">this</span>.rendered) {
+       <span style="color: #008b8b;">this</span>.render();
+       <span style="color: #008b8b;">this</span>.rendered =  <span style="color: #008b8b;">true</span>;
+    }
+  }
+  //  <span style="color: #b22222;">disconnectedCallback() {</span>
+  //    <span style="color: #b22222;">/* ... */</span>
+  //  <span style="color: #b22222;">}</span>
+  //  <span style="color: #b22222;">static get observedAttributes() {</span>
+  //    <span style="color: #b22222;">return [</span>
+  //      <span style="color: #b22222;">/* ... */</span>
+  //    <span style="color: #b22222;">];</span>
+  //  <span style="color: #b22222;">}</span>
+  //  <span style="color: #b22222;">attributeChangedCallback(name, oldValue, newValue) {</span>
+  //    <span style="color: #b22222;">/* ... */</span>
+  //  <span style="color: #b22222;">}</span>
+  //  <span style="color: #b22222;">adoptedCallback() {</span>
+  //    <span style="color: #b22222;">/* ... */</span>
+  //  <span style="color: #b22222;">}</span>
+}
+
+customElements.define(
+   <span style="color: #8b2252;">"scroll-indicator"</span>,
+  ScrollIndicator
+  //  <span style="color: #b22222;">{extends: "div"}</span>
+);
+</pre>
+</div>
+
+ <div class="org-src-container">
+ <pre class="src src-html">< <span style="color: #0000ff;">scroll-indicator</span>></ <span style="color: #0000ff;">scroll-indicator</span>>
+</pre>
+</div>
+
+ <div id="outline-container-org067d565" class="outline-2">
+ <h2 id="org067d565"> <span class="section-number-2">1.</span>  <a href="#org067d565">Ref</a></h2>
+ <div class="outline-text-2" id="text-1">
+ <ul class="org-ul"> <li> <a href="https://www.w3schools.com/howto/howto_js_scroll_indicator.asp">How TO - Scroll Indicator</a></li>
+ <li> <a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components">Web Components</a></li>
+ <li> <a href="https://css-tricks.com/indicating-scroll-position-on-a-page-with-css/">Indicating Scroll Position on a Page With CSS | CSS-Tricks - CSS-Tricks</a></li>
+</ul></div>
+</div>
+</main>]]></description>
+  <link>https://7696122.github.io/braindump/20221223130349-scroll_indicator.html</link>
+  <guid isPermaLink="false">https://7696122.github.io/braindump/20221223130349-scroll_indicator.html</guid>
+  <pubDate>Sat, 18 Feb 2023 19:32:00 +0900</pubDate>
+</item>
+<item>
+  <title>android env</title>
+  <description><![CDATA[<main id="content" class="content"> <header> <h1 class="title">android env</h1>
+</header> <div class="org-src-container">
+ <pre class="src src-sh" id="org57e5eeb"> <span style="color: #483d8b;">export</span>  <span style="color: #a0522d;">ANDROID_HOME</span>=$ <span style="color: #a0522d;">HOME</span>/Library/Android/sdk
+ <span style="color: #483d8b;">export</span>  <span style="color: #a0522d;">PATH</span>=$ <span style="color: #a0522d;">PATH</span>:$ <span style="color: #a0522d;">ANDROID_HOME</span>/emulator
+ <span style="color: #483d8b;">export</span>  <span style="color: #a0522d;">PATH</span>=$ <span style="color: #a0522d;">PATH</span>:$ <span style="color: #a0522d;">ANDROID_HOME</span>/platform-tools
+</pre>
+</div>
+
+ <div class="org-src-container">
+ <pre class="src src-fish" id="org97c5dea"> <span style="color: #a020f0;">set</span> -x  <span style="color: #a0522d;">ANDROID_HOME</span>  <span style="color: #8b2252;">$</span> <span style="color: #a0522d;">HOME/Library/Android/sdk</span>
+ <span style="color: #a020f0;">set</span> -x  <span style="color: #a0522d;">PATH</span>  <span style="color: #8b2252;">$</span> <span style="color: #a0522d;">PATH</span>: <span style="color: #8b2252;">$</span> <span style="color: #a0522d;">ANDROID_HOME/emulator</span>
+ <span style="color: #a020f0;">set</span> -x  <span style="color: #a0522d;">PATH</span>  <span style="color: #8b2252;">$</span> <span style="color: #a0522d;">PATH</span>: <span style="color: #8b2252;">$</span> <span style="color: #a0522d;">ANDROID_HOME/platform-tools</span>
+</pre>
+</div>
+</main>]]></description>
+  <link>https://7696122.github.io/braindump/android_env.html</link>
+  <guid isPermaLink="false">https://7696122.github.io/braindump/android_env.html</guid>
+  <pubDate>Sat, 18 Feb 2023 19:32:00 +0900</pubDate>
+</item>
+<item>
+  <title>CPI</title>
+  <description><![CDATA[<main id="content" class="content"> <header> <h1 class="title">CPI</h1>
+</header> <p>
+ <a href="https://news.einfomax.co.kr/news/articleView.html?idxno=4254401">JP모건 "CPI로 美 증시 3% 급등락할 수도"…가능성 큰 시나리오는 - 연합인포맥스</a>
+</p>
+
+ <div id="outline-container-org52076ef" class="outline-2">
+ <h2 id="org52076ef"> <span class="section-number-2">1.</span>  <a href="#org52076ef">소비자물가지수(CPI)</a></h2>
+ <div class="outline-text-2" id="text-1">
+ <p>
+ <span class="underline"> <b>일반 가구가</b></span>  소비생활을 유지하기 위하여  <span class="underline">구입하는 각종 상품과 서비스의 _가격변동을</span> 종합적으로 파악하기 위하여 작성되는 물가지표이다. 우리나라의 소비자물가지수는 통계청에서 작성하고 있으며 기준년을 100으로 하여 작성된다. 조사대상 상품 및 서비스 의 구성과 가중치도 경제상황에 맞게 주기적으로 조정된다. 현재는 40여개 가계의 총소 비지출에서  <span class="underline">구입비중이 큰 500여개의 상품 및 서비스 품목을 대상으로</span> 조사된 소비자 구입가격을 기준으로 하고 있다. 소비자물가지수는 소비자가 일정한 생활수준을 유지하 는 데 필요한 소득내지 소비금액의 변동을 나타내기 때문에 소비자의 구매력과 생계비 등의 측정에 사용된다. 또한  <span class="underline">소비자물가지수의 상승은 실질임금의 하락을 의미하므로</span> 이를 보전하기 위한 임금인상의 기초자료로 널리 이용되고 있다.
+</p>
+</div>
+</div>
+
+ <div id="outline-container-org329481d" class="outline-2">
+ <h2 id="org329481d"> <span class="section-number-2">2.</span>  <a href="#org329481d">출처</a></h2>
+ <div class="outline-text-2" id="text-2">
+ <p>
+ <a href="https://www.bok.or.kr/portal/bbs/B0000249/view.do?nttId=235017&menuNo=200765">경제금융용어 700선 | 경제교육관련 발간자료(상세) | 단행본 | 간행물 | 조사 · 연구 | 한국은행 홈페이지</a>
+</p>
+</div>
+</div>
+</main>]]></description>
+  <link>https://7696122.github.io/braindump/cpi.html</link>
+  <guid isPermaLink="false">https://7696122.github.io/braindump/cpi.html</guid>
+  <pubDate>Sat, 18 Feb 2023 19:32:00 +0900</pubDate>
+</item>
+<item>
+  <title>Index</title>
+  <description><![CDATA[<main id="content" class="content"> <header> <h1 class="title">Index</h1>
+</header> <div id="outline-container-org3b7d8a3" class="outline-2">
+ <h2 id="org3b7d8a3"> <span class="section-number-2">1.</span>  <a href="#org3b7d8a3">E</a></h2>
+ <div class="outline-text-2" id="text-1">
+ <ul class="org-ul"> <li>emacs
+ <ul class="org-ul"> <li> <a href="20230104035041-weblorg.html">weblorg</a></li>
+</ul></li>
+</ul></div>
+</div>
+</main>]]></description>
+  <link>https://7696122.github.io/braindump/theindex.html</link>
+  <guid isPermaLink="false">https://7696122.github.io/braindump/theindex.html</guid>
+  <pubDate>Sat, 18 Feb 2023 19:32:00 +0900</pubDate>
+</item>
+<item>
+  <title>디지털가든</title>
+  <description><![CDATA[<main id="content" class="content"> <div id="outline-container-org52827c2" class="outline-2">
+ <h2 id="org52827c2"> <a href="#org52827c2">디지털 정원 꾸미기</a></h2>
+ <div class="outline-text-2" id="text-org52827c2">
+ <ul class="org-ul"> <li> <a href="https://brunch.co.kr/@kys4620/155">디지털 정원</a></li>
+ <li> <a href="https://maggieappleton.com/garden-history">the Digital Garden</a></li>
+</ul></div>
+</div>
+
+ <div id="outline-container-org09e8b83" class="outline-2">
+ <h2 id="org09e8b83"> <a href="#org09e8b83">도서관에서</a></h2>
+ <div class="outline-text-2" id="text-org09e8b83">
+ <p>
+ <a href="../../books/index.html#ID-0f161ec5-c454-4c04-acd7-0da1a0457048">books</a>
+</p>
+</div>
+</div>
+</main>]]></description>
+  <link>https://7696122.github.io/home/index.html</link>
+  <guid isPermaLink="false">https://7696122.github.io/home/index.html</guid>
+  <pubDate>Sat, 18 Feb 2023 19:32:00 +0900</pubDate>
+</item>
+<item>
+  <title>디지털가든</title>
+  <description><![CDATA[<main id="content" class="content"> <div class="sitemap" id="orgcbc409a">
+ <ul class="org-ul"> <li> <a href="2023_01_27.html">Jan 27th, 2023</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-27 금></span></span></li>
+ <li> <a href="journal.html">journal</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-27 금></span></span></li>
+ <li> <a href="2023-01-23.html">2023-01-23</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-24 화></span></span></li>
+ <li> <a href="2023-01-11.html">2023-01-11</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-24 화></span></span></li>
+ <li> <a href="2023-01-07.html">2023-01-07</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-24 화></span></span></li>
+ <li> <a href="2023-01-24.html">2023-01-24</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-24 화></span></span></li>
+ <li> <a href="2023-01-20.html">2023-01-20</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-20 금></span></span></li>
+ <li> <a href="2023-01-19.html">2023-01-19</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-19 목></span></span></li>
+ <li> <a href="2023-01-18.html">2023-01-18</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-19 목></span></span></li>
+ <li> <a href="2023-01-17.html">2023-01-17</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-17 화></span></span></li>
+ <li> <a href="2023-01-16.html">2023-01-16</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-16 월></span></span></li>
+ <li> <a href="2023-01-15.html">2023-01-15</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-15 일></span></span></li>
+ <li> <a href="2023-01-14.html">2023-01-14</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-15 일></span></span></li>
+ <li> <a href="2023-01-13.html">2023-01-13</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-13 금></span></span></li>
+ <li> <a href="2023-01-12.html">2023-01-12</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-13 금></span></span></li>
+ <li> <a href="2023-01-10.html">2023-01-10</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-11 수></span></span></li>
+ <li> <a href="2023-01-09.html">2023-01-09</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+ <li> <a href="2023-01-08.html">2023-01-08</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+ <li> <a href="2023-01-04.html">2023-01-04</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+ <li> <a href="2022_08_17.html">Aug 17th, 2022</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+ <li> <a href="2022-12-21.html">2022-12-21</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+ <li> <a href="2022-12-13.html">2022-12-13</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+ <li> <a href="2022-12-11.html">2022-12-11</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+ <li> <a href="2022-12-08.html">2022-12-08</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+ <li> <a href="2022-11-29.html">2022-11-29</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+ <li> <a href="2022-11-25.html">2022-11-25</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+ <li> <a href="2022-11-24.html">2022-11-24</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+ <li> <a href="2022-11-19.html">2022-11-19</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+ <li> <a href="2022-11-17.html">2022-11-17</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
+</ul></div>
+</main>]]></description>
+  <link>https://7696122.github.io/journal/index.html</link>
+  <guid isPermaLink="false">https://7696122.github.io/journal/index.html</guid>
+  <pubDate>Sat, 18 Feb 2023 19:32:00 +0900</pubDate>
+</item>
+<item>
+  <title>디지털가든</title>
+  <description><![CDATA[<main id="content" class="content"> <div id="outline-container-orga1b2772" class="outline-2">
+ <h2 id="orga1b2772"> <a href="#orga1b2772">오늘</a></h2>
+ <div class="outline-text-2" id="text-orga1b2772">
+ <div class="today" id="orgf217fc6">
+ <blockquote>
+ <p>
+개춥다.
+</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+
+ <div id="outline-container-orgbd7fed5" class="outline-2">
+ <h2 id="orgbd7fed5"> <a href="#orgbd7fed5">최근 글</a></h2>
+ <div class="outline-text-2" id="text-orgbd7fed5">
+ <div class="recent" id="orgad88cb8">
+ <ul class="org-ul"> <li> <a href="../braindump/cpi.html">CPI</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-02-15 수></span></span></li>
+ <li> <a href="../braindump/만년필_닙_제조사.html">만년필 닙 제조사</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-02-15 수></span></span></li>
+ <li> <a href="../braindump/android_env.html">android env</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-02-11 토></span></span></li>
+ <li> <a href="../braindump/emacs에서_제곱미터_입력하기.html">Emacs에서 제곱미터 입력하기</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-28 토></span></span></li>
+ <li> <a href="../braindump/20221219061119-디지털가든_만들기.html">디지털 가든 만들기</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-27 금></span></span></li>
+ <li> <a href="../braindump/연말정산 용어 영어로.html">연말정산 용어 영어로</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-27 금></span></span></li>
+ <li> <a href="../braindump/slipbox.html">Slipbox</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-24 화></span></span></li>
+ <li> <a href="../braindump/20230122174210-para_method.html">PARA Method</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-24 화></span></span></li>
+ <li> <a href="../braindump/20230118064536-git_subtree.html">Git subtree</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-18 수></span></span></li>
+ <li> <a href="../braindump/20230117125941-1인_개발자.html">1인 개발자</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-17 화></span></span></li>
+</ul></div>
+</div>
+</div>
+
+ <div id="outline-container-org08d1d02" class="outline-2">
+ <h2 id="org08d1d02"> <a href="#org08d1d02">Sitemap && Feed</a></h2>
+ <div class="outline-text-2" id="text-org08d1d02">
+ <dl class="org-dl"> <dt>sitemap</dt> <dd> <a href="https://7696122.github.io/sitemap.xml">https://7696122.github.io/sitemap.xml</a></dd>
+ <dt>feed</dt> <dd> <a href="https://7696122.github.io/rss.xml">https://7696122.github.io/rss.xml</a></dd>
+</dl></div>
+</div>
+</main>]]></description>
+  <link>https://7696122.github.io/index.html</link>
+  <guid isPermaLink="false">https://7696122.github.io/index.html</guid>
+  <pubDate>Sat, 18 Feb 2023 19:32:00 +0900</pubDate>
+</item>
+<item>
+  <title>Index</title>
+  <description><![CDATA[<main id="content" class="content"> <header> <h1 class="title">Index</h1>
+</header> <div id="outline-container-orgbca3dfc" class="outline-2">
+ <h2 id="orgbca3dfc"> <span class="section-number-2">1.</span>  <a href="#orgbca3dfc">A</a></h2>
+ <div class="outline-text-2" id="text-1">
+ <ul class="org-ul"> <li> <a href="about/index.html">about</a></li>
+</ul></div>
+</div>
+ <div id="outline-container-org640c3f8" class="outline-2">
+ <h2 id="org640c3f8"> <span class="section-number-2">2.</span>  <a href="#org640c3f8">B</a></h2>
+ <div class="outline-text-2" id="text-2">
+ <ul class="org-ul"> <li> <a href="blog/index.html">blog</a></li>
+ <li> <a href="journal/index.html">braindump</a></li>
+ <li> <a href="braindump/index.html">braindump</a></li>
+</ul></div>
+</div>
+ <div id="outline-container-orgb74fb86" class="outline-2">
+ <h2 id="orgb74fb86"> <span class="section-number-2">3.</span>  <a href="#orgb74fb86">H</a></h2>
+ <div class="outline-text-2" id="text-3">
+ <ul class="org-ul"> <li> <a href="home/index.html">home</a></li>
+</ul></div>
+</div>
+ <div id="outline-container-orgf86a0b7" class="outline-2">
+ <h2 id="orgf86a0b7"> <span class="section-number-2">4.</span>  <a href="#orgf86a0b7">J</a></h2>
+ <div class="outline-text-2" id="text-4">
+ <ul class="org-ul"> <li> <a href="journal/index.html">Journal</a></li>
+</ul></div>
+</div>
+</main>]]></description>
+  <link>https://7696122.github.io/theindex.html</link>
+  <guid isPermaLink="false">https://7696122.github.io/theindex.html</guid>
+  <pubDate>Sat, 18 Feb 2023 19:32:00 +0900</pubDate>
+</item>
 <item>
   <title>디지털가든</title>
   <description><![CDATA[<main id="content" class="content"> <ul class="org-ul"> <li>쓰기</li>
@@ -72,14 +400,6 @@
 </main>]]></description>
   <link>https://7696122.github.io/books/index.html</link>
   <guid isPermaLink="false">https://7696122.github.io/books/index.html</guid>
-  <pubDate>Wed, 15 Feb 2023 06:20:00 +0900</pubDate>
-</item>
-<item>
-  <title>Index</title>
-  <description><![CDATA[<main id="content" class="content"> <header> <h1 class="title">Index</h1>
-</header></main>]]></description>
-  <link>https://7696122.github.io/books/theindex.html</link>
-  <guid isPermaLink="false">https://7696122.github.io/books/theindex.html</guid>
   <pubDate>Wed, 15 Feb 2023 06:20:00 +0900</pubDate>
 </item>
 <item>
@@ -714,111 +1034,6 @@ emacs를  <a href="#coderef-batch" class="coderef" onmouseover="CodeHighlightOn(
   <pubDate>Wed, 15 Feb 2023 06:20:00 +0900</pubDate>
 </item>
 <item>
-  <title>Scroll Indicator</title>
-  <description><![CDATA[<main id="content" class="content"> <header> <h1 class="title">Scroll Indicator</h1>
-</header> <div class="org-src-container">
- <pre class="src src-js"> <span style="color: #a020f0;">class</span> ScrollIndicator  <span style="color: #a020f0;">extends</span> HTMLElement {
-  constructor() {
-     <span style="color: #a020f0;">super</span>();
-  }
-
-  render() {
-     <span style="color: #008b8b;">this</span>.attachShadow({ mode:  <span style="color: #8b2252;">"open"</span> });
-
-     <span style="color: #a020f0;">const</span>  <span style="color: #a0522d;">container</span> = document.createElement( <span style="color: #8b2252;">"div"</span>);
-    container.setAttribute( <span style="color: #8b2252;">"class"</span>,  <span style="color: #8b2252;">"progress-container"</span>);
-
-     <span style="color: #a020f0;">const</span>  <span style="color: #a0522d;">bar</span> = document.createElement( <span style="color: #8b2252;">"div"</span>);
-    bar.setAttribute( <span style="color: #8b2252;">"class"</span>,  <span style="color: #8b2252;">"progress-bar"</span>);
-    bar.setAttribute( <span style="color: #8b2252;">"id"</span>,  <span style="color: #8b2252;">"myBar"</span>);
-
-    container.append(bar);
-
-     <span style="color: #a020f0;">const</span>  <span style="color: #a0522d;">style</span> = document.createElement( <span style="color: #8b2252;">"style"</span>);
-    style.textContent =  <span style="color: #8b2252;">`</span>
- <span style="color: #8b2252;">/* Style the header: fixed position (always stay at the top) */</span>
- <span style="color: #8b2252;">/* The progress container (grey background) */</span>
- <span style="color: #8b2252;">.progress-container {</span>
- <span style="color: #8b2252;">  width: 100%;</span>
- <span style="color: #8b2252;">  height: 8px;</span>
- <span style="color: #8b2252;">  // background: black;</span>
- <span style="color: #8b2252;">}</span>
-
- <span style="color: #8b2252;">/* The progress bar (scroll indicator) */</span>
- <span style="color: #8b2252;">.progress-bar {</span>
- <span style="color: #8b2252;">  height: 8px;</span>
- <span style="color: #8b2252;">  background: yellowgreen;</span>
- <span style="color: #8b2252;">  width: 0%;</span>
- <span style="color: #8b2252;">}</span>
- <span style="color: #8b2252;">    `</span>;
-
-     <span style="color: #008b8b;">this</span>.shadowRoot.append(style, container);
-
-    //  <span style="color: #b22222;">When the user scrolls the page, execute myFunction</span>
-    window.onscroll =  <span style="color: #a020f0;">function</span> () {
-      handleScroll();
-    };
-
-     <span style="color: #a020f0;">function</span>  <span style="color: #0000ff;">handleScroll</span>() {
-       <span style="color: #a020f0;">var</span>  <span style="color: #a0522d;">winScroll</span> =
-        document.body.scrollTop || document.documentElement.scrollTop;
-       <span style="color: #a020f0;">var</span>  <span style="color: #a0522d;">height</span> =
-        document.documentElement.scrollHeight -
-        document.documentElement.clientHeight;
-       <span style="color: #a020f0;">var</span>  <span style="color: #a0522d;">scrolled</span> = (winScroll / height) * 100;
-      bar.style.width = (scrolled <= 100 ? scrolled : 100) +  <span style="color: #8b2252;">"%"</span>;
-    }
-  }
-
-  connectedCallback() {
-     <span style="color: #a020f0;">if</span> (! <span style="color: #008b8b;">this</span>.rendered) {
-       <span style="color: #008b8b;">this</span>.render();
-       <span style="color: #008b8b;">this</span>.rendered =  <span style="color: #008b8b;">true</span>;
-    }
-  }
-  //  <span style="color: #b22222;">disconnectedCallback() {</span>
-  //    <span style="color: #b22222;">/* ... */</span>
-  //  <span style="color: #b22222;">}</span>
-  //  <span style="color: #b22222;">static get observedAttributes() {</span>
-  //    <span style="color: #b22222;">return [</span>
-  //      <span style="color: #b22222;">/* ... */</span>
-  //    <span style="color: #b22222;">];</span>
-  //  <span style="color: #b22222;">}</span>
-  //  <span style="color: #b22222;">attributeChangedCallback(name, oldValue, newValue) {</span>
-  //    <span style="color: #b22222;">/* ... */</span>
-  //  <span style="color: #b22222;">}</span>
-  //  <span style="color: #b22222;">adoptedCallback() {</span>
-  //    <span style="color: #b22222;">/* ... */</span>
-  //  <span style="color: #b22222;">}</span>
-}
-
-customElements.define(
-   <span style="color: #8b2252;">"scroll-indicator"</span>,
-  ScrollIndicator
-  //  <span style="color: #b22222;">{extends: "div"}</span>
-);
-</pre>
-</div>
-
- <div class="org-src-container">
- <pre class="src src-html">< <span style="color: #0000ff;">scroll-indicator</span>></ <span style="color: #0000ff;">scroll-indicator</span>>
-</pre>
-</div>
-
- <div id="outline-container-org067d565" class="outline-2">
- <h2 id="org067d565"> <span class="section-number-2">1.</span>  <a href="#org067d565">Ref</a></h2>
- <div class="outline-text-2" id="text-1">
- <ul class="org-ul"> <li> <a href="https://www.w3schools.com/howto/howto_js_scroll_indicator.asp">How TO - Scroll Indicator</a></li>
- <li> <a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components">Web Components</a></li>
- <li> <a href="https://css-tricks.com/indicating-scroll-position-on-a-page-with-css/">Indicating Scroll Position on a Page With CSS | CSS-Tricks - CSS-Tricks</a></li>
-</ul></div>
-</div>
-</main>]]></description>
-  <link>https://7696122.github.io/braindump/20221223130349-scroll_indicator.html</link>
-  <guid isPermaLink="false">https://7696122.github.io/braindump/20221223130349-scroll_indicator.html</guid>
-  <pubDate>Wed, 15 Feb 2023 06:20:00 +0900</pubDate>
-</item>
-<item>
   <title>webfeeder</title>
   <description><![CDATA[<main id="content" class="content"> <header> <h1 class="title">webfeeder</h1>
 </header> <div id="outline-container-org7ed5e7b" class="outline-2">
@@ -1361,35 +1576,6 @@ Input Method를 변경하는 방법 말곤
   <pubDate>Wed, 15 Feb 2023 06:20:00 +0900</pubDate>
 </item>
 <item>
-  <title>CPI</title>
-  <description><![CDATA[<main id="content" class="content"> <header> <h1 class="title">CPI</h1>
-</header> <p>
- <a href="https://news.einfomax.co.kr/news/articleView.html?idxno=4254401">JP모건 "CPI로 美 증시 3% 급등락할 수도"…가능성 큰 시나리오는 - 연합인포맥스</a>
-</p>
-
- <div id="outline-container-org52076ef" class="outline-2">
- <h2 id="org52076ef"> <span class="section-number-2">1.</span>  <a href="#org52076ef">소비자물가지수(CPI)</a></h2>
- <div class="outline-text-2" id="text-1">
- <p>
- <span class="underline"> <b>일반 가구가</b></span>  소비생활을 유지하기 위하여  <span class="underline">구입하는 각종 상품과 서비스의 _가격변동을</span> 종합적으로 파악하기 위하여 작성되는 물가지표이다. 우리나라의 소비자물가지수는 통계청에서 작성하고 있으며 기준년을 100으로 하여 작성된다. 조사대상 상품 및 서비스 의 구성과 가중치도 경제상황에 맞게 주기적으로 조정된다. 현재는 40여개 가계의 총소 비지출에서  <span class="underline">구입비중이 큰 500여개의 상품 및 서비스 품목을 대상으로</span> 조사된 소비자 구입가격을 기준으로 하고 있다. 소비자물가지수는 소비자가 일정한 생활수준을 유지하 는 데 필요한 소득내지 소비금액의 변동을 나타내기 때문에 소비자의 구매력과 생계비 등의 측정에 사용된다. 또한  <span class="underline">소비자물가지수의 상승은 실질임금의 하락을 의미하므로</span> 이를 보전하기 위한 임금인상의 기초자료로 널리 이용되고 있다.
-</p>
-</div>
-</div>
-
- <div id="outline-container-org329481d" class="outline-2">
- <h2 id="org329481d"> <span class="section-number-2">2.</span>  <a href="#org329481d">출처</a></h2>
- <div class="outline-text-2" id="text-2">
- <p>
- <a href="https://www.bok.or.kr/portal/bbs/B0000249/view.do?nttId=235017&menuNo=200765">경제금융용어 700선 | 경제교육관련 발간자료(상세) | 단행본 | 간행물 | 조사 · 연구 | 한국은행 홈페이지</a>
-</p>
-</div>
-</div>
-</main>]]></description>
-  <link>https://7696122.github.io/braindump/cpi.html</link>
-  <guid isPermaLink="false">https://7696122.github.io/braindump/cpi.html</guid>
-  <pubDate>Wed, 15 Feb 2023 06:20:00 +0900</pubDate>
-</item>
-<item>
   <title>Emacs에서 제곱미터 입력하기</title>
   <description><![CDATA[<main id="content" class="content"> <header> <h1 class="title">Emacs에서 제곱미터 입력하기</h1>
 </header> <p>
@@ -1644,22 +1830,6 @@ SEO(검색 엔진 최적화)는 웹사이트가 검색 결과에 더 잘 보이�
   <pubDate>Wed, 15 Feb 2023 06:20:00 +0900</pubDate>
 </item>
 <item>
-  <title>Index</title>
-  <description><![CDATA[<main id="content" class="content"> <header> <h1 class="title">Index</h1>
-</header> <div id="outline-container-org3b7d8a3" class="outline-2">
- <h2 id="org3b7d8a3"> <span class="section-number-2">1.</span>  <a href="#org3b7d8a3">E</a></h2>
- <div class="outline-text-2" id="text-1">
- <ul class="org-ul"> <li>emacs
- <ul class="org-ul"> <li> <a href="20230104035041-weblorg.html">weblorg</a></li>
-</ul></li>
-</ul></div>
-</div>
-</main>]]></description>
-  <link>https://7696122.github.io/braindump/theindex.html</link>
-  <guid isPermaLink="false">https://7696122.github.io/braindump/theindex.html</guid>
-  <pubDate>Wed, 15 Feb 2023 06:20:00 +0900</pubDate>
-</item>
-<item>
   <title>경제금융용어 700선</title>
   <description><![CDATA[<main id="content" class="content"> <header> <h1 class="title">경제금융용어 700선</h1>
 </header> <div id="outline-container-orga5735b4" class="outline-2">
@@ -1839,155 +2009,6 @@ SEO(검색 엔진 최적화)는 웹사이트가 검색 결과에 더 잘 보이�
   <link>https://7696122.github.io/braindump/주택구입부담지수_주택금융통계시스템-HF_한국주택금융공사.html</link>
   <guid isPermaLink="false">https://7696122.github.io/braindump/주택구입부담지수_주택금융통계시스템-HF_한국주택금융공사.html</guid>
   <pubDate>Wed, 15 Feb 2023 06:20:00 +0900</pubDate>
-</item>
-<item>
-  <title>디지털가든</title>
-  <description><![CDATA[<main id="content" class="content"> <div id="outline-container-org52827c2" class="outline-2">
- <h2 id="org52827c2"> <a href="#org52827c2">디지털 정원 꾸미기</a></h2>
- <div class="outline-text-2" id="text-org52827c2">
- <ul class="org-ul"> <li> <a href="https://brunch.co.kr/@kys4620/155">디지털 정원</a></li>
- <li> <a href="https://maggieappleton.com/garden-history">the Digital Garden</a></li>
-</ul></div>
-</div>
-
- <div id="outline-container-org09e8b83" class="outline-2">
- <h2 id="org09e8b83"> <a href="#org09e8b83">도서관에서</a></h2>
- <div class="outline-text-2" id="text-org09e8b83">
- <p>
- <a href="../../books/index.html#ID-0f161ec5-c454-4c04-acd7-0da1a0457048">books</a>
-</p>
-</div>
-</div>
-</main>]]></description>
-  <link>https://7696122.github.io/home/index.html</link>
-  <guid isPermaLink="false">https://7696122.github.io/home/index.html</guid>
-  <pubDate>Wed, 15 Feb 2023 06:20:00 +0900</pubDate>
-</item>
-<item>
-  <title>디지털가든</title>
-  <description><![CDATA[<main id="content" class="content"> <div class="sitemap" id="org87fdc64">
- <ul class="org-ul"> <li> <a href="2023_01_27.html">Jan 27th, 2023</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-27 금></span></span></li>
- <li> <a href="journal.html">journal</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-27 금></span></span></li>
- <li> <a href="2023-01-23.html">2023-01-23</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-24 화></span></span></li>
- <li> <a href="2023-01-11.html">2023-01-11</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-24 화></span></span></li>
- <li> <a href="2023-01-07.html">2023-01-07</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-24 화></span></span></li>
- <li> <a href="2023-01-24.html">2023-01-24</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-24 화></span></span></li>
- <li> <a href="2023-01-20.html">2023-01-20</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-20 금></span></span></li>
- <li> <a href="2023-01-19.html">2023-01-19</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-19 목></span></span></li>
- <li> <a href="2023-01-18.html">2023-01-18</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-19 목></span></span></li>
- <li> <a href="2023-01-17.html">2023-01-17</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-17 화></span></span></li>
- <li> <a href="2023-01-16.html">2023-01-16</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-16 월></span></span></li>
- <li> <a href="2023-01-15.html">2023-01-15</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-15 일></span></span></li>
- <li> <a href="2023-01-14.html">2023-01-14</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-15 일></span></span></li>
- <li> <a href="2023-01-13.html">2023-01-13</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-13 금></span></span></li>
- <li> <a href="2023-01-12.html">2023-01-12</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-13 금></span></span></li>
- <li> <a href="2023-01-10.html">2023-01-10</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-11 수></span></span></li>
- <li> <a href="2023-01-09.html">2023-01-09</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
- <li> <a href="2023-01-08.html">2023-01-08</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
- <li> <a href="2023-01-04.html">2023-01-04</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
- <li> <a href="2022_08_17.html">Aug 17th, 2022</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
- <li> <a href="2022-12-21.html">2022-12-21</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
- <li> <a href="2022-12-13.html">2022-12-13</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
- <li> <a href="2022-12-11.html">2022-12-11</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
- <li> <a href="2022-12-08.html">2022-12-08</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
- <li> <a href="2022-11-29.html">2022-11-29</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
- <li> <a href="2022-11-25.html">2022-11-25</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
- <li> <a href="2022-11-24.html">2022-11-24</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
- <li> <a href="2022-11-19.html">2022-11-19</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
- <li> <a href="2022-11-17.html">2022-11-17</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-10 화></span></span></li>
-</ul></div>
-</main>]]></description>
-  <link>https://7696122.github.io/journal/index.html</link>
-  <guid isPermaLink="false">https://7696122.github.io/journal/index.html</guid>
-  <pubDate>Wed, 15 Feb 2023 06:20:00 +0900</pubDate>
-</item>
-<item>
-  <title>디지털가든</title>
-  <description><![CDATA[<main id="content" class="content"> <div id="outline-container-orga1b2772" class="outline-2">
- <h2 id="orga1b2772"> <a href="#orga1b2772">오늘</a></h2>
- <div class="outline-text-2" id="text-orga1b2772">
- <div class="today" id="orgc210db6">
- <blockquote>
- <p>
-개춥다.
-</p>
-</blockquote>
-
-</div>
-</div>
-</div>
-
- <div id="outline-container-orgbd7fed5" class="outline-2">
- <h2 id="orgbd7fed5"> <a href="#orgbd7fed5">최근 글</a></h2>
- <div class="outline-text-2" id="text-orgbd7fed5">
- <div class="recent" id="org7778267">
- <ul class="org-ul"> <li> <a href="../braindump/cpi.html">CPI</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-02-15 수></span></span></li>
- <li> <a href="../braindump/만년필_닙_제조사.html">만년필 닙 제조사</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-02-15 수></span></span></li>
- <li> <a href="../braindump/emacs에서_제곱미터_입력하기.html">Emacs에서 제곱미터 입력하기</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-28 토></span></span></li>
- <li> <a href="../braindump/20221219061119-디지털가든_만들기.html">디지털 가든 만들기</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-27 금></span></span></li>
- <li> <a href="../braindump/연말정산 용어 영어로.html">연말정산 용어 영어로</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-27 금></span></span></li>
- <li> <a href="../braindump/slipbox.html">Slipbox</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-24 화></span></span></li>
- <li> <a href="../braindump/20230122174210-para_method.html">PARA Method</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-24 화></span></span></li>
- <li> <a href="../braindump/20230118064536-git_subtree.html">Git subtree</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-18 수></span></span></li>
- <li> <a href="../braindump/20230117125941-1인_개발자.html">1인 개발자</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-17 화></span></span></li>
- <li> <a href="../braindump/20230117063749-google_maps_api.html">google maps api</a>  <span class="timestamp-wrapper"> <span class="timestamp"><2023-01-17 화></span></span></li>
-</ul></div>
-</div>
-</div>
-
- <div id="outline-container-org08d1d02" class="outline-2">
- <h2 id="org08d1d02"> <a href="#org08d1d02">Sitemap && Feed</a></h2>
- <div class="outline-text-2" id="text-org08d1d02">
- <dl class="org-dl"> <dt>sitemap</dt> <dd> <a href="https://7696122.github.io/sitemap.xml">https://7696122.github.io/sitemap.xml</a></dd>
- <dt>feed</dt> <dd> <a href="https://7696122.github.io/rss.xml">https://7696122.github.io/rss.xml</a></dd>
-</dl></div>
-</div>
-</main>]]></description>
-  <link>https://7696122.github.io/index.html</link>
-  <guid isPermaLink="false">https://7696122.github.io/index.html</guid>
-  <pubDate>Wed, 15 Feb 2023 06:20:00 +0900</pubDate>
-</item>
-<item>
-  <title>Index</title>
-  <description><![CDATA[<main id="content" class="content"> <header> <h1 class="title">Index</h1>
-</header> <div id="outline-container-orgbca3dfc" class="outline-2">
- <h2 id="orgbca3dfc"> <span class="section-number-2">1.</span>  <a href="#orgbca3dfc">A</a></h2>
- <div class="outline-text-2" id="text-1">
- <ul class="org-ul"> <li> <a href="about/index.html">about</a></li>
-</ul></div>
-</div>
- <div id="outline-container-org640c3f8" class="outline-2">
- <h2 id="org640c3f8"> <span class="section-number-2">2.</span>  <a href="#org640c3f8">B</a></h2>
- <div class="outline-text-2" id="text-2">
- <ul class="org-ul"> <li> <a href="blog/index.html">blog</a></li>
- <li> <a href="journal/index.html">braindump</a></li>
- <li> <a href="braindump/index.html">braindump</a></li>
-</ul></div>
-</div>
- <div id="outline-container-orgb74fb86" class="outline-2">
- <h2 id="orgb74fb86"> <span class="section-number-2">3.</span>  <a href="#orgb74fb86">H</a></h2>
- <div class="outline-text-2" id="text-3">
- <ul class="org-ul"> <li> <a href="home/index.html">home</a></li>
-</ul></div>
-</div>
- <div id="outline-container-orgf86a0b7" class="outline-2">
- <h2 id="orgf86a0b7"> <span class="section-number-2">4.</span>  <a href="#orgf86a0b7">J</a></h2>
- <div class="outline-text-2" id="text-4">
- <ul class="org-ul"> <li> <a href="journal/index.html">Journal</a></li>
-</ul></div>
-</div>
-</main>]]></description>
-  <link>https://7696122.github.io/theindex.html</link>
-  <guid isPermaLink="false">https://7696122.github.io/theindex.html</guid>
-  <pubDate>Wed, 15 Feb 2023 06:20:00 +0900</pubDate>
-</item>
-<item>
-  <title>Index</title>
-  <description><![CDATA[<main id="content" class="content"> <header> <h1 class="title">Index</h1>
-</header></main>]]></description>
-  <link>https://7696122.github.io/blog/theindex.html</link>
-  <guid isPermaLink="false">https://7696122.github.io/blog/theindex.html</guid>
-  <pubDate>Wed, 15 Feb 2023 06:19:00 +0900</pubDate>
 </item>
 <item>
   <title>java development</title>
