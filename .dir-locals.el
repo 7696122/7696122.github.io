@@ -1,0 +1,8 @@
+((nil . (;; (enable-local-eval . t)
+         ;; (enable-local-variables . t)
+         (eval . (git-auto-commit-mode 1))
+         (mode . git-auto-commit)
+         (gac-silent-message-p . t)
+         (gac-ask-for-summary-p . nil)
+         (gac-automatically-push-p . t)
+         )))
