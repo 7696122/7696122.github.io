@@ -1,0 +1,15 @@
+/* #preamble {} */
+
+#content {
+    margin: 1.25rem;
+}
+
+/* #postamble {} */
+
+.title {
+    text-align: left;
+}
+
+/* .org-src-container { */
+/*     overflow-wrap: normal; */
+/* } */
