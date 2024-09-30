@@ -2,10 +2,17 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8" />
+<<<<<<< Updated upstream
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+||||||| Stash base
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+=======
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0" />
+>>>>>>> Stashed changes
 <title>home</title>
 <meta name="author" content="7696122" />
 <meta name="generator" content="Org Mode" />
+<<<<<<< Updated upstream
 <style type="text/css">
   #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
@@ -191,6 +198,29 @@
   .org-svg { }
 </style>
 <!-- <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" /> -->
+||||||| Stash base
+<script>
+    // @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
+    function CodeHighlightOn(elem, id) {
+        var target = document.getElementById(id);
+        if (null != target) {
+            elem.classList.add("code-highlighted");
+            target.classList.add("code-highlighted");
+        }
+    }
+
+    function CodeHighlightOff(elem, id) {
+        var target = document.getElementById(id);
+        if (null != target) {
+            elem.classList.remove("code-highlighted");
+            target.classList.remove("code-highlighted");
+        }
+    }
+        // @lice</script>
+
+=======
+<!-- <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" /> -->
+>>>>>>> Stashed changes
 <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
 <script>
     tailwind.config = {
@@ -291,10 +321,19 @@
     </ul>
 </nav>
 </header>
+<<<<<<< Updated upstream
 <main id="content" class="content">
 <section id="outline-container-orgbc90b26" class="outline-2">
 <h2 id="orgbc90b26">Home</h2>
 <div class="outline-text-2" id="text-orgbc90b26">
+||||||| Stash base
+<main id="content" class="content flex-grow mx-8 my-3">
+=======
+<main id="content" class="content">
+<section id="outline-container-orgde16983" class="outline-2">
+<h2 id="orgde16983">Home</h2>
+<div class="outline-text-2" id="text-orgde16983">
+>>>>>>> Stashed changes
 <p>
 오프라인 셋방살이
 </p>
@@ -314,13 +353,28 @@
 </section>
 </main>
 <footer id="postamble" class="status">
+<<<<<<< Updated upstream
 <ul class="flex">
     <li class="author">7696122 (<a href="mailto:7696122@gmail.com">7696122@gmail.com</a>)</li>
     <li class="date"></li>
     <li class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 29.4 (<a href="https://orgmode.org">Org</a> mode 9.8)</li>
     <li class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></li>
 </ul>
+||||||| Stash base
+<p class="author">7696122 (<a href="mailto:7696122@gmail.com">7696122@gmail.com</a>)</p>
+<p class="date"></p>
+<p class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 29.4 (<a href="https://orgmode.org">Org</a> mode 9.8)</p>
+<p class="validation"></p>
+=======
+<ul>
+    <li class="author">7696122 (<a href="mailto:7696122@gmail.com">7696122@gmail.com</a>)</li>
+    <li class="date"></li>
+    <li class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 29.4 (<a href="https://orgmode.org">Org</a> mode 9.8)</li>
+    <li class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></li>
+</ul>
+>>>>>>> Stashed changes
 
+<<<<<<< Updated upstream
 <script src="/postamble.js"></script>
 
 <!-- <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script> -->
@@ -331,6 +385,54 @@
 <script>eruda.init();</script>
 
 <!-- <link rel="stylesheet" href="/pesticide.css"> -->
+||||||| Stash base
+<script>
+    document.body.classList.add(
+        "flex",
+        "flex-col",
+        "h-screen",
+        // "justify-between",
+    );
+</script>
+=======
+<script src="/postamble.js"></script>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script> -->
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/link-preview-js@3.0.5/build/index.min.js"></script> -->
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/eruda"></script> -->
+<!-- <script>eruda.init();</script> -->
+
+<script type="text/javascript">
+    /**
+     * Loads a JavaScript file and returns a Promise for when it is loaded
+     */
+    const loadScript = src => {
+        return new Promise((resolve, reject) => {
+            const script = document.createElement('script')
+            script.type = 'text/javascript'
+            script.onload = resolve
+            script.onerror = reject
+            script.src = src
+            document.head.append(script)
+        })
+    }
+
+    let isDebug = window.localStorage.getItem('debugging');
+
+    if (isDebug != null) {
+        loadScript('https://cdn.jsdelivr.net/npm/eruda')
+            .then(() => {
+                // now safe to use jQuery and jQuery UI, which depends on jQuery
+                eruda.init();
+            })
+            .catch(() => console.error('Something went wrong.'))
+    }
+</script>
+
+<!-- <link rel="stylesheet" href="/pesticide.css"> -->
+>>>>>>> Stashed changes
 </footer>
 </body>
 </html>

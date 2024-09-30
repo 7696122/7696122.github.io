@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -321,3 +322,172 @@
 </footer>
 </body>
 </html>
+||||||| Stash base
+=======
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<!-- 2024-09-30 Mon 17:50 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0" />
+<title>이미지 용량 줄이기</title>
+<meta name="author" content="7696122" />
+<meta name="generator" content="Org Mode" />
+<!-- <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" /> -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+<script>
+    tailwind.config = {
+        corePlugins: {
+            // preflight: false,
+        }
+    }
+</script>
+
+<style type="text/tailwindcss">
+
+    @tailwind base;
+
+    @layer base {
+        h1 {
+            @apply text-2xl;
+        }
+
+        h2 {
+            @apply text-xl;
+        }
+
+        h3 {
+            @apply text-lg;
+        }
+
+        a {
+            /* @apply text-blue-600 underline; */
+        }
+    }
+
+    @tailwind components;
+
+    @tailwind utilities;
+
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    }
+</style>
+
+<!-- <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script> -->
+<!-- <script src="https://unpkg.com/react@18/umd/react.development.js"></script> -->
+<!-- <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> -->
+
+<!-- Don't use this in production: -->
+<!-- <script src="https://unpkg.com/@babel/standalone/babel.min.js"> -->
+<link rel="stylesheet" href="/main.css" type="text/css" media="screen" />
+<script type="text/javascript" src="/main.js"></script>
+<script>
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+// @license-end
+</script>
+</head>
+<body>
+<header id="preamble" class="status">
+<nav>
+    <ul class="flex items-center uppercase">
+        <li class="m-3">
+            <a href="/">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" class="rounded-full m-1">
+                    <image href="/200x200.jpg" width="40" height="40" />
+                </svg>
+            </a>
+        </li>
+        <li class="m-3">
+            <a href="/home.html">
+                <span>home</span>
+            </a>
+        </li>
+        <li class="m-3">
+            <a href="/posts.html">
+                <span>posts</span>
+            </a>
+        </li>
+        <li class="m-3">
+            <a href="/about.html">
+                <span>about</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+</header>
+<main id="content" class="content">
+<header>
+<h1 class="title">이미지 용량 줄이기</h1>
+</header><ul class="org-ul">
+<li><a href="https://medium.com/@fbrkovic/avif-is-the-future-of-web-images-a0b94d7f483e">AVIF is the Future of Web Images. The search for the perfect image format… | &#x2026;</a></li>
+<li><a href="https://gusrb3164.github.io/web/2021/11/26/browser-image-optimzing/">브라우저 이미지 최적화하기 - WebP - AVIF - JPEG | HyunGyu</a></li>
+</ul>
+</main>
+<footer id="postamble" class="status">
+<ul>
+    <li class="author">7696122 (<a href="mailto:7696122@gmail.com">7696122@gmail.com</a>)</li>
+    <li class="date"></li>
+    <li class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 29.4 (<a href="https://orgmode.org">Org</a> mode 9.8)</li>
+    <li class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></li>
+</ul>
+
+<script src="/postamble.js"></script>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script> -->
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/link-preview-js@3.0.5/build/index.min.js"></script> -->
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/eruda"></script> -->
+<!-- <script>eruda.init();</script> -->
+
+<script type="text/javascript">
+    /**
+     * Loads a JavaScript file and returns a Promise for when it is loaded
+     */
+    const loadScript = src => {
+        return new Promise((resolve, reject) => {
+            const script = document.createElement('script')
+            script.type = 'text/javascript'
+            script.onload = resolve
+            script.onerror = reject
+            script.src = src
+            document.head.append(script)
+        })
+    }
+
+    let isDebug = window.localStorage.getItem('debugging');
+
+    if (isDebug != null) {
+        loadScript('https://cdn.jsdelivr.net/npm/eruda')
+            .then(() => {
+                // now safe to use jQuery and jQuery UI, which depends on jQuery
+                eruda.init();
+            })
+            .catch(() => console.error('Something went wrong.'))
+    }
+</script>
+
+<!-- <link rel="stylesheet" href="/pesticide.css"> -->
+</footer>
+</body>
+</html>
+>>>>>>> Stashed changes
