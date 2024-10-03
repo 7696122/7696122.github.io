@@ -43,12 +43,19 @@
             @apply font-bold
         }
 
-        main {
+        /* main#content {
             a {
-                /* @apply text-blue-600; */
-                /* @apply underline; */
+                @apply text-blue-600;
+                @apply underline;
             }
-        }
+
+            ol,
+            ul {
+                list-style-type: disc; 
+                list-style-position: inside; 
+                margin-left: 15px; 
+            }
+        } */
     }
 
     @tailwind components;
@@ -69,8 +76,11 @@
 
 <!-- Don't use this in production: -->
 <!-- <script src="https://unpkg.com/@babel/standalone/babel.min.js"> -->
-<link rel="stylesheet" href="/main.css" type="text/css" media="screen" />
-<script type="text/javascript" src="/main.js"></script>
+<link
+rel="stylesheet" href="/main.css"
+type="text/css"
+media="screen"
+/><script type="text/javascript" src="/main.js"></script>
 <script>
 // @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
      function CodeHighlightOn(elem, id)
@@ -93,10 +103,16 @@
 </script>
 </head>
 <body>
-<div id="org-div-home-and-up" class="p-2">
-    <a accesskey="h" href="/posts.html">[UP]</a>
-    |
-    <a accesskey="H" href="/home.html">[HOME]</a>
+<div id="org-div-home-and-up"
+    class="p-3"
+>
+    <a accesskey="h" href="/posts.html"
+        class="text-lg"
+    > [UP] </a>
+    <span class="text-xl"> | </span>
+    <a accesskey="H" href="/home.html"
+        class="text-lg"
+    > [HOME] </a>
 </div>
 <header id="preamble" class="status">
 <section>
@@ -131,20 +147,20 @@
 <h2 id="org087cc27">최종 커밋의 hash</h2>
 <div class="outline-text-2" id="text-org087cc27">
 </div>
-<div id="outline-container-org063419f" class="outline-3">
-<h3 id="org063419f">&gt;&gt; 명령</h3>
-<div class="outline-text-3" id="text-org063419f">
+<div id="outline-container-orgbf116de" class="outline-3">
+<h3 id="orgbf116de">&gt;&gt; 명령</h3>
+<div class="outline-text-3" id="text-orgbf116de">
 <div class="org-src-container">
 <pre class="src src-sh" id="org69b4f55"><span style="color: #228b22;">git</span> rev-parse --short HEAD
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-org953ee45" class="outline-3">
-<h3 id="org953ee45">&lt;&lt; 결과</h3>
-<div class="outline-text-3" id="text-org953ee45">
+<div id="outline-container-org31e4bb3" class="outline-3">
+<h3 id="org31e4bb3">&lt;&lt; 결과</h3>
+<div class="outline-text-3" id="text-org31e4bb3">
 <div class="org-src-container">
-<pre class="src src-org">24ffacb
+<pre class="src src-org">a3605d4
 </pre>
 </div>
 </div>
@@ -154,18 +170,18 @@
 <h2 id="org22ce077">현재 branch</h2>
 <div class="outline-text-2" id="text-org22ce077">
 </div>
-<div id="outline-container-orgfbf89d3" class="outline-3">
-<h3 id="orgfbf89d3">&gt;&gt; 명령</h3>
-<div class="outline-text-3" id="text-orgfbf89d3">
+<div id="outline-container-org4559f54" class="outline-3">
+<h3 id="org4559f54">&gt;&gt; 명령</h3>
+<div class="outline-text-3" id="text-org4559f54">
 <div class="org-src-container">
 <pre class="src src-sh" id="org5e175f3"><span style="color: #228b22;">git</span> branch --show-current
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-org589ce5f" class="outline-3">
-<h3 id="org589ce5f">&lt;&lt; 결과</h3>
-<div class="outline-text-3" id="text-org589ce5f">
+<div id="outline-container-org48ff91d" class="outline-3">
+<h3 id="org48ff91d">&lt;&lt; 결과</h3>
+<div class="outline-text-3" id="text-org48ff91d">
 <div class="org-src-container">
 <pre class="src src-org">develop
 </pre>
@@ -177,8 +193,8 @@
 <footer id="postamble" class="status">
 <section>
     <ul>
+        <li class="date">Fri Oct  4 01:26:47 2024</li>
         <li class="author">&copy; 7696122 (<a href="mailto:7696122@gmail.com">7696122@gmail.com</a>)</li>
-        <li class="date"></li>
         <li class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 29.4 (<a href="https://orgmode.org">Org</a> mode 9.8)</li>
         <li class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></li>
     </ul>

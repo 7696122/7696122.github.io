@@ -43,12 +43,19 @@
             @apply font-bold
         }
 
-        main {
+        /* main#content {
             a {
-                /* @apply text-blue-600; */
-                /* @apply underline; */
+                @apply text-blue-600;
+                @apply underline;
             }
-        }
+
+            ol,
+            ul {
+                list-style-type: disc; 
+                list-style-position: inside; 
+                margin-left: 15px; 
+            }
+        } */
     }
 
     @tailwind components;
@@ -69,8 +76,11 @@
 
 <!-- Don't use this in production: -->
 <!-- <script src="https://unpkg.com/@babel/standalone/babel.min.js"> -->
-<link rel="stylesheet" href="/main.css" type="text/css" media="screen" />
-<script type="text/javascript" src="/main.js"></script>
+<link
+rel="stylesheet" href="/main.css"
+type="text/css"
+media="screen"
+/><script type="text/javascript" src="/main.js"></script>
 <script>
 // @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
      function CodeHighlightOn(elem, id)
@@ -93,10 +103,16 @@
 </script>
 </head>
 <body>
-<div id="org-div-home-and-up" class="p-2">
-    <a accesskey="h" href="/posts.html">[UP]</a>
-    |
-    <a accesskey="H" href="/home.html">[HOME]</a>
+<div id="org-div-home-and-up"
+    class="p-3"
+>
+    <a accesskey="h" href="/posts.html"
+        class="text-lg"
+    > [UP] </a>
+    <span class="text-xl"> | </span>
+    <a accesskey="H" href="/home.html"
+        class="text-lg"
+    > [HOME] </a>
 </div>
 <header id="preamble" class="status">
 <section>
@@ -134,8 +150,8 @@
 <footer id="postamble" class="status">
 <section>
     <ul>
-        <li class="author">&copy; 7696122 (<a href="mailto:7696122@gmail.com">7696122@gmail.com</a>)</li>
         <li class="date"></li>
+        <li class="author">&copy; 7696122 (<a href="mailto:7696122@gmail.com">7696122@gmail.com</a>)</li>
         <li class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 29.4 (<a href="https://orgmode.org">Org</a> mode 9.8)</li>
         <li class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></li>
     </ul>
