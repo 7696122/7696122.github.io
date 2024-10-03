@@ -17,10 +17,17 @@
 </script>
 
 <style type="text/tailwindcss">
-
     @tailwind base;
 
     @layer base {
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(/fonts/Roboto.woff2) format('woff2');
+        }
+
         h1 {
             @apply text-2xl;
         }
@@ -33,8 +40,11 @@
             @apply text-lg;
         }
 
-        a {
-            /* @apply text-blue-600 underline; */
+        main {
+            a {
+                /* @apply text-blue-600; */
+                /* @apply underline; */
+            }
         }
     }
 
@@ -84,11 +94,7 @@
     <nav>
         <ul class="flex items-center uppercase">
             <li>
-                <a href="/">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" class="rounded-full m-1">
-                        <image href="/200x200.jpg" width="40" height="40" />
-                    </svg>
-                </a>
+                <a href="/">🪦</a>
             </li>
             <li class="m-3">
                 <a href="/home.html">
@@ -116,20 +122,20 @@
 <h2 id="org087cc27">최종 커밋의 hash</h2>
 <div class="outline-text-2" id="text-org087cc27">
 </div>
-<div id="outline-container-org406f524" class="outline-3">
-<h3 id="org406f524">&gt;&gt; 명령</h3>
-<div class="outline-text-3" id="text-org406f524">
+<div id="outline-container-org88756ff" class="outline-3">
+<h3 id="org88756ff">&gt;&gt; 명령</h3>
+<div class="outline-text-3" id="text-org88756ff">
 <div class="org-src-container">
 <pre class="src src-sh" id="org69b4f55"><span style="color: #228b22;">git</span> rev-parse --short HEAD
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-org7b9657c" class="outline-3">
-<h3 id="org7b9657c">&lt;&lt; 결과</h3>
-<div class="outline-text-3" id="text-org7b9657c">
+<div id="outline-container-orgd2a034f" class="outline-3">
+<h3 id="orgd2a034f">&lt;&lt; 결과</h3>
+<div class="outline-text-3" id="text-orgd2a034f">
 <div class="org-src-container">
-<pre class="src src-org">b86d877
+<pre class="src src-org">1142ebf
 </pre>
 </div>
 </div>
@@ -139,18 +145,18 @@
 <h2 id="org22ce077">현재 branch</h2>
 <div class="outline-text-2" id="text-org22ce077">
 </div>
-<div id="outline-container-org97e053b" class="outline-3">
-<h3 id="org97e053b">&gt;&gt; 명령</h3>
-<div class="outline-text-3" id="text-org97e053b">
+<div id="outline-container-orgb8dc0d5" class="outline-3">
+<h3 id="orgb8dc0d5">&gt;&gt; 명령</h3>
+<div class="outline-text-3" id="text-orgb8dc0d5">
 <div class="org-src-container">
 <pre class="src src-sh" id="org5e175f3"><span style="color: #228b22;">git</span> branch --show-current
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-org998c7b3" class="outline-3">
-<h3 id="org998c7b3">&lt;&lt; 결과</h3>
-<div class="outline-text-3" id="text-org998c7b3">
+<div id="outline-container-orgc427e9f" class="outline-3">
+<h3 id="orgc427e9f">&lt;&lt; 결과</h3>
+<div class="outline-text-3" id="text-orgc427e9f">
 <div class="org-src-container">
 <pre class="src src-org">develop
 </pre>

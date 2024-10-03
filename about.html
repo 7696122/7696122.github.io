@@ -17,10 +17,17 @@
 </script>
 
 <style type="text/tailwindcss">
-
     @tailwind base;
 
     @layer base {
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(/fonts/Roboto.woff2) format('woff2');
+        }
+
         h1 {
             @apply text-2xl;
         }
@@ -33,8 +40,11 @@
             @apply text-lg;
         }
 
-        a {
-            /* @apply text-blue-600 underline; */
+        main {
+            a {
+                /* @apply text-blue-600; */
+                /* @apply underline; */
+            }
         }
     }
 
@@ -84,11 +94,7 @@
     <nav>
         <ul class="flex items-center uppercase">
             <li>
-                <a href="/">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" class="rounded-full m-1">
-                        <image href="/200x200.jpg" width="40" height="40" />
-                    </svg>
-                </a>
+                <a href="/">🪦</a>
             </li>
             <li class="m-3">
                 <a href="/home.html">
@@ -110,16 +116,11 @@
 </section>
 </header>
 <main id="content" class="content">
-<section id="outline-container-orge13864b" class="outline-2">
-<h2 id="orge13864b">Me</h2>
-<div class="outline-text-2" id="text-orge13864b">
 <dl class="org-dl">
-<dt>memento mori</dt><dd>내 죽을을 기억하려고 합니다.</dd>
-<dt>korean</dt><dd>한국인입니다.</dd>
-<dt>stoicism</dt><dd>스토아철학을 좋아합니다.</dd>
+<dt>🪦 Memento Mori</dt><dd>내 죽을을 기억하려고 합니다.</dd>
+<dt>🇰🇷 Korean</dt><dd>한국인입니다.</dd>
+<dt>🏛️ Stoicism</dt><dd>스토아철학을 좋아합니다.</dd>
 </dl>
-</div>
-</section>
 </main>
 <footer id="postamble" class="status">
 <section>
