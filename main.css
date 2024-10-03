@@ -1,21 +1,15 @@
-<<<<<<< Updated upstream
-/* #preamble {} */
-
-#content {
-    margin: 1.25rem;
+main > .org-ul > li > a {
+  font-size: 1.2rem;
+  font-weight: bold;
+  height: 5rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  border: 3px solid green;
+  padding: 2rem;
+  margin: 0.5rem;
 }
 
-/* #postamble {} */
-
-.title {
-    text-align: left;
-}
-
-/* .org-src-container { */
-/*     overflow-wrap: normal; */
-/* } */
-||||||| Stash base
-=======
 #content {
   max-width: 60em;
   margin: auto;
@@ -588,4 +582,3 @@ main#content {
 }
 
 /*# sourceMappingURL=main.css.map */
->>>>>>> Stashed changes

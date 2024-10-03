@@ -109,17 +109,18 @@
 </header>
 <main id="content" class="content">
 <ul class="org-ul">
-<li><a href="모바일_디버깅하기.html">모바일 디버깅하기</a></li>
-<li><a href="불안함.html">불안함</a></li>
-<li><a href="이미지_용량_줄이기.html">이미지 용량 줄이기</a></li>
+<li><a href="git_정보_보여주는_컴포넌트.html">Git 정보를 보여주는 Component 만들기</a></li>
 <li><a href="헤더는_위로_푸터는_아래로.html">헤더는 위로 푸터는 아래로</a></li>
+<li><a href="이미지_용량_줄이기.html">이미지 용량 줄이기</a></li>
+<li><a href="불안함.html">불안함</a></li>
+<li><a href="모바일_디버깅하기.html">모바일 디버깅하기</a></li>
 <li><a href="nav는_어디에.html">Nav는 어디에</a></li>
 <li><a href="blank.html">Blank</a></li>
 </ul>
 </main>
 <footer id="postamble" class="status">
 <ul>
-    <li class="author">7696122 (<a href="mailto:7696122@gmail.com">7696122@gmail.com</a>)</li>
+    <li class="author">&copy; 7696122 (<a href="mailto:7696122@gmail.com">7696122@gmail.com</a>)</li>
     <li class="date"></li>
     <li class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 29.4 (<a href="https://orgmode.org">Org</a> mode 9.8)</li>
     <li class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></li>
@@ -137,7 +138,7 @@
 <script type="text/javascript">
     let isDebug = window.localStorage.getItem('debugging');
 
-    if (isDebug != null) {
+    if (isDebug === null) {
         /**
          * Loads a JavaScript file and returns a Promise for when it is loaded
          */

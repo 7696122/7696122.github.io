@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0" />
-<title>home</title>
+<title>Git 정보를 보여주는 Component 만들기</title>
 <meta name="author" content="7696122" />
 <meta name="generator" content="Org Mode" />
 <!-- <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" /> -->
@@ -108,24 +108,57 @@
 </nav>
 </header>
 <main id="content" class="content">
-<section id="outline-container-orgcf2d555" class="outline-2">
-<h2 id="orgcf2d555">Home</h2>
-<div class="outline-text-2" id="text-orgcf2d555">
-<p>
-오프라인 셋방살이
-</p>
-
-<p>
-온라인 셋방살이
-</p>
-
-<p>
-저가정책 회사
-</p>
-
-<p>
-저가연봉 노예
-</p>
+<header>
+<h1 class="title">Git 정보를 보여주는 Component 만들기</h1>
+</header><section id="outline-container-orgb1f3e80" class="outline-2">
+<h2 id="orgb1f3e80">contents</h2>
+<div class="outline-text-2" id="text-orgb1f3e80">
+</div>
+<div id="outline-container-org087cc27" class="outline-3">
+<h3 id="org087cc27">최종 커밋의 hash</h3>
+<div class="outline-text-3" id="text-org087cc27">
+</div>
+<div id="outline-container-org0682a69" class="outline-4">
+<h4 id="org0682a69">&gt;&gt; 명령</h4>
+<div class="outline-text-4" id="text-org0682a69">
+<div class="org-src-container">
+<pre class="src src-sh" id="org69b4f55"><span style="color: #228b22;">git</span> rev-parse --short HEAD
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgbdf086a" class="outline-4">
+<h4 id="orgbdf086a">&lt;&lt; 결과</h4>
+<div class="outline-text-4" id="text-orgbdf086a">
+<div class="org-src-container">
+<pre class="src src-org">c4f90f5
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgc3425ab" class="outline-3">
+<h3 id="orgc3425ab">현제 branch</h3>
+<div class="outline-text-3" id="text-orgc3425ab">
+</div>
+<div id="outline-container-org48eaa09" class="outline-4">
+<h4 id="org48eaa09">&gt;&gt; 명령</h4>
+<div class="outline-text-4" id="text-org48eaa09">
+<div class="org-src-container">
+<pre class="src src-sh" id="org5e175f3"><span style="color: #228b22;">git</span> branch --show-current
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgc925853" class="outline-4">
+<h4 id="orgc925853">&lt;&lt; 결과</h4>
+<div class="outline-text-4" id="text-orgc925853">
+<div class="org-src-container">
+<pre class="src src-org">develop
+</pre>
+</div>
+</div>
+</div>
 </div>
 </section>
 </main>
