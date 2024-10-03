@@ -15,14 +15,6 @@ main > .org-ul > li p {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-main > .org-ul > li a {
-  width: auto;
-  display: block;
-  font-size: 1.7rem;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
 
 #content {
   max-width: 60em;
