@@ -80,95 +80,94 @@
 </head>
 <body>
 <header id="preamble" class="status">
-<nav>
-    <ul class="flex items-center uppercase">
-        <li class="m-3">
-            <a href="/">
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" class="rounded-full m-1">
-                    <image href="/200x200.jpg" width="40" height="40" />
-                </svg>
-            </a>
-        </li>
-        <li class="m-3">
-            <a href="/home.html">
-                <span>home</span>
-            </a>
-        </li>
-        <li class="m-3">
-            <a href="/posts.html">
-                <span>posts</span>
-            </a>
-        </li>
-        <li class="m-3">
-            <a href="/about.html">
-                <span>about</span>
-            </a>
-        </li>
-    </ul>
-</nav>
+<section>
+    <nav>
+        <ul class="flex items-center uppercase">
+            <li>
+                <a href="/">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" class="rounded-full m-1">
+                        <image href="/200x200.jpg" width="40" height="40" />
+                    </svg>
+                </a>
+            </li>
+            <li class="m-3">
+                <a href="/home.html">
+                    <span>home</span>
+                </a>
+            </li>
+            <li class="m-3">
+                <a href="/posts.html">
+                    <span>posts</span>
+                </a>
+            </li>
+            <li class="m-3">
+                <a href="/about.html">
+                    <span>about</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</section>
 </header>
 <main id="content" class="content">
 <header>
 <h1 class="title">Git 정보를 보여주는 Component 만들기</h1>
-</header><section id="outline-container-orgb1f3e80" class="outline-2">
-<h2 id="orgb1f3e80">contents</h2>
-<div class="outline-text-2" id="text-orgb1f3e80">
+</header><section id="outline-container-org087cc27" class="outline-2">
+<h2 id="org087cc27">최종 커밋의 hash</h2>
+<div class="outline-text-2" id="text-org087cc27">
 </div>
-<div id="outline-container-org087cc27" class="outline-3">
-<h3 id="org087cc27">최종 커밋의 hash</h3>
-<div class="outline-text-3" id="text-org087cc27">
-</div>
-<div id="outline-container-org48eaa09" class="outline-4">
-<h4 id="org48eaa09">&gt;&gt; 명령</h4>
-<div class="outline-text-4" id="text-org48eaa09">
+<div id="outline-container-org406f524" class="outline-3">
+<h3 id="org406f524">&gt;&gt; 명령</h3>
+<div class="outline-text-3" id="text-org406f524">
 <div class="org-src-container">
 <pre class="src src-sh" id="org69b4f55"><span style="color: #228b22;">git</span> rev-parse --short HEAD
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-orgc925853" class="outline-4">
-<h4 id="orgc925853">&lt;&lt; 결과</h4>
-<div class="outline-text-4" id="text-orgc925853">
+<div id="outline-container-org7b9657c" class="outline-3">
+<h3 id="org7b9657c">&lt;&lt; 결과</h3>
+<div class="outline-text-3" id="text-org7b9657c">
 <div class="org-src-container">
-<pre class="src src-org">9db23c5
+<pre class="src src-org">b86d877
 </pre>
 </div>
 </div>
 </div>
+</section>
+<section id="outline-container-org22ce077" class="outline-2">
+<h2 id="org22ce077">현재 branch</h2>
+<div class="outline-text-2" id="text-org22ce077">
 </div>
-<div id="outline-container-org22ce077" class="outline-3">
-<h3 id="org22ce077">현재 branch</h3>
-<div class="outline-text-3" id="text-org22ce077">
-</div>
-<div id="outline-container-orgaa2b5ef" class="outline-4">
-<h4 id="orgaa2b5ef">&gt;&gt; 명령</h4>
-<div class="outline-text-4" id="text-orgaa2b5ef">
+<div id="outline-container-org97e053b" class="outline-3">
+<h3 id="org97e053b">&gt;&gt; 명령</h3>
+<div class="outline-text-3" id="text-org97e053b">
 <div class="org-src-container">
 <pre class="src src-sh" id="org5e175f3"><span style="color: #228b22;">git</span> branch --show-current
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-org530b2aa" class="outline-4">
-<h4 id="org530b2aa">&lt;&lt; 결과</h4>
-<div class="outline-text-4" id="text-org530b2aa">
+<div id="outline-container-org998c7b3" class="outline-3">
+<h3 id="org998c7b3">&lt;&lt; 결과</h3>
+<div class="outline-text-3" id="text-org998c7b3">
 <div class="org-src-container">
-<pre class="src src-org">master
+<pre class="src src-org">develop
 </pre>
-</div>
 </div>
 </div>
 </div>
 </section>
 </main>
 <footer id="postamble" class="status">
-<ul>
-    <li class="author">&copy; 7696122 (<a href="mailto:7696122@gmail.com">7696122@gmail.com</a>)</li>
-    <li class="date"></li>
-    <li class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 29.4 (<a href="https://orgmode.org">Org</a> mode 9.8)</li>
-    <li class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></li>
-</ul>
+<section>
+    <ul>
+        <li class="author">&copy; 7696122 (<a href="mailto:7696122@gmail.com">7696122@gmail.com</a>)</li>
+        <li class="date"></li>
+        <li class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 29.4 (<a href="https://orgmode.org">Org</a> mode 9.8)</li>
+        <li class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></li>
+    </ul>
+</section>
 
 <script src="/postamble.js"></script>
 

@@ -1,12 +1,23 @@
-main > .org-ul > li > a {
-  font-size: 1.2rem;
-  font-weight: bold;
-  height: 5rem;
-  border-radius: 1rem;
-  display: flex;
-  align-items: center;
-  padding: 2rem;
-  margin: 0.5rem;
+.status {
+  margin: 0 1rem 0 1rem;
+}
+
+.title {
+  padding-bottom: 2rem;
+}
+
+main > .org-ul > li {
+  padding: 1rem;
+  border: 2px;
+  display: block;
+}
+main > .org-ul > li a {
+  width: auto;
+  display: block;
+  font-size: 1.7rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 #content {
