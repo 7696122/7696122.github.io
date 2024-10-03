@@ -11,6 +11,10 @@ main > .org-ul > li {
   border: 2px;
   display: block;
 }
+main > .org-ul > li p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 main > .org-ul > li a {
   width: auto;
   display: block;
