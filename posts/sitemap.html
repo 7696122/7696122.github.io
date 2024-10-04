@@ -69,7 +69,8 @@
     }
 </style>
 
-<!-- <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script> -->
+<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+    integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
 
 <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
 <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
@@ -105,16 +106,28 @@ media="screen"
 </script>
 </head>
 <body>
-<div id="org-div-home-and-up"
-    class="p-3"
->
-    <a accesskey="h" href="/posts.html"
+<div id="org-div-home-and-up" class="p-3">
+    <button
         class="text-lg"
-    > [UP] </a>
+        onclick="history.back()">
+        BACK
+    </button>
     <span class="text-xl"> | </span>
-    <a accesskey="H" href="/home.html"
+    <button
+        accesskey="h"
+        onclick="window.location='/posts.html'"
         class="text-lg"
-    > [HOME] </a>
+    >
+        UP
+    </button>
+    <span class="text-xl"> | </span>
+    <button
+        accesskey="H"
+        onclick="window.location='/'"
+        class="text-lg"
+    >
+        HOME
+    </button>
 </div>
 <header id="preamble" class="status">
 <section>
@@ -144,13 +157,13 @@ media="screen"
 </header>
 <main id="content" class="content">
 <ul class="org-ul">
-<li>📰 <a href="git_정보_보여주는_컴포넌트.html">Git 정보를 보여주는 Component 만들기</a><div class="item-end"><span class="timestamp font-mono text-xs items-center "><2024-10-04 01:26></span></div></li>
-<li>📰 <a href="헤더는_위로_푸터는_아래로.html">헤더는 위로 푸터는 아래로</a><div class="item-end"><span class="timestamp font-mono text-xs items-center "><2024-10-01 21:51></span></div></li>
-<li>📰 <a href="이미지_용량_줄이기.html">이미지 용량 줄이기</a><div class="item-end"><span class="timestamp font-mono text-xs items-center "><2024-10-01 21:51></span></div></li>
-<li>📰 <a href="불안함.html">불안함</a><div class="item-end"><span class="timestamp font-mono text-xs items-center "><2024-10-01 21:51></span></div></li>
-<li>📰 <a href="모바일_디버깅하기.html">모바일 디버깅하기</a><div class="item-end"><span class="timestamp font-mono text-xs items-center "><2024-10-01 21:51></span></div></li>
-<li>📰 <a href="nav는_어디에.html">Nav는 어디에</a><div class="item-end"><span class="timestamp font-mono text-xs items-center "><2024-10-01 21:51></span></div></li>
-<li>📰 <a href="blank.html">Blank</a><div class="item-end"><span class="timestamp font-mono text-xs items-center "><2024-10-01 21:51></span></div></li>
+<li><div class="text-2xl">📰 <a href="git_정보_보여주는_컴포넌트.html">Git 정보를 보여주는 Component 만들기</a></div><div class="item-end"><span class="timestamp font-mono text-xs items-center ">&lt;2024-10-04 09:07&gt;</span></div></li>
+<li><div class="text-2xl">📰 <a href="모바일_디버깅하기.html">모바일 디버깅하기</a></div><div class="item-end"><span class="timestamp font-mono text-xs items-center ">&lt;2024-09-30 13:21&gt;</span></div></li>
+<li><div class="text-2xl">📰 <a href="불안함.html">불안함</a></div><div class="item-end"><span class="timestamp font-mono text-xs items-center ">&lt;2024-09-30 11:14&gt;</span></div></li>
+<li><div class="text-2xl">📰 <a href="이미지_용량_줄이기.html">이미지 용량 줄이기</a></div><div class="item-end"><span class="timestamp font-mono text-xs items-center ">&lt;2024-09-25 19:37&gt;</span></div></li>
+<li><div class="text-2xl">📰 <a href="헤더는_위로_푸터는_아래로.html">헤더는 위로 푸터는 아래로</a></div><div class="item-end"><span class="timestamp font-mono text-xs items-center ">&lt;2024-09-25 19:32&gt;</span></div></li>
+<li><div class="text-2xl">📰 <a href="nav는_어디에.html">Nav는 어디에</a></div><div class="item-end"><span class="timestamp font-mono text-xs items-center ">&lt;2024-09-23 09:52&gt;</span></div></li>
+<li><div class="text-2xl">📰 <a href="blank.html">Blank</a></div><div class="item-end"><span class="timestamp font-mono text-xs items-center ">&lt;2024-09-20 10:50&gt;</span></div></li>
 </ul>
 </main>
 <footer id="postamble" class="status">

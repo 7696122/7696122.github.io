@@ -1,8 +1,3 @@
-import "https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"
-
-alert('a')
-
-
 // const template = document
 //       .createElement("template");
 // template.innerHTML = `<style="display:flex;">aaa</>`;

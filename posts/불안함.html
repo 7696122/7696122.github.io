@@ -69,7 +69,8 @@
     }
 </style>
 
-<!-- <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script> -->
+<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+    integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
 
 <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
 <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
@@ -105,16 +106,28 @@ media="screen"
 </script>
 </head>
 <body>
-<div id="org-div-home-and-up"
-    class="p-3"
->
-    <a accesskey="h" href="/posts.html"
+<div id="org-div-home-and-up" class="p-3">
+    <button
         class="text-lg"
-    > [UP] </a>
+        onclick="history.back()">
+        BACK
+    </button>
     <span class="text-xl"> | </span>
-    <a accesskey="H" href="/home.html"
+    <button
+        accesskey="h"
+        onclick="window.location='/posts.html'"
         class="text-lg"
-    > [HOME] </a>
+    >
+        UP
+    </button>
+    <span class="text-xl"> | </span>
+    <button
+        accesskey="H"
+        onclick="window.location='/'"
+        class="text-lg"
+    >
+        HOME
+    </button>
 </div>
 <header id="preamble" class="status">
 <section>
