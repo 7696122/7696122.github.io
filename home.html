@@ -107,11 +107,54 @@ media="screen"
 </head>
 <body>
 <header id="preamble" class="status">
+<script>
+    class Logo extends HTMLElement {
+        constructor() {
+            super();
+            // 
+            //             const span = document.createElement('span');
+            // 
+            //             const emojis = ['🪦', '🇰🇷', '🏛'];
+            //             let emoji = emojis[
+            //                 Math.floor(
+            //                     Math.random() * emojis.length
+            //                 )
+            //             ];
+            //             span.textContent = emoji;
+            // 
+            //             const shadowRoot = this.attachShadow({ mode: "open" });
+            // 
+            //             shadowRoot.appendChild(span);
+        }
+
+        connectedCallback() {
+            if (!this.rendered) {
+                this.render();
+                this.rendered = true;
+            }
+        }
+
+        render() {
+            const emojis = ['🪦', '🇰🇷', '🏛'];
+            let emoji = emojis[
+                Math.floor(
+                    Math.random() * emojis.length
+                )
+            ];
+            this.innerHTML = `${emoji}`;
+        }
+    }
+
+    customElements.define("logo-emoji", Logo);
+</script>
+
 <section>
     <nav>
-        <ul class="flex items-center uppercase">
+        <ul class="flex items-center text-3xl capitalize">
             <li>
-                <a href="/">🪦</a>
+                <a href="/">
+                    <logo-emoji />
+                </a>
             </li>
             <li class="m-3">
                 <a href="/home.html">
@@ -133,10 +176,15 @@ media="screen"
 </section>
 </header>
 <main id="content" class="content">
+<section id="outline-container-org40f39a0" class="outline-2">
+<h2 id="org40f39a0"></h2>
+<div class="outline-text-2" id="text-org40f39a0">
 <ul class="org-ul">
-<li>🏚오프라인 셋방살이</li>
+<li>🏚 오프라인 셋방살이</li>
 <li>🏠 온라인 노대출 자가</li>
 </ul>
+</div>
+</section>
 </main>
 <footer id="postamble" class="status">
 <section>

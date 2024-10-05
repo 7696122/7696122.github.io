@@ -107,11 +107,54 @@ media="screen"
 </head>
 <body>
 <header id="preamble" class="status">
+<script>
+    class Logo extends HTMLElement {
+        constructor() {
+            super();
+            // 
+            //             const span = document.createElement('span');
+            // 
+            //             const emojis = ['🪦', '🇰🇷', '🏛'];
+            //             let emoji = emojis[
+            //                 Math.floor(
+            //                     Math.random() * emojis.length
+            //                 )
+            //             ];
+            //             span.textContent = emoji;
+            // 
+            //             const shadowRoot = this.attachShadow({ mode: "open" });
+            // 
+            //             shadowRoot.appendChild(span);
+        }
+
+        connectedCallback() {
+            if (!this.rendered) {
+                this.render();
+                this.rendered = true;
+            }
+        }
+
+        render() {
+            const emojis = ['🪦', '🇰🇷', '🏛'];
+            let emoji = emojis[
+                Math.floor(
+                    Math.random() * emojis.length
+                )
+            ];
+            this.innerHTML = `${emoji}`;
+        }
+    }
+
+    customElements.define("logo-emoji", Logo);
+</script>
+
 <section>
     <nav>
-        <ul class="flex items-center uppercase">
+        <ul class="flex items-center text-3xl capitalize">
             <li>
-                <a href="/">🪦</a>
+                <a href="/">
+                    <logo-emoji />
+                </a>
             </li>
             <li class="m-3">
                 <a href="/home.html">
@@ -133,11 +176,13 @@ media="screen"
 </section>
 </header>
 <main id="content" class="content">
+<div>
 <dl class="org-dl">
-<dt>🪦 Memento Mori</dt><dd>내 죽을을 기억하려고 합니다.</dd>
-<dt>🇰🇷 Korean</dt><dd>한국인입니다.</dd>
-<dt>🏛️ Stoicism</dt><dd>스토아철학을 좋아합니다.</dd>
+<dt><span>🪦</span> Memento Mori</dt><dd>내 죽을을 기억하려고 합니다.</dd>
+<dt><span>🇰🇷</span> Korean</dt><dd>한국인입니다.</dd>
+<dt><span>🏛️</span> Stoicism</dt><dd>스토아철학을 좋아합니다.</dd>
 </dl>
+</div>
 </main>
 <footer id="postamble" class="status">
 <section>

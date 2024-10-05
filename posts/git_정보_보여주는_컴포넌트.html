@@ -130,11 +130,54 @@ media="screen"
     </button>
 </div>
 <header id="preamble" class="status">
+<script>
+    class Logo extends HTMLElement {
+        constructor() {
+            super();
+            // 
+            //             const span = document.createElement('span');
+            // 
+            //             const emojis = ['🪦', '🇰🇷', '🏛'];
+            //             let emoji = emojis[
+            //                 Math.floor(
+            //                     Math.random() * emojis.length
+            //                 )
+            //             ];
+            //             span.textContent = emoji;
+            // 
+            //             const shadowRoot = this.attachShadow({ mode: "open" });
+            // 
+            //             shadowRoot.appendChild(span);
+        }
+
+        connectedCallback() {
+            if (!this.rendered) {
+                this.render();
+                this.rendered = true;
+            }
+        }
+
+        render() {
+            const emojis = ['🪦', '🇰🇷', '🏛'];
+            let emoji = emojis[
+                Math.floor(
+                    Math.random() * emojis.length
+                )
+            ];
+            this.innerHTML = `${emoji}`;
+        }
+    }
+
+    customElements.define("logo-emoji", Logo);
+</script>
+
 <section>
     <nav>
-        <ul class="flex items-center uppercase">
+        <ul class="flex items-center text-3xl capitalize">
             <li>
-                <a href="/">🪦</a>
+                <a href="/">
+                    <logo-emoji />
+                </a>
             </li>
             <li class="m-3">
                 <a href="/home.html">
@@ -158,45 +201,45 @@ media="screen"
 <main id="content" class="content">
 <header>
 <h1 class="title">Git 정보를 보여주는 Component 만들기</h1>
-</header><section id="outline-container-orgec6f99e" class="outline-2">
-<h2 id="orgec6f99e">최종 커밋의 hash</h2>
-<div class="outline-text-2" id="text-orgec6f99e">
+</header><section id="outline-container-org087cc27" class="outline-2">
+<h2 id="org087cc27">최종 커밋의 hash</h2>
+<div class="outline-text-2" id="text-org087cc27">
 </div>
-<div id="outline-container-org222bafe" class="outline-3">
-<h3 id="org222bafe">&gt;&gt; 명령</h3>
-<div class="outline-text-3" id="text-org222bafe">
+<div id="outline-container-orgbe9a53f" class="outline-3">
+<h3 id="orgbe9a53f">&gt;&gt; 명령</h3>
+<div class="outline-text-3" id="text-orgbe9a53f">
 <div class="org-src-container">
-<pre class="src src-sh" id="org1b85080"><span style="color: #228b22;">git</span> rev-parse --short HEAD
+<pre class="src src-sh" id="org69b4f55"><span style="color: #228b22;">git</span> rev-parse --short HEAD
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-org489cf84" class="outline-3">
-<h3 id="org489cf84">&lt;&lt; 결과</h3>
-<div class="outline-text-3" id="text-org489cf84">
+<div id="outline-container-orgbdcfdcc" class="outline-3">
+<h3 id="orgbdcfdcc">&lt;&lt; 결과</h3>
+<div class="outline-text-3" id="text-orgbdcfdcc">
 <div class="org-src-container">
-<pre class="src src-org">067bf42
+<pre class="src src-org">f56889c
 </pre>
 </div>
 </div>
 </div>
 </section>
-<section id="outline-container-orga1f3a85" class="outline-2">
-<h2 id="orga1f3a85">현재 branch</h2>
-<div class="outline-text-2" id="text-orga1f3a85">
+<section id="outline-container-org22ce077" class="outline-2">
+<h2 id="org22ce077">현재 branch</h2>
+<div class="outline-text-2" id="text-org22ce077">
 </div>
-<div id="outline-container-org339896f" class="outline-3">
-<h3 id="org339896f">&gt;&gt; 명령</h3>
-<div class="outline-text-3" id="text-org339896f">
+<div id="outline-container-org2f03b9e" class="outline-3">
+<h3 id="org2f03b9e">&gt;&gt; 명령</h3>
+<div class="outline-text-3" id="text-org2f03b9e">
 <div class="org-src-container">
-<pre class="src src-sh" id="org134e718"><span style="color: #228b22;">git</span> branch --show-current
+<pre class="src src-sh" id="org5e175f3"><span style="color: #228b22;">git</span> branch --show-current
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-org8d9f73a" class="outline-3">
-<h3 id="org8d9f73a">&lt;&lt; 결과</h3>
-<div class="outline-text-3" id="text-org8d9f73a">
+<div id="outline-container-org5f854f4" class="outline-3">
+<h3 id="org5f854f4">&lt;&lt; 결과</h3>
+<div class="outline-text-3" id="text-org5f854f4">
 <div class="org-src-container">
 <pre class="src src-org">master
 </pre>

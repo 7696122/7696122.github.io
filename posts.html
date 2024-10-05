@@ -107,11 +107,54 @@ media="screen"
 </head>
 <body>
 <header id="preamble" class="status">
+<script>
+    class Logo extends HTMLElement {
+        constructor() {
+            super();
+            // 
+            //             const span = document.createElement('span');
+            // 
+            //             const emojis = ['🪦', '🇰🇷', '🏛'];
+            //             let emoji = emojis[
+            //                 Math.floor(
+            //                     Math.random() * emojis.length
+            //                 )
+            //             ];
+            //             span.textContent = emoji;
+            // 
+            //             const shadowRoot = this.attachShadow({ mode: "open" });
+            // 
+            //             shadowRoot.appendChild(span);
+        }
+
+        connectedCallback() {
+            if (!this.rendered) {
+                this.render();
+                this.rendered = true;
+            }
+        }
+
+        render() {
+            const emojis = ['🪦', '🇰🇷', '🏛'];
+            let emoji = emojis[
+                Math.floor(
+                    Math.random() * emojis.length
+                )
+            ];
+            this.innerHTML = `${emoji}`;
+        }
+    }
+
+    customElements.define("logo-emoji", Logo);
+</script>
+
 <section>
     <nav>
-        <ul class="flex items-center uppercase">
+        <ul class="flex items-center text-3xl capitalize">
             <li>
-                <a href="/">🪦</a>
+                <a href="/">
+                    <logo-emoji />
+                </a>
             </li>
             <li class="m-3">
                 <a href="/home.html">
@@ -133,17 +176,20 @@ media="screen"
 </section>
 </header>
 <main id="content" class="content">
-<section class="text-lg">
+<section id="outline-container-orgf3aaa4d" class="outline-2">
+<h2 id="orgf3aaa4d"></h2>
+<div class="outline-text-2" id="text-orgf3aaa4d">
 <ul class="org-ul">
-<li><div class="text-2xl truncate">📰 <a href="../posts/모바일_키보드.html">모바일 키보드</a></div><div class="item-end"><span class="timestamp font-mono text-xs items-center ">&lt;2024-10-04 14:08&gt;</span></div></li>
-<li><div class="text-2xl truncate">📰 <a href="../posts/git_정보_보여주는_컴포넌트.html">Git 정보를 보여주는 Component 만들기</a></div><div class="item-end"><span class="timestamp font-mono text-xs items-center ">&lt;2024-10-04 09:07&gt;</span></div></li>
-<li><div class="text-2xl truncate">📰 <a href="../posts/모바일_디버깅하기.html">모바일 디버깅하기</a></div><div class="item-end"><span class="timestamp font-mono text-xs items-center ">&lt;2024-09-30 13:21&gt;</span></div></li>
-<li><div class="text-2xl truncate">📰 <a href="../posts/불안함.html">불안함</a></div><div class="item-end"><span class="timestamp font-mono text-xs items-center ">&lt;2024-09-30 11:14&gt;</span></div></li>
-<li><div class="text-2xl truncate">📰 <a href="../posts/이미지_용량_줄이기.html">이미지 용량 줄이기</a></div><div class="item-end"><span class="timestamp font-mono text-xs items-center ">&lt;2024-09-25 19:37&gt;</span></div></li>
-<li><div class="text-2xl truncate">📰 <a href="../posts/헤더는_위로_푸터는_아래로.html">헤더는 위로 푸터는 아래로</a></div><div class="item-end"><span class="timestamp font-mono text-xs items-center ">&lt;2024-09-25 19:32&gt;</span></div></li>
-<li><div class="text-2xl truncate">📰 <a href="../posts/nav는_어디에.html">Nav는 어디에</a></div><div class="item-end"><span class="timestamp font-mono text-xs items-center ">&lt;2024-09-23 09:52&gt;</span></div></li>
-<li><div class="text-2xl truncate">📰 <a href="../posts/blank.html">Blank</a></div><div class="item-end"><span class="timestamp font-mono text-xs items-center ">&lt;2024-09-20 10:50&gt;</span></div></li>
+<li><div class="text-2xl">📰 <a href="../posts/git_정보_보여주는_컴포넌트.html">Git 정보를 보여주는 Component 만들기</a></div><div class="item-end"><span class="timestamp font-mono text-xs items-center ">&lt;2024-10-05 09:13&gt;</span></div></li>
+<li><div class="text-2xl">📰 <a href="../posts/모바일_키보드.html">모바일 키보드</a></div><div class="item-end"><span class="timestamp font-mono text-xs items-center ">&lt;2024-10-04 21:58&gt;</span></div></li>
+<li><div class="text-2xl">📰 <a href="../posts/헤더는_위로_푸터는_아래로.html">헤더는 위로 푸터는 아래로</a></div><div class="item-end"><span class="timestamp font-mono text-xs items-center ">&lt;2024-10-01 21:51&gt;</span></div></li>
+<li><div class="text-2xl">📰 <a href="../posts/이미지_용량_줄이기.html">이미지 용량 줄이기</a></div><div class="item-end"><span class="timestamp font-mono text-xs items-center ">&lt;2024-10-01 21:51&gt;</span></div></li>
+<li><div class="text-2xl">📰 <a href="../posts/불안함.html">불안함</a></div><div class="item-end"><span class="timestamp font-mono text-xs items-center ">&lt;2024-10-01 21:51&gt;</span></div></li>
+<li><div class="text-2xl">📰 <a href="../posts/모바일_디버깅하기.html">모바일 디버깅하기</a></div><div class="item-end"><span class="timestamp font-mono text-xs items-center ">&lt;2024-10-01 21:51&gt;</span></div></li>
+<li><div class="text-2xl">📰 <a href="../posts/nav는_어디에.html">Nav는 어디에</a></div><div class="item-end"><span class="timestamp font-mono text-xs items-center ">&lt;2024-10-01 21:51&gt;</span></div></li>
+<li><div class="text-2xl">📰 <a href="../posts/blank.html">Blank</a></div><div class="item-end"><span class="timestamp font-mono text-xs items-center ">&lt;2024-10-01 21:51&gt;</span></div></li>
 </ul>
+</div>
 </section>
 </main>
 <footer id="postamble" class="status">
