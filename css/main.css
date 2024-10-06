@@ -1,21 +1,3 @@
-.status {
-  margin: 0 1rem 0 1rem;
-}
-
-.title {
-  padding-bottom: 2rem;
-}
-
-main > .org-ul > li {
-  padding: 1rem;
-  border: 2px;
-  display: block;
-}
-main > .org-ul > li p {
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
 #content {
   max-width: 60em;
   margin: auto;
@@ -329,7 +311,7 @@ pre.src-ebnf2ps:before {
   content: "ebfn2ps";
 }
 
-/* additional language identifiers per \"defun org-babel-execute\"
+/* additional language identifiers per "defun org-babel-execute"
        in ob-*.el */
 pre.src-cpp:before {
   content: "C++";
@@ -460,7 +442,7 @@ pre.src-nxml:before {
 }
 
 /* add a generic configuration mode; LaTeX export needs an additional
-     (add-to-list 'org-latex-listings-langs '(conf \" \")) in .emacs */
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
 pre.src-conf:before {
   content: "Configuration File";
 }
@@ -581,10 +563,6 @@ textarea {
   background-color: #ffff00;
   color: #000000;
   font-weight: bold;
-}
-
-main#content {
-  margin: 1.25rem;
 }
 
 /*# sourceMappingURL=main.css.map */

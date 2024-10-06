@@ -7,83 +7,92 @@
 <meta name="author" content="7696122" />
 <meta name="generator" content="Org Mode" />
 <!-- <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" /> -->
+
 <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
-<script>
-    tailwind.config = {
-        corePlugins: {
-            // preflight: false,
-        }
-    }
-</script>
+<!-- <link rel="stylesheet" href="/css/tailwind.css" type="text/tailwindcss" media="screen" /> -->
+<!-- <style type="text/tailwindcss">
+     @tailwind base;
 
-<style type="text/tailwindcss">
-    @tailwind base;
+     @layer base {
+     @font-face {
+     font-family: 'Roboto';
+     font-style: normal;
+     font-weight: 400;
+     font-display: swap;
+     src: url(/fonts/Roboto.woff2) format('woff2');
+     }
 
-    @layer base {
-        @font-face {
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 400;
-            font-display: swap;
-            src: url(/fonts/Roboto.woff2) format('woff2');
-        }
+     h1 {
+     @apply text-2xl;
+     @apply font-bold
+     }
 
-        h1 {
-            @apply text-2xl;
-            @apply font-bold
-        }
+     h2 {
+     @apply text-xl;
+     @apply font-bold
+     }
 
-        h2 {
-            @apply text-xl;
-            @apply font-bold
-        }
+     h3 {
+     @apply text-lg;
+     @apply font-bold
+     }
 
-        h3 {
-            @apply text-lg;
-            @apply font-bold
-        }
+     main#content {
+     a {
+     @apply text-blue-600;
+     @apply underline;
+     }
 
-        /* main#content {
-            a {
-                @apply text-blue-600;
-                @apply underline;
-            }
+     }
 
-            ol,
-            ul {
-                list-style-type: disc; 
-                list-style-position: inside; 
-                margin-left: 15px; 
-            }
-        } */
-    }
+     /* ol,
+     ul {
+     @apply list-disc;
+     @apply list-outside;
+     @apply m-5;
+     } */
 
-    @tailwind components;
+     .org-ui * {
+     list-style: disc;
+     }
 
-    @tailwind utilities;
+     .org-ul {
+     li {
+     span:not(:last-of-type),
+     a {
+     }
+     span:last-of-type {
+     @apply float-right;
+     @apply italic;
+     }
+     }
+     }
+     }
 
-    @layer utilities {
-      .content-auto {
-        content-visibility: auto;
-      }
-    }
-</style>
+     @tailwind components;
 
-<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
-    integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+     @tailwind utilities;
 
-<script src="https://unpkg.com/react@18/umd/react.development.js"></script>
-<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+     @layer utilities {
+     .content-auto {
+     content-visibility: auto;
+     }
+     }
+     </style> -->
+
+<!-- <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+     integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script> -->
+
+<!-- <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> -->
 
 <!-- Don't use this in production: -->
 <!-- <script src="https://unpkg.com/@babel/standalone/babel.min.js"> -->
 
-<script src="https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.7.41/dist/flexsearch.bundle.min.js"></script>
-<link
-rel="stylesheet" href="/main.css"
-type="text/css"
-media="screen"
-/><script type="text/javascript" src="/main.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.7.41/dist/flexsearch.bundle.min.js"></script> -->
+<link rel="stylesheet" href="/css/main.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="/css/style.css" type="text/css" media="screen" />
+<script type="text/javascript" src="/js/main.js"></script>
 <script>
 // @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
      function CodeHighlightOn(elem, id)
@@ -106,99 +115,76 @@ media="screen"
 </script>
 </head>
 <body>
-<div id="org-div-home-and-up" class="p-3">
-    <button
-        class="text-lg"
-        onclick="history.back()">
-        BACK
-    </button>
-    <span class="text-xl"> | </span>
-    <button
-        accesskey="h"
-        onclick="window.location='/posts.html'"
-        class="text-lg"
-    >
-        UP
-    </button>
-    <span class="text-xl"> | </span>
-    <button
-        accesskey="H"
-        onclick="window.location='/'"
-        class="text-lg"
-    >
-        HOME
-    </button>
-</div>
 <header id="preamble" class="status">
 <script>
-    class Logo extends HTMLElement {
-        constructor() {
-            super();
-            // 
-            //             const span = document.createElement('span');
-            // 
-            //             const emojis = ['🪦', '🇰🇷', '🏛'];
-            //             let emoji = emojis[
-            //                 Math.floor(
-            //                     Math.random() * emojis.length
-            //                 )
-            //             ];
-            //             span.textContent = emoji;
-            // 
-            //             const shadowRoot = this.attachShadow({ mode: "open" });
-            // 
-            //             shadowRoot.appendChild(span);
-        }
+  class Logo extends HTMLElement {
+    constructor() {
+      super();
 
-        connectedCallback() {
-            if (!this.rendered) {
-                this.render();
-                this.rendered = true;
-            }
-        }
-
-        render() {
-            const emojis = ['🪦', '🇰🇷', '🏛'];
-            let emoji = emojis[
-                Math.floor(
-                    Math.random() * emojis.length
-                )
-            ];
-            this.innerHTML = `${emoji}`;
-        }
+      // const span = document.createElement('span');
+      //
+      // const emojis = ['🪦', '🇰🇷', '🏛'];
+      // let emoji = emojis[
+      //     Math.floor(
+      //         Math.random() * emojis.length
+      //     )
+      // ];
+      // span.textContent = emoji;
+      //
+      // const shadowRoot = this.attachShadow({ mode: "open" });
+      //
+      // shadowRoot.appendChild(span);
     }
 
-    customElements.define("logo-emoji", Logo);
+    connectedCallback() {
+      if (!this.rendered) {
+        this.render();
+        this.rendered = true;
+      }
+    }
+
+    render() {
+      const emojis = ['🪦', '🇰🇷', '🏛'];
+      let emoji = emojis[
+        Math.floor(
+          Math.random() * emojis.length
+        )
+      ];
+      this.innerHTML = `${emoji}`;
+    }
+  }
+
+  customElements.define("logo-emoji", Logo);
 </script>
 
 <section>
-    <nav>
-        <ul class="flex items-center text-3xl capitalize">
-            <li>
-                <a href="/">
-                    <logo-emoji />
-                </a>
-            </li>
-            <li class="m-3">
-                <a href="/home.html">
-                    <span>home</span>
-                </a>
-            </li>
-            <li class="m-3">
-                <a href="/posts.html">
-                    <span>posts</span>
-                </a>
-            </li>
-            <li class="m-3">
-                <a href="/about.html">
-                    <span>about</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
+  <nav>
+    <ul class="flex items-center text-3xl capitalize">
+      <li>
+        <a href="/">
+          <logo-emoji />
+        </a>
+      </li>
+      <li class="m-3">
+        <a href="/home.html">
+          <span>home</span>
+        </a>
+      </li>
+      <li class="m-3">
+        <a href="/posts.html">
+          <span>posts</span>
+        </a>
+      </li>
+      <li class="m-3">
+        <a href="/about.html">
+          <span>about</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
 </section>
 </header>
-<main id="content" class="content">
+<main id="content" class="content container">
 <p>
 나는 왜 감정을 통제하지 못하는가.
 </p>
@@ -220,12 +206,12 @@ media="screen"
 </main>
 <footer id="postamble" class="status">
 <section>
-    <ul>
-        <li class="date"></li>
-        <li class="author">&copy; 7696122 (<a href="mailto:7696122@gmail.com">7696122@gmail.com</a>)</li>
-        <li class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 29.4 (<a href="https://orgmode.org">Org</a> mode 9.8)</li>
-        <li class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></li>
-    </ul>
+  <ul>
+    <li class="date"></li>
+    <li class="author">&copy; 7696122 (<a href="mailto:7696122@gmail.com">7696122@gmail.com</a>)</li>
+    <li class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 29.4 (<a href="https://orgmode.org">Org</a> mode 9.8)</li>
+    <li class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></li>
+  </ul>
 </section>
 
 <script src="/postamble.js"></script>
@@ -238,29 +224,29 @@ media="screen"
 <!-- <script>eruda.init();</script> -->
 
 <script type="text/javascript">
-    let isDebug = window.localStorage.getItem('debugging');
+  let isDebug = window.localStorage.getItem('debugging');
 
-    if (isDebug === null) {
-        /**
-         * Loads a JavaScript file and returns a Promise for when it is loaded
-         */
-        const loadScript = src => {
-            return new Promise((resolve, reject) => {
-                const script = document.createElement('script')
-                script.type = 'text/javascript'
-                script.onload = resolve
-                script.onerror = reject
-                script.src = src
-                document.head.append(script)
-            })
-        }
-
-        loadScript('https://cdn.jsdelivr.net/npm/eruda')
-            .then(() => {
-                eruda.init();
-            })
-            .catch(() => console.error('Something went wrong.'))
+  if (isDebug === null) {
+    /**
+     * Loads a JavaScript file and returns a Promise for when it is loaded
+     */
+    const loadScript = src => {
+      return new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.type = 'text/javascript'
+        script.onload = resolve
+        script.onerror = reject
+        script.src = src
+        document.head.append(script)
+      })
     }
+
+    loadScript('https://cdn.jsdelivr.net/npm/eruda')
+      .then(() => {
+        eruda.init();
+      })
+      .catch(() => console.error('Something went wrong.'))
+  }
 </script>
 
 <!-- <link rel="stylesheet" href="/pesticide.css"> -->
