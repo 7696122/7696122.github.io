@@ -11,87 +11,86 @@
 <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
 <!-- <link rel="stylesheet" href="/css/tailwind.css" type="text/tailwindcss" media="screen" /> -->
 <style type="text/tailwindcss">
-@tailwind base;
+    @tailwind base;
 
-@layer base {
-  /* @font-face { */
-  /*     font-family: "Roboto"; */
-  /*     font-style: normal; */
-  /*     font-weight: 400; */
-  /*     font-display: swap; */
-  /*     src: url(/fonts/Roboto.woff2) format("woff2"); */
-  /* } */
+    @layer base {
+      .title {
+        @apply text-2xl;
+      }
 
-  body {
-    @apply w-full;
-    @apply max-w-xl;
-    @apply m-auto;
-  }
+      #preamble {
+        @apply fixed;
+        @apply w-full;
+        @apply bg-gray-200;
 
-  h1 {
-    @apply text-2xl;
-    @apply font-bold;
-  }
+        nav {
+          ul {
+            @apply flex;
+            @apply items-center;
+            /* @apply justify-between; */
+            @apply text-3xl;
+            @apply capitalize;
 
-  h2 {
-    @apply text-xl;
-    @apply font-bold;
-  }
-
-  h3 {
-    @apply text-lg;
-    @apply font-bold;
-  }
-
-  #preamble, #postamble {
-    @apply p-3;
-  }
-
-  main#content {
-    @apply max-w-full;
-    @apply p-3;
-
-    a {
-      /* @apply text-blue-600; */
-      /* @apply underline; */
-    }
-    ul {
-      li {
-        a {
-          @apply flex;
-          @apply justify-between;
-          @apply gap-2;
-          @apply items-center;
-
-          /* span:not(:last-of-type) { */
-          /*     @apply font-bold; */
-          /*     @apply text-lg; */
-          /* } */
-          span:nth-of-type(2) {
-            @apply text-2xl;
-            @apply grow;
-            @apply truncate;
+            li:nth-of-type(1) {
+              @apply p-4;
+            }
           }
-          span:last-of-type {
-            @apply font-mono;
-            @apply flex-none;
+        }
+      }
+
+      #preamble,
+      #postamble {
+
+        section {
+          /* @apply p-3; */
+        }
+
+      }
+
+      main#content {
+        @apply max-w-full;
+        @apply p-3;
+
+        a {
+          /* @apply text-blue-600; */
+          /* @apply underline; */
+        }
+        ul {
+          li {
+            a {
+              @apply flex;
+              @apply justify-between;
+              @apply gap-2;
+              @apply items-center;
+
+              /* span:not(:last-of-type) { */
+              /*     @apply font-bold; */
+              /*     @apply text-lg; */
+              /* } */
+              span:nth-of-type(2) {
+                @apply text-2xl;
+                @apply grow;
+                @apply truncate;
+              }
+              span:last-of-type {
+                @apply font-mono;
+                @apply flex-none;
+              }
+            }
           }
         }
       }
     }
-  }
-}
 
-@tailwind components;
+    @tailwind components;
 
-@tailwind utilities;
+    @tailwind utilities;
 
-@layer utilities {
-  .content-auto {
-    content-visibility: auto;
-  }
-}
-
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    }
 </style>
 
 <!-- <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
@@ -105,8 +104,8 @@
 
 <!-- <script src="https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.7.41/dist/flexsearch.bundle.min.js"></script> -->
 
+<!-- <link rel="stylesheet" href="/css/style.css" type="text/css" media="screen" /> -->
 <link rel="stylesheet" href="/css/main.css" type="text/css" media="screen" />
-<link rel="stylesheet" href="/css/style.css" type="text/css" media="screen" />
 <script type="text/javascript" src="/js/main.js"></script>
 <script>
 // @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
@@ -172,9 +171,9 @@
   customElements.define("logo-emoji", Logo);
 </script>
 
-<section>
+<section id="gnb">
   <nav>
-    <ul class="flex items-center text-3xl capitalize">
+    <ul>
       <li>
         <a href="/">
           <logo-emoji />
@@ -229,7 +228,7 @@
   </ul>
 </section>
 
-<script src="/postamble.js"></script>
+<script src="/js/postamble.js"></script>
 
 <!-- <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script> -->
 
