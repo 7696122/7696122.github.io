@@ -10,75 +10,89 @@
 
 <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
 <!-- <link rel="stylesheet" href="/css/tailwind.css" type="text/tailwindcss" media="screen" /> -->
-<!-- <style type="text/tailwindcss">
-     @tailwind base;
+<style type="text/tailwindcss">
+@tailwind base;
 
-     @layer base {
-     @font-face {
-     font-family: 'Roboto';
-     font-style: normal;
-     font-weight: 400;
-     font-display: swap;
-     src: url(/fonts/Roboto.woff2) format('woff2');
-     }
+@layer base {
+  /* @font-face { */
+  /*     font-family: "Roboto"; */
+  /*     font-style: normal; */
+  /*     font-weight: 400; */
+  /*     font-display: swap; */
+  /*     src: url(/fonts/Roboto.woff2) format("woff2"); */
+  /* } */
 
-     h1 {
-     @apply text-2xl;
-     @apply font-bold
-     }
+  body {
+    @apply w-full;
+    @apply max-w-xl;
+    @apply m-auto;
+  }
 
-     h2 {
-     @apply text-xl;
-     @apply font-bold
-     }
+  h1 {
+    @apply text-2xl;
+    @apply font-bold;
+  }
 
-     h3 {
-     @apply text-lg;
-     @apply font-bold
-     }
+  h2 {
+    @apply text-xl;
+    @apply font-bold;
+  }
 
-     main#content {
-     a {
-     @apply text-blue-600;
-     @apply underline;
-     }
+  h3 {
+    @apply text-lg;
+    @apply font-bold;
+  }
 
-     }
+  #preamble, #postamble {
+    @apply p-3;
+  }
 
-     /* ol,
-     ul {
-     @apply list-disc;
-     @apply list-outside;
-     @apply m-5;
-     } */
+  main#content {
+    @apply max-w-full;
+    @apply p-3;
 
-     .org-ui * {
-     list-style: disc;
-     }
+    a {
+      /* @apply text-blue-600; */
+      /* @apply underline; */
+    }
+    ul {
+      li {
+        a {
+          @apply flex;
+          @apply justify-between;
+          @apply gap-2;
+          @apply items-center;
 
-     .org-ul {
-     li {
-     span:not(:last-of-type),
-     a {
-     }
-     span:last-of-type {
-     @apply float-right;
-     @apply italic;
-     }
-     }
-     }
-     }
+          /* span:not(:last-of-type) { */
+          /*     @apply font-bold; */
+          /*     @apply text-lg; */
+          /* } */
+          span:nth-of-type(2) {
+            @apply text-2xl;
+            @apply grow;
+            @apply truncate;
+          }
+          span:last-of-type {
+            @apply font-mono;
+            @apply flex-none;
+          }
+        }
+      }
+    }
+  }
+}
 
-     @tailwind components;
+@tailwind components;
 
-     @tailwind utilities;
+@tailwind utilities;
 
-     @layer utilities {
-     .content-auto {
-     content-visibility: auto;
-     }
-     }
-     </style> -->
+@layer utilities {
+  .content-auto {
+    content-visibility: auto;
+  }
+}
+
+</style>
 
 <!-- <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
      integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script> -->
@@ -90,6 +104,7 @@
 <!-- <script src="https://unpkg.com/@babel/standalone/babel.min.js"> -->
 
 <!-- <script src="https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.7.41/dist/flexsearch.bundle.min.js"></script> -->
+
 <link rel="stylesheet" href="/css/main.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="/css/style.css" type="text/css" media="screen" />
 <script type="text/javascript" src="/js/main.js"></script>
@@ -187,45 +202,45 @@
 <main id="content" class="content container">
 <header>
 <h1 class="title">Git 정보를 보여주는 Component 만들기</h1>
-</header><section id="outline-container-orgec6f99e" class="outline-2">
-<h2 id="orgec6f99e">최종 커밋의 hash</h2>
-<div class="outline-text-2" id="text-orgec6f99e">
+</header><section id="outline-container-org087cc27" class="outline-2">
+<h2 id="org087cc27">최종 커밋의 hash</h2>
+<div class="outline-text-2" id="text-org087cc27">
 </div>
-<div id="outline-container-org32bdd29" class="outline-3">
-<h3 id="org32bdd29">&gt;&gt; 명령</h3>
-<div class="outline-text-3" id="text-org32bdd29">
+<div id="outline-container-orgd1a3715" class="outline-3">
+<h3 id="orgd1a3715">&gt;&gt; 명령</h3>
+<div class="outline-text-3" id="text-orgd1a3715">
 <div class="org-src-container">
-<pre class="src src-sh" id="org1b85080"><span style="color: #228b22;">git</span> rev-parse --short HEAD
+<pre class="src src-sh" id="org69b4f55"><span style="color: #228b22;">git</span> rev-parse --short HEAD
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-org962182d" class="outline-3">
-<h3 id="org962182d">&lt;&lt; 결과</h3>
-<div class="outline-text-3" id="text-org962182d">
+<div id="outline-container-org84d6c35" class="outline-3">
+<h3 id="org84d6c35">&lt;&lt; 결과</h3>
+<div class="outline-text-3" id="text-org84d6c35">
 <div class="org-src-container">
-<pre class="src src-org">60954f5
+<pre class="src src-org">9426abd
 </pre>
 </div>
 </div>
 </div>
 </section>
-<section id="outline-container-orga1f3a85" class="outline-2">
-<h2 id="orga1f3a85">현재 branch</h2>
-<div class="outline-text-2" id="text-orga1f3a85">
+<section id="outline-container-org22ce077" class="outline-2">
+<h2 id="org22ce077">현재 branch</h2>
+<div class="outline-text-2" id="text-org22ce077">
 </div>
-<div id="outline-container-org19d0a92" class="outline-3">
-<h3 id="org19d0a92">&gt;&gt; 명령</h3>
-<div class="outline-text-3" id="text-org19d0a92">
+<div id="outline-container-org96eba21" class="outline-3">
+<h3 id="org96eba21">&gt;&gt; 명령</h3>
+<div class="outline-text-3" id="text-org96eba21">
 <div class="org-src-container">
-<pre class="src src-sh" id="org134e718"><span style="color: #228b22;">git</span> branch --show-current
+<pre class="src src-sh" id="org5e175f3"><span style="color: #228b22;">git</span> branch --show-current
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-org6c3fc26" class="outline-3">
-<h3 id="org6c3fc26">&lt;&lt; 결과</h3>
-<div class="outline-text-3" id="text-org6c3fc26">
+<div id="outline-container-orgeeed5d8" class="outline-3">
+<h3 id="orgeeed5d8">&lt;&lt; 결과</h3>
+<div class="outline-text-3" id="text-orgeeed5d8">
 <div class="org-src-container">
 <pre class="src src-org">master
 </pre>
