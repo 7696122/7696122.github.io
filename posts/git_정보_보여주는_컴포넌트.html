@@ -11,23 +11,28 @@
 <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
 <!-- <link rel="stylesheet" href="/css/tailwind.css" type="text/tailwindcss" media="screen" /> -->
 <style type="text/tailwindcss">
-    @tailwind base;
+  @tailwind base;
 
     @layer base {
+      body {
+        @apply max-w-screen-sm;
+        @apply mx-auto;
+      }
+
       .title {
         @apply text-2xl;
       }
 
       #preamble {
         @apply fixed;
-        @apply w-full;
+        @apply top-0;
         @apply bg-gray-200;
 
         nav {
           ul {
             @apply flex;
             @apply items-center;
-            /* @apply justify-between; */
+            @apply justify-between;
             @apply text-3xl;
             @apply capitalize;
 
@@ -38,40 +43,34 @@
         }
       }
 
-      #preamble,
-      #postamble {
-
-        section {
-          /* @apply p-3; */
-        }
-
-      }
-
       main#content {
-        @apply max-w-full;
         @apply p-3;
 
         a {
           /* @apply text-blue-600; */
-          /* @apply underline; */
+          @apply underline;
         }
+
         ul {
           li {
+            /* @apply flex; */
+            /* @apply justify-between; */
+            @apply items-center;
+
             a {
-              @apply flex;
-              @apply justify-between;
               @apply gap-2;
-              @apply items-center;
 
               /* span:not(:last-of-type) { */
               /*     @apply font-bold; */
               /*     @apply text-lg; */
               /* } */
+
               span:nth-of-type(2) {
                 @apply text-2xl;
                 @apply grow;
                 @apply truncate;
               }
+
               span:last-of-type {
                 @apply font-mono;
                 @apply flex-none;
@@ -201,45 +200,45 @@
 <main id="content" class="content container">
 <header>
 <h1 class="title">Git 정보를 보여주는 Component 만들기</h1>
-</header><section id="outline-container-org087cc27" class="outline-2">
-<h2 id="org087cc27">최종 커밋의 hash</h2>
-<div class="outline-text-2" id="text-org087cc27">
+</header><section id="outline-container-orgec6f99e" class="outline-2">
+<h2 id="orgec6f99e">최종 커밋의 hash</h2>
+<div class="outline-text-2" id="text-orgec6f99e">
 </div>
-<div id="outline-container-orgbe1896f" class="outline-3">
-<h3 id="orgbe1896f">&gt;&gt; 명령</h3>
-<div class="outline-text-3" id="text-orgbe1896f">
+<div id="outline-container-org16df08e" class="outline-3">
+<h3 id="org16df08e">&gt;&gt; 명령</h3>
+<div class="outline-text-3" id="text-org16df08e">
 <div class="org-src-container">
-<pre class="src src-sh" id="org69b4f55"><span style="color: #228b22;">git</span> rev-parse --short HEAD
+<pre class="src src-sh" id="org1b85080"><span style="color: #228b22;">git</span> rev-parse --short HEAD
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-org323f260" class="outline-3">
-<h3 id="org323f260">&lt;&lt; 결과</h3>
-<div class="outline-text-3" id="text-org323f260">
+<div id="outline-container-org72d3f02" class="outline-3">
+<h3 id="org72d3f02">&lt;&lt; 결과</h3>
+<div class="outline-text-3" id="text-org72d3f02">
 <div class="org-src-container">
-<pre class="src src-org">d3dbd5f
+<pre class="src src-org">6527f60
 </pre>
 </div>
 </div>
 </div>
 </section>
-<section id="outline-container-org22ce077" class="outline-2">
-<h2 id="org22ce077">현재 branch</h2>
-<div class="outline-text-2" id="text-org22ce077">
+<section id="outline-container-orga1f3a85" class="outline-2">
+<h2 id="orga1f3a85">현재 branch</h2>
+<div class="outline-text-2" id="text-orga1f3a85">
 </div>
-<div id="outline-container-org733a98e" class="outline-3">
-<h3 id="org733a98e">&gt;&gt; 명령</h3>
-<div class="outline-text-3" id="text-org733a98e">
+<div id="outline-container-orgd9bf985" class="outline-3">
+<h3 id="orgd9bf985">&gt;&gt; 명령</h3>
+<div class="outline-text-3" id="text-orgd9bf985">
 <div class="org-src-container">
-<pre class="src src-sh" id="org5e175f3"><span style="color: #228b22;">git</span> branch --show-current
+<pre class="src src-sh" id="org134e718"><span style="color: #228b22;">git</span> branch --show-current
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-org63ae7c4" class="outline-3">
-<h3 id="org63ae7c4">&lt;&lt; 결과</h3>
-<div class="outline-text-3" id="text-org63ae7c4">
+<div id="outline-container-org9bc5351" class="outline-3">
+<h3 id="org9bc5351">&lt;&lt; 결과</h3>
+<div class="outline-text-3" id="text-org9bc5351">
 <div class="org-src-container">
 <pre class="src src-org">master
 </pre>

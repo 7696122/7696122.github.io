@@ -11,23 +11,28 @@
 <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
 <!-- <link rel="stylesheet" href="/css/tailwind.css" type="text/tailwindcss" media="screen" /> -->
 <style type="text/tailwindcss">
-    @tailwind base;
+  @tailwind base;
 
     @layer base {
+      body {
+        @apply max-w-screen-sm;
+        @apply mx-auto;
+      }
+
       .title {
         @apply text-2xl;
       }
 
       #preamble {
         @apply fixed;
-        @apply w-full;
+        @apply top-0;
         @apply bg-gray-200;
 
         nav {
           ul {
             @apply flex;
             @apply items-center;
-            /* @apply justify-between; */
+            @apply justify-between;
             @apply text-3xl;
             @apply capitalize;
 
@@ -38,40 +43,34 @@
         }
       }
 
-      #preamble,
-      #postamble {
-
-        section {
-          /* @apply p-3; */
-        }
-
-      }
-
       main#content {
-        @apply max-w-full;
         @apply p-3;
 
         a {
           /* @apply text-blue-600; */
-          /* @apply underline; */
+          @apply underline;
         }
+
         ul {
           li {
+            /* @apply flex; */
+            /* @apply justify-between; */
+            @apply items-center;
+
             a {
-              @apply flex;
-              @apply justify-between;
               @apply gap-2;
-              @apply items-center;
 
               /* span:not(:last-of-type) { */
               /*     @apply font-bold; */
               /*     @apply text-lg; */
               /* } */
+
               span:nth-of-type(2) {
                 @apply text-2xl;
                 @apply grow;
                 @apply truncate;
               }
+
               span:last-of-type {
                 @apply font-mono;
                 @apply flex-none;
@@ -200,15 +199,15 @@
 </header>
 <main id="content" class="content container">
 <ul class="org-ul">
-<li><a href="../posts/blank.html"><span>📰</span> <span>Blank</span> <span class="timestamp">&lt;2024-10-09 19:03&gt;</span></a></li>
-<li><a href="../posts/킵.html"><span>📰</span> <span>킵</span> <span class="timestamp">&lt;2024-10-09 10:11&gt;</span></a></li>
-<li><a href="../posts/git_정보_보여주는_컴포넌트.html"><span>📰</span> <span>Git 정보를 보여주는 Component 만들기</span> <span class="timestamp">&lt;2024-10-05 09:13&gt;</span></a></li>
-<li><a href="../posts/모바일_키보드.html"><span>📰</span> <span>모바일 키보드</span> <span class="timestamp">&lt;2024-10-04 21:58&gt;</span></a></li>
-<li><a href="../posts/헤더는_위로_푸터는_아래로.html"><span>📰</span> <span>헤더는 위로 푸터는 아래로</span> <span class="timestamp">&lt;2024-10-01 21:51&gt;</span></a></li>
-<li><a href="../posts/이미지_용량_줄이기.html"><span>📰</span> <span>이미지 용량 줄이기</span> <span class="timestamp">&lt;2024-10-01 21:51&gt;</span></a></li>
-<li><a href="../posts/불안함.html"><span>📰</span> <span>불안함</span> <span class="timestamp">&lt;2024-10-01 21:51&gt;</span></a></li>
-<li><a href="../posts/모바일_디버깅하기.html"><span>📰</span> <span>모바일 디버깅하기</span> <span class="timestamp">&lt;2024-10-01 21:51&gt;</span></a></li>
-<li><a href="../posts/nav는_어디에.html"><span>📰</span> <span>Nav는 어디에</span> <span class="timestamp">&lt;2024-10-01 21:51&gt;</span></a></li>
+<li><a href="../posts/킵.html"><span>📰</span> <span>킵</span> <span class="timestamp">&lt;2024-10-10 09:19&gt;</span></a></li>
+<li><a href="../posts/blank.html"><span>📰</span> <span>Blank</span> <span class="timestamp">&lt;2024-10-10 08:37&gt;</span></a></li>
+<li><a href="../posts/모바일_키보드.html"><span>📰</span> <span>모바일 키보드</span> <span class="timestamp">&lt;2024-10-04 14:08&gt;</span></a></li>
+<li><a href="../posts/git_정보_보여주는_컴포넌트.html"><span>📰</span> <span>Git 정보를 보여주는 Component 만들기</span> <span class="timestamp">&lt;2024-10-04 09:07&gt;</span></a></li>
+<li><a href="../posts/모바일_디버깅하기.html"><span>📰</span> <span>모바일 디버깅하기</span> <span class="timestamp">&lt;2024-09-30 13:21&gt;</span></a></li>
+<li><a href="../posts/불안함.html"><span>📰</span> <span>불안함</span> <span class="timestamp">&lt;2024-09-30 11:14&gt;</span></a></li>
+<li><a href="../posts/이미지_용량_줄이기.html"><span>📰</span> <span>이미지 용량 줄이기</span> <span class="timestamp">&lt;2024-09-25 19:37&gt;</span></a></li>
+<li><a href="../posts/헤더는_위로_푸터는_아래로.html"><span>📰</span> <span>헤더는 위로 푸터는 아래로</span> <span class="timestamp">&lt;2024-09-25 19:32&gt;</span></a></li>
+<li><a href="../posts/nav는_어디에.html"><span>📰</span> <span>Nav는 어디에</span> <span class="timestamp">&lt;2024-09-23 09:52&gt;</span></a></li>
 </ul>
 </main>
 <footer id="postamble" class="status">

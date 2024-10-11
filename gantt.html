@@ -11,23 +11,28 @@
 <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
 <!-- <link rel="stylesheet" href="/css/tailwind.css" type="text/tailwindcss" media="screen" /> -->
 <style type="text/tailwindcss">
-    @tailwind base;
+  @tailwind base;
 
     @layer base {
+      body {
+        @apply max-w-screen-sm;
+        @apply mx-auto;
+      }
+
       .title {
         @apply text-2xl;
       }
 
       #preamble {
         @apply fixed;
-        @apply w-full;
+        @apply top-0;
         @apply bg-gray-200;
 
         nav {
           ul {
             @apply flex;
             @apply items-center;
-            /* @apply justify-between; */
+            @apply justify-between;
             @apply text-3xl;
             @apply capitalize;
 
@@ -38,40 +43,34 @@
         }
       }
 
-      #preamble,
-      #postamble {
-
-        section {
-          /* @apply p-3; */
-        }
-
-      }
-
       main#content {
-        @apply max-w-full;
         @apply p-3;
 
         a {
           /* @apply text-blue-600; */
-          /* @apply underline; */
+          @apply underline;
         }
+
         ul {
           li {
+            /* @apply flex; */
+            /* @apply justify-between; */
+            @apply items-center;
+
             a {
-              @apply flex;
-              @apply justify-between;
               @apply gap-2;
-              @apply items-center;
 
               /* span:not(:last-of-type) { */
               /*     @apply font-bold; */
               /*     @apply text-lg; */
               /* } */
+
               span:nth-of-type(2) {
                 @apply text-2xl;
                 @apply grow;
                 @apply truncate;
               }
+
               span:last-of-type {
                 @apply font-mono;
                 @apply flex-none;
@@ -208,13 +207,13 @@
 <script type="text/javascript">
 gantt.init("gantt_here");
 </script>
-<section id="outline-container-orge21c2f9" class="outline-2">
-<h2 id="orge21c2f9">filter list&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ox">ox</span></span></h2>
+<section id="outline-container-orgc480e02" class="outline-2">
+<h2 id="orgc480e02">filter list&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ox">ox</span></span></h2>
 </section>
 
-<section id="outline-container-org6f7d7c7" class="outline-2">
-<h2 id="org6f7d7c7">gantt&#xa0;&#xa0;&#xa0;<span class="tag"><span class="content">content</span></span></h2>
-<div class="outline-text-2" id="text-org6f7d7c7">
+<section id="outline-container-org7146a59" class="outline-2">
+<h2 id="org7146a59">gantt&#xa0;&#xa0;&#xa0;<span class="tag"><span class="content">content</span></span></h2>
+<div class="outline-text-2" id="text-org7146a59">
 <p>
 Gantt
 </p>
