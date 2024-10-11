@@ -131,6 +131,33 @@
 </head>
 <body>
 <header id="preamble" class="status">
+<section id="gnb">
+  <nav>
+    <ul>
+      <li>
+        <a href="/">
+          <logo-emoji />
+        </a>
+      </li>
+      <li class="m-3">
+        <a href="/home.html">
+          <span>home</span>
+        </a>
+      </li>
+      <li class="m-3">
+        <a href="/posts.html">
+          <span>posts</span>
+        </a>
+      </li>
+      <li class="m-3">
+        <a href="/about.html">
+          <span>about</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</section>
+
 <script>
   class Logo extends HTMLElement {
     constructor() {
@@ -171,33 +198,6 @@
 
   customElements.define("logo-emoji", Logo);
 </script>
-
-<section id="gnb">
-  <nav>
-    <ul>
-      <li>
-        <a href="/">
-          <logo-emoji />
-        </a>
-      </li>
-      <li class="m-3">
-        <a href="/home.html">
-          <span>home</span>
-        </a>
-      </li>
-      <li class="m-3">
-        <a href="/posts.html">
-          <span>posts</span>
-        </a>
-      </li>
-      <li class="m-3">
-        <a href="/about.html">
-          <span>about</span>
-        </a>
-      </li>
-    </ul>
-  </nav>
-</section>
 </header>
 <main id="content" class="content container">
 <p>
@@ -230,7 +230,7 @@
 </section>
 </footer>
 <script type="text/javascript">
-(function () {
+  (function () {
     let bodyEl = document.body
     // let contentEl = document.getElementById('content');
     let preambleEl = document.getElementById('preamble');
@@ -238,7 +238,7 @@
     let preambleRect = preambleEl.getBoundingClientRect();
 
     bodyEl.classList.add(
-        `pt-[${preambleRect.height}px]`,
+      `pt-[${preambleRect.height}px]`,
     );
 
     preambleEl.classList.add(
@@ -250,7 +250,7 @@
 
     postambleEl.classList.add(
     );
-})();
+  })();
 </script>
 
 <!-- <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script> -->
@@ -261,33 +261,33 @@
 <!-- <script>eruda.init();</script> -->
 
 <script type="text/javascript">
-    userbase.init({ appId: '9a3b7d01-ad2f-4deb-aa6d-3ee838045454' })
+  userbase.init({ appId: '9a3b7d01-ad2f-4deb-aa6d-3ee838045454' })
 </script>
 
 <script type="text/javascript">
-    let isDebug = window.localStorage.getItem('debugging');
+  let isDebug = window.localStorage.getItem('debugging');
 
-    if (isDebug === null) {
-        /**
-         * Loads a JavaScript file and returns a Promise for when it is loaded
-         */
-        const loadScript = src => {
-            return new Promise((resolve, reject) => {
-                const script = document.createElement('script')
-                script.type = 'text/javascript'
-                script.onload = resolve
-                script.onerror = reject
-                script.src = src
-                document.head.append(script)
-            })
-        }
-
-        loadScript('https://cdn.jsdelivr.net/npm/eruda')
-            .then(() => {
-                eruda.init();
-            })
-            .catch(() => console.error('Something went wrong.'))
+  if (isDebug === null) {
+    /**
+     * Loads a JavaScript file and returns a Promise for when it is loaded
+     */
+    const loadScript = src => {
+      return new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.type = 'text/javascript'
+        script.onload = resolve
+        script.onerror = reject
+        script.src = src
+        document.head.append(script)
+      })
     }
+
+    loadScript('https://cdn.jsdelivr.net/npm/eruda')
+      .then(() => {
+        eruda.init();
+      })
+      .catch(() => console.error('Something went wrong.'))
+  }
 </script>
 
 <!-- <link rel="stylesheet" href="/pesticide.css"> -->
