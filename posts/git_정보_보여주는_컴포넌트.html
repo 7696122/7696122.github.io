@@ -8,6 +8,8 @@
 <meta name="generator" content="Org Mode" />
 <!-- <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" /> -->
 
+<script type="text/javascript" src="https://sdk.userbase.com/2/userbase.js"></script>
+
 <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
 <!-- <link rel="stylesheet" href="/css/tailwind.css" type="text/tailwindcss" media="screen" /> -->
 <style type="text/tailwindcss">
@@ -204,18 +206,30 @@
 <h2 id="orgec6f99e">최종 커밋의 hash</h2>
 <div class="outline-text-2" id="text-orgec6f99e">
 </div>
+<<<<<<< Updated upstream
 <div id="outline-container-org16df08e" class="outline-3">
 <h3 id="org16df08e">&gt;&gt; 명령</h3>
 <div class="outline-text-3" id="text-org16df08e">
+=======
+<div id="outline-container-org2055c6c" class="outline-3">
+<h3 id="org2055c6c">&gt;&gt; 명령</h3>
+<div class="outline-text-3" id="text-org2055c6c">
+>>>>>>> Stashed changes
 <div class="org-src-container">
 <pre class="src src-sh" id="org1b85080"><span style="color: #228b22;">git</span> rev-parse --short HEAD
 </pre>
 </div>
 </div>
 </div>
+<<<<<<< Updated upstream
 <div id="outline-container-org72d3f02" class="outline-3">
 <h3 id="org72d3f02">&lt;&lt; 결과</h3>
 <div class="outline-text-3" id="text-org72d3f02">
+=======
+<div id="outline-container-org7b8b715" class="outline-3">
+<h3 id="org7b8b715">&lt;&lt; 결과</h3>
+<div class="outline-text-3" id="text-org7b8b715">
+>>>>>>> Stashed changes
 <div class="org-src-container">
 <pre class="src src-org">6527f60
 </pre>
@@ -227,18 +241,30 @@
 <h2 id="orga1f3a85">현재 branch</h2>
 <div class="outline-text-2" id="text-orga1f3a85">
 </div>
+<<<<<<< Updated upstream
 <div id="outline-container-orgd9bf985" class="outline-3">
 <h3 id="orgd9bf985">&gt;&gt; 명령</h3>
 <div class="outline-text-3" id="text-orgd9bf985">
+=======
+<div id="outline-container-orgee96997" class="outline-3">
+<h3 id="orgee96997">&gt;&gt; 명령</h3>
+<div class="outline-text-3" id="text-orgee96997">
+>>>>>>> Stashed changes
 <div class="org-src-container">
 <pre class="src src-sh" id="org134e718"><span style="color: #228b22;">git</span> branch --show-current
 </pre>
 </div>
 </div>
 </div>
+<<<<<<< Updated upstream
 <div id="outline-container-org9bc5351" class="outline-3">
 <h3 id="org9bc5351">&lt;&lt; 결과</h3>
 <div class="outline-text-3" id="text-org9bc5351">
+=======
+<div id="outline-container-org6cf6826" class="outline-3">
+<h3 id="org6cf6826">&lt;&lt; 결과</h3>
+<div class="outline-text-3" id="text-org6cf6826">
+>>>>>>> Stashed changes
 <div class="org-src-container">
 <pre class="src src-org">master
 </pre>
@@ -256,8 +282,30 @@
     <li class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></li>
   </ul>
 </section>
+</footer>
+<script type="text/javascript">
+(function () {
+    let bodyEl = document.body
+    // let contentEl = document.getElementById('content');
+    let preambleEl = document.getElementById('preamble');
+    let postambleEl = document.getElementById('postamble');
+    let preambleRect = preambleEl.getBoundingClientRect();
 
-<script src="/js/postamble.js"></script>
+    bodyEl.classList.add(
+        `pt-[${preambleRect.height}px]`,
+    );
+
+    preambleEl.classList.add(
+    );
+
+    // contentEl.classList.add(
+    //     "m-5",
+    // );
+
+    postambleEl.classList.add(
+    );
+})();
+</script>
 
 <!-- <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script> -->
 
@@ -267,32 +315,35 @@
 <!-- <script>eruda.init();</script> -->
 
 <script type="text/javascript">
-  let isDebug = window.localStorage.getItem('debugging');
+    userbase.init({ appId: '9a3b7d01-ad2f-4deb-aa6d-3ee838045454' })
+</script>
 
-  if (isDebug === null) {
-    /**
-     * Loads a JavaScript file and returns a Promise for when it is loaded
-     */
-    const loadScript = src => {
-      return new Promise((resolve, reject) => {
-        const script = document.createElement('script')
-        script.type = 'text/javascript'
-        script.onload = resolve
-        script.onerror = reject
-        script.src = src
-        document.head.append(script)
-      })
+<script type="text/javascript">
+    let isDebug = window.localStorage.getItem('debugging');
+
+    if (isDebug === null) {
+        /**
+         * Loads a JavaScript file and returns a Promise for when it is loaded
+         */
+        const loadScript = src => {
+            return new Promise((resolve, reject) => {
+                const script = document.createElement('script')
+                script.type = 'text/javascript'
+                script.onload = resolve
+                script.onerror = reject
+                script.src = src
+                document.head.append(script)
+            })
+        }
+
+        loadScript('https://cdn.jsdelivr.net/npm/eruda')
+            .then(() => {
+                eruda.init();
+            })
+            .catch(() => console.error('Something went wrong.'))
     }
-
-    loadScript('https://cdn.jsdelivr.net/npm/eruda')
-      .then(() => {
-        eruda.init();
-      })
-      .catch(() => console.error('Something went wrong.'))
-  }
 </script>
 
 <!-- <link rel="stylesheet" href="/pesticide.css"> -->
-</footer>
 </body>
 </html>
