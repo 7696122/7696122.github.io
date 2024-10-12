@@ -13,7 +13,7 @@
 <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
 <!-- <link rel="stylesheet" href="/css/tailwind.css" type="text/tailwindcss" media="screen" /> -->
 <style type="text/tailwindcss">
-  @tailwind base;
+    @tailwind base;
 
     @layer base {
       body {
@@ -21,65 +21,30 @@
         @apply mx-auto;
       }
 
-      .title {
-        @apply text-2xl;
-      }
-
-      #preamble {
-        @apply fixed;
-        @apply top-0;
-        @apply bg-gray-200;
-
-        nav {
-          ul {
-            @apply flex;
-            @apply items-center;
-            @apply justify-between;
-            @apply text-3xl;
-            @apply capitalize;
-
-            li:nth-of-type(1) {
-              @apply p-4;
-            }
-          }
-        }
-      }
-
-      main#content {
+      #content {
         @apply p-3;
+      }
 
-        a {
-          /* @apply text-blue-600; */
-          @apply underline;
-        }
-
-        ul {
-          li {
-            /* @apply flex; */
-            /* @apply justify-between; */
-            @apply items-center;
-
-            a {
-              @apply gap-2;
-
-              /* span:not(:last-of-type) { */
-              /*     @apply font-bold; */
-              /*     @apply text-lg; */
-              /* } */
-
-              span:nth-of-type(2) {
-                @apply text-2xl;
-                @apply grow;
-                @apply truncate;
-              }
-
-              span:last-of-type {
-                @apply font-mono;
-                @apply flex-none;
-              }
-            }
+      #posts-list {
+        li {
+          @apply p-2;
+          @apply border-b;
+          span:nth-of-type(1) {
+            @apply block;
+          }
+          span:nth-of-type(3) {
+            @apply font-black; 
+          }
+          span:last-of-type {
+            @apply block;
           }
         }
+      }
+
+      .title {
+        @apply text-left;
+        @apply font-black;
+        @apply text-xl;
       }
     }
 
@@ -132,24 +97,24 @@
 <body>
 <header id="preamble" class="status">
 <section id="gnb">
-  <nav>
-    <ul>
+  <nav class="font-black text-xl">
+    <ul class="flex items-center capitalize p-3 gap-3">
       <li>
         <a href="/">
           <logo-emoji />
         </a>
       </li>
-      <li class="m-3">
+      <li>
         <a href="/home.html">
           <span>home</span>
         </a>
       </li>
-      <li class="m-3">
+      <li>
         <a href="/posts.html">
           <span>posts</span>
         </a>
       </li>
-      <li class="m-3">
+      <li>
         <a href="/about.html">
           <span>about</span>
         </a>
@@ -157,6 +122,10 @@
     </ul>
   </nav>
 </section>
+
+<style type="text/css" media="screen">
+
+</style>
 
 <script>
   class Logo extends HTMLElement {
@@ -186,7 +155,11 @@
     }
 
     render() {
-      const emojis = ['🪦', '🇰🇷', '🏛'];
+      const emojis = [
+          '🪦',
+          '🇰🇷',
+          '🏛'
+      ];
       let emoji = emojis[
         Math.floor(
           Math.random() * emojis.length
@@ -207,37 +180,35 @@
 </p>
 </main>
 <footer id="postamble" class="status">
-<section>
-  <ul>
-    <li class="date"></li>
-    <li class="author">&copy; 7696122 (<a href="mailto:7696122@gmail.com">7696122@gmail.com</a>)</li>
-    <li class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 29.4 (<a href="https://orgmode.org">Org</a> mode 9.8)</li>
-    <li class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></li>
-  </ul>
-</section>
+<ul class="p-3">
+  <li class="date"></li>
+  <li class="author">&copy; 7696122 (<a href="mailto:7696122@gmail.com">7696122@gmail.com</a>)</li>
+  <!-- <li class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 29.4 (<a href="https://orgmode.org">Org</a> mode 9.8)</li> -->
+  <!-- <li class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></li> -->
+</ul>
 </footer>
 <script type="text/javascript">
-  (function () {
-    let bodyEl = document.body
-    // let contentEl = document.getElementById('content');
-    let preambleEl = document.getElementById('preamble');
-    let postambleEl = document.getElementById('postamble');
-    let preambleRect = preambleEl.getBoundingClientRect();
-
-    bodyEl.classList.add(
-      `pt-[${preambleRect.height}px]`,
-    );
-
-    preambleEl.classList.add(
-    );
-
-    // contentEl.classList.add(
-    //     "m-5",
-    // );
-
-    postambleEl.classList.add(
-    );
-  })();
+  // (function () {
+  //   let bodyEl = document.body
+  //   // let contentEl = document.getElementById('content');
+  //   let preambleEl = document.getElementById('preamble');
+  //   let postambleEl = document.getElementById('postamble');
+  //   let preambleRect = preambleEl.getBoundingClientRect();
+  //
+  //   bodyEl.classList.add(
+  //     // `pt-[${preambleRect.height}px]`,
+  //   );
+  //
+  //   preambleEl.classList.add(
+  //   );
+  //
+  //   // contentEl.classList.add(
+  //   //     "m-5",
+  //   // );
+  //
+  //   postambleEl.classList.add(
+  //   );
+  // })();
 </script>
 
 <!-- <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script> -->
@@ -248,35 +219,34 @@
 <!-- <script>eruda.init();</script> -->
 
 <script type="text/javascript">
-  userbase.init({ appId: '9a3b7d01-ad2f-4deb-aa6d-3ee838045454' })
+    userbase.init({ appId: '9a3b7d01-ad2f-4deb-aa6d-3ee838045454' })
 </script>
 
 <script type="text/javascript">
-  let isDebug = window.localStorage.getItem('debugging');
+    let isDebug = window.localStorage.getItem('debugging');
 
-  if (isDebug === null) {
-    /**
-     * Loads a JavaScript file and returns a Promise for when it is loaded
-     */
-    const loadScript = src => {
-      return new Promise((resolve, reject) => {
-        const script = document.createElement('script')
-        script.type = 'text/javascript'
-        script.onload = resolve
-        script.onerror = reject
-        script.src = src
-        document.head.append(script)
-      })
+    if (isDebug === null) {
+      /**
+       * Loads a JavaScript file and returns a Promise for when it is loaded
+       */
+      const loadScript = src => {
+        return new Promise((resolve, reject) => {
+          const script = document.createElement('script')
+          script.type = 'text/javascript'
+          script.onload = resolve
+          script.onerror = reject
+          script.src = src
+          document.head.append(script)
+        })
+      }
+
+      loadScript('https://cdn.jsdelivr.net/npm/eruda')
+        .then(() => {
+          eruda.init();
+        })
+        .catch(() => console.error('Something went wrong.'))
     }
-
-    loadScript('https://cdn.jsdelivr.net/npm/eruda')
-      .then(() => {
-        eruda.init();
-      })
-      .catch(() => console.error('Something went wrong.'))
-  }
 </script>
-
 <!-- <link rel="stylesheet" href="/pesticide.css"> -->
 </body>
 </html>
