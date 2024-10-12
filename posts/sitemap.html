@@ -13,39 +13,40 @@
 <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
 <!-- <link rel="stylesheet" href="/css/tailwind.css" type="text/tailwindcss" media="screen" /> -->
 <style type="text/tailwindcss">
-    @tailwind base;
+  @tailwind base;
 
     @layer base {
-      body {
-        @apply max-w-screen-sm;
-        @apply mx-auto;
-      }
-
-      #content {
-        @apply p-3;
-      }
-
-      #posts-list {
-        li {
-          @apply p-2;
-          @apply border-b;
-          span:nth-of-type(1) {
-            @apply block;
-          }
-          span:nth-of-type(3) {
-            @apply font-black; 
-          }
-          span:last-of-type {
-            @apply block;
-          }
+        body {
+            @apply max-w-screen-sm;
+            @apply mx-auto;
         }
-      }
 
-      .title {
-        @apply text-left;
-        @apply font-black;
-        @apply text-xl;
-      }
+        #content {
+            @apply p-3;
+        }
+
+        #posts-list {
+            li {
+                @apply p-2;
+                @apply border-b;
+
+                span:nth-of-type(1) {
+                    @apply block;
+                }
+                span:nth-of-type(3) {
+                    @apply font-black; 
+                }
+                span:last-of-type {
+                    @apply block;
+                }
+            }
+        }
+
+        .title {
+            @apply text-left;
+            @apply font-black;
+            @apply text-xl;
+        }
     }
 
     @tailwind components;
@@ -53,9 +54,9 @@
     @tailwind utilities;
 
     @layer utilities {
-      .content-auto {
-        content-visibility: auto;
-      }
+        .content-auto {
+            content-visibility: auto;
+        }
     }
 </style>
 
@@ -174,15 +175,15 @@
 </header>
 <main id="content" class="content container">
 <ul class="org-ul">
-<li><a href="킵.html"><span class="author">7696122</span> <span>📰</span> <span>킵</span> <span class="timestamp">&lt;Oct 09&gt;</span></a></li>
-<li><a href="blank.html"><span class="author">7696122</span> <span>📰</span> <span>Blank</span> <span class="timestamp">&lt;Oct 09&gt;</span></a></li>
-<li><a href="git_정보_보여주는_컴포넌트.html"><span class="author">7696122</span> <span>📰</span> <span>Git 정보를 보여주는 Component 만들기</span> <span class="timestamp">&lt;Oct 05&gt;</span></a></li>
-<li><a href="모바일_키보드.html"><span class="author">7696122</span> <span>📰</span> <span>모바일 키보드</span> <span class="timestamp">&lt;Oct 04&gt;</span></a></li>
-<li><a href="헤더는_위로_푸터는_아래로.html"><span class="author">7696122</span> <span>📰</span> <span>헤더는 위로 푸터는 아래로</span> <span class="timestamp">&lt;Oct 01&gt;</span></a></li>
-<li><a href="이미지_용량_줄이기.html"><span class="author">7696122</span> <span>📰</span> <span>이미지 용량 줄이기</span> <span class="timestamp">&lt;Oct 01&gt;</span></a></li>
-<li><a href="불안함.html"><span class="author">7696122</span> <span>📰</span> <span>불안함</span> <span class="timestamp">&lt;Oct 01&gt;</span></a></li>
-<li><a href="모바일_디버깅하기.html"><span class="author">7696122</span> <span>📰</span> <span>모바일 디버깅하기</span> <span class="timestamp">&lt;Oct 01&gt;</span></a></li>
-<li><a href="nav는_어디에.html"><span class="author">7696122</span> <span>📰</span> <span>Nav는 어디에</span> <span class="timestamp">&lt;Oct 01&gt;</span></a></li>
+<li><a href="킵.html"><span class="author">7696122</span> <span>📰</span> <span>킵</span> 킵.org <span class="timestamp">Oct 09</span></a></li>
+<li><a href="blank.html"><span class="author">7696122</span> <span>📰</span> <span>Blank</span> blank.org <span class="timestamp">Oct 09</span></a></li>
+<li><a href="git_정보_보여주는_컴포넌트.html"><span class="author">7696122</span> <span>📰</span> <span>Git 정보를 보여주는 Component 만들기</span> git_정보_보여주는_컴포넌트.org <span class="timestamp">Oct 05</span></a></li>
+<li><a href="모바일_키보드.html"><span class="author">7696122</span> <span>📰</span> <span>모바일 키보드</span> 모바일_키보드.org <span class="timestamp">Oct 04</span></a></li>
+<li><a href="헤더는_위로_푸터는_아래로.html"><span class="author">7696122</span> <span>📰</span> <span>헤더는 위로 푸터는 아래로</span> 헤더는_위로_푸터는_아래로.org <span class="timestamp">Oct 01</span></a></li>
+<li><a href="이미지_용량_줄이기.html"><span class="author">7696122</span> <span>📰</span> <span>이미지 용량 줄이기</span> 이미지_용량_줄이기.org <span class="timestamp">Oct 01</span></a></li>
+<li><a href="불안함.html"><span class="author">7696122</span> <span>📰</span> <span>불안함</span> 불안함.org <span class="timestamp">Oct 01</span></a></li>
+<li><a href="모바일_디버깅하기.html"><span class="author">7696122</span> <span>📰</span> <span>모바일 디버깅하기</span> 모바일_디버깅하기.org <span class="timestamp">Oct 01</span></a></li>
+<li><a href="nav는_어디에.html"><span class="author">7696122</span> <span>📰</span> <span>Nav는 어디에</span> nav는_어디에.org <span class="timestamp">Oct 01</span></a></li>
 </ul>
 </main>
 <footer id="postamble" class="status">

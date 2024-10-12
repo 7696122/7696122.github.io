@@ -13,39 +13,40 @@
 <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
 <!-- <link rel="stylesheet" href="/css/tailwind.css" type="text/tailwindcss" media="screen" /> -->
 <style type="text/tailwindcss">
-    @tailwind base;
+  @tailwind base;
 
     @layer base {
-      body {
-        @apply max-w-screen-sm;
-        @apply mx-auto;
-      }
-
-      #content {
-        @apply p-3;
-      }
-
-      #posts-list {
-        li {
-          @apply p-2;
-          @apply border-b;
-          span:nth-of-type(1) {
-            @apply block;
-          }
-          span:nth-of-type(3) {
-            @apply font-black; 
-          }
-          span:last-of-type {
-            @apply block;
-          }
+        body {
+            @apply max-w-screen-sm;
+            @apply mx-auto;
         }
-      }
 
-      .title {
-        @apply text-left;
-        @apply font-black;
-        @apply text-xl;
-      }
+        #content {
+            @apply p-3;
+        }
+
+        #posts-list {
+            li {
+                @apply p-2;
+                @apply border-b;
+
+                span:nth-of-type(1) {
+                    @apply block;
+                }
+                span:nth-of-type(3) {
+                    @apply font-black; 
+                }
+                span:last-of-type {
+                    @apply block;
+                }
+            }
+        }
+
+        .title {
+            @apply text-left;
+            @apply font-black;
+            @apply text-xl;
+        }
     }
 
     @tailwind components;
@@ -53,9 +54,9 @@
     @tailwind utilities;
 
     @layer utilities {
-      .content-auto {
-        content-visibility: auto;
-      }
+        .content-auto {
+            content-visibility: auto;
+        }
     }
 </style>
 
@@ -179,20 +180,20 @@
 <h2 id="org087cc27">최종 커밋의 hash</h2>
 <div class="outline-text-2" id="text-org087cc27">
 </div>
-<div id="outline-container-orgfcd6c6f" class="outline-3">
-<h3 id="orgfcd6c6f">&gt;&gt; 명령</h3>
-<div class="outline-text-3" id="text-orgfcd6c6f">
+<div id="outline-container-org47bcd9b" class="outline-3">
+<h3 id="org47bcd9b">&gt;&gt; 명령</h3>
+<div class="outline-text-3" id="text-org47bcd9b">
 <div class="org-src-container">
 <pre class="src src-sh" id="org69b4f55"><span style="color: #228b22;">git</span> rev-parse --short HEAD
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-orgf61c3af" class="outline-3">
-<h3 id="orgf61c3af">&lt;&lt; 결과</h3>
-<div class="outline-text-3" id="text-orgf61c3af">
+<div id="outline-container-org376d773" class="outline-3">
+<h3 id="org376d773">&lt;&lt; 결과</h3>
+<div class="outline-text-3" id="text-org376d773">
 <div class="org-src-container">
-<pre class="src src-org">36bd388
+<pre class="src src-org">bce2d37
 </pre>
 </div>
 </div>
@@ -202,18 +203,18 @@
 <h2 id="org22ce077">현재 branch</h2>
 <div class="outline-text-2" id="text-org22ce077">
 </div>
-<div id="outline-container-org919c1b6" class="outline-3">
-<h3 id="org919c1b6">&gt;&gt; 명령</h3>
-<div class="outline-text-3" id="text-org919c1b6">
+<div id="outline-container-orgc1f1735" class="outline-3">
+<h3 id="orgc1f1735">&gt;&gt; 명령</h3>
+<div class="outline-text-3" id="text-orgc1f1735">
 <div class="org-src-container">
 <pre class="src src-sh" id="org5e175f3"><span style="color: #228b22;">git</span> branch --show-current
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-org12b12cb" class="outline-3">
-<h3 id="org12b12cb">&lt;&lt; 결과</h3>
-<div class="outline-text-3" id="text-org12b12cb">
+<div id="outline-container-org1a8dee7" class="outline-3">
+<h3 id="org1a8dee7">&lt;&lt; 결과</h3>
+<div class="outline-text-3" id="text-org1a8dee7">
 <div class="org-src-container">
 <pre class="src src-org">master
 </pre>
