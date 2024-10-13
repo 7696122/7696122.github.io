@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0" />
-<title>Blank - site76</title>
+<title>Web Components - site76</title>
 <meta name="author" content="7696122" />
 <meta name="generator" content="Org Mode" />
 <!-- <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" /> -->
@@ -175,255 +175,23 @@
 </header>
 <main id="content" class="content container">
 <header>
-<h1 class="title">Blank</h1>
-</header><p>
-<a href="https://notes.alexkehayias.com/how-to-get-org-mode-filetags/">https://notes.alexkehayias.com/how-to-get-org-mode-filetags/</a><br>
-</p>
-<div class="org-src-container">
-<pre class="src src-emacs-lisp"><span style="color: #b22222;">;; </span><span style="color: #b22222;">(org-collect-keywords '("FILETAGS"))</span>
-
-<span style="color: #707183;">(</span><span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">76/public?</span> <span style="color: #7388d6;">()</span>
-&#9474; <span style="color: #7388d6;">(</span><span style="color: #008b8b;">car</span> <span style="color: #909183;">(</span><span style="color: #008b8b;">cdr</span> <span style="color: #709870;">(</span><span style="color: #008b8b;">car</span> <span style="color: #707183;">(</span><span style="color: #0000ff;">org-collect-keywords</span> <span style="color: #a020f0;">'</span><span style="color: #7388d6;">(</span><span style="color: #8b2252;">"public"</span><span style="color: #7388d6;">)</span><span style="color: #707183;">)</span><span style="color: #709870;">)</span><span style="color: #909183;">)</span><span style="color: #7388d6;">)</span><span style="color: #707183;">)</span>
-<span style="color: #707183;">(</span>76/public?<span style="color: #707183;">)</span>
-
-<span style="color: #b22222;">;; </span><span style="color: #b22222;">(defun 76/org-file-is-private ()</span>
-<span style="color: #b22222;">;;   </span><span style="color: #b22222;">(let ((tags (car (cdr (car (org-collect-keywords '("FILETAGS")))))))</span>
-<span style="color: #b22222;">;;     </span><span style="color: #b22222;">(if (stringp tags)</span>
-<span style="color: #b22222;">;;         </span><span style="color: #b22222;">(member "private" (split-string tags ":"))</span>
-<span style="color: #b22222;">;;       </span><span style="color: #b22222;">nil)))</span>
-
-<span style="color: #b22222;">;; </span><span style="color: #b22222;">(76/org-file-is-private)</span>
-</pre>
+<h1 class="title">Web Components</h1>
+</header><nav id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgcc185e9">1. References</a></li>
+</ul>
 </div>
-
-<div class="org-src-container">
-<pre class="src src-elisp"><span style="color: #707183;">(</span><span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">76/org-get-filetags</span> <span style="color: #7388d6;">(</span>e<span style="color: #7388d6;">)</span>
-&#9474; <span style="color: #7388d6;">(</span><span style="color: #a020f0;">let</span> <span style="color: #909183;">(</span><span style="color: #709870;">(</span>type <span style="color: #707183;">(</span><span style="color: #0000ff;">org-element-type</span> e<span style="color: #707183;">)</span><span style="color: #709870;">)</span>
-&#9474; &#9474; &#9474; &#9474; <span style="color: #709870;">(</span>key <span style="color: #707183;">(</span><span style="color: #0000ff;">org-element-property</span> <span style="color: #483d8b;">:key</span> e<span style="color: #707183;">)</span><span style="color: #709870;">)</span>
-&#9474; &#9474; &#9474; &#9474; <span style="color: #709870;">(</span>value <span style="color: #707183;">(</span><span style="color: #0000ff;">org-element-property</span> <span style="color: #483d8b;">:value</span> e<span style="color: #707183;">)</span><span style="color: #709870;">)</span><span style="color: #909183;">)</span>
-&#9474; &#9474; <span style="color: #909183;">(</span><span style="color: #a020f0;">if</span> <span style="color: #709870;">(</span><span style="color: #a020f0;">and</span> <span style="color: #707183;">(</span><span style="color: #008b8b;">eq</span> type <span style="color: #a020f0;">'</span><span style="color: #008b8b;">keyword</span><span style="color: #707183;">)</span>
-&#9474; &#9474; &#9474; &#9474; &#9474; &#9474; &#9474;<span style="color: #707183;">(</span><span style="color: #008b8b;">equal</span> key <span style="color: #8b2252;">"FILETAGS"</span><span style="color: #707183;">)</span><span style="color: #709870;">)</span>
-&#9474; &#9474; &#9474; &#9474; <span style="color: #709870;">(</span><span style="color: #0000ff;">string-split</span> value <span style="color: #8b2252;">":"</span> t<span style="color: #709870;">)</span><span style="color: #909183;">)</span><span style="color: #7388d6;">)</span><span style="color: #707183;">)</span>
-&#9474; &#9474; &#9474; &#9474;
-<span style="color: #707183;">(</span><span style="color: #0000ff;">org-element-map</span> <span style="color: #7388d6;">(</span><span style="color: #0000ff;">org-element-parse-buffer</span><span style="color: #7388d6;">)</span> <span style="color: #a020f0;">'</span><span style="color: #7388d6;">(</span>keyword<span style="color: #7388d6;">)</span> <span style="color: #a020f0;">#'</span><span style="color: #008b8b;">76/org-get-filetags</span><span style="color: #707183;">)</span>
-
-<span style="color: #b22222;">;; </span><span style="color: #b22222;">(defun 76/public? ()</span>
-<span style="color: #b22222;">;;   </span><span style="color: #b22222;">)</span>
-</pre>
-</div>
-
+</nav>
+<section id="outline-container-orgcc185e9" class="outline-2">
+<h2 id="orgcc185e9"><span class="section-number-2">1.</span> References</h2>
+<div class="outline-text-2" id="text-1">
 <p>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
-1818<br>
+<a href="https://developer.mozilla.org/ko/docs/Web/API/Web_components">웹 컴포넌트 - Web API | MDN</a>
 </p>
+</div>
+</section>
 </main>
 <footer id="postamble" class="status">
 <ul class="p-3">
