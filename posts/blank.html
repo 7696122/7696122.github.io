@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0" />
-<title>Blank - site76</title>
+<title>Blank - space76</title>
 <meta name="author" content="7696122" />
 <meta name="generator" content="Org Mode" />
 <!-- <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" /> -->
@@ -182,9 +182,12 @@
 <div class="org-src-container">
 <pre class="src src-emacs-lisp"><span style="color: #b22222;">;; </span><span style="color: #b22222;">(org-collect-keywords '("FILETAGS"))</span>
 
-<span style="color: #707183;">(</span><span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">76/public?</span> <span style="color: #7388d6;">()</span>
-&#9474; <span style="color: #7388d6;">(</span><span style="color: #008b8b;">car</span> <span style="color: #909183;">(</span><span style="color: #008b8b;">cdr</span> <span style="color: #709870;">(</span><span style="color: #008b8b;">car</span> <span style="color: #707183;">(</span><span style="color: #0000ff;">org-collect-keywords</span> <span style="color: #a020f0;">'</span><span style="color: #7388d6;">(</span><span style="color: #8b2252;">"public"</span><span style="color: #7388d6;">)</span><span style="color: #707183;">)</span><span style="color: #709870;">)</span><span style="color: #909183;">)</span><span style="color: #7388d6;">)</span><span style="color: #707183;">)</span>
-<span style="color: #707183;">(</span>76/public?<span style="color: #707183;">)</span>
+<span style="color: #707183;">(</span><span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">76/public?</span> <span style="color: #7388d6;">(</span>file<span style="color: #7388d6;">)</span>
+&#9474; <span style="color: #7388d6;">(</span><span style="color: #a020f0;">with-temp-buffer</span>
+&#9474; &#9474; <span style="color: #909183;">(</span><span style="color: #008b8b;">insert-file-contents</span> file<span style="color: #909183;">)</span>
+&#9474; &#9474; <span style="color: #909183;">(</span><span style="color: #0000ff;">cadar</span> <span style="color: #709870;">(</span><span style="color: #0000ff;">org-collect-keywords</span> <span style="color: #a020f0;">'</span><span style="color: #707183;">(</span><span style="color: #8b2252;">"public"</span><span style="color: #707183;">)</span><span style="color: #709870;">)</span><span style="color: #909183;">)</span><span style="color: #7388d6;">)</span><span style="color: #707183;">)</span>
+&#9474; &#9474;
+<span style="color: #707183;">(</span><span style="color: #0000ff;">76/public?</span> <span style="color: #8b2252;">"~/org/posts/blank.org"</span><span style="color: #707183;">)</span>
 
 <span style="color: #b22222;">;; </span><span style="color: #b22222;">(defun 76/org-file-is-private ()</span>
 <span style="color: #b22222;">;;   </span><span style="color: #b22222;">(let ((tags (car (cdr (car (org-collect-keywords '("FILETAGS")))))))</span>
