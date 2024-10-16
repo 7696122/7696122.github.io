@@ -17,11 +17,14 @@
 
     @layer base {
         body {
-            @apply max-w-screen-sm;
-            @apply mx-auto;
+            /* @apply max-w-screen-sm; */
+            /* @apply mx-auto; */
         }
 
         #content {
+            /* max-width: 60em; */
+            @apply max-w-full;
+            margin: auto;
             @apply p-3;
         }
 
@@ -119,6 +122,11 @@
         </a>
       </li>
       <li>
+        <a href="/garden.html">
+          <span>garden</span>
+        </a>
+      </li>
+      <li>
         <a href="/about.html">
           <span>about</span>
         </a>
@@ -176,20 +184,20 @@
   customElements.define("logo-emoji", Logo);
 </script>
 </header>
-<main id="content" class="content container">
+<main id="content" class="content">
 <div id='oxtf-filter-list'></div>
 
 <div id="gantt_here" style='width:1000px; height:400px;'></div>
 <script type="text/javascript">
 gantt.init("gantt_here");
 </script>
-<section id="outline-container-org6d38ea7" class="outline-2">
-<h2 id="org6d38ea7">filter list&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ox">ox</span></span></h2>
+<section id="outline-container-orgc480e02" class="outline-2">
+<h2 id="orgc480e02">filter list&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ox">ox</span></span></h2>
 </section>
 
-<section id="outline-container-orga017f3f" class="outline-2">
-<h2 id="orga017f3f">gantt&#xa0;&#xa0;&#xa0;<span class="tag"><span class="content">content</span></span></h2>
-<div class="outline-text-2" id="text-orga017f3f">
+<section id="outline-container-org7146a59" class="outline-2">
+<h2 id="org7146a59">gantt&#xa0;&#xa0;&#xa0;<span class="tag"><span class="content">content</span></span></h2>
+<div class="outline-text-2" id="text-org7146a59">
 <p>
 Gantt
 </p>

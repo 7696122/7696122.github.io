@@ -17,11 +17,14 @@
 
     @layer base {
         body {
-            @apply max-w-screen-sm;
-            @apply mx-auto;
+            /* @apply max-w-screen-sm; */
+            /* @apply mx-auto; */
         }
 
         #content {
+            /* max-width: 60em; */
+            @apply max-w-full;
+            margin: auto;
             @apply p-3;
         }
 
@@ -116,6 +119,11 @@
         </a>
       </li>
       <li>
+        <a href="/garden.html">
+          <span>garden</span>
+        </a>
+      </li>
+      <li>
         <a href="/about.html">
           <span>about</span>
         </a>
@@ -173,7 +181,7 @@
   customElements.define("logo-emoji", Logo);
 </script>
 </header>
-<main id="content" class="content container">
+<main id="content" class="content">
 <!-- <source srcset="photo.avif" type="image/avif" /> -->
 <!-- <source srcset="photo.webp" type="image/webp" /> -->
 <!-- <img src="photo.jpg" alt="photo" /> -->

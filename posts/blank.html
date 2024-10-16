@@ -17,11 +17,14 @@
 
     @layer base {
         body {
-            @apply max-w-screen-sm;
-            @apply mx-auto;
+            /* @apply max-w-screen-sm; */
+            /* @apply mx-auto; */
         }
 
         #content {
+            /* max-width: 60em; */
+            @apply max-w-full;
+            margin: auto;
             @apply p-3;
         }
 
@@ -116,6 +119,11 @@
         </a>
       </li>
       <li>
+        <a href="/garden.html">
+          <span>garden</span>
+        </a>
+      </li>
+      <li>
         <a href="/about.html">
           <span>about</span>
         </a>
@@ -173,7 +181,7 @@
   customElements.define("logo-emoji", Logo);
 </script>
 </header>
-<main id="content" class="content container">
+<main id="content" class="content">
 <header>
 <h1 class="title">Blank</h1>
 </header><p>
@@ -185,7 +193,7 @@
 <span style="color: #707183;">(</span><span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">76/public?</span> <span style="color: #7388d6;">(</span>file<span style="color: #7388d6;">)</span>
 &#9474; <span style="color: #7388d6;">(</span><span style="color: #a020f0;">with-temp-buffer</span>
 &#9474; &#9474; <span style="color: #909183;">(</span><span style="color: #008b8b;">insert-file-contents</span> file<span style="color: #909183;">)</span>
-&#9474; &#9474; <span style="color: #909183;">(</span><span style="color: #0000ff;">cadar</span> <span style="color: #709870;">(</span><span style="color: #0000ff;">org-collect-keywords</span> <span style="color: #a020f0;">'</span><span style="color: #707183;">(</span><span style="color: #8b2252;">"public"</span><span style="color: #707183;">)</span><span style="color: #709870;">)</span><span style="color: #909183;">)</span><span style="color: #7388d6;">)</span><span style="color: #707183;">)</span>
+&#9474; &#9474; <span style="color: #909183;">(</span><span style="color: #008b8b;">string=</span> <span style="color: #8b2252;">"true"</span> <span style="color: #709870;">(</span><span style="color: #008b8b;">cadar</span> <span style="color: #707183;">(</span><span style="color: #008b8b;">org-collect-keywords</span> <span style="color: #a020f0;">'</span><span style="color: #7388d6;">(</span><span style="color: #8b2252;">"public"</span><span style="color: #7388d6;">)</span><span style="color: #707183;">)</span><span style="color: #709870;">)</span><span style="color: #909183;">)</span><span style="color: #7388d6;">)</span><span style="color: #707183;">)</span>
 &#9474; &#9474;
 <span style="color: #707183;">(</span><span style="color: #0000ff;">76/public?</span> <span style="color: #8b2252;">"~/org/posts/blank.org"</span><span style="color: #707183;">)</span>
 
@@ -201,14 +209,14 @@
 
 <div class="org-src-container">
 <pre class="src src-elisp"><span style="color: #707183;">(</span><span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">76/org-get-filetags</span> <span style="color: #7388d6;">(</span>e<span style="color: #7388d6;">)</span>
-&#9474; <span style="color: #7388d6;">(</span><span style="color: #a020f0;">let</span> <span style="color: #909183;">(</span><span style="color: #709870;">(</span>type <span style="color: #707183;">(</span><span style="color: #0000ff;">org-element-type</span> e<span style="color: #707183;">)</span><span style="color: #709870;">)</span>
-&#9474; &#9474; &#9474; &#9474; <span style="color: #709870;">(</span>key <span style="color: #707183;">(</span><span style="color: #0000ff;">org-element-property</span> <span style="color: #483d8b;">:key</span> e<span style="color: #707183;">)</span><span style="color: #709870;">)</span>
-&#9474; &#9474; &#9474; &#9474; <span style="color: #709870;">(</span>value <span style="color: #707183;">(</span><span style="color: #0000ff;">org-element-property</span> <span style="color: #483d8b;">:value</span> e<span style="color: #707183;">)</span><span style="color: #709870;">)</span><span style="color: #909183;">)</span>
+&#9474; <span style="color: #7388d6;">(</span><span style="color: #a020f0;">let</span> <span style="color: #909183;">(</span><span style="color: #709870;">(</span>type <span style="color: #707183;">(</span><span style="color: #008b8b;">org-element-type</span> e<span style="color: #707183;">)</span><span style="color: #709870;">)</span>
+&#9474; &#9474; &#9474; &#9474; <span style="color: #709870;">(</span>key <span style="color: #707183;">(</span><span style="color: #008b8b;">org-element-property</span> <span style="color: #483d8b;">:key</span> e<span style="color: #707183;">)</span><span style="color: #709870;">)</span>
+&#9474; &#9474; &#9474; &#9474; <span style="color: #709870;">(</span>value <span style="color: #707183;">(</span><span style="color: #008b8b;">org-element-property</span> <span style="color: #483d8b;">:value</span> e<span style="color: #707183;">)</span><span style="color: #709870;">)</span><span style="color: #909183;">)</span>
 &#9474; &#9474; <span style="color: #909183;">(</span><span style="color: #a020f0;">if</span> <span style="color: #709870;">(</span><span style="color: #a020f0;">and</span> <span style="color: #707183;">(</span><span style="color: #008b8b;">eq</span> type <span style="color: #a020f0;">'</span><span style="color: #008b8b;">keyword</span><span style="color: #707183;">)</span>
 &#9474; &#9474; &#9474; &#9474; &#9474; &#9474; &#9474;<span style="color: #707183;">(</span><span style="color: #008b8b;">equal</span> key <span style="color: #8b2252;">"FILETAGS"</span><span style="color: #707183;">)</span><span style="color: #709870;">)</span>
-&#9474; &#9474; &#9474; &#9474; <span style="color: #709870;">(</span><span style="color: #0000ff;">string-split</span> value <span style="color: #8b2252;">":"</span> t<span style="color: #709870;">)</span><span style="color: #909183;">)</span><span style="color: #7388d6;">)</span><span style="color: #707183;">)</span>
+&#9474; &#9474; &#9474; &#9474; <span style="color: #709870;">(</span><span style="color: #008b8b;">string-split</span> value <span style="color: #8b2252;">":"</span> t<span style="color: #709870;">)</span><span style="color: #909183;">)</span><span style="color: #7388d6;">)</span><span style="color: #707183;">)</span>
 &#9474; &#9474; &#9474; &#9474;
-<span style="color: #707183;">(</span><span style="color: #0000ff;">org-element-map</span> <span style="color: #7388d6;">(</span><span style="color: #0000ff;">org-element-parse-buffer</span><span style="color: #7388d6;">)</span> <span style="color: #a020f0;">'</span><span style="color: #7388d6;">(</span>keyword<span style="color: #7388d6;">)</span> <span style="color: #a020f0;">#'</span><span style="color: #008b8b;">76/org-get-filetags</span><span style="color: #707183;">)</span>
+<span style="color: #707183;">(</span><span style="color: #008b8b;">org-element-map</span> <span style="color: #7388d6;">(</span><span style="color: #008b8b;">org-element-parse-buffer</span><span style="color: #7388d6;">)</span> <span style="color: #a020f0;">'</span><span style="color: #7388d6;">(</span>keyword<span style="color: #7388d6;">)</span> <span style="color: #a020f0;">#'</span><span style="color: #008b8b;">76/org-get-filetags</span><span style="color: #707183;">)</span>
 
 <span style="color: #b22222;">;; </span><span style="color: #b22222;">(defun 76/public? ()</span>
 <span style="color: #b22222;">;;   </span><span style="color: #b22222;">)</span>
