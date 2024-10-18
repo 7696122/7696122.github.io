@@ -100,6 +100,8 @@
 </head>
 <body>
 <header id="preamble" class="status">
+<script src="https://cdn.jsdelivr.net/npm/ua-parser-js/dist/ua-parser.min.js"></script>
+
 <section id="gnb">
   <nav class="font-black text-xl">
     <ul class="flex items-center capitalize p-3 gap-3">
@@ -137,6 +139,11 @@
 </style>
 
 <script>
+  const uap = new UAParser();
+  console.log(uap.getResult());
+
+  const useGarden? = () => uap.getBrowser() !== 'Firefox'
+
   class Logo extends HTMLElement {
     constructor() {
       super();
@@ -165,9 +172,9 @@
 
     render() {
       const emojis = [
-          '🪦',
-          '🇰🇷',
-          '🏛'
+        '🪦',
+        '🇰🇷',
+        '🏛'
       ];
       let emoji = emojis[
         Math.floor(

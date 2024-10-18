@@ -100,6 +100,8 @@
 </head>
 <body>
 <header id="preamble" class="status">
+<script src="https://cdn.jsdelivr.net/npm/ua-parser-js/dist/ua-parser.min.js"></script>
+
 <section id="gnb">
   <nav class="font-black text-xl">
     <ul class="flex items-center capitalize p-3 gap-3">
@@ -137,6 +139,11 @@
 </style>
 
 <script>
+  const uap = new UAParser();
+  console.log(uap.getResult());
+
+  const useGarden? = () => uap.getBrowser() !== 'Firefox'
+
   class Logo extends HTMLElement {
     constructor() {
       super();
@@ -165,9 +172,9 @@
 
     render() {
       const emojis = [
-          '🪦',
-          '🇰🇷',
-          '🏛'
+        '🪦',
+        '🇰🇷',
+        '🏛'
       ];
       let emoji = emojis[
         Math.floor(
@@ -183,16 +190,18 @@
 </header>
 <main id="content" class="content">
 <div class="h-screen">
-<iframe
-  id=""
-  title=""
-  width="100%"
-  height="100%"
-  frameborder="0"
-  webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""
-  src="/logseq"
-  >
-</iframe>
+<!-- <embed -->
+<!--   type="text/html" -->
+<!--   src="/logseq" -->
+<!--   width="100%" -->
+<!--   height="100%" -->
+<!--   /> -->
+<!-- <object data="http://localhost:8080/logseq/index.html" -->
+<!-- width="800" -->
+<!-- height="800" -->
+<!-- type="text/html"> -->
+<!-- </object> -->
+<embed type="text/html" src="/logseq" width="100%" height="100%">
 </div>
 </main>
 <footer id="postamble" class="status">
