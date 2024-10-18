@@ -100,15 +100,26 @@
 </head>
 <body>
 <header id="preamble" class="status">
-<script src="https://cdn.jsdelivr.net/npm/ua-parser-js/dist/ua-parser.min.js"></script>
+<section>
+  <a href="/">
+    <pre class="m-0 p-0 border-0 font-black bg-transparent">
+   ___________  __________  ___ 
+  /_  / __/ _ \/ __<  /_  ||_  |
+   / / _ \\_, / _ \/ / __// __/ 
+  /_/\___/___/\___/_/____/____/ 
+    </pre>
+  </a>
+</section>
 
 <section id="gnb">
   <nav class="font-black text-xl">
-    <ul class="flex items-center capitalize p-3 gap-3">
-      <li>
-        <a href="/">
-          <logo-emoji />
-        </a>
+    <ul class="flex items-center capitalize gap-3">
+      <!--
+                 <li>
+                 <a href="/">
+                 <logo-emoji />
+                 </a>
+            -->
       </li>
       <li>
         <a href="/home.html">
@@ -126,6 +137,11 @@
         </a>
       </li>
       <li>
+        <a href="/gantt.html">
+          <span>gantt</span>
+        </a>
+      </li>
+      <li>
         <a href="/about.html">
           <span>about</span>
         </a>
@@ -134,15 +150,35 @@
   </nav>
 </section>
 
-<style type="text/css" media="screen">
-
-</style>
-
+<style type="text/css" media="screen"></style>
+<script src="https://cdn.jsdelivr.net/npm/ua-parser-js/dist/ua-parser.min.js"></script>
 <script>
+  const gnbs = [
+    {
+      name: "home"
+            link: "/home.html"
+    },
+    {
+      name: "posts"
+            link: "/posts.html"
+    },
+    {
+      name: "garden"
+            link: "/garden.html"
+    },
+    {
+      name: "gantt"
+            link: "/gantt.html"
+    },
+    {
+      name: "about"
+            link: "/about.html"
+    },
+  ]
   const uap = new UAParser();
   console.log(uap.getResult());
 
-  const useGarden? = () => uap.getBrowser() !== 'Firefox'
+  // const useGarden? = () => uap.getBrowser() !== 'Firefox'
 
   class Logo extends HTMLElement {
     constructor() {
@@ -191,7 +227,7 @@
 <main id="content" class="content">
 <div id="posts-list">
 <ul class="org-ul">
-<li><a href="../posts/blank.html"><span class="author">7696122</span> <span>📰</span> <span>Blank</span>  <span class="timestamp">Oct 15</span></a></li>
+<li><a href="../posts/git_정보_보여주는_컴포넌트.html"><span class="author">7696122</span> <span>📰</span> <span>Git 정보를 보여주는 Component 만들기</span>  <span class="timestamp">Oct 19</span></a></li>
 </ul>
 </div>
 </main>

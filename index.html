@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0" />
-<title>Index Home  About - space76</title>
+<title>Index  About - space76</title>
 <meta name="author" content="7696122" />
 <meta name="generator" content="Org Mode" />
 <!-- <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" /> -->
@@ -100,15 +100,26 @@
 </head>
 <body>
 <header id="preamble" class="status">
-<script src="https://cdn.jsdelivr.net/npm/ua-parser-js/dist/ua-parser.min.js"></script>
+<section>
+  <a href="/">
+    <pre class="m-0 p-0 border-0 font-black bg-transparent">
+   ___________  __________  ___ 
+  /_  / __/ _ \/ __<  /_  ||_  |
+   / / _ \\_, / _ \/ / __// __/ 
+  /_/\___/___/\___/_/____/____/ 
+    </pre>
+  </a>
+</section>
 
 <section id="gnb">
   <nav class="font-black text-xl">
-    <ul class="flex items-center capitalize p-3 gap-3">
-      <li>
-        <a href="/">
-          <logo-emoji />
-        </a>
+    <ul class="flex items-center capitalize gap-3">
+      <!--
+                 <li>
+                 <a href="/">
+                 <logo-emoji />
+                 </a>
+            -->
       </li>
       <li>
         <a href="/home.html">
@@ -126,6 +137,11 @@
         </a>
       </li>
       <li>
+        <a href="/gantt.html">
+          <span>gantt</span>
+        </a>
+      </li>
+      <li>
         <a href="/about.html">
           <span>about</span>
         </a>
@@ -134,15 +150,35 @@
   </nav>
 </section>
 
-<style type="text/css" media="screen">
-
-</style>
-
+<style type="text/css" media="screen"></style>
+<script src="https://cdn.jsdelivr.net/npm/ua-parser-js/dist/ua-parser.min.js"></script>
 <script>
+  const gnbs = [
+    {
+      name: "home"
+            link: "/home.html"
+    },
+    {
+      name: "posts"
+            link: "/posts.html"
+    },
+    {
+      name: "garden"
+            link: "/garden.html"
+    },
+    {
+      name: "gantt"
+            link: "/gantt.html"
+    },
+    {
+      name: "about"
+            link: "/about.html"
+    },
+  ]
   const uap = new UAParser();
   console.log(uap.getResult());
 
-  const useGarden? = () => uap.getBrowser() !== 'Firefox'
+  // const useGarden? = () => uap.getBrowser() !== 'Firefox'
 
   class Logo extends HTMLElement {
     constructor() {
@@ -189,6 +225,10 @@
 </script>
 </header>
 <main id="content" class="content">
+<section id="outline-container-org448191f" class="outline-2">
+<h2 id="org448191f">html</h2>
+<div class="outline-text-2" id="text-org448191f">
+<section class="border-b">
 <!-- <source srcset="photo.avif" type="image/avif" /> -->
 <!-- <source srcset="photo.webp" type="image/webp" /> -->
 <!-- <img src="photo.jpg" alt="photo" /> -->
@@ -202,23 +242,30 @@
     height="200"
     />
 </picture>
+</section>
+</div>
+</section>
+<section id="outline-container-orgff76ad3" class="outline-2">
+<h2 id="orgff76ad3">posts</h2>
+<div class="outline-text-2" id="text-orgff76ad3">
 <section class="border-b">
 <ul class="org-ul">
-<li>🏚 오프라인 셋방살이</li>
-<li>🏠 온라인 노대출 자가</li>
+<li><a href="../posts/git_정보_보여주는_컴포넌트.html"><span class="author">7696122</span> <span>📰</span> <span>Git 정보를 보여주는 Component 만들기</span>  <span class="timestamp">Oct 19</span></a></li>
 </ul>
 </section>
-<section class="border-b">
-<ul class="org-ul">
-<li><a href="../posts/blank.html"><span class="author">7696122</span> <span>📰</span> <span>Blank</span>  <span class="timestamp">Oct 15</span></a></li>
-</ul>
+</div>
 </section>
+<section id="outline-container-org2107a1b" class="outline-2">
+<h2 id="org2107a1b">about</h2>
+<div class="outline-text-2" id="text-org2107a1b">
 <section class="border-b">
 <dl class="org-dl">
 <dt><span>🪦</span> Memento Mori</dt><dd>내 죽을을 기억하려고 합니다.</dd>
 <dt><span>🇰🇷</span> Korean</dt><dd>한국인입니다.</dd>
 <dt><span>🏛️</span> Stoicism</dt><dd>스토아철학을 좋아합니다.</dd>
 </dl>
+</section>
+</div>
 </section>
 </main>
 <footer id="postamble" class="status">
